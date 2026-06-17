@@ -1,0 +1,14 @@
+{
+  "name": "vestai-wealth",
+  "description": "Connect your VestAI wealth account to Claude — portfolios, net worth, real assets, liabilities, markets and your daily brief, with confirmation on every change. Bundles the VestAI MCP connector and private-banker skills.",
+  "version": "0.1.0",
+  "author": {
+    "name": "VestAI",
+    "url": "https://vestai.ai",
+    "email": "support@vestai.ai"
+  },
+  "homepage": "https://vestai.ai/mcp",
+  "repository": "https://github.com/Oltramare-AI/vestai-claude-plugin",
+  "license": "UNLICENSED",
+  "keywords": ["wealth", "finance", "private-banking", "family-office", "portfolio", "mcp"]
+}

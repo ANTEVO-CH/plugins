@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "vestai": {
+      "type": "sse",
+      "url": "https://api.vestai.ai/mcp/sse"
+    }
+  }
+}
