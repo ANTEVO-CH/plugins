@@ -13,7 +13,7 @@ the private-banker skills in a single step.
 
 ```text
 # 1. add this marketplace
-/plugin marketplace add Oltramare-AI/vestai-claude-plugin
+/plugin marketplace add VESTAI-LTD/vestai-claude-plugin
 
 # 2. install the plugin
 /plugin install vestai-wealth@vestai
