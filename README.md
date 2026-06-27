@@ -40,12 +40,16 @@ Works in Claude Code, Claude.ai (web) and Claude Desktop.
 
 | Component | What it is |
 |-----------|------------|
-| **MCP connector** (`.mcp.json`) | Remote VestAI MCP server (`https://api.vestai.ai/mcp/sse`, OAuth 2.1) — portfolios, net worth, real assets, liabilities, accounts, risk, markets, signals, family and document metadata. |
+| **MCP connector** (`.mcp.json`) | The VestAI MCP servers (remote SSE, OAuth 2.1) — portfolio & net worth (cash-inclusive AUM), risk, credit/leverage, real assets, markets & daily brief, **equity & technical analysis**, **geopolitics**, **watchlist**, **goals**, family and documents. Currently one server per domain (multi-server); a single `/mcp/wealth/sse` aggregate is on the way. |
 | **Skill: `wealth-portfolio-review`** | Banker-grade review → net worth, allocation/concentration, risk & drift, leverage, real-asset yield, market backdrop → a dated memo. |
 | **Skill: `portfolio-stress-radar`** | "Where could I get hurt?" — traces a shock across concentration → risk → leverage/covenants → liquidity into a consequence, with pre-emptions. |
 | **Skill: `concentration-and-drift`** | Concentration map (name/class/currency/region) + drift vs target + ranked trim/rebalance candidates. |
 | **Skill: `liquidity-and-leverage`** | Liquidity ladder (raisable in days / weeks / months+), leverage, and covenant headroom with distance to margin-call / DSCR / ICR triggers. |
 | **Skill: `market-signals-period`** | Time-series read over a look-back window — what trended, what's new, how correlations shifted. |
+| **Skill: `security-analysis`** | One instrument, both lenses — fundamentals (valuation, growth, margins, peers) + technicals (signal consensus, backtest). |
+| **Skill: `geopolitical-risk`** | World risk read tied to your exposure — conflict, chokepoints, sanctions, cyber, narrative; cross-references where your capital sits. |
+| **Skill: `watchlist-review`** | Your tracked instruments — movers, buy/sell signals, regime & volatility; hands off to `security-analysis`. |
+| **Skill: `goals-review`** | Funding progress vs targets, the gap to plan, what's on track vs at risk. |
 
 Invoke a skill explicitly with `/vestai-wealth:<skill>` (e.g.
 `/vestai-wealth:portfolio-stress-radar`), or just ask in plain language — the skills
@@ -72,6 +76,15 @@ into the detail:
 - "Summarise the signals over the last 3 months." · "How have correlations shifted this quarter?"
 - "What's been trending — and what rolled off?"
 
+**Analyse a security**
+- "Analyse NVDA." · "Is Apple expensive?" · "Technicals on the S&P 500."
+
+**Geopolitics**
+- "What are the geopolitical risks right now?" · "How exposed am I to the Strait of Hormuz / China?"
+
+**Watchlist & goals**
+- "What's on my watchlist — anything signalling?" · "How am I tracking against my goals?"
+
 **The whole picture**
 - "Review my portfolio." · "How am I doing?" · "Give me a net-worth breakdown."
 
@@ -89,13 +102,17 @@ legal advice.
 .claude-plugin/marketplace.json              # the catalog (lists the plugin)
 plugins/vestai-wealth/
 ├── .claude-plugin/plugin.json               # plugin manifest
-├── .mcp.json                                # remote VestAI MCP connector
+├── .mcp.json                                # remote VestAI MCP connector (multi-server)
 └── skills/
     ├── wealth-portfolio-review/SKILL.md
     ├── portfolio-stress-radar/SKILL.md
     ├── concentration-and-drift/SKILL.md
     ├── liquidity-and-leverage/SKILL.md
-    └── market-signals-period/SKILL.md
+    ├── market-signals-period/SKILL.md
+    ├── security-analysis/SKILL.md
+    ├── geopolitical-risk/SKILL.md
+    ├── watchlist-review/SKILL.md
+    └── goals-review/SKILL.md
 ```
 
 ## Links

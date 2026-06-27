@@ -1,8 +1,18 @@
 {
   "mcpServers": {
-    "vestai": {
-      "type": "sse",
-      "url": "https://api.vestai.ai/mcp/sse"
-    }
+    "vestai-portfolio":   { "type": "sse", "url": "https://api.vestai.ai/mcp/portfolio/core/sse" },
+    "vestai-risk":        { "type": "sse", "url": "https://api.vestai.ai/mcp/portfolio/risk/sse" },
+    "vestai-credit":      { "type": "sse", "url": "https://api.vestai.ai/mcp/portfolio/credit/sse" },
+    "vestai-real-assets": { "type": "sse", "url": "https://api.vestai.ai/mcp/portfolio/real_assets/sse" },
+    "vestai-markets":     { "type": "sse", "url": "https://api.vestai.ai/mcp/markets/core/sse" },
+    "vestai-signals":     { "type": "sse", "url": "https://api.vestai.ai/mcp/markets/alt_indices/sse" },
+    "vestai-equity":      { "type": "sse", "url": "https://api.vestai.ai/mcp/markets/equity/sse" },
+    "vestai-technical":   { "type": "sse", "url": "https://api.vestai.ai/mcp/markets/technical/sse" },
+    "vestai-geo":         { "type": "sse", "url": "https://api.vestai.ai/mcp/intelligence/geo/sse" },
+    "vestai-watchlist":   { "type": "sse", "url": "https://api.vestai.ai/mcp/wealth/watchlist/sse" },
+    "vestai-goals":       { "type": "sse", "url": "https://api.vestai.ai/mcp/wealth/goals/sse" },
+    "vestai-today":       { "type": "sse", "url": "https://api.vestai.ai/mcp/wealth/today/sse" },
+    "vestai-family":      { "type": "sse", "url": "https://api.vestai.ai/mcp/wealth/family/sse" },
+    "vestai-documents":   { "type": "sse", "url": "https://api.vestai.ai/mcp/wealth/documents/sse" }
   }
 }
