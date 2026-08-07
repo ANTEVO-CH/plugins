@@ -1,30 +1,30 @@
 ---
 name: portfolio-stress-radar
 description: >-
-  Find where a VestAI wealth household could actually get hurt — and trace it
+  Find where a Antevo Wealth household could actually get hurt — and trace it
   across domains. Use whenever the user asks "where could I get hurt", "what's my
   biggest risk", "stress my book/portfolio", "where am I exposed", "what happens
   if markets fall / oil spikes / rates rise", "am I over-leveraged", or "margin-call
   risk". The value is the CHAIN: not a list of metrics, but how a shock in one place
   (concentration, a market move) propagates through risk → leverage/covenants →
   liquidity into a real consequence, then what to do about it. Orchestrates the
-  VestAI MCP connector (portfolio.risk, portfolio.credit, portfolio.core,
+  Antevo Wealth MCP connector (portfolio.risk, portfolio.credit, portfolio.core,
   portfolio.real_assets). Read-only — proposes pre-emptions, never executes.
 compatibility: >-
-  Requires the VestAI MCP connector. If the VestAI tools are not available, tell
-  the user to connect VestAI in their assistant's connector settings, then stop.
+  Requires the Antevo Wealth MCP connector. If the Antevo Wealth tools are not available, tell
+  the user to connect Antevo Wealth in their assistant's connector settings, then stop.
 ---
 
-# VestAI — Stress radar
+# Antevo Wealth — Stress radar
 
 Most tools answer "what is my volatility?" This skill answers the better question:
 **"what could actually hurt me, and how?"** You earn your keep by drawing the
 *chain* — the same way a desk thinks — from a trigger to a consequence to a fix.
 
 ## Before you start
-- **Connector check.** No VestAI tools present → ask the user to connect VestAI, then stop. Never fabricate figures.
+- **Connector check.** No Antevo Wealth tools present → ask the user to connect Antevo Wealth, then stop. Never fabricate figures.
 - **Household.** Resolve a `household_id` (ask if there's more than one). Scoped tools need it.
-- **Read-only.** You propose pre-emptions; the user acts and confirms in VestAI.
+- **Read-only.** You propose pre-emptions; the user acts and confirms in Antevo Wealth.
 
 ## Step 1 — Gather (current-state)
 | Link | Tool(s) |
@@ -68,13 +68,13 @@ Rank chains by severity (a covenant breach under a plausible shock beats a large
 - {contained risks worth noting, one line each}
 
 ---
-*Read-only stress read from your VestAI data as of {dates}. Estimates, not a
+*Read-only stress read from your Antevo Wealth data as of {dates}. Estimates, not a
 guaranteed outcome; informational only — not investment advice. Any change is
-yours to confirm in VestAI.*
+yours to confirm in Antevo Wealth.*
 ```
 
 ## Guardrails
 - **Chain, don't list.** If you're just printing metrics, you've failed the skill.
 - **Label estimates.** Stress impacts are modelled approximations — say so.
 - **Cite or omit.** Every figure from a tool with its date; empty/stale → say so.
-- **Pre-emptions, not orders.** "Consider / I'd look at"; VestAI confirms every change.
+- **Pre-emptions, not orders.** "Consider / I'd look at"; Antevo Wealth confirms every change.

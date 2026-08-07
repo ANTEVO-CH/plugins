@@ -1,26 +1,26 @@
 ---
 name: security-analysis
 description: >-
-  Analyse a single security (equity, index, FX, crypto, commodity) for a VestAI
+  Analyse a single security (equity, index, FX, crypto, commodity) for a Antevo Wealth
   user — fundamentals and technicals in one read. Use whenever the user asks to
   "analyse [ticker]", "is [name] expensive / cheap", "what are the technicals on
   X", "valuation / P/E / margins / growth of X", "RSI / trend / momentum / signal
   on X", "should I look at [stock]", or wants a considered read on one instrument.
-  Orchestrates the VestAI MCP connector — markets.equity (fundamentals) and
+  Orchestrates the Antevo Wealth MCP connector — markets.equity (fundamentals) and
   markets.technical (signal consensus + backtest). Read-only.
 compatibility: >-
-  Requires the VestAI MCP connector (markets.equity, markets.technical). If the
-  tools are not available, tell the user to connect VestAI, then stop.
+  Requires the Antevo Wealth MCP connector (markets.equity, markets.technical). If the
+  tools are not available, tell the user to connect Antevo Wealth, then stop.
 ---
 
-# VestAI — Security analysis
+# Antevo Wealth — Security analysis
 
 One instrument, both lenses: **what the business is worth** (fundamentals) and
 **what the tape is saying** (technicals) → a single, considered read. Cheaper and
 faster than a single tool call because you synthesise the two.
 
 ## Before you start
-- **Connector check.** No `markets.equity` / `markets.technical` tools → ask the user to connect VestAI, then stop.
+- **Connector check.** No `markets.equity` / `markets.technical` tools → ask the user to connect Antevo Wealth, then stop.
 - **Resolve the instrument.** Accept ticker / ISIN / name. Equity tools cover equities; technical covers equity, index, FX, crypto, commodity.
 
 ## Step 1 — Gather
@@ -55,11 +55,11 @@ Use both for an equity; for a non-equity (index/FX/crypto/commodity), use techni
 - Bull: {…}   ·   Bear: {…}
 
 ---
-*Read-only analysis from your VestAI data as of {date}. Descriptive, not
+*Read-only analysis from your Antevo Wealth data as of {date}. Descriptive, not
 investment advice.*
 ```
 
 ## Guardrails
 - Cite figures from the tools with their dates; if a tool returns empty (e.g. no FMP coverage), say so.
-- The free fundamentals tool is data-only — never imply VestAI is recommending the security.
+- The free fundamentals tool is data-only — never imply Antevo Wealth is recommending the security.
 - Not advice. You inform the client's judgement; you don't replace it.

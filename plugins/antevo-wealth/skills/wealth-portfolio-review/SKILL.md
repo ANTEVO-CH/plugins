@@ -1,24 +1,24 @@
 ---
 name: wealth-portfolio-review
 description: >-
-  Produce a private-banker-grade portfolio review for a VestAI wealth client by
-  orchestrating the VestAI MCP connector. Use this whenever the user asks for a
+  Produce a private-banker-grade portfolio review for a Antevo Wealth client by
+  orchestrating the Antevo Wealth MCP connector. Use this whenever the user asks for a
   portfolio review, a wealth check-up, "how am I doing", a net-worth breakdown,
   a risk / concentration / drift review, leverage or liquidity analysis, or a
   quarterly / periodic review of their holdings — even if they don't say the word
   "review". Prefer this skill over answering from a single tool call when the user
-  wants a considered, multi-factor read on their wealth. Requires the VestAI MCP
+  wants a considered, multi-factor read on their wealth. Requires the Antevo Wealth MCP
   connector to be connected (tools under markets.core, portfolio.core,
   portfolio.risk, portfolio.credit, portfolio.real_assets). Read-only: it
   surfaces findings and recommendations, never executes trades or changes.
 compatibility: >-
-  Requires the VestAI MCP connector. If the VestAI tools are not available, tell
-  the user to connect VestAI in their assistant's connector settings, then stop.
+  Requires the Antevo Wealth MCP connector. If the Antevo Wealth tools are not available, tell
+  the user to connect Antevo Wealth in their assistant's connector settings, then stop.
 ---
 
-# VestAI — Portfolio Review
+# Antevo Wealth — Portfolio Review
 
-Turn the raw VestAI tools into one considered, banker-grade review of a household's
+Turn the raw Antevo Wealth tools into one considered, banker-grade review of a household's
 wealth. The value you add over a single tool call is **synthesis**: tying net
 worth, allocation, risk, leverage, real-asset yield and the market backdrop into a
 clear picture of *what changed, what's at risk, and what to consider* — in the
@@ -26,8 +26,8 @@ client's reporting currency, with every figure dated.
 
 ## Before you start
 
-- **Connector check.** If the VestAI tools aren't present, say so and ask the user
-  to connect VestAI, then stop — don't fabricate numbers.
+- **Connector check.** If the Antevo Wealth tools aren't present, say so and ask the user
+  to connect Antevo Wealth, then stop — don't fabricate numbers.
 - **Identify the household.** If the user gave a household, use it. Otherwise call
   the households listing (or `get_net_worth` with their default) — if there's more
   than one, ask which before proceeding. You need a `household_id` for the scoped
@@ -116,7 +116,7 @@ Keep it tight, specific, and dated. Lead with the answer. Use this structure:
 2. …
 
 ---
-*Read-only review from your VestAI data as of {dates}. Informational only — not
+*Read-only review from your Antevo Wealth data as of {dates}. Informational only — not
 investment, tax, or legal advice. Any change is yours to make and confirm.*
 ```
 
@@ -126,7 +126,7 @@ investment, tax, or legal advice. Any change is yours to make and confirm.*
   a tool returned empty or stale, say so — never fill a gap with a plausible
   number.
 - **Recommendations, never execution.** Frame actions as "consider / I'd look at",
-  and remind the user that VestAI confirms every change before it happens.
+  and remind the user that Antevo Wealth confirms every change before it happens.
 - **Not advice.** Close with the informational-only line. You support the client's
   judgement; you don't replace it.
 - **Currency discipline.** Report in the household's reporting currency; when you

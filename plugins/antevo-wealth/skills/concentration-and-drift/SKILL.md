@@ -1,28 +1,28 @@
 ---
 name: concentration-and-drift
 description: >-
-  Diagnose concentration and allocation drift for a VestAI wealth household and
+  Diagnose concentration and allocation drift for a Antevo Wealth household and
   surface what to rebalance. Use when the user asks "am I too concentrated",
   "single-stock / single-name risk", "have I drifted from my target allocation",
   "is my allocation off", "what should I trim or rebalance", or "how diversified am
   I". Produces a concentration map (by position, asset class, currency, region), the
   drift vs target with any open breaches, and ranked trim/add candidates with the
-  reasoning. Orchestrates the VestAI MCP connector (portfolio.core, portfolio.risk).
+  reasoning. Orchestrates the Antevo Wealth MCP connector (portfolio.core, portfolio.risk).
   Read-only — proposes, never trades.
 compatibility: >-
-  Requires the VestAI MCP connector. If the VestAI tools are not available, tell
-  the user to connect VestAI in their assistant's connector settings, then stop.
+  Requires the Antevo Wealth MCP connector. If the Antevo Wealth tools are not available, tell
+  the user to connect Antevo Wealth in their assistant's connector settings, then stop.
 ---
 
-# VestAI — Concentration & drift
+# Antevo Wealth — Concentration & drift
 
 Turn the positions and the risk dashboard into a clear read on *how lopsided the
 book is* and *how far it has wandered from plan* — with specific, ranked moves.
 
 ## Before you start
-- **Connector check.** No VestAI tools → ask the user to connect, then stop.
+- **Connector check.** No Antevo Wealth tools → ask the user to connect, then stop.
 - **Household.** Resolve `household_id` (ask if more than one).
-- **Read-only.** Trim/add ideas are proposals the user confirms in VestAI.
+- **Read-only.** Trim/add ideas are proposals the user confirms in Antevo Wealth.
 
 ## Step 1 — Gather
 | Dimension | Tool(s) |
@@ -59,8 +59,8 @@ Give 2–5 concrete moves, each tied to a finding: which sleeve/name, rough size
 2. …
 
 ---
-*Read-only from your VestAI data as of {dates}. Informational only — not investment
-advice. Any change is yours to confirm in VestAI.*
+*Read-only from your Antevo Wealth data as of {dates}. Informational only — not investment
+advice. Any change is yours to confirm in Antevo Wealth.*
 ```
 
 ## Guardrails

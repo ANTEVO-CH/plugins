@@ -1,26 +1,26 @@
 ---
 name: geopolitical-risk
 description: >-
-  Read the world's geopolitical risks and tie them to a VestAI wealth client's
+  Read the world's geopolitical risks and tie them to a Antevo Wealth client's
   exposure. Use whenever the user asks about geopolitical risk, "what's happening
   in the world", conflict / war / sanctions / cyber risk, a chokepoint (Hormuz,
   Suez, Taiwan Strait, Red Sea), supply-chain or energy-security risk, or "how
-  exposed am I to [region/event]". Orchestrates the VestAI MCP connector's
+  exposed am I to [region/event]". Orchestrates the Antevo Wealth MCP connector's
   intelligence.geo tools (15 live layers + country drilldown) and, when portfolio
   tools are connected, cross-references where the household's capital actually sits.
   Read-only.
 compatibility: >-
-  Requires the VestAI MCP connector (intelligence.geo). If the tools are not
-  available, tell the user to connect VestAI, then stop.
+  Requires the Antevo Wealth MCP connector (intelligence.geo). If the tools are not
+  available, tell the user to connect Antevo Wealth, then stop.
 ---
 
-# VestAI — Geopolitical risk
+# Antevo Wealth — Geopolitical risk
 
 Turn the raw geo layers into a read that answers the only question that matters to
 a principal: **does this touch my capital, and what do I watch?**
 
 ## Before you start
-- **Connector check.** No `intelligence.geo` tools → ask the user to connect VestAI, then stop. Never invent events.
+- **Connector check.** No `intelligence.geo` tools → ask the user to connect Antevo Wealth, then stop. Never invent events.
 - **Scope.** Geo data is global/universal (free). Portfolio exposure is household-scoped — only cross-reference if the portfolio tools are connected and a household resolves.
 
 ## Step 1 — Gather
@@ -52,7 +52,7 @@ a principal: **does this touch my capital, and what do I watch?**
 - {1–3 forward triggers}
 
 ---
-*Read-only geopolitical intelligence from your VestAI data as of {date}.
+*Read-only geopolitical intelligence from your Antevo Wealth data as of {date}.
 Informational only — not investment advice.*
 ```
 

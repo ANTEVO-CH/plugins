@@ -1,24 +1,24 @@
 {
-  "name": "vestai",
+  "name": "antevo",
   "owner": {
-    "name": "VestAI",
-    "url": "https://vestai.ai"
+    "name": "Antevo",
+    "url": "https://antevo.ch"
   },
   "metadata": {
-    "description": "VestAI plugins for Claude — connect your wealth and work with it through private-banker skills.",
+    "description": "Antevo plugins for Claude — connect your wealth and work with it through private-banker skills.",
     "pluginRoot": "./plugins"
   },
   "plugins": [
     {
-      "name": "vestai-wealth",
-      "source": "./vestai-wealth",
-      "description": "Connect your VestAI wealth account to Claude — portfolios, net worth, real assets, liabilities, markets and your daily brief — plus banker-grade skills. Read-only with confirmation on every change.",
-      "version": "0.1.0",
+      "name": "antevo-wealth",
+      "source": "./antevo-wealth",
+      "description": "Connect your Antevo Wealth account to Claude — portfolios, net worth, real assets, liabilities, markets, geopolitics and your daily brief — plus banker-grade skills. Read-only with confirmation on every change.",
+      "version": "0.4.0",
       "category": "finance",
       "tags": ["wealth", "finance", "private-banking", "family-office", "mcp"],
       "author": {
-        "name": "VestAI",
-        "url": "https://vestai.ai"
+        "name": "Antevo",
+        "url": "https://antevo.ch"
       }
     }
   ]

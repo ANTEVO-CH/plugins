@@ -1,24 +1,24 @@
 ---
 name: goals-review
 description: >-
-  Review a VestAI wealth household's financial goals and funding progress. Use
+  Review a Antevo Wealth household's financial goals and funding progress. Use
   when the user asks "how am I tracking against my goals", "am I on track for
   retirement / the property / the exit", "what's my progress toward [goal]", "what
   do I need to stay on plan", or wants a read on their wealth goals. Orchestrates
-  the VestAI MCP connector's wealth.goals tool (target vs current, progress %, gap,
+  the Antevo Wealth MCP connector's wealth.goals tool (target vs current, progress %, gap,
   ahead/behind). Read-only.
 compatibility: >-
-  Requires the VestAI MCP connector (wealth.goals). If the tools are not
-  available, tell the user to connect VestAI, then stop.
+  Requires the Antevo Wealth MCP connector (wealth.goals). If the tools are not
+  available, tell the user to connect Antevo Wealth, then stop.
 ---
 
-# VestAI — Goals review
+# Antevo Wealth — Goals review
 
 Turn the goals list into a clear "on track / at risk, and what closes the gap"
 read.
 
 ## Before you start
-- **Connector check.** No `wealth.goals` tool → ask the user to connect VestAI, then stop.
+- **Connector check.** No `wealth.goals` tool → ask the user to connect Antevo Wealth, then stop.
 - **Household.** Resolve a `household_id` (ask if more than one).
 
 ## Step 1 — Gather

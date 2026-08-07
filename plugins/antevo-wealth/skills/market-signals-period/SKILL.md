@@ -1,20 +1,20 @@
 ---
 name: market-signals-period
 description: >-
-  Summarise VestAI market signals and alternative-index moves over a time window
+  Summarise Antevo Wealth market signals and alternative-index moves over a time window
   and pull out the insights. Use when the user asks for analytics "over the last N
   weeks/months", "what's trended / changed lately", "summarise the signals across
   [period]", "what's been moving", "how have correlations shifted", or "give me a
   read on the period". Pulls recent signals and results over a chosen look-back
   (days), the correlation regime, and per-instrument history, then writes a period
   narrative: what trended, what's new, what rolled off, and which correlations
-  changed. Orchestrates the VestAI MCP connector (markets.alt_indices). Read-only.
+  changed. Orchestrates the Antevo Wealth MCP connector (markets.alt_indices). Read-only.
 compatibility: >-
-  Requires the VestAI MCP connector. If the VestAI tools are not available, tell
-  the user to connect VestAI in their assistant's connector settings, then stop.
+  Requires the Antevo Wealth MCP connector. If the Antevo Wealth tools are not available, tell
+  the user to connect Antevo Wealth in their assistant's connector settings, then stop.
 ---
 
-# VestAI — Signals over a period
+# Antevo Wealth — Signals over a period
 
 This is the connector's genuine *time-series* skill. Turn a look-back window of
 signals, results and correlations into a narrative of **what changed and what it
@@ -30,7 +30,7 @@ means** — not a table dump.
   signals-period read instead — don't fabricate a portfolio history.
 
 ## Before you start
-- **Connector check.** No VestAI tools → ask the user to connect, then stop.
+- **Connector check.** No Antevo Wealth tools → ask the user to connect, then stop.
 - **Window.** Pick the look-back from the user's ask ("last 3 months" → ~90 days; "last quarter" → ~90; "this month" → ~30). Default ~90 days if unspecified; cap at 365. State the window you used.
 
 ## Step 1 — Gather
@@ -68,7 +68,7 @@ Call `list_capabilities` first if unsure which alt-index tools/params are live.
 - {1–3 forward items tied to the above}
 
 ---
-*Read-only over the {window} look-back from your VestAI data. Signals computed from
+*Read-only over the {window} look-back from your Antevo Wealth data. Signals computed from
 market data — informational only, not investment advice.*
 ```
 

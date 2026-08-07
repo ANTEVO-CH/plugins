@@ -1,29 +1,29 @@
 ---
 name: liquidity-and-leverage
 description: >-
-  Assess a VestAI wealth household's liquidity and leverage — how fast it can raise
+  Assess a Antevo Wealth household's liquidity and leverage — how fast it can raise
   cash and how much covenant headroom it has. Use when the user asks "can I raise
   cash / how liquid am I", "could I meet a capital call or margin call", "how
   levered am I", "what's my loan-to-value", "covenant headroom", "how much can I
   borrow against the book", or "what's my interest cost". Produces a liquidity
   ladder (raisable in days / weeks–a quarter / months+), a leverage summary
   (facilities, weighted rate, utilisation), and covenant headroom with distance to
-  any margin-call / DSCR / ICR trigger. Orchestrates the VestAI MCP connector
+  any margin-call / DSCR / ICR trigger. Orchestrates the Antevo Wealth MCP connector
   (portfolio.credit, portfolio.core, portfolio.real_assets). Read-only.
 compatibility: >-
-  Requires the VestAI MCP connector. If the VestAI tools are not available, tell
-  the user to connect VestAI in their assistant's connector settings, then stop.
+  Requires the Antevo Wealth MCP connector. If the Antevo Wealth tools are not available, tell
+  the user to connect Antevo Wealth in their assistant's connector settings, then stop.
 ---
 
-# VestAI — Liquidity & leverage
+# Antevo Wealth — Liquidity & leverage
 
 Answer the two questions that decide whether a shock is survivable: **how fast can
 this household raise cash, and how much room is left before a facility bites?**
 
 ## Before you start
-- **Connector check.** No VestAI tools → ask the user to connect, then stop.
+- **Connector check.** No Antevo Wealth tools → ask the user to connect, then stop.
 - **Household.** Resolve `household_id` (ask if more than one).
-- **Read-only.** Any drawdown/repayment/posting idea is a proposal to confirm in VestAI.
+- **Read-only.** Any drawdown/repayment/posting idea is a proposal to confirm in Antevo Wealth.
 
 ## Step 1 — Gather
 | Dimension | Tool(s) |
@@ -62,8 +62,8 @@ this household raise cash, and how much room is left before a facility bites?**
 2. …
 
 ---
-*Read-only from your VestAI data as of {dates}. Informational only — not investment,
-tax, or legal advice. Any facility action is yours to confirm in VestAI.*
+*Read-only from your Antevo Wealth data as of {dates}. Informational only — not investment,
+tax, or legal advice. Any facility action is yours to confirm in Antevo Wealth.*
 ```
 
 ## Guardrails

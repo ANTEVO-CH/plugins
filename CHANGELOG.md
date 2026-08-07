@@ -1,6 +1,19 @@
 # Changelog
 
-All notable changes to the VestAI plugin are documented here.
+All notable changes to the Antevo Wealth plugin are documented here.
+
+## [0.4.0] — rebrand to Antevo Wealth
+- The wealth product moved to **antevo.ch/wealth** (vestai.ai/wealth is retired).
+  Rebranded the plugin accordingly — VestAI → **Antevo Wealth** across the
+  manifest, marketplace, README, SECURITY, and all skill copy.
+- Repo renamed `vestai-plugin` → `antevo-wealth-plugin`; catalog `vestai` → `antevo`;
+  plugin `vestai-wealth` → `antevo-wealth`. New install:
+  `/plugin marketplace add VESTAI-LTD/antevo-wealth-plugin` →
+  `/plugin install antevo-wealth@antevo`.
+- Links → antevo.ch (homepage, policies); contact → **contact@antevo.ch**.
+- **Unchanged:** the connector endpoints + OAuth issuer stay on `api.vestai.ai`
+  (the API/backend did not move — only the product brand + web surface did). No
+  functional change to how the tools work.
 
 ## [0.3.0] — 2026-06
 - New connector tools went live in PROD — geo, technical, equity, watchlist, goals —

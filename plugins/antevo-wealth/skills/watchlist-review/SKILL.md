@@ -1,24 +1,24 @@
 ---
 name: watchlist-review
 description: >-
-  Review a VestAI wealth household's tracked instruments (their watchlist). Use
+  Review a Antevo Wealth household's tracked instruments (their watchlist). Use
   when the user asks "what's on my watchlist", "what am I tracking", "anything
   moving on my watchlist", "which of my watched names has a buy/sell signal", or
-  wants a read on the instruments they follow. Orchestrates the VestAI MCP
+  wants a read on the instruments they follow. Orchestrates the Antevo Wealth MCP
   connector's wealth.watchlist tool (price, momentum, signal, volatility per
   instrument) and can hand off to security-analysis for a deep dive. Read-only.
 compatibility: >-
-  Requires the VestAI MCP connector (wealth.watchlist). If the tools are not
-  available, tell the user to connect VestAI, then stop.
+  Requires the Antevo Wealth MCP connector (wealth.watchlist). If the tools are not
+  available, tell the user to connect Antevo Wealth, then stop.
 ---
 
-# VestAI — Watchlist review
+# Antevo Wealth — Watchlist review
 
 Turn the tracked-instruments list into a quick "what deserves attention" read,
 not a raw dump.
 
 ## Before you start
-- **Connector check.** No `wealth.watchlist` tool → ask the user to connect VestAI, then stop.
+- **Connector check.** No `wealth.watchlist` tool → ask the user to connect Antevo Wealth, then stop.
 - **Household.** Resolve a `household_id` (ask if more than one).
 
 ## Step 1 — Gather

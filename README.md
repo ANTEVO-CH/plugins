@@ -1,46 +1,54 @@
-# VestAI — MCP connector & plugin
+# Antevo Wealth — MCP connector & plugin
 
-The **VestAI Wealth** connector exposes your portfolios, net worth, real assets,
-liabilities, risk, markets and daily brief over the Model Context Protocol — with
-confirmation on every change.
+The **Antevo Wealth** connector exposes your portfolios, net worth, real assets,
+liabilities, risk, markets, geopolitics and daily brief over the Model Context
+Protocol — with confirmation on every change.
 
 MCP is an open standard, so the connector works with **any MCP client** (Claude,
 Cursor, VS Code/Copilot, Goose, and others). This repo additionally packages it as
 a **one-install Claude plugin** that wires up the connector *and* the private-banker
 skills in a single step.
 
-> You need a [VestAI](https://vestai.ai) account to see your own data. The universal
-> market surfaces (markets brief, executive brief, signals) work on a free account;
-> the personal surfaces (net worth, portfolio, real assets, liabilities, family,
-> documents) show your household once you connect.
+> You need an [Antevo Wealth](https://antevo.ch/wealth) account to see your own
+> data. The universal market surfaces (markets brief, executive brief, signals,
+> geopolitics) work on a free account; the personal surfaces (net worth, portfolio,
+> real assets, liabilities, family, documents) show your household once you connect.
+
+> **Note:** the product lives at `antevo.ch/wealth`; the API + OAuth backend is
+> hosted on `api.vestai.ai` (unchanged) — so the connector URLs below are correct.
 
 ## Use with any MCP client
 
-Point your client at the remote VestAI MCP server — it advertises OAuth 2.1, so the
-client walks you through sign-in (no credentials are shared with the assistant):
+Point your client at the remote Antevo Wealth MCP servers — they advertise
+OAuth 2.1, so the client walks you through sign-in (no credentials are shared with
+the assistant). Each domain is its own endpoint, e.g.:
 
 ```text
-https://api.vestai.ai/mcp/sse
+https://api.vestai.ai/mcp/portfolio/core/sse     # net worth, positions, AUM
+https://api.vestai.ai/mcp/intelligence/geo/sse   # geopolitics
+https://api.vestai.ai/mcp/markets/equity/sse     # equity fundamentals
 ```
+
+(See `.mcp.json` for the full list. A single aggregate endpoint is on the roadmap.)
 
 ## Install in Claude (one step)
 
 ```text
 # 1. add this marketplace
-/plugin marketplace add VESTAI-LTD/vestai-plugin
+/plugin marketplace add VESTAI-LTD/antevo-wealth-plugin
 
 # 2. install the plugin
-/plugin install vestai-wealth@vestai
+/plugin install antevo-wealth@antevo
 ```
 
-On first use you'll see the **VestAI OAuth** consent screen — sign in and approve.
-Works in Claude Code, Claude.ai (web) and Claude Desktop.
+On first use you'll see the **Antevo Wealth OAuth** consent screen — sign in and
+approve. Works in Claude Code, Claude.ai (web) and Claude Desktop.
 
 ## What's inside
 
 | Component | What it is |
 |-----------|------------|
-| **MCP connector** (`.mcp.json`) | The VestAI MCP servers (remote SSE, OAuth 2.1) — portfolio & net worth (cash-inclusive AUM), risk, credit/leverage, real assets, markets & daily brief, **equity & technical analysis**, **geopolitics**, **watchlist**, **goals**, family and documents. Currently one server per domain (multi-server); a single `/mcp/wealth/sse` aggregate is on the way. |
+| **MCP connector** (`.mcp.json`) | The Antevo Wealth MCP servers (remote SSE, OAuth 2.1, on `api.vestai.ai`) — portfolio & net worth (cash-inclusive AUM), risk, credit/leverage, real assets, markets & daily brief, **equity & technical analysis**, **geopolitics**, **watchlist**, **goals**, family and documents. Currently one server per domain (multi-server); a single `/mcp/wealth/sse` aggregate is on the way. |
 | **Skill: `wealth-portfolio-review`** | Banker-grade review → net worth, allocation/concentration, risk & drift, leverage, real-asset yield, market backdrop → a dated memo. |
 | **Skill: `portfolio-stress-radar`** | "Where could I get hurt?" — traces a shock across concentration → risk → leverage/covenants → liquidity into a consequence, with pre-emptions. |
 | **Skill: `concentration-and-drift`** | Concentration map (name/class/currency/region) + drift vs target + ranked trim/rebalance candidates. |
@@ -51,8 +59,8 @@ Works in Claude Code, Claude.ai (web) and Claude Desktop.
 | **Skill: `watchlist-review`** | Your tracked instruments — movers, buy/sell signals, regime & volatility; hands off to `security-analysis`. |
 | **Skill: `goals-review`** | Funding progress vs targets, the gap to plan, what's on track vs at risk. |
 
-Invoke a skill explicitly with `/vestai-wealth:<skill>` (e.g.
-`/vestai-wealth:portfolio-stress-radar`), or just ask in plain language — the skills
+Invoke a skill explicitly with `/antevo-wealth:<skill>` (e.g.
+`/antevo-wealth:portfolio-stress-radar`), or just ask in plain language — the skills
 auto-trigger on the questions below.
 
 ## Critical questions you can ask
@@ -100,9 +108,9 @@ legal advice.
 
 ```
 .claude-plugin/marketplace.json              # the catalog (lists the plugin)
-plugins/vestai-wealth/
+plugins/antevo-wealth/
 ├── .claude-plugin/plugin.json               # plugin manifest
-├── .mcp.json                                # remote VestAI MCP connector (multi-server)
+├── .mcp.json                                # remote Antevo Wealth MCP connector (multi-server)
 └── skills/
     ├── wealth-portfolio-review/SKILL.md
     ├── portfolio-stress-radar/SKILL.md
@@ -116,10 +124,10 @@ plugins/vestai-wealth/
 ```
 
 ## Links
-- Connector docs: https://vestai.ai/mcp
-- Privacy: https://vestai.ai/policies/privacy-policy · Terms: https://vestai.ai/policies/terms-of-use
-- Support: support@vestai.ai
+- Product: https://antevo.ch/wealth  (dedicated connector docs page coming)
+- Privacy: https://antevo.ch/policies/privacy-policy · Terms: https://antevo.ch/policies/terms-of-use
+- Contact: contact@antevo.ch
 
 ---
 *This repo contains only the plugin manifest, skills, and a pointer to the hosted
-VestAI MCP endpoint — no VestAI backend code.*
+Antevo Wealth MCP endpoints — no backend code.*
