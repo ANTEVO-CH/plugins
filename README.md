@@ -35,7 +35,7 @@ https://api.vestai.ai/mcp/markets/equity/sse     # equity fundamentals
 
 ```text
 # 1. add this marketplace
-/plugin marketplace add ANTEVO-CH/antevo-wealth-plugin
+/plugin marketplace add ANTEVO-CH/wealth-plugin
 
 # 2. install the plugin
 /plugin install antevo-wealth@antevo
