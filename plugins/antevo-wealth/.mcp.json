@@ -1,18 +1,18 @@
 {
   "mcpServers": {
-    "vestai-portfolio":   { "type": "sse", "url": "https://api.vestai.ai/mcp/portfolio/core/sse" },
-    "vestai-risk":        { "type": "sse", "url": "https://api.vestai.ai/mcp/portfolio/risk/sse" },
-    "vestai-credit":      { "type": "sse", "url": "https://api.vestai.ai/mcp/portfolio/credit/sse" },
-    "vestai-real-assets": { "type": "sse", "url": "https://api.vestai.ai/mcp/portfolio/real_assets/sse" },
-    "vestai-markets":     { "type": "sse", "url": "https://api.vestai.ai/mcp/markets/core/sse" },
-    "vestai-signals":     { "type": "sse", "url": "https://api.vestai.ai/mcp/markets/alt_indices/sse" },
-    "vestai-equity":      { "type": "sse", "url": "https://api.vestai.ai/mcp/markets/equity/sse" },
-    "vestai-technical":   { "type": "sse", "url": "https://api.vestai.ai/mcp/markets/technical/sse" },
-    "vestai-geo":         { "type": "sse", "url": "https://api.vestai.ai/mcp/intelligence/geo/sse" },
-    "vestai-watchlist":   { "type": "sse", "url": "https://api.vestai.ai/mcp/wealth/watchlist/sse" },
-    "vestai-goals":       { "type": "sse", "url": "https://api.vestai.ai/mcp/wealth/goals/sse" },
-    "vestai-today":       { "type": "sse", "url": "https://api.vestai.ai/mcp/wealth/today/sse" },
-    "vestai-family":      { "type": "sse", "url": "https://api.vestai.ai/mcp/wealth/family/sse" },
-    "vestai-documents":   { "type": "sse", "url": "https://api.vestai.ai/mcp/wealth/documents/sse" }
+    "antevo-portfolio":   { "type": "sse", "url": "https://api.antevo.ch/mcp/portfolio/core/sse" },
+    "antevo-risk":        { "type": "sse", "url": "https://api.antevo.ch/mcp/portfolio/risk/sse" },
+    "antevo-credit":      { "type": "sse", "url": "https://api.antevo.ch/mcp/portfolio/credit/sse" },
+    "antevo-real-assets": { "type": "sse", "url": "https://api.antevo.ch/mcp/portfolio/real_assets/sse" },
+    "antevo-markets":     { "type": "sse", "url": "https://api.antevo.ch/mcp/markets/core/sse" },
+    "antevo-signals":     { "type": "sse", "url": "https://api.antevo.ch/mcp/markets/alt_indices/sse" },
+    "antevo-equity":      { "type": "sse", "url": "https://api.antevo.ch/mcp/markets/equity/sse" },
+    "antevo-technical":   { "type": "sse", "url": "https://api.antevo.ch/mcp/markets/technical/sse" },
+    "antevo-geo":         { "type": "sse", "url": "https://api.antevo.ch/mcp/intelligence/geo/sse" },
+    "antevo-watchlist":   { "type": "sse", "url": "https://api.antevo.ch/mcp/wealth/watchlist/sse" },
+    "antevo-goals":       { "type": "sse", "url": "https://api.antevo.ch/mcp/wealth/goals/sse" },
+    "antevo-today":       { "type": "sse", "url": "https://api.antevo.ch/mcp/wealth/today/sse" },
+    "antevo-family":      { "type": "sse", "url": "https://api.antevo.ch/mcp/wealth/family/sse" },
+    "antevo-documents":   { "type": "sse", "url": "https://api.antevo.ch/mcp/wealth/documents/sse" }
   }
 }

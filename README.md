@@ -14,9 +14,6 @@ skills in a single step.
 > geopolitics) work on a free account; the personal surfaces (net worth, portfolio,
 > real assets, liabilities, family, documents) show your household once you connect.
 
-> **Note:** the product lives at `antevo.ch/wealth`; the API + OAuth backend is
-> hosted on `api.vestai.ai` (unchanged) — so the connector URLs below are correct.
-
 ## Use with any MCP client
 
 Point your client at the remote Antevo Wealth MCP servers — they advertise
@@ -24,12 +21,16 @@ OAuth 2.1, so the client walks you through sign-in (no credentials are shared wi
 the assistant). Each domain is its own endpoint, e.g.:
 
 ```text
-https://api.vestai.ai/mcp/portfolio/core/sse     # net worth, positions, AUM
-https://api.vestai.ai/mcp/intelligence/geo/sse   # geopolitics
-https://api.vestai.ai/mcp/markets/equity/sse     # equity fundamentals
+https://api.antevo.ch/mcp/portfolio/core/sse     # net worth, positions, AUM
+https://api.antevo.ch/mcp/intelligence/geo/sse   # geopolitics
+https://api.antevo.ch/mcp/markets/equity/sse     # equity fundamentals
 ```
 
-(See `.mcp.json` for the full list. A single aggregate endpoint is on the roadmap.)
+(See `.mcp.json` for the full list. A single one-connect aggregate endpoint,
+`/mcp/wealth/sse`, is rolling out.)
+
+> `api.antevo.ch` and the legacy `api.vestai.ai` front the **same** service, so
+> existing configurations keep working — but `api.antevo.ch` is the address to use.
 
 ## Install in Claude (one step)
 
@@ -48,7 +49,8 @@ approve. Works in Claude Code, Claude.ai (web) and Claude Desktop.
 
 | Component | What it is |
 |-----------|------------|
-| **MCP connector** (`.mcp.json`) | The Antevo Wealth MCP servers (remote SSE, OAuth 2.1, on `api.vestai.ai`) — portfolio & net worth (cash-inclusive AUM), risk, credit/leverage, real assets, markets & daily brief, **equity & technical analysis**, **geopolitics**, **watchlist**, **goals**, family and documents. Currently one server per domain (multi-server); a single `/mcp/wealth/sse` aggregate is on the way. |
+| **MCP connector** (`.mcp.json`) | The Antevo Wealth MCP servers (remote SSE, OAuth 2.1, on `api.antevo.ch`) — portfolio & net worth (cash-inclusive AUM), risk, credit/leverage, real assets, markets & daily brief, **equity & technical analysis**, **geopolitics**, **watchlist**, **goals**, family and documents. Currently one server per domain (multi-server); a single `/mcp/wealth/sse` aggregate is on the way. |
+| **Skill: `daily-brief`** | The morning note — what matters today, what needs you: brief, alerts, open breaches, drift and the upcoming calendar in one read. |
 | **Skill: `wealth-portfolio-review`** | Banker-grade review → net worth, allocation/concentration, risk & drift, leverage, real-asset yield, market backdrop → a dated memo. |
 | **Skill: `portfolio-stress-radar`** | "Where could I get hurt?" — traces a shock across concentration → risk → leverage/covenants → liquidity into a consequence, with pre-emptions. |
 | **Skill: `concentration-and-drift`** | Concentration map (name/class/currency/region) + drift vs target + ranked trim/rebalance candidates. |
@@ -67,6 +69,9 @@ auto-trigger on the questions below.
 
 Once connected, fire these directly — each routes to a skill and drills straight
 into the detail:
+
+**Start the day**
+- "What's my brief?" · "Anything I should know today?" · "What needs my attention?"
 
 **Where am I exposed**
 - "Where could I get hurt this week?" · "Stress my book against an oil shock / equity −20% / rates +50bp."
@@ -112,6 +117,7 @@ plugins/antevo-wealth/
 ├── .claude-plugin/plugin.json               # plugin manifest
 ├── .mcp.json                                # remote Antevo Wealth MCP connector (multi-server)
 └── skills/
+    ├── daily-brief/SKILL.md
     ├── wealth-portfolio-review/SKILL.md
     ├── portfolio-stress-radar/SKILL.md
     ├── concentration-and-drift/SKILL.md

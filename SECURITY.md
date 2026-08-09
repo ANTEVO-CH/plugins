@@ -7,7 +7,7 @@ Please do not open public GitHub issues for vulnerabilities.
 
 This repository contains only the Antevo Wealth plugin manifest and Agent Skills —
 **no backend code, secrets, or customer data.** The plugin points Claude at the
-hosted Antevo Wealth MCP endpoints (on `https://api.vestai.ai`, OAuth 2.1).
+hosted Antevo Wealth MCP endpoints (on `https://api.antevo.ch`, OAuth 2.1).
 Accessing any wealth data requires the user's own Antevo Wealth login and explicit
 consent, and every change is confirmation-gated.
 

@@ -2,6 +2,21 @@
 
 All notable changes to the Antevo Wealth plugin are documented here.
 
+## [0.4.2] — daily-brief skill
+- New **daily-brief** skill for the `/wealth/today` surface — the morning note:
+  what matters today, unread alerts, open compliance breaches, drift and the
+  upcoming calendar, triaged into one executive read (10 skills total).
+- Equity + technical analysis are already covered by **security-analysis** (one
+  instrument, both lenses) — deliberately one skill, so the descriptions don't
+  overlap and degrade auto-triggering.
+
+## [0.4.1] — Antevo-branded endpoints
+- Connector URLs now use **`api.antevo.ch`** (same service as the legacy
+  `api.vestai.ai`, which keeps working). MCP server keys renamed `vestai-*` →
+  `antevo-*`. GitHub repo description/homepage rebranded.
+- The backend now advertises the antevo issuer when reached on that host, so the
+  endpoint is self-consistent for strict OAuth clients.
+
 ## [0.4.0] — rebrand to Antevo Wealth
 - The wealth product moved to **antevo.ch/wealth** (vestai.ai/wealth is retired).
   Rebranded the plugin accordingly — VestAI → **Antevo Wealth** across the
