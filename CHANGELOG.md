@@ -8,7 +8,7 @@ All notable changes to the Antevo Wealth plugin are documented here.
   manifest, marketplace, README, SECURITY, and all skill copy.
 - Repo renamed `vestai-plugin` → `antevo-wealth-plugin`; catalog `vestai` → `antevo`;
   plugin `vestai-wealth` → `antevo-wealth`. New install:
-  `/plugin marketplace add VESTAI-LTD/antevo-wealth-plugin` →
+  `/plugin marketplace add ANTEVO-CH/antevo-wealth-plugin` →
   `/plugin install antevo-wealth@antevo`.
 - Links → antevo.ch (homepage, policies); contact → **contact@antevo.ch**.
 - **Unchanged:** the connector endpoints + OAuth issuer stay on `api.vestai.ai`
