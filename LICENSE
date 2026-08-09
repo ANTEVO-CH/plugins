@@ -1,4 +1,4 @@
-Copyright (c) 2026 VestAI LTD (trading as Antevo). All rights reserved.
+Copyright (c) 2026 Antevo. All rights reserved.
 
 This repository contains the Antevo Wealth plugin manifest and Agent Skills for use
 with Claude and other MCP-compatible AI assistants.
@@ -11,6 +11,6 @@ Antevo Wealth service requires an Antevo Wealth account.
 The Antevo Wealth name and logo, and the hosted service, APIs, and data are
 proprietary. No license is granted to the backend, APIs, or data. You may not
 redistribute, sell, sublicense, or create derivative marketplaces from this
-repository without prior written permission from VestAI LTD.
+repository without prior written permission from Antevo.
 
 THE CONTENTS OF THIS REPOSITORY ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.

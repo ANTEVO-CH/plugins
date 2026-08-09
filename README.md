@@ -29,9 +29,6 @@ https://api.antevo.ch/mcp/markets/equity/sse     # equity fundamentals
 (See `.mcp.json` for the full list. A single one-connect aggregate endpoint,
 `/mcp/wealth/sse`, is rolling out.)
 
-> `api.antevo.ch` and the legacy `api.vestai.ai` front the **same** service, so
-> existing configurations keep working — but `api.antevo.ch` is the address to use.
-
 ## Install in Claude (one step)
 
 ```text
