@@ -1,13 +1,15 @@
-# Antevo Wealth — MCP connector & plugin
+# Antevo — plugins & MCP connectors
 
-The **Antevo Wealth** connector exposes your portfolios, net worth, real assets,
-liabilities, risk, markets, geopolitics and daily brief over the Model Context
-Protocol — with confirmation on every change.
+Antevo's MCP connectors and Claude plugins, in one marketplace.
 
-MCP is an open standard, so the connector works with **any MCP client** (Claude,
-Cursor, VS Code/Copilot, Goose, and others). This repo additionally packages it as
-a **one-install Claude plugin** that wires up the connector *and* the private-banker
-skills in a single step.
+| Plugin | What it is | Account |
+|---|---|---|
+| **`antevo-wealth`** | Your portfolios, net worth, real assets, liabilities, risk, markets, geopolitics and daily brief — plus ten private-banker skills. | Antevo Wealth account |
+| **`antevo-executive`** | The Antevo Executive Brief — editorial market and world intelligence, today and back through the dated archive. | **None — public** |
+
+MCP is an open standard, so these work with **any MCP client** (Claude, Cursor,
+VS Code/Copilot, Goose, and others). This repo packages them as one-install
+Claude plugins that wire up the connector *and* the skills in a single step.
 
 > You need an [Antevo Wealth](https://antevo.ch/wealth) account to see your own
 > data. The universal market surfaces (markets brief, executive brief, signals,
@@ -29,18 +31,29 @@ https://api.antevo.ch/mcp/markets/equity/sse     # equity fundamentals
 (See `.mcp.json` for the full list. A single one-connect aggregate endpoint,
 `/mcp/wealth/sse`, is rolling out.)
 
-## Install in Claude (one step)
+## Install in Claude
 
 ```text
-# 1. add this marketplace
-/plugin marketplace add ANTEVO-CH/wealth-plugin
+# 1. add the marketplace (once)
+/plugin marketplace add ANTEVO-CH/plugins
 
-# 2. install the plugin
-/plugin install antevo-wealth@antevo
+# 2. install what you need
+/plugin install antevo-executive@antevo    # public — nothing to sign in to
+/plugin install antevo-wealth@antevo       # your account — OAuth on first use
 ```
 
-On first use you'll see the **Antevo Wealth OAuth** consent screen — sign in and
-approve. Works in Claude Code, Claude.ai (web) and Claude Desktop.
+Works in Claude Code, Claude.ai (web) and Claude Desktop.
+
+### Try it without an account
+
+`antevo-executive` needs no sign-in — add it and ask:
+
+```text
+https://api.antevo.ch/mcp/executive/sse
+```
+
+> *"What's happening in the markets?"* · *"What did the brief say on 9 August?"* ·
+> *"How did the energy story develop?"*
 
 ## What's inside
 
@@ -57,6 +70,14 @@ approve. Works in Claude Code, Claude.ai (web) and Claude Desktop.
 | **Skill: `geopolitical-risk`** | World risk read tied to your exposure — conflict, chokepoints, sanctions, cyber, narrative; cross-references where your capital sits. |
 | **Skill: `watchlist-review`** | Your tracked instruments — movers, buy/sell signals, regime & volatility; hands off to `security-analysis`. |
 | **Skill: `goals-review`** | Funding progress vs targets, the gap to plan, what's on track vs at risk. |
+
+### `antevo-executive` — public, no account
+
+| Component | What it is |
+|-----------|------------|
+| **MCP connector** | `https://api.antevo.ch/mcp/executive/sse` — the published Executive Brief, its dated archive, market snapshot and world events. Read-only, rate-limited, no personal data reachable. |
+| **Skill: `world-brief`** | What's happening in markets and the world — the editorial read, grounded in the numbers. |
+| **Skill: `story-timeline`** | How a story developed — reconstructs the arc from the dated archive, including where the view shifted. |
 
 Invoke a skill explicitly with `/antevo-wealth:<skill>` (e.g.
 `/antevo-wealth:portfolio-stress-radar`), or just ask in plain language — the skills
@@ -109,7 +130,13 @@ legal advice.
 ## Structure
 
 ```
-.claude-plugin/marketplace.json              # the catalog (lists the plugin)
+.claude-plugin/marketplace.json              # the catalog (lists both plugins)
+plugins/antevo-executive/
+├── .claude-plugin/plugin.json
+├── .mcp.json                                # public Executive connector (no auth)
+└── skills/
+    ├── world-brief/SKILL.md
+    └── story-timeline/SKILL.md
 plugins/antevo-wealth/
 ├── .claude-plugin/plugin.json               # plugin manifest
 ├── .mcp.json                                # remote Antevo Wealth MCP connector (multi-server)
@@ -127,10 +154,10 @@ plugins/antevo-wealth/
 ```
 
 ## Links
-- Product: https://antevo.ch/wealth  (dedicated connector docs page coming)
+- Connectors: https://antevo.ch/mcp · Wealth: https://antevo.ch/wealth · Executive: https://antevo.ch/executive
 - Privacy: https://antevo.ch/policies/privacy-policy · Terms: https://antevo.ch/policies/terms-of-use
 - Contact: contact@antevo.ch
 
 ---
-*This repo contains only the plugin manifest, skills, and a pointer to the hosted
-Antevo Wealth MCP endpoints — no backend code.*
+*This repo contains only plugin manifests, skills, and pointers to the hosted
+Antevo MCP endpoints — no backend code.*

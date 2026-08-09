@@ -1,0 +1,10 @@
+{
+  "name": "antevo-executive",
+  "description": "The Antevo Executive Brief in your assistant — editorial market and world intelligence, today and back through the dated archive. No account required.",
+  "version": "0.1.0",
+  "author": { "name": "Antevo", "url": "https://antevo.ch", "email": "contact@antevo.ch" },
+  "homepage": "https://antevo.ch/executive",
+  "repository": "https://github.com/ANTEVO-CH/plugins",
+  "license": "UNLICENSED",
+  "keywords": ["news", "markets", "intelligence", "executive-brief", "geopolitics", "mcp"]
+}

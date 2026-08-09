@@ -8,7 +8,7 @@
     "email": "contact@antevo.ch"
   },
   "homepage": "https://antevo.ch/wealth",
-  "repository": "https://github.com/ANTEVO-CH/wealth-plugin",
+  "repository": "https://github.com/ANTEVO-CH/plugins",
   "license": "UNLICENSED",
   "keywords": ["wealth", "finance", "private-banking", "family-office", "portfolio", "mcp"]
 }

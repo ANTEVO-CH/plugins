@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "antevo-executive": {
+      "type": "sse",
+      "url": "https://api.antevo.ch/mcp/executive/sse"
+    }
+  }
+}

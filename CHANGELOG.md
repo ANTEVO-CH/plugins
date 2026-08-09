@@ -1,6 +1,15 @@
 # Changelog
 
-All notable changes to the Antevo Wealth plugin are documented here.
+All notable changes to the Antevo plugins are documented here.
+
+## [unreleased] — marketplace + Executive plugin
+- Repo renamed `wealth-plugin` → **`plugins`** — it is a marketplace, not one
+  plugin. Install: `/plugin marketplace add ANTEVO-CH/plugins`.
+- New **`antevo-executive`** plugin (v0.1.0) — the public Executive Brief
+  connector (`/mcp/executive/sse`, **no account**) with two skills:
+  **world-brief** (what's happening now) and **story-timeline** (how a story
+  developed, from the dated archive).
+- README reframed around two plugins; `antevo-wealth` unchanged.
 
 ## [0.4.2] — daily-brief skill
 - New **daily-brief** skill for the `/wealth/today` surface — the morning note:
@@ -17,7 +26,7 @@ All notable changes to the Antevo Wealth plugin are documented here.
 
 ## [0.4.0] — Antevo Wealth
 - Repo, catalog and plugin aligned to Antevo Wealth. Install:
-  `/plugin marketplace add ANTEVO-CH/wealth-plugin` →
+  `/plugin marketplace add ANTEVO-CH/plugins` →
   `/plugin install antevo-wealth@antevo`.
 - Links to antevo.ch (homepage, policies); contact **contact@antevo.ch**.
 
