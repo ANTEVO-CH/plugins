@@ -13,7 +13,7 @@
       "name": "antevo-wealth",
       "source": "./antevo-wealth",
       "description": "Connect your Antevo Wealth account to Claude \u2014 portfolios, net worth, real assets, liabilities, markets, geopolitics and your daily brief \u2014 plus banker-grade skills. Read-only with confirmation on every change.",
-      "version": "0.4.2",
+      "version": "0.5.0",
       "category": "finance",
       "tags": [
         "wealth",

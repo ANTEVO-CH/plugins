@@ -11,6 +11,14 @@ All notable changes to the Antevo plugins are documented here.
   developed, from the dated archive).
 - README reframed around two plugins; `antevo-wealth` unchanged.
 
+## [0.5.0] — one connection for all of Wealth
+- `antevo-wealth` now connects through the single **`/mcp/wealth/sse`** aggregate
+  instead of 14 per-domain servers: **one connection, one sign-in**, same tools
+  (names unchanged, so every skill works as before). Verified live in PROD.
+- The backend also now advertises the **Antevo** brand and a host-aware OAuth
+  issuer, so `api.antevo.ch` is self-consistent for strict clients.
+- Per-domain endpoints remain available for a narrower tool set.
+
 ## [0.4.2] — daily-brief skill
 - New **daily-brief** skill for the `/wealth/today` surface — the morning note:
   what matters today, unread alerts, open compliance breaches, drift and the
