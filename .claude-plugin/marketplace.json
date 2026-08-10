@@ -26,6 +26,24 @@
         "name": "Antevo",
         "url": "https://antevo.ch"
       }
+    },
+    {
+      "name": "antevo-executive",
+      "source": "./antevo-executive",
+      "description": "The Antevo Executive Brief in your assistant \u2014 editorial market and world intelligence, today and back through the dated archive. No account required.",
+      "version": "0.1.0",
+      "category": "finance",
+      "tags": [
+        "news",
+        "markets",
+        "intelligence",
+        "geopolitics",
+        "mcp"
+      ],
+      "author": {
+        "name": "Antevo",
+        "url": "https://antevo.ch"
+      }
     }
   ]
 }
