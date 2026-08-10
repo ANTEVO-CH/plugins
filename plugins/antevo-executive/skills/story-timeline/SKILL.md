@@ -10,7 +10,7 @@ description: >-
   shifted. Read-only, no account required.
 compatibility: >-
   Requires the Antevo Executive connector (public, no sign-in). If the tools are
-  not available, tell the user to add https://api.antevo.ch/mcp/executive/sse,
+  not available, tell the user to add https://api.antevo.ch/mcp/executive/mcp,
   then stop.
 ---
 

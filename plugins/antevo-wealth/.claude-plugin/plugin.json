@@ -1,7 +1,7 @@
 {
   "name": "antevo-wealth",
-  "description": "Connect your Antevo Wealth account to Claude — portfolios, net worth, real assets, liabilities, markets, geopolitics and your daily brief, with confirmation on every change. Bundles the Antevo Wealth MCP connector and private-banker skills.",
-  "version": "0.5.0",
+  "description": "Connect your Antevo Wealth account to Claude \u2014 portfolios, net worth, real assets, liabilities, markets, geopolitics and your daily brief, with confirmation on every change. Bundles the Antevo Wealth MCP connector and private-banker skills.",
+  "version": "0.5.1",
   "author": {
     "name": "Antevo",
     "url": "https://antevo.ch",
@@ -10,5 +10,12 @@
   "homepage": "https://antevo.ch/wealth",
   "repository": "https://github.com/ANTEVO-CH/plugins",
   "license": "UNLICENSED",
-  "keywords": ["wealth", "finance", "private-banking", "family-office", "portfolio", "mcp"]
+  "keywords": [
+    "wealth",
+    "finance",
+    "private-banking",
+    "family-office",
+    "portfolio",
+    "mcp"
+  ]
 }

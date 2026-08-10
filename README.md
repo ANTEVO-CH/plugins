@@ -23,8 +23,8 @@ OAuth 2.1, so the client walks you through sign-in (no credentials are shared wi
 the assistant). Each domain is its own endpoint, e.g.:
 
 ```text
-https://api.antevo.ch/mcp/wealth/sse       # everything, one sign-in
-https://api.antevo.ch/mcp/executive/sse    # public brief, no account
+https://api.antevo.ch/mcp/wealth/mcp       # everything, one sign-in
+https://api.antevo.ch/mcp/executive/mcp    # public brief, no account
 ```
 
 One connection covers the whole wealth surface. Per-domain endpoints
@@ -49,7 +49,7 @@ Works in Claude Code, Claude.ai (web) and Claude Desktop.
 `antevo-executive` needs no sign-in — add it and ask:
 
 ```text
-https://api.antevo.ch/mcp/executive/sse
+https://api.antevo.ch/mcp/executive/mcp
 ```
 
 > *"What's happening in the markets?"* · *"What did the brief say on 9 August?"* ·
@@ -59,7 +59,7 @@ https://api.antevo.ch/mcp/executive/sse
 
 | Component | What it is |
 |-----------|------------|
-| **MCP connector** (`.mcp.json`) | The Antevo Wealth MCP servers (remote SSE, OAuth 2.1, on `api.antevo.ch`) — portfolio & net worth (cash-inclusive AUM), risk, credit/leverage, real assets, markets & daily brief, **equity & technical analysis**, **geopolitics**, **watchlist**, **goals**, family and documents. One connection (`/mcp/wealth/sse`) covers all of it; per-domain endpoints remain available for a narrower tool set. |
+| **MCP connector** (`.mcp.json`) | The Antevo Wealth MCP servers (remote Streamable HTTP, OAuth 2.1, on `api.antevo.ch`) — portfolio & net worth (cash-inclusive AUM), risk, credit/leverage, real assets, markets & daily brief, **equity & technical analysis**, **geopolitics**, **watchlist**, **goals**, family and documents. One connection (`/mcp/wealth/mcp`) covers all of it; per-domain endpoints remain available for a narrower tool set. |
 | **Skill: `daily-brief`** | The morning note — what matters today, what needs you: brief, alerts, open breaches, drift and the upcoming calendar in one read. |
 | **Skill: `wealth-portfolio-review`** | Banker-grade review → net worth, allocation/concentration, risk & drift, leverage, real-asset yield, market backdrop → a dated memo. |
 | **Skill: `portfolio-stress-radar`** | "Where could I get hurt?" — traces a shock across concentration → risk → leverage/covenants → liquidity into a consequence, with pre-emptions. |
@@ -75,7 +75,7 @@ https://api.antevo.ch/mcp/executive/sse
 
 | Component | What it is |
 |-----------|------------|
-| **MCP connector** | `https://api.antevo.ch/mcp/executive/sse` — the published Executive Brief, its dated archive, market snapshot and world events. Read-only, rate-limited, no personal data reachable. |
+| **MCP connector** | `https://api.antevo.ch/mcp/executive/mcp` — the published Executive Brief, its dated archive, market snapshot and world events. Read-only, rate-limited, no personal data reachable. |
 | **Skill: `world-brief`** | What's happening in markets and the world — the editorial read, grounded in the numbers. |
 | **Skill: `story-timeline`** | How a story developed — reconstructs the arc from the dated archive, including where the view shifted. |
 
