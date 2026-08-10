@@ -5,7 +5,7 @@ Antevo's MCP connectors and Claude plugins, in one marketplace.
 | Plugin | What it is | Account |
 |---|---|---|
 | **`antevo-wealth`** | Your portfolios, net worth, real assets, liabilities, risk, markets, geopolitics and daily brief — plus ten private-banker skills. | Antevo Wealth account |
-| **`antevo-executive`** | The Antevo Executive Brief — editorial market and world intelligence, today and back through the dated archive. | **None — public** |
+| **`antevo-executive`** | The Antevo Executive Brief — editorial market and world intelligence, today and back through the dated archive. *(built; listing shortly)* | **None — public** |
 
 MCP is an open standard, so these work with **any MCP client** (Claude, Cursor,
 VS Code/Copilot, Goose, and others). This repo packages them as one-install
@@ -72,7 +72,7 @@ https://api.antevo.ch/mcp/executive/sse
 | **Skill: `watchlist-review`** | Your tracked instruments — movers, buy/sell signals, regime & volatility; hands off to `security-analysis`. |
 | **Skill: `goals-review`** | Funding progress vs targets, the gap to plan, what's on track vs at risk. |
 
-### `antevo-executive` — public, no account
+### `antevo-executive` — public, no account *(not yet listed)*
 
 | Component | What it is |
 |-----------|------------|
@@ -131,7 +131,7 @@ legal advice.
 ## Structure
 
 ```
-.claude-plugin/marketplace.json              # the catalog (lists both plugins)
+.claude-plugin/marketplace.json              # the catalog
 plugins/antevo-executive/
 ├── .claude-plugin/plugin.json
 ├── .mcp.json                                # public Executive connector (no auth)
