@@ -38,15 +38,16 @@ https://api.antevo.ch/mcp/markets/equity/sse     # equity fundamentals
 /plugin marketplace add ANTEVO-CH/plugins
 
 # 2. install what you need
-/plugin install antevo-executive@antevo    # public — nothing to sign in to
 /plugin install antevo-wealth@antevo       # your account — OAuth on first use
 ```
 
 Works in Claude Code, Claude.ai (web) and Claude Desktop.
 
-### Try it without an account
+### Executive Brief — coming shortly
 
-`antevo-executive` needs no sign-in — add it and ask:
+The public `antevo-executive` plugin is built and its connector is deploying.
+It is intentionally **not yet listed** in the marketplace until the endpoint is
+verified live. It will connect at:
 
 ```text
 https://api.antevo.ch/mcp/executive/sse

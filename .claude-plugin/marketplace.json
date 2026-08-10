@@ -5,29 +5,23 @@
     "url": "https://antevo.ch"
   },
   "metadata": {
-    "description": "Antevo plugins for Claude — connect your wealth, and read the Executive Brief, through private-banker skills.",
+    "description": "Antevo plugins for Claude \u2014 connect your wealth, and read the Executive Brief, through private-banker skills.",
     "pluginRoot": "./plugins"
   },
   "plugins": [
     {
       "name": "antevo-wealth",
       "source": "./antevo-wealth",
-      "description": "Connect your Antevo Wealth account to Claude — portfolios, net worth, real assets, liabilities, markets, geopolitics and your daily brief — plus banker-grade skills. Read-only with confirmation on every change.",
+      "description": "Connect your Antevo Wealth account to Claude \u2014 portfolios, net worth, real assets, liabilities, markets, geopolitics and your daily brief \u2014 plus banker-grade skills. Read-only with confirmation on every change.",
       "version": "0.4.2",
       "category": "finance",
-      "tags": ["wealth", "finance", "private-banking", "family-office", "mcp"],
-      "author": {
-        "name": "Antevo",
-        "url": "https://antevo.ch"
-      }
-    },
-    {
-      "name": "antevo-executive",
-      "source": "./antevo-executive",
-      "description": "The Antevo Executive Brief in your assistant — editorial market and world intelligence, today and back through the dated archive. No account required.",
-      "version": "0.1.0",
-      "category": "finance",
-      "tags": ["news", "markets", "intelligence", "geopolitics", "mcp"],
+      "tags": [
+        "wealth",
+        "finance",
+        "private-banking",
+        "family-office",
+        "mcp"
+      ],
       "author": {
         "name": "Antevo",
         "url": "https://antevo.ch"
