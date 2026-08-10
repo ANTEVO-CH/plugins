@@ -75,8 +75,10 @@ https://api.antevo.ch/mcp/executive/mcp
 
 | Component | What it is |
 |-----------|------------|
-| **MCP connector** | `https://api.antevo.ch/mcp/executive/mcp` — the published Executive Brief, its dated archive, market snapshot and world events. Read-only, rate-limited, no personal data reachable. |
+| **MCP connector** | `https://api.antevo.ch/mcp/executive/mcp` — the published Executive Brief, its risk radar and forward calendar, the dated archive, market snapshot and world events. Read-only, rate-limited, no personal data reachable. |
 | **Skill: `world-brief`** | What's happening in markets and the world — the editorial read, grounded in the numbers. |
+| **Skill: `risk-radar`** | What could go wrong from here — each risk graded by trend, impact and probability, paired with the reading that would settle it, plus the dated forward calendar. |
+| **Skill: `emerging-risks`** | How the risk board has moved over weeks — what's newly on it, what has escalated, what is entrenched, what has left. |
 | **Skill: `story-timeline`** | How a story developed — reconstructs the arc from the dated archive, including where the view shifted. |
 
 Invoke a skill explicitly with `/antevo-wealth:<skill>` (e.g.
@@ -118,6 +120,11 @@ into the detail:
 
 **The whole picture**
 - "Review my portfolio." · "How am I doing?" · "Give me a net-worth breakdown."
+
+**The public brief — no account needed**
+- "What's happening in the markets?" · "What could go wrong from here?"
+- "What new risks have emerged this month?" · "What's coming up this week?"
+- "How did the energy story develop?" · "What did the brief say on 9 August?"
 
 > Period analytics that span the *household over time* (net-worth trajectory, risk
 > radar across 6 months, drawdown/VaR history) need connector history tools that
