@@ -2,6 +2,28 @@
 
 All notable changes to the Antevo plugins are documented here.
 
+## [unreleased] — risk radar + Streamable HTTP
+
+- **`antevo-executive` 0.2.0** — two new skills:
+  **risk-radar** (what could go wrong from here: each risk graded by trend,
+  impact and probability, paired with the reading that would settle it, plus
+  the dated forward calendar) and **emerging-risks** (how the board has changed
+  over weeks — what's new, escalating, entrenched or gone).
+- Backed by three new connector tools: `get_risk_radar`, `track_risk_evolution`
+  and `get_catalysts`.
+- **emerging-risks groups the risks itself, on purpose.** The connector returns
+  every dated board in one call but does NOT thread a risk across days: the
+  brief rewords each risk every morning, and matching on wording was measured
+  against 14 real briefs to be unreliable (true continuations and unrelated
+  pairs scored in the same band). Grouping by meaning is the model's job; the
+  skill says so and cites the dates it grouped.
+- **Both plugins now connect over Streamable HTTP** (`/mcp/…/mcp`) instead of
+  HTTP+SSE (`/mcp/…/sse`). SSE is deprecated in the MCP spec; the streamable
+  endpoints were verified live in production before this switch. The SSE
+  endpoints remain available for anything still pointed at them.
+- Tool titles and read-only/destructive hints now reach `tools/list`, so hosts
+  can label what a tool does before running it.
+
 ## [unreleased] — marketplace + Executive plugin
 - Repo renamed `wealth-plugin` → **`plugins`** — it is a marketplace, not one
   plugin. Install: `/plugin marketplace add ANTEVO-CH/plugins`.
