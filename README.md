@@ -79,6 +79,8 @@ https://api.antevo.ch/mcp/executive/mcp
 | **Skill: `world-brief`** | What's happening in markets and the world — the editorial read, grounded in the numbers. |
 | **Skill: `risk-radar`** | What could go wrong from here — each risk graded by trend, impact and probability, paired with the reading that would settle it, plus the dated forward calendar. |
 | **Skill: `emerging-risks`** | How the risk board has moved over weeks — what's newly on it, what has escalated, what is entrenched, what has left. |
+| **Skill: `signal-read`** | Antevo's own probability layer — the odds it carries on named outcomes, which way they moved, and what the shape of the move means. Live bands only. |
+| **Skill: `decode`** | What a move actually means, in plain language — the desk's own decode: what the tape says, the transferable lesson, and what an allocator does differently. |
 | **Skill: `story-timeline`** | How a story developed — reconstructs the arc from the dated archive, including where the view shifted. |
 
 Invoke a skill explicitly with `/antevo-wealth:<skill>` (e.g.
@@ -125,6 +127,8 @@ into the detail:
 - "What's happening in the markets?" · "What could go wrong from here?"
 - "What new risks have emerged this month?" · "What's coming up this week?"
 - "How did the energy story develop?" · "What did the brief say on 9 August?"
+- "What are the odds the strait reopens?" · "What does your model say?"
+- "Explain that move to me." · "I don't follow markets — what's going on?"
 
 > Period analytics that span the *household over time* (net-worth trajectory, risk
 > radar across 6 months, drawdown/VaR history) need connector history tools that
