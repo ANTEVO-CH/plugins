@@ -2,6 +2,24 @@
 
 All notable changes to the Antevo plugins are documented here.
 
+## [unreleased] — signal read + plain-language decode
+
+- **`antevo-executive` 0.3.0** — two more skills, taking it to six:
+  **signal-read** (Antevo's own probability layer — the odds it carries on named
+  outcomes, which way they moved, and what the shape means) and **decode**
+  (what a move actually means, in plain language).
+- **signal-read enforces live bands only.** The desk once published an expired
+  band as a current probability and corrected it in the open; `why_it_leads`
+  carries that correction. The skill reads it before quoting any number, and
+  describes direction rather than quoting a figure it cannot date.
+- **decode uses the desk's own plain-language copy rather than paraphrasing.**
+  Simplifying a financial claim is where meaning quietly changes — a hedge gets
+  dropped, "the odds fell" becomes "it won't happen". The brief already carries
+  an authored jargon-free rendering, so the skill routes and frames it instead
+  of rewriting it.
+- Both lean on the connector's new `sections` argument, so `decode` pulls ~2KB
+  instead of the full ~24KB brief.
+
 ## [unreleased] — risk radar + Streamable HTTP
 
 - **`antevo-executive` 0.2.0** — two new skills:

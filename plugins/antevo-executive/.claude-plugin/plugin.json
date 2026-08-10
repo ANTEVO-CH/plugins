@@ -1,7 +1,7 @@
 {
   "name": "antevo-executive",
   "description": "The Antevo Executive Brief in your assistant \u2014 editorial market and world intelligence, today and back through the dated archive. No account required.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": {
     "name": "Antevo",
     "url": "https://antevo.ch",
@@ -12,11 +12,13 @@
   "license": "UNLICENSED",
   "keywords": [
     "executive-brief",
+    "explainer",
     "geopolitics",
     "intelligence",
     "markets",
     "mcp",
     "news",
+    "probability",
     "risk",
     "risk-radar"
   ]
