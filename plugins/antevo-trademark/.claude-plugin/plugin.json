@@ -1,7 +1,7 @@
 {
   "name": "antevo-trademark",
-  "description": "Trademark conflict intelligence in your assistant — screen a brand name across 70+ registers, read who holds a mark and how they file, and check the opposition window in twenty offices. No account needed. Personal watchlist and deadlines are coming shortly.",
-  "version": "0.1.0",
+  "description": "Trademark conflict intelligence in your assistant — screen a brand name across 70+ registers, read who holds a mark and how they file, and check the opposition window in twenty offices. Screening needs no account; your own watchlist, conflicts and deadlines connect with an Antevo sign-in.",
+  "version": "0.2.0",
   "author": {
     "name": "Antevo",
     "url": "https://antevo.ch",

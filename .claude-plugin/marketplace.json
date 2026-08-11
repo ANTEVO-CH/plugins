@@ -48,8 +48,8 @@
     {
       "name": "antevo-trademark",
       "source": "./antevo-trademark",
-      "description": "Trademark conflict intelligence in Claude — screen a brand name across 70+ registers, read who holds a mark and how they file, and check the opposition window in any of twenty offices, including the ones that run it after registration. No account needed. Your own watchlist, conflicts and deadlines are coming shortly, behind an Antevo sign-in.",
-      "version": "0.1.0",
+      "description": "Trademark conflict intelligence in Claude — screen a brand name across 70+ registers, read who holds a mark and how they file, and check the opposition window in any of twenty offices, including the ones that run it after registration. Screening needs no account. Your own watchlist, conflicts and deadlines connect with an Antevo sign-in — OAuth, read-only by default, and it asks before it changes anything.",
+      "version": "0.2.0",
       "category": "productivity",
       "tags": [
         "trademark",
