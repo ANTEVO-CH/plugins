@@ -31,7 +31,7 @@
       "name": "antevo-executive",
       "source": "./antevo-executive",
       "description": "The Antevo Executive Brief in Claude \u2014 today's editorial read on markets and world events, the risk radar and how it has changed, the forward calendar, Antevo's own probability layer, and a plain-language decode. No account required.",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "category": "finance",
       "tags": [
         "news",
