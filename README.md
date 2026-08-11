@@ -6,6 +6,7 @@ Antevo's MCP connectors and Claude plugins, in one marketplace.
 |---|---|---|
 | **`antevo-wealth`** | Your portfolios, net worth, real assets, liabilities, risk, markets, geopolitics and daily brief — plus ten private-banker skills. | Antevo Wealth account |
 | **`antevo-executive`** | The Antevo Executive Brief — editorial market and world intelligence, today and back through the dated archive. | **None — public** |
+| **`antevo-trademark`** | Screen a brand name across the registers, read who holds a mark and how they file, and check the opposition window in twenty offices. Your own watchlist and deadlines connect separately. | **Screening: none.** Watchlist: Antevo Trademark account |
 
 MCP is an open standard, so these work with **any MCP client** (Claude, Cursor,
 VS Code/Copilot, Goose, and others). This repo packages them as one-install
@@ -25,11 +26,16 @@ the assistant). Each domain is its own endpoint, e.g.:
 ```text
 https://api.antevo.ch/mcp/wealth/mcp       # everything, one sign-in
 https://api.antevo.ch/mcp/executive/mcp    # public brief, no account
+https://trademark.antevo.ch/mcp            # trademark — screening needs no account
 ```
 
 One connection covers the whole wealth surface. Per-domain endpoints
-(`/mcp/portfolio/core/sse`, `/mcp/intelligence/geo/sse`, …) remain available if
+(`/mcp/portfolio/core/mcp`, `/mcp/intelligence/geo/mcp`, …) remain available if
 you want a narrower tool set.
+
+Trademark sits on its own host rather than under `api.antevo.ch`: it runs as a
+separate service, and the address difference is structural, not an oversight. It
+speaks Streamable HTTP only — it never served the deprecated `/sse` transport.
 
 ## Install in Claude
 
@@ -39,6 +45,7 @@ you want a narrower tool set.
 
 # 2. install what you need
 /plugin install antevo-executive@antevo    # public — nothing to sign in to
+/plugin install antevo-trademark@antevo    # screening public; watchlist needs a token
 /plugin install antevo-wealth@antevo       # your account — OAuth on first use
 ```
 
@@ -54,6 +61,16 @@ https://api.antevo.ch/mcp/executive/mcp
 
 > *"What's happening in the markets?"* · *"What did the brief say on 9 August?"* ·
 > *"How did the energy story develop?"*
+
+`antevo-trademark`'s screening tools are open too — no account, no token:
+
+```text
+https://trademark.antevo.ch/mcp
+```
+
+> *"Has anyone filed anything close to my brand name?"* ·
+> *"How long do I have to oppose an EU trademark?"* ·
+> *"Does Japan run opposition before or after registration?"*
 
 ## What's inside
 
@@ -82,6 +99,21 @@ https://api.antevo.ch/mcp/executive/mcp
 | **Skill: `signal-read`** | Antevo's own probability layer — the odds it carries on named outcomes, which way they moved, and what the shape of the move means. Live bands only. |
 | **Skill: `decode`** | What a move actually means, in plain language — the desk's own decode: what the tape says, the transferable lesson, and what an allocator does differently. |
 | **Skill: `story-timeline`** | How a story developed — reconstructs the arc from the dated archive, including where the view shifted. |
+
+### `antevo-trademark` — screening public, watchlist on a token
+
+| Component | What it is |
+|-----------|------------|
+| **MCP connector** | `https://trademark.antevo.ch/mcp` — eleven tools. Three need no account: screen a name across the registers, read a holder's filing pattern, look up an opposition window. The rest reach the user's own desk and need a token from **antevo.ch/trademark → Settings → Connect your AI**. |
+| **Skill: `clearance-check`** | "Is this name taken?" — screens the registers, then reads whoever holds the closest hits. Reports what exists and which registers were searched; it never clears a name for use. |
+| **Skill: `opposition-deadline`** | "How long do I have?" — the window for any of twenty offices, what starts the clock, and the provision behind it. Leads with the trap: a minority of offices (Switzerland, Germany, Japan, Sweden) run opposition *after* registration, so "registered" does not mean too late. |
+| **Skill: `conflict-review`** | The desk loop — what has been filed near the user's watched names, ranked by consequence and paired with its closing window; clear the noise, add a name to watch. Both writes are reversible and confirmed first. |
+
+> Two things these skills will not do, by design: **clear a name** (a register
+> search says what exists, not whether a name may be used — that turns on goods,
+> territory and unregistered rights) and **call anyone a squatter** (a legal
+> conclusion, and defamatory if wrong). They show the evidence and leave the
+> conclusion to the reader and their counsel.
 
 Invoke a skill explicitly with `/antevo-wealth:<skill>` (e.g.
 `/antevo-wealth:portfolio-stress-radar`), or just ask in plain language — the skills
@@ -123,6 +155,12 @@ into the detail:
 **The whole picture**
 - "Review my portfolio." · "How am I doing?" · "Give me a net-worth breakdown."
 
+**Trademark — screening needs no account**
+- "Is this name taken?" · "Has anyone filed anything close to my brand?"
+- "Who owns this trademark, and how do they file?"
+- "How long do I have to oppose an EU trademark?" · "Have I missed the window in Japan?"
+- "What's near my brands this week?" · "Watch this name for me." *(token)*
+
 **The public brief — no account needed**
 - "What's happening in the markets?" · "What could go wrong from here?"
 - "What new risks have emerged this month?" · "What's coming up this week?"
@@ -147,7 +185,18 @@ plugins/antevo-executive/
 ├── .mcp.json                                # public Executive connector (no auth)
 └── skills/
     ├── world-brief/SKILL.md
+    ├── risk-radar/SKILL.md
+    ├── emerging-risks/SKILL.md
+    ├── signal-read/SKILL.md
+    ├── decode/SKILL.md
     └── story-timeline/SKILL.md
+plugins/antevo-trademark/
+├── .claude-plugin/plugin.json
+├── .mcp.json                                # trademark.antevo.ch — its own host
+└── skills/
+    ├── clearance-check/SKILL.md
+    ├── opposition-deadline/SKILL.md
+    └── conflict-review/SKILL.md
 plugins/antevo-wealth/
 ├── .claude-plugin/plugin.json               # plugin manifest
 ├── .mcp.json                                # one-connect Antevo Wealth MCP connector
@@ -165,7 +214,7 @@ plugins/antevo-wealth/
 ```
 
 ## Links
-- Connectors: https://antevo.ch/mcp · Wealth: https://antevo.ch/wealth · Executive: https://antevo.ch/executive
+- Connectors: https://antevo.ch/mcp · Wealth: https://antevo.ch/wealth · Executive: https://antevo.ch/executive · Trademark: https://antevo.ch/trademark
 - Privacy: https://antevo.ch/policies/privacy-policy · Terms: https://antevo.ch/policies/terms-of-use
 - Contact: contact@antevo.ch
 
