@@ -32,7 +32,7 @@ so and point them to the Antevo Wealth connector — don't guess.
 | Where markets stand | `get_market_snapshot()` |
 | How markets moved | `get_indices(days_back)` — for "this week/month" |
 | World events | `get_world_events(days_back)` — conflict, chokepoints, sanctions |
-| Longer-form analysis | `get_cio_desk()` — when they want depth |
+| Longer-form analysis | `get_executive_desk()` — when they want depth |
 
 For a plain "what's happening", the brief + snapshot is usually enough. Add the
 others only when the question calls for them.
