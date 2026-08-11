@@ -5,14 +5,14 @@
     "url": "https://antevo.ch"
   },
   "metadata": {
-    "description": "Antevo plugins for Claude \u2014 connect your wealth, and read the Executive Brief, through private-banker skills.",
+    "description": "Antevo plugins for Claude — connect your wealth, and read the Executive Brief, through private-banker skills.",
     "pluginRoot": "./plugins"
   },
   "plugins": [
     {
       "name": "antevo-wealth",
       "source": "./antevo-wealth",
-      "description": "Connect your Antevo Wealth account to Claude \u2014 portfolios, net worth, real assets, liabilities, markets, geopolitics and your daily brief \u2014 plus banker-grade skills. Read-only with confirmation on every change.",
+      "description": "Connect your Antevo Wealth account to Claude — portfolios, net worth, real assets, liabilities, markets, geopolitics and your daily brief — plus banker-grade skills. Read-only with confirmation on every change.",
       "version": "0.5.1",
       "category": "finance",
       "tags": [
@@ -30,7 +30,7 @@
     {
       "name": "antevo-executive",
       "source": "./antevo-executive",
-      "description": "The Antevo Executive Brief in Claude \u2014 today's editorial read on markets and world events, the risk radar and how it has changed, the forward calendar, Antevo's own probability layer, and a plain-language decode. No account required.",
+      "description": "The Antevo Executive Brief in Claude — today's editorial read on markets and world events, the risk radar and how it has changed, the forward calendar, Antevo's own probability layer, and a plain-language decode. No account required.",
       "version": "0.3.1",
       "category": "finance",
       "tags": [
@@ -38,6 +38,24 @@
         "markets",
         "intelligence",
         "geopolitics",
+        "mcp"
+      ],
+      "author": {
+        "name": "Antevo",
+        "url": "https://antevo.ch"
+      }
+    },
+    {
+      "name": "antevo-trademark",
+      "source": "./antevo-trademark",
+      "description": "Trademark conflict intelligence in Claude — screen a brand name across 70+ registers, read who holds a mark and how they file, and check the opposition window in any of twenty offices, including the ones that run it after registration. Screening needs no account; your own watchlist and deadlines connect with a token.",
+      "version": "0.1.0",
+      "category": "productivity",
+      "tags": [
+        "trademark",
+        "brand-protection",
+        "intellectual-property",
+        "clearance",
         "mcp"
       ],
       "author": {

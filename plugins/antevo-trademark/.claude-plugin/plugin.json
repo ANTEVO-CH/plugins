@@ -1,0 +1,22 @@
+{
+  "name": "antevo-trademark",
+  "description": "Trademark conflict intelligence in your assistant — screen a brand name across 70+ registers, read who holds a mark and how they file, and check the opposition window in any of twenty offices. The screening tools need no account.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Antevo",
+    "url": "https://antevo.ch",
+    "email": "contact@antevo.ch"
+  },
+  "homepage": "https://antevo.ch/trademark",
+  "repository": "https://github.com/ANTEVO-CH/plugins",
+  "license": "UNLICENSED",
+  "keywords": [
+    "brand-protection",
+    "clearance",
+    "intellectual-property",
+    "mcp",
+    "opposition",
+    "trademark",
+    "watch"
+  ]
+}

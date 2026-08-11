@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "antevo-trademark": {
+      "type": "http",
+      "url": "https://trademark.antevo.ch/mcp"
+    }
+  }
+}
