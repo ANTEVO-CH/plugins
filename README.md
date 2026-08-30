@@ -17,6 +17,20 @@ Claude plugins that wire up the connector *and* the skills in a single step.
 > geopolitics) work on a free account; the personal surfaces (net worth, portfolio,
 > real assets, liabilities, family, documents) show your household once you connect.
 
+## Prefer a terminal?
+
+`@antevo/cli` drives the same connectors from a shell — no assistant, scriptable,
+read-only by default:
+
+```bash
+npx @antevo/cli brief     # no account, nothing installed
+npx @antevo/cli tools     # every tool the server has, live
+npx @antevo/cli login     # device code — works over SSH and in containers
+```
+
+It speaks MCP rather than wrapping a separate API, so it reaches tools added
+after you installed it. Source: [ANTEVO-CH/cli](https://github.com/ANTEVO-CH/cli).
+
 ## Use with any MCP client
 
 Point your client at the remote Antevo Wealth MCP servers — they advertise
