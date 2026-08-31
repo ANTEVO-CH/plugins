@@ -5,7 +5,7 @@ Antevo's MCP connectors and Claude plugins, in one marketplace.
 | Plugin | What it is | Account |
 |---|---|---|
 | **`antevo-wealth`** | Your portfolios, net worth, real assets, liabilities, risk, markets, geopolitics and daily brief — plus ten private-banker skills. | Antevo Wealth account |
-| **`antevo-executive`** | The Antevo Executive Brief — editorial market and world intelligence, today and back through the dated archive. | **None — public** |
+| **`antevo-executive`** | The Antevo Executive Brief — editorial market and world intelligence, today and back through the dated archive, plus per-sector desk reads, a world map of chokepoints and cables, and a century of macro-economic history. | **None — public** |
 | **`antevo-trademark`** | Screen a brand name across the registers, read who holds a mark and how they file, and check the opposition window in twenty offices. Your own watchlist and deadlines connect separately. | **Screening: none.** Watchlist: Antevo Trademark account |
 
 MCP is an open standard, so these work with **any MCP client** (Claude, Cursor,
@@ -73,8 +73,28 @@ Works in Claude Code, Claude.ai (web) and Claude Desktop.
 https://api.antevo.ch/mcp/executive/mcp
 ```
 
-> *"What's happening in the markets?"* · *"What did the brief say on 9 August?"* ·
+**The day:**
+> *"What's happening in the markets?"* · *"What could go wrong from here?"* ·
+> *"What's coming up this week?"* · *"What did the brief say on 9 August?"* ·
 > *"How did the energy story develop?"*
+
+**The desk's own view, one sector at a time:**
+> *"What's Antevo's read on shipping?"* · *"How do you see aviation right now?"* ·
+> *"Your view on succession planning?"* · *"What does the desk say about art?"* ·
+> *"Give me the institutional read on commodities."*
+
+**Where it is happening:**
+> *"What's going on at the Strait of Hormuz?"* ·
+> *"Which submarine cables run through the Red Sea?"* ·
+> *"Where is displacement rising?"* · *"What disasters are active right now?"* ·
+> *"Any new sanctions this month?"*
+
+**The long run — around 180 countries, some series back to 1920:**
+> *"What has Swiss inflation done since 2020?"* ·
+> *"Compare house prices in France and Italy."* ·
+> *"What were UK policy rates through the seventies?"* ·
+> *"Show me industrial production for Germany."* ·
+> *"What did Japanese CPI do after 1990?"*
 
 `antevo-trademark`'s screening tools are open too — no account, no token:
 
@@ -106,13 +126,16 @@ https://trademark.antevo.ch/mcp
 
 | Component | What it is |
 |-----------|------------|
-| **MCP connector** | `https://api.antevo.ch/mcp/executive/mcp` — the published Executive Brief, its risk radar and forward calendar, the dated archive, market snapshot and world events. Read-only, rate-limited, no personal data reachable. |
+| **MCP connector** | `https://api.antevo.ch/mcp/executive/mcp` — fifteen tools: the published Executive Brief, its risk radar and forward calendar, the dated archive, market snapshot and indices, a nine-layer world-events map, fourteen per-sector desk reads, and ~80,000 macro-economic series. Read-only, rate-limited, no personal data reachable. |
 | **Skill: `world-brief`** | What's happening in markets and the world — the editorial read, grounded in the numbers. |
 | **Skill: `risk-radar`** | What could go wrong from here — each risk graded by trend, impact and probability, paired with the reading that would settle it, plus the dated forward calendar. |
 | **Skill: `emerging-risks`** | How the risk board has moved over weeks — what's newly on it, what has escalated, what is entrenched, what has left. |
 | **Skill: `signal-read`** | Antevo's own probability layer — the odds it carries on named outcomes, which way they moved, and what the shape of the move means. Live bands only. |
 | **Skill: `decode`** | What a move actually means, in plain language — the desk's own decode: what the tape says, the transferable lesson, and what an allocator does differently. |
 | **Skill: `story-timeline`** | How a story developed — reconstructs the arc from the dated archive, including where the view shifted. |
+| **Skill: `desk-read`** | Antevo's written view on ONE area — shipping, aviation, yachts, energy, infrastructure, real estate, commodities, geopolitics, AI, energy transition, demographics, generational wealth, succession, art. Retail or institutional; both are dated. |
+| **Skill: `world-map`** | Where it is happening — shipping chokepoints, submarine cables, armed conflicts, disasters, displacement, sanctions, cyber and regulatory actions. Ask for the layers you need; narrowing buys depth. |
+| **Skill: `macro-history`** | The long run — consumer prices, policy and market rates, house prices, industrial production and commodities for ~180 countries, some back to 1920. Quarterly published levels, always dated. |
 
 ### `antevo-trademark` — screening public, watchlist on a token
 

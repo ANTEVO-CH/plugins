@@ -2,7 +2,29 @@
 
 All notable changes to the Antevo plugins are documented here.
 
-## [unreleased] — signal read + plain-language decode
+## [unreleased] — the desk, the map, and a century of numbers
+
+- **`antevo-executive` 0.4.0** — three more skills, taking it to nine:
+  **desk-read** (Antevo's written view on one of fourteen coverage areas —
+  shipping through art — retail or institutional, always dated),
+  **world-map** (nine layers of where-it-is-happening: chokepoints, submarine
+  cables, conflicts, disasters, displacement, sanctions, cyber, regulatory,
+  hotspots) and **macro-history** (~80,000 reference series for around 180
+  countries, some back to 1920).
+- **desk-read distinguishes "not a thing" from "deliberately withheld".** The
+  connector answers those two cases differently on purpose; the skill reads the
+  difference and stops rather than retrying or hunting for a back door on
+  material the public read excludes.
+- **world-map tells the model to narrow.** All layers together run to roughly
+  40k tokens with two truncated; one or two layers inherit the row budget the
+  others were spending. It also reads `layers_unknown`, so a dropped selection
+  cannot pass for a complete answer.
+- **macro-history dates every figure.** These are quarterly published levels
+  that lag — the newest observation is a quarter end, never today — and index
+  levels are only comparable within one series. The skill states the vintage
+  rather than presenting a 2025 reading as current.
+
+## [0.3.x] — signal read + plain-language decode
 
 - **`antevo-executive` 0.3.0** — two more skills, taking it to six:
   **signal-read** (Antevo's own probability layer — the odds it carries on named
