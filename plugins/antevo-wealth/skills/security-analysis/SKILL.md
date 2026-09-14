@@ -7,7 +7,7 @@ description: >-
   X", "valuation / P/E / margins / growth of X", "RSI / trend / momentum / signal
   on X", "should I look at [stock]", or wants a considered read on one instrument.
   Orchestrates the Antevo Wealth MCP connector — markets.equity (fundamentals) and
-  markets.technical (signal consensus + backtest). Read-only.
+  markets.technical (how indicators lean + backtest). Read-only.
 compatibility: >-
   Requires the Antevo Wealth MCP connector (markets.equity, markets.technical). If the
   tools are not available, tell the user to connect Antevo Wealth, then stop.
@@ -27,14 +27,14 @@ faster than a single tool call because you synthesise the two.
 | Lens | Tool |
 |------|------|
 | Fundamentals: valuation (P/E, EV/EBITDA, FCF yield, ROIC), revenue growth, margins, peers | `get_equity_fundamentals(identifier, frequency, year_history, peers)` |
-| Technicals: multi-indicator signal consensus, regime; optional backtest (Sharpe, drawdown, hit-rate) | `run_technical_analysis(identifier, analysis_mode, frequency, history_days)` |
+| Technicals: how many indicators lean up, down or neutral, regime; optional backtest (Sharpe, drawdown, hit-rate) | `run_technical_analysis(identifier, analysis_mode, frequency, history_days)` |
 
 Use both for an equity; for a non-equity (index/FX/crypto/commodity), use technical only and say so. The fundamentals tool returns FREE structured data — *you* write the narrative.
 
 ## Step 2 — Analyse
 - **Valuation in context.** P/E and EV/EBITDA vs the peer set, not in isolation. Is the premium/discount earned by growth and returns (ROIC, FCF)?
 - **Quality.** Margins, growth durability, balance sheet.
-- **Technical read.** How many indicators agree (consensus), the regime (trend/range/vol), key levels; if backtested, the Sharpe / max drawdown / hit-rate.
+- **Technical read.** How many indicators lean up, down or neutral (`signals.overall`) — an indicator reading, never a buy or sell call — the regime (trend/range/vol), key levels; if backtested, the Sharpe / max drawdown / hit-rate.
 - **Where they agree or diverge.** "Cheap and improving" vs "rich but strong trend" vs "weak on both" — the synthesis is the value.
 
 ## Step 3 — Write the memo

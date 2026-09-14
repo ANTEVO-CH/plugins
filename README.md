@@ -285,6 +285,7 @@ Verbatim excerpts from the live public connections on 14 September 2026, trimmed
 ## What's New
 
 - **14 September 2026 — Crypto and Mandates.** `antevo-crypto` 0.1.0 (price-check, crypto-performance, technical-read) and `antevo-mandates` 0.1.0 (reviews-due, meeting-prep, succession-scan), both listed in the MCP Registry the same day.
+- **`antevo-wealth` 0.5.2.** Technical analysis and the watchlist say how indicators lean, never buy or sell.
 - **`antevo-crypto` 0.1.1.** Technical signals say how indicators lean — up, down or neutral, with counts — never buy or sell.
 - **`antevo-mandates` 0.1.1.** The skills no longer ask for a firm ID: the connection uses your own firm, and names each one if you belong to several.
 - **`antevo-executive` 0.4.0.** Desk reads for fourteen coverage areas, the world-events map and a century of macro-economic history.

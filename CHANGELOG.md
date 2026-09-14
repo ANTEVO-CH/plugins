@@ -4,6 +4,11 @@ All notable changes to the Antevo plugins are documented here.
 
 ## [unreleased] — crypto reference prices and the Mandates desk
 
+- **`antevo-wealth` 0.5.2** — the Wealth connector now tells assistants how
+  indicators lean (`signal_lean`, and `lean` with up / down / neutral counts in
+  technical analysis) instead of STRONG_BUY / SELL labels. watchlist-review and
+  security-analysis read the new fields and say "leans down", never "a sell".
+
 - **`antevo-crypto` 0.1.1** — technical signals now report how indicators lean
   (`up`, `down`, `neutral`, with counts) instead of `BUY` / `STRONG_SELL` labels
   under a `recommendation` key. On a public connector every client showed those
