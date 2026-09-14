@@ -20,14 +20,16 @@ Where the book's succession planning is thin.
 ## Before you start
 - **Connector check.** No `get_succession_scan` tool → ask the user to connect
   Antevo Mandates, then stop.
-- **Firm.** The scan needs `firm_id`. No tool on this connector looks it up, so
-  ask the user for it once and reuse it. **Never guess one.**
+- **Firm.** Leave `firm_id` out — the connector uses the signed-in member's own
+  firm. If they belong to several, the tool answers with each firm's name and ID;
+  ask which one they mean, then pass that `firm_id` for the rest of the
+  conversation. **Never guess one.**
 
 ## Step 1 — Gather
 | Need | Tool |
 |------|------|
-| The whole book | `get_succession_scan(firm_id)` |
-| Context on a client that stands out | `get_client_dossier(firm_id, client_id)` |
+| The whole book | `get_succession_scan()` |
+| Context on a client that stands out | `get_client_dossier(client_id)` |
 
 ## Step 2 — Read it carefully
 Each row carries `confirmed`, `total`, `completion_pct` and `urgency`.

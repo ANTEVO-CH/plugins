@@ -88,7 +88,7 @@
       "name": "antevo-mandates",
       "source": "./antevo-mandates",
       "description": "Your firm's client book in Claude — reviews due and overdue, meeting preparation from the record, and succession gaps across the book. Signs in with your Antevo Mandates firm account over OAuth; the connector can change records in your own book, and the skills ask before they do.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "category": "finance",
       "tags": [
         "wealth-management",

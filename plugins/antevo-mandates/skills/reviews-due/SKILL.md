@@ -20,19 +20,20 @@ The review list, in the order it needs working.
 ## Before you start
 - **Connector check.** No `get_client_reviews_due` tool → ask the user to connect
   Antevo Mandates, then stop. Never invent clients or dates.
-- **Firm.** Every client-book tool needs `firm_id`, the firm's ID. No tool on
-  this connector looks it up, so ask the user for it once and reuse it for the
-  rest of the conversation. **Never guess one.**
-- **A client by name.** `get_eam_clients(firm_id, search="Alder")` returns
+- **Firm.** Leave `firm_id` out — the connector uses the signed-in member's own
+  firm. If they belong to several, the tool answers with each firm's name and ID;
+  ask which one they mean, then pass that `firm_id` for the rest of the
+  conversation. **Never guess one.**
+- **A client by name.** `get_eam_clients(search="Alder")` returns
   `eam_client_id`. If several match, ask which.
 
 ## Step 1 — Gather
 | Need | Tool |
 |------|------|
-| Every scheduled review | `get_client_reviews_due(firm_id)` |
-| One client's review | `get_client_reviews_due(firm_id, client_id)` |
-| Context on a client near the top | `get_client_dossier(firm_id, client_id)` |
-| Record a review as done | `complete_review(firm_id, client_id, notes, next_review_months)` — **a write** |
+| Every scheduled review | `get_client_reviews_due()` |
+| One client's review | `get_client_reviews_due(client_id)` |
+| Context on a client near the top | `get_client_dossier(client_id)` |
+| Record a review as done | `complete_review(client_id, notes, next_review_months)` — **a write** |
 
 ## Step 2 — Order it
 Each row carries `next_review_date`, `last_reviewed_at`, `days_until_due` and

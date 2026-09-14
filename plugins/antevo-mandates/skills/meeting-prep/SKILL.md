@@ -20,19 +20,21 @@ One page to walk in with.
 ## Before you start
 - **Connector check.** No `get_client_dossier` tool → ask the user to connect
   Antevo Mandates, then stop.
-- **Firm.** Every client-book tool needs `firm_id`. No tool on this connector
-  looks it up, so ask the user for it once and reuse it. **Never guess one.**
-- **The client.** `get_eam_clients(firm_id, search=name)` → `eam_client_id`. If
+- **Firm.** Leave `firm_id` out — the connector uses the signed-in member's own
+  firm. If they belong to several, the tool answers with each firm's name and ID;
+  ask which one they mean, then pass that `firm_id` for the rest of the
+  conversation. **Never guess one.**
+- **The client.** `get_eam_clients(search=name)` → `eam_client_id`. If
   several match, ask which.
 
 ## Step 1 — Gather
 | Need | Tool |
 |------|------|
-| Who they are, AUM, review status, team | `get_client_dossier(firm_id, client_id)` |
+| Who they are, AUM, review status, team | `get_client_dossier(client_id)` |
 | Goals and progress | `get_client_goals(client_id)` |
-| The assigned team | `get_client_team(firm_id, client_id)` |
-| Recent correspondence and its flags | `get_email_messages(firm_id, client_id=client_id)` |
-| The full generated brief | `generate_meeting_brief(firm_id, client_id)` — **uses credits** |
+| The assigned team | `get_client_team(client_id)` |
+| Recent correspondence and its flags | `get_email_messages(client_id=client_id)` |
+| The full generated brief | `generate_meeting_brief(client_id)` — **uses credits** |
 
 Start from the dossier, goals and correspondence: they are free and usually
 enough. `generate_meeting_brief` builds an eleven-section brief and **consumes
