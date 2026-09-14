@@ -4,6 +4,10 @@ All notable changes to the Antevo plugins are documented here.
 
 ## [unreleased] — crypto reference prices and the Mandates desk
 
+- **`antevo-mandates` 0.1.1** — the skills no longer ask for a firm ID. The
+  connector now uses the signed-in member's own firm when `firm_id` is omitted
+  and names each firm when the member belongs to several (antevo-wealth-api).
+
 - **`antevo-crypto` 0.1.0** — new, public. Wires the Antevo Crypto connector
   (`/mcp/crypto/mcp`) and three skills: **price-check**, **crypto-performance**
   and **technical-read**.
@@ -22,8 +26,8 @@ All notable changes to the Antevo plugins are documented here.
 - **succession-scan does not trust a LOW on an empty checklist.** The connector
   marks a client with no checklist at all as low urgency. The skill reports those
   clients as "not started".
-- **Known gap:** every Mandates client-book tool needs `firm_id`, and no tool on
-  the connector returns it yet, so the skills ask the user for it.
+- **Firm ID (fixed in 0.1.1):** every Mandates client-book tool needed `firm_id`,
+  and no tool on the connector returned it, so the 0.1.0 skills had to ask for it.
 
 ## [unreleased] — the desk, the map, and a century of numbers
 

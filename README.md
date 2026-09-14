@@ -188,9 +188,6 @@ quote. Antevo publishes the price, not its sources.
 | **Skill: `meeting-prep`** | One page to walk into a client meeting with, from the dossier, goals, team and correspondence. Offers the full generated brief, and says first that it uses credits. |
 | **Skill: `succession-scan`** | Where succession planning is thin across the book — with clients who have no checklist at all reported as "not started", not as low urgency. |
 
-> Every Mandates client-book tool takes a `firm_id`, and the connector has no tool
-> that looks it up yet: the skills ask for it once and reuse it.
-
 Invoke a skill explicitly with `/antevo-wealth:<skill>` (e.g.
 `/antevo-wealth:portfolio-stress-radar`), or just ask in plain language — the skills
 auto-trigger on the questions below.
