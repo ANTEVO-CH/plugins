@@ -2,6 +2,29 @@
 
 All notable changes to the Antevo plugins are documented here.
 
+## [unreleased] — crypto reference prices and the Mandates desk
+
+- **`antevo-crypto` 0.1.0** — new, public. Wires the Antevo Crypto connector
+  (`/mcp/crypto/mcp`) and three skills: **price-check**, **crypto-performance**
+  and **technical-read**.
+- **A reference price is dated, and never a quote.** The connector publishes one
+  composite daily price per pair across major exchanges. Every skill states the
+  date, refuses to call it live, and never names or guesses the sources.
+- **technical-read translates the tally.** The connector labels its vote count
+  `BUY` or `STRONG_SELL`. The skill reports the counts in words and never passes a
+  label on as a recommendation.
+- **`antevo-mandates` 0.1.0** — new, firm account over OAuth. Wires the Antevo
+  Mandates connector (`/mcp/mandates/mcp`) and three skills: **reviews-due**,
+  **meeting-prep** and **succession-scan**.
+- **Mandates can write, so the skills ask.** Recording a review changes the
+  record: reviews-due states exactly what will change and waits for a yes.
+  meeting-prep says the generated brief uses credits before calling it.
+- **succession-scan does not trust a LOW on an empty checklist.** The connector
+  marks a client with no checklist at all as low urgency. The skill reports those
+  clients as "not started".
+- **Known gap:** every Mandates client-book tool needs `firm_id`, and no tool on
+  the connector returns it yet, so the skills ask the user for it.
+
 ## [unreleased] — the desk, the map, and a century of numbers
 
 - **`antevo-executive` 0.4.0** — three more skills, taking it to nine:
