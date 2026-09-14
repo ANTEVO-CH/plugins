@@ -1,7 +1,7 @@
 {
   "name": "antevo-crypto",
   "description": "Antevo crypto reference prices in your assistant — one composite daily price per major crypto pair, daily history, and technical signals on that same series. No account required.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "Antevo",
     "url": "https://antevo.ch",
