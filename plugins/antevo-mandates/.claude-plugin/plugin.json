@@ -1,0 +1,22 @@
+{
+  "name": "antevo-mandates",
+  "description": "Your firm's client book in your assistant — reviews due, meeting preparation and succession gaps, with each client's goals, documents and correspondence. Signs in with your Antevo Mandates firm account over OAuth. The connector can change records in your own book; the skills ask before anything is changed.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Antevo",
+    "url": "https://antevo.ch",
+    "email": "contact@antevo.ch"
+  },
+  "homepage": "https://antevo.ch/mandate",
+  "repository": "https://github.com/ANTEVO-CH/plugins",
+  "license": "UNLICENSED",
+  "keywords": [
+    "compliance",
+    "eam",
+    "family-office",
+    "mcp",
+    "reviews",
+    "succession",
+    "wealth-management"
+  ]
+}

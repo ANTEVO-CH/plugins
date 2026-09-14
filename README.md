@@ -6,6 +6,8 @@ Antevo's MCP connectors and Claude plugins, in one marketplace.
 |---|---|---|
 | **`antevo-wealth`** | Your portfolios, net worth, real assets, liabilities, risk, markets, geopolitics and daily brief — plus ten private-banker skills. | Antevo Wealth account |
 | **`antevo-executive`** | The Antevo Executive Brief — editorial market and world intelligence, today and back through the dated archive, plus per-sector desk reads, a world map of chokepoints and cables, and a century of macro-economic history. | **None — public** |
+| **`antevo-crypto`** | Antevo's crypto reference prices — one composite daily price per major pair, a year of history and technical signals. | **None — public** |
+| **`antevo-mandates`** | Your firm's client book — reviews due, meeting preparation and succession gaps, from the record. | Antevo Mandates firm account |
 | **`antevo-trademark`** | Screen a brand name across the registers, read who holds a mark and how they file, and check the opposition window in twenty offices. Your own watchlist and deadlines connect separately. | **Screening: none.** Watchlist: Antevo Trademark account |
 
 MCP is an open standard, so these work with **any MCP client** (Claude, Cursor,
@@ -41,6 +43,8 @@ the assistant). Each domain is its own endpoint, e.g.:
 https://api.antevo.ch/mcp/wealth/mcp       # everything, one sign-in
 https://api.antevo.ch/mcp/executive/mcp    # public brief, no account
 https://trademark.antevo.ch/mcp            # trademark — screening needs no account
+https://api.antevo.ch/mcp/crypto/mcp       # crypto reference prices, no account
+https://api.antevo.ch/mcp/mandates/mcp     # your firm's client book, one sign-in
 ```
 
 One connection covers the whole wealth surface. Per-domain endpoints
@@ -61,6 +65,8 @@ speaks Streamable HTTP only — it never served the deprecated `/sse` transport.
 /plugin install antevo-executive@antevo    # public — nothing to sign in to
 /plugin install antevo-trademark@antevo    # screening public; watchlist needs a token
 /plugin install antevo-wealth@antevo       # your account — OAuth on first use
+/plugin install antevo-crypto@antevo       # public — nothing to sign in to
+/plugin install antevo-mandates@antevo     # your firm — OAuth on first use
 ```
 
 Works in Claude Code, Claude.ai (web) and Claude Desktop.
@@ -105,6 +111,18 @@ https://trademark.antevo.ch/mcp
 > *"Has anyone filed anything close to my brand name?"* ·
 > *"How long do I have to oppose an EU trademark?"* ·
 > *"Does Japan run opposition before or after registration?"*
+
+`antevo-crypto` needs no sign-in either:
+
+```text
+https://api.antevo.ch/mcp/crypto/mcp
+```
+
+> *"What's bitcoin worth?"* · *"How has ETH done this quarter?"* ·
+> *"Is SOL above its 200-day?"* · *"Compare BTC and ETH since June."*
+
+One composite reference price per pair — whole UTC days, not a live or tradable
+quote. Antevo publishes the price, not its sources.
 
 ## What's inside
 
@@ -151,6 +169,27 @@ https://trademark.antevo.ch/mcp
 > territory and unregistered rights) and **call anyone a squatter** (a legal
 > conclusion, and defamatory if wrong). They show the evidence and leave the
 > conclusion to the reader and their counsel.
+
+### `antevo-crypto` — public, no account
+
+| Component | What it is |
+|-----------|------------|
+| **MCP connector** | `https://api.antevo.ch/mcp/crypto/mcp` — four tools: every covered pair with its latest reference price, one pair's price, up to 365 days of daily history, and technical signals. One composite daily price per pair across major exchanges, outlying quotes excluded. Read-only, rate-limited, no personal data reachable. |
+| **Skill: `price-check`** | "What is bitcoin worth?" — the reference price for one pair or many, always dated, never passed off as a live quote. |
+| **Skill: `crypto-performance`** | How a pair moved over a window — return, range and worst drawdown from the daily bars, with the exact dates used, and pairs compared on percentage moves. |
+| **Skill: `technical-read`** | Moving averages, MACD, RSI, Bollinger and ATR on the reference price — the readings and the vote counts, translated into words and never into a trading recommendation. Stablecoin pegs are refused. |
+
+### `antevo-mandates` — your firm's book, OAuth
+
+| Component | What it is |
+|-----------|------------|
+| **MCP connector** | `https://api.antevo.ch/mcp/mandates/mcp` — the signed-in firm's client book: clients and dossiers, reviews, goals, team, documents, meeting briefs, succession and client email. **Not read-only:** it can create and update records; irreversible actions return a plan first. |
+| **Skill: `reviews-due`** | The review list in the order it needs working — overdue first, then the next thirty days by risk tier — and, on an explicit go, a review recorded as done. |
+| **Skill: `meeting-prep`** | One page to walk into a client meeting with, from the dossier, goals, team and correspondence. Offers the full generated brief, and says first that it uses credits. |
+| **Skill: `succession-scan`** | Where succession planning is thin across the book — with clients who have no checklist at all reported as "not started", not as low urgency. |
+
+> Every Mandates client-book tool takes a `firm_id`, and the connector has no tool
+> that looks it up yet: the skills ask for it once and reuse it.
 
 Invoke a skill explicitly with `/antevo-wealth:<skill>` (e.g.
 `/antevo-wealth:portfolio-stress-radar`), or just ask in plain language — the skills
@@ -217,6 +256,13 @@ legal advice.
 
 ```
 .claude-plugin/marketplace.json              # the catalog
+plugins/antevo-crypto/
+├── .claude-plugin/plugin.json
+├── .mcp.json                                # public crypto reference prices (no auth)
+└── skills/
+    ├── price-check/SKILL.md
+    ├── crypto-performance/SKILL.md
+    └── technical-read/SKILL.md
 plugins/antevo-executive/
 ├── .claude-plugin/plugin.json
 ├── .mcp.json                                # public Executive connector (no auth)
@@ -227,6 +273,13 @@ plugins/antevo-executive/
     ├── signal-read/SKILL.md
     ├── decode/SKILL.md
     └── story-timeline/SKILL.md
+plugins/antevo-mandates/
+├── .claude-plugin/plugin.json
+├── .mcp.json                                # the firm's client book (OAuth 2.1)
+└── skills/
+    ├── reviews-due/SKILL.md
+    ├── meeting-prep/SKILL.md
+    └── succession-scan/SKILL.md
 plugins/antevo-trademark/
 ├── .claude-plugin/plugin.json
 ├── .mcp.json                                # trademark.antevo.ch — its own host
@@ -251,7 +304,7 @@ plugins/antevo-wealth/
 ```
 
 ## Links
-- Connectors: https://antevo.ch/mcp · Wealth: https://antevo.ch/wealth · Executive: https://antevo.ch/executive · Trademark: https://antevo.ch/trademark
+- Connectors: https://antevo.ch/mcp · Wealth: https://antevo.ch/wealth · Executive: https://antevo.ch/executive · Trademark: https://antevo.ch/trademark · Mandates: https://antevo.ch/mandate
 - Privacy: https://antevo.ch/policies/privacy-policy · Terms: https://antevo.ch/policies/terms-of-use
 - Contact: contact@antevo.ch
 

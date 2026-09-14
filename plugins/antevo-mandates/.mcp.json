@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "antevo-mandates": {
+      "type": "http",
+      "url": "https://api.antevo.ch/mcp/mandates/mcp"
+    }
+  }
+}

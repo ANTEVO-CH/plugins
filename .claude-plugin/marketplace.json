@@ -5,7 +5,7 @@
     "url": "https://antevo.ch"
   },
   "metadata": {
-    "description": "Antevo plugins for Claude — connect your wealth, and read the Executive Brief, through private-banker skills.",
+    "description": "Antevo plugins for Claude — connect your wealth or your firm's client book, and read the Executive Brief and crypto reference prices, through purpose-built skills.",
     "pluginRoot": "./plugins"
   },
   "plugins": [
@@ -59,6 +59,42 @@
         "brand-protection",
         "intellectual-property",
         "clearance",
+        "mcp"
+      ],
+      "author": {
+        "name": "Antevo",
+        "url": "https://antevo.ch"
+      }
+    },
+    {
+      "name": "antevo-crypto",
+      "source": "./antevo-crypto",
+      "description": "Antevo crypto reference prices in Claude — one composite daily price per major crypto pair, a year of daily history, and technical signals on that same series, with skills that date every price and never turn an indicator into advice. No account required.",
+      "version": "0.1.0",
+      "category": "finance",
+      "tags": [
+        "crypto",
+        "bitcoin",
+        "prices",
+        "technical-analysis",
+        "mcp"
+      ],
+      "author": {
+        "name": "Antevo",
+        "url": "https://antevo.ch"
+      }
+    },
+    {
+      "name": "antevo-mandates",
+      "source": "./antevo-mandates",
+      "description": "Your firm's client book in Claude — reviews due and overdue, meeting preparation from the record, and succession gaps across the book. Signs in with your Antevo Mandates firm account over OAuth; the connector can change records in your own book, and the skills ask before they do.",
+      "version": "0.1.0",
+      "category": "finance",
+      "tags": [
+        "wealth-management",
+        "eam",
+        "family-office",
+        "compliance",
         "mcp"
       ],
       "author": {
