@@ -20,10 +20,9 @@ What the indicators say about a pair, and how far that should be taken.
 ## Scope (important)
 - Signals are **computed on the Antevo reference price**: daily bars, so this is
   a daily-timeframe read, not an intraday one.
-- **Indicator readings are not advice.** The connector labels its tally
-  `BUY`, `SELL`, `STRONG_BUY` and so on. Those are vote counts. **Never pass a
-  label on as a recommendation** — translate it: "six of ten indicators lean
-  bullish".
+- **Indicator readings are not advice.** The connector reports how many
+  indicators lean up, down or neutral. **Never turn that into a recommendation**
+  — say "six of ten indicators lean up", never "a buy".
 - Stablecoin pairs (USDC/USD, USDT/USD, USDC/USDT) are refused on purpose: a peg
   has no trend, and a signal on one is noise.
 
@@ -36,9 +35,10 @@ What the indicators say about a pair, and how far that should be taken.
 
 ## Step 2 — Read it
 The response carries `as_of`, `bars_used`, `missing_days` and `signals`:
-- `signals.overall` — the tally: `buy_count`, `sell_count`, `neutral_count`,
-  `score`. Lead with the counts, not the label.
-- `signals.moving_averages` — price against SMA and EMA at 10, 50 and 200 days.
+- `signals.overall` — `up`, `down` and `neutral` counts, and `balance` (up minus
+  down, over all). Lead with the counts; `lean` only says which side has more.
+- `signals.moving_averages` — price against SMA and EMA at 10, 50 and 200 days,
+  each indicator with its own `lean`.
   Above the 200-day with the 50 above it is a longer uptrend; below both is the
   reverse. Say which, in words.
 - `signals.oscillators` — RSI (above 70 is conventionally overbought, below 30
@@ -56,7 +56,7 @@ the 200-day measures; say so rather than reading the rest as complete.
 ```
 # {BASE}/{QUOTE} — technical read, {as_of}
 
-**The tally:** {buy} lean bullish · {sell} lean bearish · {neutral} neutral
+**How the indicators lean:** {up} up · {down} down · {neutral} neutral
 **Trend:** {price vs 50- and 200-day, in words}
 **Momentum:** RSI {value} — {reading} · MACD {above/below} its signal line
 **Volatility:** typical daily range about {ATR} {QUOTE}

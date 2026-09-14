@@ -4,6 +4,14 @@ All notable changes to the Antevo plugins are documented here.
 
 ## [unreleased] — crypto reference prices and the Mandates desk
 
+- **`antevo-crypto` 0.1.1** — technical signals now report how indicators lean
+  (`up`, `down`, `neutral`, with counts) instead of `BUY` / `STRONG_SELL` labels
+  under a `recommendation` key. On a public connector every client showed those
+  labels raw, and they read as trading advice. technical-read reads the new fields.
+- **README rebuilt** — cover, connection map and skills map as animated SVGs,
+  every skill in one table, verbatim sample output from the live connections, and
+  a `validate` workflow that checks manifests, connectors, skills and assets.
+
 - **`antevo-mandates` 0.1.1** — the skills no longer ask for a firm ID. The
   connector now uses the signed-in member's own firm when `firm_id` is omitted
   and names each firm when the member belongs to several (antevo-wealth-api).

@@ -70,7 +70,7 @@
       "name": "antevo-crypto",
       "source": "./antevo-crypto",
       "description": "Antevo crypto reference prices in Claude — one composite daily price per major crypto pair, a year of daily history, and technical signals on that same series, with skills that date every price and never turn an indicator into advice. No account required.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "category": "finance",
       "tags": [
         "crypto",
