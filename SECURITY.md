@@ -9,7 +9,7 @@ This repository contains only plugin manifests and Agent Skills — **no backend
 code, secrets, or customer data.** The plugins point Claude at hosted Antevo MCP
 endpoints:
 
-- **Executive** and **Crypto** (`https://api.antevo.ch`) and **Trademark screening**
+- **Executive** (`https://api.antevo.ch`) and **Trademark screening**
   (`https://trademark.antevo.ch`) are public: no account, and no personal data
   reachable.
 - **Wealth** (`https://api.antevo.ch`, OAuth 2.1) reaches the user's own household

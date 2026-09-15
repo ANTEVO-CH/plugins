@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "antevo-crypto": {
-      "type": "http",
-      "url": "https://api.antevo.ch/mcp/crypto/mcp"
-    }
-  }
-}

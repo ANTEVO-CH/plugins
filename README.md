@@ -2,18 +2,18 @@
 
 # Antevo: plugins and MCP connections for Claude and any MCP client
 
-**Antevo brings the world around your wealth into the assistant you already use.** Five connections — the Executive Brief, trademark registers, crypto reference prices, your own household and your firm's client book — and 28 skills that know how to read them: dated, attributed, and honest about what they cannot see. Install once in Claude, or point any MCP client at an address.
+**Antevo brings the world around your wealth into the assistant you already use.** Four connections — the Executive Brief, trademark registers, your own household and your firm's client book — and 25 skills that know how to read them: dated, attributed, and honest about what they cannot see. Install once in Claude, or point any MCP client at an address.
 
 [![validate](https://github.com/ANTEVO-CH/plugins/actions/workflows/validate.yml/badge.svg)](https://github.com/ANTEVO-CH/plugins/actions/workflows/validate.yml)
 [![MCP Registry](https://img.shields.io/badge/MCP%20Registry-ch.antevo-252c28?labelColor=9b7936)](https://registry.modelcontextprotocol.io/v0/servers?search=ch.antevo)
-[![Claude plugins](https://img.shields.io/badge/Claude-5%20plugins%20%C2%B7%2028%20skills-252c28?labelColor=9b7936)](#skills)
+[![Claude plugins](https://img.shields.io/badge/Claude-4%20plugins%20%C2%B7%2025%20skills-252c28?labelColor=9b7936)](#skills)
 [![npm](https://img.shields.io/npm/v/@antevo/cli?label=%40antevo%2Fcli&color=252c28&labelColor=9b7936)](https://www.npmjs.com/package/@antevo/cli)
 [![Hosted in Switzerland](https://img.shields.io/badge/hosted-Switzerland-252c28?labelColor=9b7936)](https://antevo.ch)
 
 ### Why Antevo
 
 - **A named desk, not a web search.** Answers come from Antevo's published Executive Brief and its dated archive, from the trademark registers themselves, and — when you sign in — from your own record. The assistant says where a read came from and when.
-- **Public where it can be, permissioned where it matters.** Executive, trademark screening and crypto need no account and reach no personal data. Wealth and Mandates sign in over OAuth 2.1; your account's own permissions apply.
+- **Public where it can be, permissioned where it matters.** Executive and trademark screening need no account and reach no personal data. Wealth and Mandates sign in over OAuth 2.1; your account's own permissions apply.
 - **Intelligence, not advice.** The skills hold the line: no invented probabilities, no "clear to use", no buy or sell dressed up as a signal.
 
 ## Who this is for
@@ -21,9 +21,9 @@
 - **Families and private investors.** One question — *"where could I get hurt this week?"* — traced across concentration, risk, leverage and liquidity in your own household, with the market backdrop that explains it.
 - **External asset managers and family offices.** Walk into a client meeting with the dossier, goals, correspondence and the review that is due, prepared from the firm's own record.
 - **Founders, brand owners and counsel.** Screen a name before you launch, read who holds anything close and how they file, and know how long you have to oppose.
-- **Anyone who follows markets and the world.** The daily editorial read, the risk radar, a century of macro history and one reference price per major crypto pair — no account.
+- **Anyone who follows markets and the world.** The daily editorial read, the risk radar and a century of macro history — no account.
 
-![How a question travels: your assistant speaks MCP to five Antevo connections, which draw on the Antevo desk and return an answer with the record behind it](assets/connections.svg)
+![How a question travels: your assistant speaks MCP to four Antevo connections, which draw on the Antevo desk and return an answer with the record behind it](assets/connections.svg)
 
 ## Table of Contents
 
@@ -56,7 +56,6 @@ Add the marketplace once, then install what you need:
 
 /plugin install antevo-executive@antevo    # public — nothing to sign in to
 /plugin install antevo-trademark@antevo    # screening public; your watchlist needs a sign-in
-/plugin install antevo-crypto@antevo       # public
 /plugin install antevo-wealth@antevo       # your household — OAuth on first use
 /plugin install antevo-mandates@antevo     # your firm — by arrangement, OAuth on first use
 ```
@@ -74,24 +73,21 @@ gemini extensions install https://github.com/ANTEVO-CH/antevo-mcp
 ### A terminal
 
 ```bash
-npx @antevo/cli brief                                                      # no account, nothing installed
-npx @antevo/cli call get_crypto_price --server crypto --arg symbol=BTC/USD  # a reference price
-npx @antevo/cli login                                                      # device code — works over SSH
+npx @antevo/cli brief    # no account, nothing installed
+npx @antevo/cli login    # device code — works over SSH
 ```
 
 Source: [ANTEVO-CH/cli](https://github.com/ANTEVO-CH/cli).
 
 ## Quick Start
 
-No account needed for any of these once `antevo-executive`, `antevo-trademark` and `antevo-crypto` are installed:
+No account needed for any of these once `antevo-executive` and `antevo-trademark` are installed:
 
 ```text
 What happened in markets today, and what does the desk make of it?
 What could go wrong from here — and what would settle it?
 Has anyone filed anything close to "Novara"?
 How long do I have to oppose an EU trademark, and from when?
-Is bitcoin above its 200-day average?
-How has ETH done against the euro this quarter?
 ```
 
 With `antevo-wealth` or `antevo-mandates` and your sign-in:
@@ -111,15 +107,14 @@ Invoke a skill directly with `/<plugin>:<skill>` — for example `/antevo-execut
 |:--|:--|:--|:--|--:|
 | **I.** | **Executive** — the daily editorial read, risk radar, forward calendar, dated archive, per-sector desk reads, a world-events map and macro-economic history | `https://api.antevo.ch/mcp/executive/mcp` | Public | 15 |
 | **II.** | **Trademark** — screen a name, read a holder's filing pattern, check an opposition window | `https://trademark.antevo.ch/mcp` | Public screening | 4 |
-| **III.** | **Crypto** — one reference price per major pair, daily history and technical signals | `https://api.antevo.ch/mcp/crypto/mcp` | Public | 4 |
-| **IV.** | **Wealth** — your household: holdings, allocation, risk, real assets, liabilities, goals and documents | `https://api.antevo.ch/mcp/wealth/mcp` | Your account | 36 |
-| **V.** | **Mandates** — your firm's client book: clients, reviews, meeting briefs, goals, documents, succession, client email | `https://api.antevo.ch/mcp/mandates/mcp` | By arrangement | 24 |
+| **III.** | **Wealth** — your household: holdings, allocation, risk, real assets, liabilities, goals and documents | `https://api.antevo.ch/mcp/wealth/mcp` | Your account | 36 |
+| **IV.** | **Mandates** — your firm's client book: clients, reviews, meeting briefs, goals, documents, succession, client email | `https://api.antevo.ch/mcp/mandates/mcp` | By arrangement | 24 |
 
-All five are listed in the official [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=ch.antevo) under `ch.antevo`. Tool counts are read live from each server's `tools/list`.
+All four are listed in the official [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=ch.antevo) under `ch.antevo`. Tool counts are read live from each server's `tools/list`.
 
 ## Skills
 
-![Antevo plugins and skills: Executive 9, Wealth 10, Trademark 3, Crypto 3, Mandates 3, around the Antevo marketplace](assets/skills.svg)
+![Antevo plugins and skills: Executive 9, Wealth 10, Trademark 3, Mandates 3, around the Antevo marketplace](assets/skills.svg)
 
 | Skill | What it does |
 |:--|:--|
@@ -137,10 +132,6 @@ All five are listed in the official [MCP Registry](https://registry.modelcontext
 | `/antevo-trademark:clearance-check` | What is on the registers near a name, and who holds it — never a clearance |
 | `/antevo-trademark:opposition-deadline` | How long there is to oppose in a given office, what starts the clock, and the provision |
 | `/antevo-trademark:conflict-review` | New filings near your watched names, ranked by consequence — with your sign-in |
-| **antevo-crypto** | *public* |
-| `/antevo-crypto:price-check` | The reference price for one pair or many, always dated |
-| `/antevo-crypto:crypto-performance` | Return, range and worst drawdown over a window, from the daily bars |
-| `/antevo-crypto:technical-read` | Moving averages, MACD, RSI, Bollinger and ATR — how each leans, never a trading call |
 | **antevo-wealth** | *your account* |
 | `/antevo-wealth:daily-brief` | The household's morning note — what matters today and what needs you |
 | `/antevo-wealth:wealth-portfolio-review` | A dated review: net worth, allocation, risk and drift, leverage, real assets |
@@ -167,10 +158,6 @@ The Antevo Executive Brief is a daily editorial read on markets and world events
 
 `screen_mark` compares a name against the registers Antevo reads and returns each hit with a similarity tier, its status, applicant and filing date — and the list of registers it searched, which varies by name. A tier is a string-and-phonetic comparison, not a legal view of confusability. The skills say what exists and which registers were searched; they never call a name clear, and never call anyone a squatter.
 
-### How is the crypto reference price calculated?
-
-One price per pair, never one per exchange. For each whole UTC day, Antevo takes each major exchange's daily bar, drops any quote more than 5% from that day's median close, and publishes only when at least three quotes survive. The published open, high, low and close are volume-weighted across the quotes that remain; volume is their sum. A day is published once the collector's final run for it has landed. Which exchanges contribute is not part of any answer. See [Methodology](#methodology).
-
 ### What can the Wealth connection see?
 
 Only the household your Antevo Wealth sign-in can see — positions and accounts, allocation and drift, risk and stress, real assets, liabilities, goals, family structure and documents — through one connection at `/mcp/wealth/mcp`. Every tool is read-only.
@@ -187,7 +174,6 @@ Mandates reaches the signed-in member's own firm. It reads clients, dossiers, re
 | **Dated** | Rarely | **Every read carries its date; the archive is addressable by date** |
 | **Your holdings or client book** | Not visible | **Visible with your sign-in, scoped to you** |
 | **Trademark registers** | Not searched directly | **Screened, with the registers named** |
-| **Crypto prices** | A number from somewhere | **One composite reference price, method published** |
 | **Advice** | Can drift into it | **Intelligence, not advice — the skills hold the line** |
 
 ## Use cases
@@ -229,28 +215,6 @@ Verbatim excerpts from the live public connections on 14 September 2026, trimmed
 </details>
 
 <details>
-<summary><code>get_crypto_price</code> — Crypto, public</summary>
-
-```json
-{
-  "symbol": "BTC/USD",
-  "base": "BTC",
-  "quote": "USD",
-  "date": "2026-09-13",
-  "open": 77259.66367,
-  "high": 77426.44845,
-  "low": 76465.21002,
-  "close": 76806.8034,
-  "volume": 5087.020344,
-  "change_1d_pct": -0.58,
-  "method": "Antevo reference price: a volume-weighted daily bar across major exchanges, with outlying quotes excluded. Whole UTC days only; not a live or tradable quote.",
-  "source": { "name": "Antevo", "url": "https://antevo.ch/mcp" }
-}
-```
-
-</details>
-
-<details>
 <summary><code>screen_mark("Meridian")</code> — Trademark, public</summary>
 
 ```json
@@ -280,22 +244,20 @@ Verbatim excerpts from the live public connections on 14 September 2026, trimmed
 
 **How the skills read.** Every skill in this repository is a written instruction, not code: which tools to call, how to read the result, and what not to say. They lead with consequence rather than list order, date every figure, keep grades as the desk published them, name what was searched, and stop — rather than guess — when a tool refuses or data is missing.
 
-**The crypto reference price, precisely.** Per pair, per whole UTC day, over the exchange whitelist: take each exchange's daily bar; exclude quotes whose close is more than 5% from the day's median close; require at least three surviving quotes; volume-weight open, high, low and close across the survivors. A day is not published until two hours after it ends, so the collector's final fetch of the finished day has landed. Technical signals are computed on those bars with the same indicator code the Antevo technical analyst uses, and are refused for stablecoin pegs and for pairs with fewer than 200 days of history.
-
 ## What's New
 
+- **15 September 2026 — Crypto withdrawn.** The public Crypto connection and `antevo-crypto` are no longer offered.
 - **14 September 2026 — Crypto and Mandates.** `antevo-crypto` 0.1.0 (price-check, crypto-performance, technical-read) and `antevo-mandates` 0.1.0 (reviews-due, meeting-prep, succession-scan), both listed in the MCP Registry the same day.
 - **`antevo-wealth` 0.5.2.** Technical analysis and the watchlist say how indicators lean, never buy or sell.
-- **`antevo-crypto` 0.1.1.** Technical signals say how indicators lean — up, down or neutral, with counts — never buy or sell.
 - **`antevo-mandates` 0.1.1.** The skills no longer ask for a firm ID: the connection uses your own firm, and names each one if you belong to several.
 - **`antevo-executive` 0.4.0.** Desk reads for fourteen coverage areas, the world-events map and a century of macro-economic history.
-- **`@antevo/cli` 0.2.0.** The terminal client reaches all five connections.
+- **`@antevo/cli` 0.2.0.** The terminal client reaches every Antevo connection.
 
 Full history: [CHANGELOG.md](CHANGELOG.md).
 
 ## Limitations
 
-- **Daily, not live.** The Executive Brief publishes daily; crypto reference prices cover whole UTC days; macro series are quarterly published levels that lag. Nothing here is a live or tradable quote.
+- **Daily, not live.** The Executive Brief publishes daily; macro series are quarterly published levels that lag. Nothing here is a live or tradable quote.
 - **A screen is not a clearance.** Register coverage varies by name and office, and prior rights that never reach a register are invisible to any search.
 - **Your record, as connected.** Wealth and Mandates answer from what your account holds; they cannot see what was never connected.
 - **Skills are a Claude feature.** Other MCP clients get the same connections and tools, without the skills that decide how to read them.
@@ -341,7 +303,7 @@ Antevo connects developments in the world to the things you own, manage and prot
 
 ### Do I need an account?
 
-Not for Executive, trademark screening or crypto. Wealth needs an Antevo Wealth account; Mandates needs a firm account, by arrangement.
+Not for Executive or trademark screening. Wealth needs an Antevo Wealth account; Mandates needs a firm account, by arrangement.
 
 ### Does Antevo give investment advice?
 
@@ -350,10 +312,6 @@ No. It is editorial market intelligence and a reading of your own record. The sk
 ### Which assistants does this work with?
 
 Claude (Code, Desktop and claude.ai) with the full plugins and skills; Cursor, VS Code, Gemini CLI, Windsurf, Zed, Goose and any Streamable-HTTP MCP client with the connections and tools; and a terminal through `@antevo/cli`.
-
-### Where does the crypto price come from?
-
-It is a composite of major exchanges' daily bars, computed by Antevo as described in [Methodology](#methodology). Antevo publishes the reference price, not its sources.
 
 ## License
 
