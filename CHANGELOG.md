@@ -2,6 +2,12 @@
 
 All notable changes to the Antevo plugins are documented here.
 
+## 2026-09-15 — Crypto withdrawn
+
+- **`antevo-crypto` removed.** The public Crypto connection is withdrawn and no
+  longer offered: the plugin, its three skills and its marketplace entry are gone.
+  Executive, Trademark, Wealth and Mandates are unchanged.
+
 ## [unreleased] — crypto reference prices and the Mandates desk
 
 - **`antevo-wealth` 0.5.2** — the Wealth connector now tells assistants how

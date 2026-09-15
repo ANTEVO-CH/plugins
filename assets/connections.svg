@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 640" width="100%" role="img"
-     aria-label="How a question travels: your assistant speaks MCP to one of five Antevo connections — Executive, Trademark and Crypto are public; Wealth and Mandates need your sign-in — which draw on the Antevo desk and return an answer with the record behind it">
+     aria-label="How a question travels: your assistant speaks MCP to one of four Antevo connections — Executive and Trademark are public; Wealth and Mandates need your sign-in — which draw on the Antevo desk and return an answer with the record behind it">
   <title>Antevo — how a question travels</title>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b0e12"/><stop offset="1" stop-color="#161b20"/></linearGradient>
@@ -19,14 +19,12 @@
 
   <path class="wire" d="M300 320 H380"/><path class="flow" d="M300 320 H380"/>
   <g>
-    <path class="wire" d="M580 320 C640 320 640 124 700 124"/><path class="wire" d="M580 320 C640 320 640 222 700 222"/>
-    <path class="wire" d="M580 320 H700"/><path class="wire" d="M580 320 C640 320 640 418 700 418"/>
-    <path class="wire" d="M580 320 C640 320 640 516 700 516"/>
-    <path class="flow" d="M580 320 C640 320 640 124 700 124"/><path class="flow" d="M580 320 C640 320 640 516 700 516"/>
-    <path class="wire" d="M1010 124 C1070 124 1070 320 1130 320"/><path class="wire" d="M1010 222 C1070 222 1070 320 1130 320"/>
-    <path class="wire" d="M1010 320 H1130"/><path class="wire" d="M1010 418 C1070 418 1070 320 1130 320"/>
-    <path class="wire" d="M1010 516 C1070 516 1070 320 1130 320"/>
-    <path class="flow" d="M1010 320 H1130"/>
+    <path class="wire" d="M580 320 C640 320 640 125 700 125"/><path class="wire" d="M580 320 C640 320 640 255 700 255"/>
+    <path class="wire" d="M580 320 C640 320 640 385 700 385"/><path class="wire" d="M580 320 C640 320 640 515 700 515"/>
+    <path class="flow" d="M580 320 C640 320 640 125 700 125"/><path class="flow" d="M580 320 C640 320 640 515 700 515"/>
+    <path class="wire" d="M1010 125 C1070 125 1070 320 1130 320"/><path class="wire" d="M1010 255 C1070 255 1070 320 1130 320"/>
+    <path class="wire" d="M1010 385 C1070 385 1070 320 1130 320"/><path class="wire" d="M1010 515 C1070 515 1070 320 1130 320"/>
+    <path class="flow" d="M1010 255 C1070 255 1070 320 1130 320"/><path class="flow" d="M1010 385 C1070 385 1070 320 1130 320"/>
     <path class="wire" d="M1390 320 H1440"/><path class="flow" d="M1390 320 H1440"/>
   </g>
 
@@ -39,13 +37,12 @@
   <text x="480" y="316" class="t" font-size="30" text-anchor="middle">MCP</text>
   <text x="480" y="346" class="s" font-size="14" text-anchor="middle">Streamable HTTP</text>
 
-  <text x="700" y="94" class="k" font-size="12">PUBLIC — NO ACCOUNT</text>
-  <rect class="box" x="700" y="102" width="310" height="44" rx="12"/><text x="722" y="131" class="t" font-size="24">Executive</text><text x="990" y="130" class="s" font-size="13" text-anchor="end">markets · world · macro</text>
-  <rect class="box" x="700" y="200" width="310" height="44" rx="12"/><text x="722" y="229" class="t" font-size="24">Trademark</text><text x="990" y="228" class="s" font-size="13" text-anchor="end">the registers</text>
-  <rect class="box" x="700" y="298" width="310" height="44" rx="12"/><text x="722" y="327" class="t" font-size="24">Crypto</text><text x="990" y="326" class="s" font-size="13" text-anchor="end">reference prices</text>
-  <text x="700" y="390" class="k" font-size="12">YOUR PERMISSION — OAUTH 2.1</text>
-  <rect class="box" x="700" y="396" width="310" height="44" rx="12"/><text x="722" y="425" class="t" font-size="24">Wealth</text><text x="990" y="424" class="s" font-size="13" text-anchor="end">your household</text>
-  <rect class="box" x="700" y="494" width="310" height="44" rx="12"/><text x="722" y="523" class="t" font-size="24">Mandates</text><text x="990" y="522" class="s" font-size="13" text-anchor="end">your firm</text>
+  <text x="700" y="95" class="k" font-size="12">PUBLIC — NO ACCOUNT</text>
+  <rect class="box" x="700" y="103" width="310" height="44" rx="12"/><text x="722" y="132" class="t" font-size="24">Executive</text><text x="990" y="131" class="s" font-size="13" text-anchor="end">markets · world · macro</text>
+  <rect class="box" x="700" y="233" width="310" height="44" rx="12"/><text x="722" y="262" class="t" font-size="24">Trademark</text><text x="990" y="261" class="s" font-size="13" text-anchor="end">the registers</text>
+  <text x="700" y="355" class="k" font-size="12">YOUR PERMISSION — OAUTH 2.1</text>
+  <rect class="box" x="700" y="363" width="310" height="44" rx="12"/><text x="722" y="392" class="t" font-size="24">Wealth</text><text x="990" y="391" class="s" font-size="13" text-anchor="end">your household</text>
+  <rect class="box" x="700" y="493" width="310" height="44" rx="12"/><text x="722" y="522" class="t" font-size="24">Mandates</text><text x="990" y="521" class="s" font-size="13" text-anchor="end">your firm</text>
 
   <rect class="box" x="1130" y="262" width="260" height="116" rx="16"/>
   <text x="1260" y="310" class="t" font-size="30" text-anchor="middle">The Antevo desk</text>
