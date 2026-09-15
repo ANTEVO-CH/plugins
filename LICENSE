@@ -1,16 +1,21 @@
 Copyright (c) 2026 Antevo. All rights reserved.
 
-This repository contains the Antevo Wealth plugin manifest and Agent Skills for use
-with Claude and other MCP-compatible AI assistants.
+This repository contains the Antevo plugins (Executive, Trademark, Wealth and
+Mandates): their manifests and Agent Skills, for use with Claude and other
+MCP-compatible AI assistants.
 
-You may install and use this plugin to connect to the Antevo Wealth service,
-subject to the Antevo Terms of Use (https://antevo.ch/policies/terms-of-use) and
-Privacy Policy (https://antevo.ch/policies/privacy-policy). Use of the connected
-Antevo Wealth service requires an Antevo Wealth account.
+You may install and use these plugins to connect to the Antevo services, subject to
+the Antevo Terms of Use (https://antevo.ch/policies/terms-of-use) and Privacy Policy
+(https://antevo.ch/policies/privacy-policy). Executive and trademark screening need
+no account. Antevo Wealth requires an Antevo Wealth account; Antevo Mandates requires
+a firm account, by arrangement with Antevo.
 
-The Antevo Wealth name and logo, and the hosted service, APIs, and data are
-proprietary. No license is granted to the backend, APIs, or data. You may not
-redistribute, sell, sublicense, or create derivative marketplaces from this
-repository without prior written permission from Antevo.
+The Antevo name and logo, and the hosted services, APIs and data, are proprietary.
+No license is granted to the backend, APIs or data. You may not redistribute, sell,
+sublicense, or create derivative marketplaces from this repository without prior
+written permission from Antevo.
+
+The connection metadata published separately in ANTEVO-CH/antevo-mcp is MIT licensed;
+this repository is not.
 
 THE CONTENTS OF THIS REPOSITORY ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
