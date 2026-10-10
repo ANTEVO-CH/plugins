@@ -1,7 +1,7 @@
 ---
 name: watchlist-review
 description: >-
-  Review a Antevo Wealth household's tracked instruments (their watchlist). Use
+  Review an Antevo Wealth household's tracked instruments (their watchlist). Use
   when the user asks "what's on my watchlist", "what am I tracking", "anything
   moving on my watchlist", "which of my watched names are leaning up or down", or
   wants a read on the instruments they follow. Orchestrates the Antevo Wealth MCP

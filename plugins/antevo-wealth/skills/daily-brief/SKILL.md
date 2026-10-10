@@ -30,9 +30,9 @@ Your job is to lead with the answer, not to dump five tool outputs.
 | The brief — what matters now | `get_today_brief` |
 | Attention — anything unread | `get_unread_alerts` |
 | Policy — anything in breach | `get_open_breaches` |
-| Position — drifted from plan? | `get_drift_snapshot` |
+| Position — drifted from plan? | `get_portfolio_drift(household_id, portfolio_id)` for each portfolio in household-wide `get_risk()`; `no_targets` means no target set |
 | Ahead — dividends, earnings, macro | `get_upcoming_calendar` |
-| Backdrop (optional) | `get_market_brief` — only the lines that touch this book |
+| Backdrop (optional) | `get_brief(kind='market')` — only the lines that touch this book |
 
 Call all of them for a general "what's my brief"; for a narrow ask ("any
 breaches?") call just what's needed.

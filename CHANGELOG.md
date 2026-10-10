@@ -2,6 +2,38 @@
 
 All notable changes to the Antevo plugins are documented here.
 
+## 2026-10-10 — Wealth 0.6.0: recording holdings, meeting prep, current tool names
+
+- **`antevo-wealth` 0.6.0**
+  - **New skill: `record-holdings`.** It reads holdings from a statement,
+    screenshot or list and checks them with the user before any tool call. It then
+    records them with `create_portfolio` and `add_position`, a few at a time, each
+    only after the user approves the plan. It never buys, sells or moves money.
+  - **New skill: `advisor-meeting-prep`.** A one-page brief before a meeting with
+    the user's own banker: what that bank holds, drift, credit, goals and dates,
+    ending in questions, not verdicts.
+  - **Five skills named tools retired in the September tool consolidation;** they
+    now call today's tools:
+    - `get_portfolio_summary` → `get_net_worth(scope='allocation')`
+    - `get_household_aum` → `get_net_worth(scope='aum')`
+    - `get_risk_dashboard` / `get_portfolio_risk` → `get_risk`
+    - `get_market_brief` → `get_brief(kind='market')`
+
+    daily-brief also stops calling `get_drift_snapshot`, which fails on the
+    server; it reads drift per portfolio with `get_portfolio_drift`.
+    The affected skills were concentration-and-drift, daily-brief,
+    liquidity-and-leverage, portfolio-stress-radar and wealth-portfolio-review.
+  - **Plan limits:** record-holdings records the largest holdings first and stops
+    cleanly when the plan's holding limit is reached, passing on the server's
+    message. wealth-portfolio-review and advisor-meeting-prep treat a
+    `forbidden_tier` section as "not included on this plan" and carry on with the
+    rest. No skill quotes a price or plan name of its own.
+  - **`wealth-portfolio-review`** also covers weekly and monthly reviews. It takes
+    portfolio ids from household-wide `get_risk()`, and on an empty book it passes on the
+    connector's `next_step` instead of presenting zeros.
+- **README:** the Wealth connection now has 38 tools, and it no longer claims every
+  tool is read-only.
+
 ## 2026-09-15 — Crypto withdrawn
 
 - **`antevo-crypto` removed.** The public Crypto connection is withdrawn and no

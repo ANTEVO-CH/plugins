@@ -1,7 +1,7 @@
 ---
 name: liquidity-and-leverage
 description: >-
-  Assess a Antevo Wealth household's liquidity and leverage — how fast it can raise
+  Assess an Antevo Wealth household's liquidity and leverage — how fast it can raise
   cash and how much covenant headroom it has. Use when the user asks "can I raise
   cash / how liquid am I", "could I meet a capital call or margin call", "how
   levered am I", "what's my loan-to-value", "covenant headroom", "how much can I
@@ -28,7 +28,7 @@ this household raise cash, and how much room is left before a facility bites?**
 ## Step 1 — Gather
 | Dimension | Tool(s) |
 |-----------|---------|
-| Liquid assets, cash, AUM | `get_household_aum`, `get_portfolio_summary`, `get_portfolio_positions` |
+| Liquid assets, cash, AUM | `get_net_worth(scope='aum')`, `get_net_worth(scope='allocation')`, `get_portfolio_positions` |
 | Illiquid real assets | `list_real_assets`, `get_real_asset_economics` |
 | Facilities: balance, limit, rate, maturity, covenants, collateral | `list_facilities`, `get_facility` (per facility) |
 

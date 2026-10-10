@@ -1,7 +1,7 @@
 ---
 name: concentration-and-drift
 description: >-
-  Diagnose concentration and allocation drift for a Antevo Wealth household and
+  Diagnose concentration and allocation drift for an Antevo Wealth household and
   surface what to rebalance. Use when the user asks "am I too concentrated",
   "single-stock / single-name risk", "have I drifted from my target allocation",
   "is my allocation off", "what should I trim or rebalance", or "how diversified am
@@ -27,8 +27,8 @@ book is* and *how far it has wandered from plan* — with specific, ranked moves
 ## Step 1 — Gather
 | Dimension | Tool(s) |
 |-----------|---------|
-| Positions & weights | `get_portfolio_positions`, `get_portfolio_summary` |
-| Concentration (HHI, top-weight), allocation | `get_risk_dashboard` |
+| Positions & weights | `get_portfolio_positions`, `get_net_worth(scope='allocation')` |
+| Concentration (HHI, top-weight), allocation | `get_risk` (household-wide: omit `portfolio_id`) |
 | Drift vs target, breaches | `get_portfolio_drift` (per portfolio) |
 
 ## Step 2 — Analyse
