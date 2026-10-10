@@ -1,7 +1,7 @@
 ---
 name: security-analysis
 description: >-
-  Analyse a single security (equity, index, FX, crypto, commodity) for a Antevo Wealth
+  Analyse a single security (equity, index, FX, crypto, commodity) for an Antevo Wealth
   user — fundamentals and technicals in one read. Use whenever the user asks to
   "analyse [ticker]", "is [name] expensive / cheap", "what are the technicals on
   X", "valuation / P/E / margins / growth of X", "RSI / trend / momentum / signal

@@ -2,11 +2,11 @@
 
 # Antevo: plugins and MCP connections for Claude and any MCP client
 
-**Antevo brings the world around your wealth into the assistant you already use.** Four connections — the Executive Brief, trademark registers, your own household and your firm's client book — and 25 skills that know how to read them: dated, attributed, and honest about what they cannot see. Install once in Claude, or point any MCP client at an address.
+**Antevo brings the world around your wealth into the assistant you already use.** Four connections — the Executive Brief, trademark registers, your own household and your firm's client book — and 27 skills that know how to read them: dated, attributed, and honest about what they cannot see. Install once in Claude, or point any MCP client at an address.
 
 [![validate](https://github.com/ANTEVO-CH/plugins/actions/workflows/validate.yml/badge.svg)](https://github.com/ANTEVO-CH/plugins/actions/workflows/validate.yml)
 [![MCP Registry](https://img.shields.io/badge/MCP%20Registry-ch.antevo-252c28?labelColor=9b7936)](https://registry.modelcontextprotocol.io/v0/servers?search=ch.antevo)
-[![Claude plugins](https://img.shields.io/badge/Claude-4%20plugins%20%C2%B7%2025%20skills-252c28?labelColor=9b7936)](#skills)
+[![Claude plugins](https://img.shields.io/badge/Claude-4%20plugins%20%C2%B7%2027%20skills-252c28?labelColor=9b7936)](#skills)
 [![npm](https://img.shields.io/npm/v/@antevo/cli?label=%40antevo%2Fcli&color=252c28&labelColor=9b7936)](https://www.npmjs.com/package/@antevo/cli)
 [![Hosted in Switzerland](https://img.shields.io/badge/hosted-Switzerland-252c28?labelColor=9b7936)](https://antevo.ch)
 
@@ -107,14 +107,14 @@ Invoke a skill directly with `/<plugin>:<skill>` — for example `/antevo-execut
 |:--|:--|:--|:--|--:|
 | **I.** | **Executive** — the daily editorial read, risk radar, forward calendar, dated archive, per-sector desk reads, a world-events map and macro-economic history | `https://api.antevo.ch/mcp/executive/mcp` | Public | 15 |
 | **II.** | **Trademark** — screen a name, read a holder's filing pattern, check an opposition window | `https://trademark.antevo.ch/mcp` | Public screening | 4 |
-| **III.** | **Wealth** — your household: holdings, allocation, risk, real assets, liabilities, goals and documents | `https://api.antevo.ch/mcp/wealth/mcp` | Your account | 36 |
+| **III.** | **Wealth** — your household: holdings, allocation, risk, real assets, liabilities, goals and documents, and recording what you already hold | `https://api.antevo.ch/mcp/wealth/mcp` | Your account | 38 |
 | **IV.** | **Mandates** — your firm's client book: clients, reviews, meeting briefs, goals, documents, succession, client email | `https://api.antevo.ch/mcp/mandates/mcp` | By arrangement | 24 |
 
 All four are listed in the official [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=ch.antevo) under `ch.antevo`. Tool counts are read live from each server's `tools/list`.
 
 ## Skills
 
-![Antevo plugins and skills: Executive 9, Wealth 10, Trademark 3, Mandates 3, around the Antevo marketplace](assets/skills.svg)
+![Antevo plugins and skills: Executive 9, Wealth 12, Trademark 3, Mandates 3, around the Antevo marketplace](assets/skills.svg)
 
 | Skill | What it does |
 |:--|:--|
@@ -133,6 +133,8 @@ All four are listed in the official [MCP Registry](https://registry.modelcontext
 | `/antevo-trademark:opposition-deadline` | How long there is to oppose in a given office, what starts the clock, and the provision |
 | `/antevo-trademark:conflict-review` | New filings near your watched names, ranked by consequence — with your sign-in |
 | **antevo-wealth** | *your account* |
+| `/antevo-wealth:record-holdings` | Records what you already hold, from a statement or a list, after you approve each plan |
+| `/antevo-wealth:advisor-meeting-prep` | Before you meet your banker: your book with that bank, what needs attention, the questions to ask |
 | `/antevo-wealth:daily-brief` | The household's morning note — what matters today and what needs you |
 | `/antevo-wealth:wealth-portfolio-review` | A dated review: net worth, allocation, risk and drift, leverage, real assets |
 | `/antevo-wealth:portfolio-stress-radar` | Where you could get hurt — a shock traced through concentration, risk, leverage and liquidity |
@@ -160,7 +162,7 @@ The Antevo Executive Brief is a daily editorial read on markets and world events
 
 ### What can the Wealth connection see?
 
-Only the household your Antevo Wealth sign-in can see — positions and accounts, allocation and drift, risk and stress, real assets, liabilities, goals, family structure and documents — through one connection at `/mcp/wealth/mcp`. Every tool is read-only.
+Only the household your Antevo Wealth sign-in can see — positions and accounts, allocation and drift, risk and stress, real assets, liabilities, goals, family structure and documents — through one connection at `/mcp/wealth/mcp`. Every tool reads, except two: `create_portfolio` and `add_position` record holdings you already own. Each returns a plan first and writes only after you say yes; nothing is ever bought, sold or moved.
 
 ### What can the Mandates connection change?
 

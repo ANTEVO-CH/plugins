@@ -1,7 +1,7 @@
 ---
 name: geopolitical-risk
 description: >-
-  Read the world's geopolitical risks and tie them to a Antevo Wealth client's
+  Read the world's geopolitical risks and tie them to an Antevo Wealth client's
   exposure. Use whenever the user asks about geopolitical risk, "what's happening
   in the world", conflict / war / sanctions / cyber risk, a chokepoint (Hormuz,
   Suez, Taiwan Strait, Red Sea), supply-chain or energy-security risk, or "how

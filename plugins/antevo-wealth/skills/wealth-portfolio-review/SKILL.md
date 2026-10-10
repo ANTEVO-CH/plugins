@@ -1,9 +1,10 @@
 ---
 name: wealth-portfolio-review
 description: >-
-  Produce a private-banker-grade portfolio review for a Antevo Wealth client by
+  Produce a private-banker-grade portfolio review for an Antevo Wealth client by
   orchestrating the Antevo Wealth MCP connector. Use this whenever the user asks for a
-  portfolio review, a wealth check-up, "how am I doing", a net-worth breakdown,
+  portfolio review, a weekly or monthly review of their book, a wealth check-up,
+  "how am I doing", a net-worth breakdown,
   a risk / concentration / drift review, leverage or liquidity analysis, or a
   quarterly / periodic review of their holdings — even if they don't say the word
   "review". Prefer this skill over answering from a single tool call when the user
@@ -29,29 +30,29 @@ client's reporting currency, with every figure dated.
 - **Connector check.** If the Antevo Wealth tools aren't present, say so and ask the user
   to connect Antevo Wealth, then stop — don't fabricate numbers.
 - **Identify the household.** If the user gave a household, use it. Otherwise call
-  the households listing (or `get_net_worth` with their default) — if there's more
-  than one, ask which before proceeding. You need a `household_id` for the scoped
+  `list_households` — if there's more than one, ask which before proceeding. You need a `household_id` for the scoped
   tools.
 - **Read-only.** This skill never calls a write/delete tool. You propose; the user
   acts. Make that explicit in the memo.
 
 ## Step 1 — Gather (call tools, don't guess)
 
-Pull the inputs, then reason. Tools are tolerant of an empty book — an empty result
-is data, not an error (a new account simply has nothing yet); say so rather than
-inventing figures. Where a tool needs a `portfolio_id`, get the list first from the
-portfolio summary / positions.
+Pull the inputs, then reason. An empty result is data, not an error. When a result
+carries `empty_book: true`, the household has nothing in it yet: say so, pass on its
+`next_step` message and link, and stop the review there rather than presenting
+zeros. Where a tool needs a `portfolio_id`, take it from the `portfolios` list that
+`get_risk()` returns when called without one.
 
 | Dimension | Tool(s) |
 |-----------|---------|
 | Net worth (assets − liabilities, FX-converted) | `get_net_worth` |
-| Holdings & allocation | `get_portfolio_summary`, `get_portfolio_positions` |
+| Holdings & allocation | `get_net_worth(scope='allocation')`, `get_portfolio_positions` |
 | Accounts / custody | `list_accounts` |
-| Risk (vol, VaR, concentration) | `get_risk_dashboard`, `get_portfolio_risk` (per portfolio) |
+| Risk (vol, VaR, concentration) | `get_risk` (household-wide), `get_risk(portfolio_id=…)` (per portfolio) |
 | Drift vs targets / breaches | `get_portfolio_drift` (per portfolio) |
 | Leverage | `list_facilities` (balances, rates, utilisation, covenants, collateral) |
 | Real-asset yield | `list_real_assets`, `get_real_asset_economics` |
-| Market backdrop | `get_market_brief` |
+| Market backdrop | `get_brief(kind='market')` |
 
 Call only what's relevant to the user's ask — a "net worth check" doesn't need the
 full risk pass — but for a general "review", cover all rows. Note the `as_of` /

@@ -1,7 +1,7 @@
 ---
 name: portfolio-stress-radar
 description: >-
-  Find where a Antevo Wealth household could actually get hurt — and trace it
+  Find where an Antevo Wealth household could actually get hurt — and trace it
   across domains. Use whenever the user asks "where could I get hurt", "what's my
   biggest risk", "stress my book/portfolio", "where am I exposed", "what happens
   if markets fall / oil spikes / rates rise", "am I over-leveraged", or "margin-call
@@ -29,10 +29,10 @@ Most tools answer "what is my volatility?" This skill answers the better questio
 ## Step 1 — Gather (current-state)
 | Link | Tool(s) |
 |------|---------|
-| Concentration, vol, VaR, drawdown | `get_risk_dashboard`, `get_portfolio_risk` (per portfolio) |
+| Concentration, vol, VaR, drawdown | `get_risk` (household-wide), `get_risk(portfolio_id=…)` (per portfolio) |
 | Drift / open breaches | `get_portfolio_drift` (per portfolio) |
 | Leverage, LTV, covenants, collateral | `list_facilities` |
-| Book size / liquid vs illiquid | `get_household_aum`, `get_portfolio_summary`, `get_portfolio_positions` |
+| Book size / liquid vs illiquid | `get_net_worth(scope='aum')`, `get_net_worth(scope='allocation')`, `get_portfolio_positions` |
 | Illiquid real assets + yield | `list_real_assets`, `get_real_asset_economics` |
 
 > Period note: full historical stress *replay* over months is not yet exposed as a

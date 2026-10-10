@@ -1,7 +1,7 @@
 ---
 name: goals-review
 description: >-
-  Review a Antevo Wealth household's financial goals and funding progress. Use
+  Review an Antevo Wealth household's financial goals and funding progress. Use
   when the user asks "how am I tracking against my goals", "am I on track for
   retirement / the property / the exit", "what's my progress toward [goal]", "what
   do I need to stay on plan", or wants a read on their wealth goals. Orchestrates
