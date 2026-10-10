@@ -51,6 +51,10 @@ sets that against the whole book, and ends in questions rather than conclusions.
   - Credit: match each facility through its `account_id` to the account's
     institution in `list_accounts`.
   - If a match is unclear, ask rather than guess.
+- **Sections the plan doesn't include.** A tool that refuses with
+  `forbidden_tier` (risk, credit, real assets, documents on some plans): note that
+  part as not included, pass on its `human_message` and upgrade link once, and
+  carry on with the rest of the brief.
 - **Empty book.** When a result carries `empty_book: true`, say nothing has been
   added yet, pass on its `next_step`, and stop.
 

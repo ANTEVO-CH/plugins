@@ -23,6 +23,11 @@ All notable changes to the Antevo plugins are documented here.
     server; it reads drift per portfolio with `get_portfolio_drift`.
     The affected skills were concentration-and-drift, daily-brief,
     liquidity-and-leverage, portfolio-stress-radar and wealth-portfolio-review.
+  - **Plan limits:** record-holdings records the largest holdings first and stops
+    cleanly when the plan's holding limit is reached, passing on the server's
+    message. wealth-portfolio-review and advisor-meeting-prep treat a
+    `forbidden_tier` section as "not included on this plan" and carry on with the
+    rest. No skill quotes a price or plan name of its own.
   - **`wealth-portfolio-review`** also covers weekly and monthly reviews. It takes
     portfolio ids from household-wide `get_risk()`, and on an empty book it passes on the
     connector's `next_step` instead of presenting zeros.

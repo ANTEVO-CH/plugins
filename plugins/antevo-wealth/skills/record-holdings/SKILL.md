@@ -68,6 +68,8 @@ currency, as_of)` without `confirm`, adding `cost_basis_per_unit` only as allowe
 in Step 1. Pass the ISIN as `security` when there is one, otherwise the exact name.
 Each call returns a plan.
 
+- **Largest first.** Record the holdings in order of value, largest first, so a
+  book with a holding limit still shows most of what the user owns.
 - **Batches of up to five.** Request the plans, show their `human_message`s
   together and numbered, and ask for one answer. Plans expire after five minutes,
   so never leave a batch waiting.
@@ -83,6 +85,10 @@ Each call returns a plan.
 - **Held elsewhere:** when the plan shows the same security in another portfolio,
   point it out before asking for the yes, so it is not counted twice.
 - **Plan expired:** ask for a fresh plan. Never reuse an old `plan_id`.
+- **Book full:** if a call refuses because the user's plan has reached its
+  holding limit, stop there. Pass on its `human_message` and upgrade link exactly
+  as given, and list the lines not yet recorded. Never quote a price or a plan
+  name of your own.
 
 ## Step 4 — Close
 

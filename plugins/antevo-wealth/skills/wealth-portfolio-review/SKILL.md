@@ -32,6 +32,9 @@ client's reporting currency, with every figure dated.
 - **Identify the household.** If the user gave a household, use it. Otherwise call
   `list_households` — if there's more than one, ask which before proceeding. You need a `household_id` for the scoped
   tools.
+- **Sections the plan doesn't include.** A tool that refuses with
+  `forbidden_tier` is a plan limit, not an error: name the section as not
+  included, pass on its `human_message` and upgrade link once, and review the rest.
 - **Read-only.** This skill never calls a write/delete tool. You propose; the user
   acts. Make that explicit in the memo.
 
