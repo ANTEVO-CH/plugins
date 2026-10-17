@@ -3,10 +3,6 @@
     "antevo-trademark": {
       "type": "http",
       "url": "https://trademark.antevo.ch/mcp"
-    },
-    "antevo-trademark-me": {
-      "type": "http",
-      "url": "https://trademark.antevo.ch/mcp/me"
     }
   }
 }

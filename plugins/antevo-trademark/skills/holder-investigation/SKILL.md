@@ -9,10 +9,10 @@ description: >-
   before they talk to counsel. Nothing is spent without a yes, and nothing is
   bought unless the user asks to buy.
 compatibility: >-
-  The investigation and the credit tools are on the signed-in server
-  (trademark.antevo.ch/mcp/me), which needs an Antevo sign-in. If
-  run_investigation or get_credit_balance return "unauthenticated", relay the
-  sign-in link and stop; holder_read on the public server still works.
+  Requires the Antevo Trademark connector (trademark.antevo.ch/mcp). The
+  investigation and the credit tools need an Antevo sign-in, which the
+  connector asks for when one of them is first used; holder_read needs none.
+  If the user does not sign in, say the investigation needs it and stop.
 ---
 
 # Antevo — Holder investigation

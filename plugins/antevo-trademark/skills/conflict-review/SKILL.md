@@ -6,14 +6,15 @@ description: >-
   what is closing. Use when the user asks "what's new near my brand", "any
   conflicts", "what should I be worried about this week", "watch this name for
   me", "that one's not a problem", "what deadlines are coming up", or opens with
-  "check my trademarks". Needs an Antevo account and a connected token — the
+  "check my trademarks". Needs an Antevo account and a sign-in — the
   screening tools do not. Writes are limited to watching a name and clearing a
   hit, both reversible, and both confirmed with the user first.
 compatibility: >-
-  Requires the Antevo Trademark connector AND a token, generated at
-  antevo.ch/trademark → Settings → Connect your AI. If the personal tools return
-  "unauthenticated", relay that link and stop — do not fall back to public
-  screening and present it as their watchlist.
+  Requires the Antevo Trademark connector and an Antevo sign-in, which the
+  connector asks for when a personal tool is first used (a token from
+  antevo.ch/trademark → Settings → Connect your AI also works). If the personal
+  tools still return "unauthenticated", say so and stop — do not fall back to
+  public screening and present it as their watchlist.
 ---
 
 # Antevo — Conflict review
