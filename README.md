@@ -2,7 +2,7 @@
 
 # Antevo: plugins and MCP connections for Claude and any MCP client
 
-**Antevo brings the world around your wealth into the assistant you already use.** Four connections — the Executive Brief, trademark registers, your own household and your firm's client book — and 27 skills that know how to read them: dated, attributed, and honest about what they cannot see. Install once in Claude, or point any MCP client at an address.
+**Antevo brings the world around your wealth into the assistant you already use.** Four connections — the Executive Brief, trademark registers, your own household and your firm's client book — and 28 skills that know how to read them: dated, attributed, and honest about what they cannot see. Install once in Claude, or point any MCP client at an address.
 
 [![validate](https://github.com/ANTEVO-CH/plugins/actions/workflows/validate.yml/badge.svg)](https://github.com/ANTEVO-CH/plugins/actions/workflows/validate.yml)
 [![MCP Registry](https://img.shields.io/badge/MCP%20Registry-ch.antevo-252c28?labelColor=9b7936)](https://registry.modelcontextprotocol.io/v0/servers?search=ch.antevo)
@@ -114,7 +114,7 @@ All four are listed in the official [MCP Registry](https://registry.modelcontext
 
 ## Skills
 
-![Antevo plugins and skills: Executive 9, Wealth 12, Trademark 3, Mandates 3, around the Antevo marketplace](assets/skills.svg)
+![Antevo plugins and skills: Executive 9, Wealth 12, Trademark 4, Mandates 3, around the Antevo marketplace](assets/skills.svg)
 
 | Skill | What it does |
 |:--|:--|
@@ -132,6 +132,7 @@ All four are listed in the official [MCP Registry](https://registry.modelcontext
 | `/antevo-trademark:clearance-check` | What is on the registers near a name, and who holds it — never a clearance |
 | `/antevo-trademark:opposition-deadline` | How long there is to oppose in a given office, what starts the clock, and the provision |
 | `/antevo-trademark:conflict-review` | New filings near your watched names, ranked by consequence — with your sign-in |
+| `/antevo-trademark:holder-investigation` | Who is behind a holder: the free register read, then a cited web dossier for a credit, asked first |
 | **antevo-wealth** | *your account* |
 | `/antevo-wealth:record-holdings` | Records what you already hold, from a statement or a list, after you approve each plan |
 | `/antevo-wealth:advisor-meeting-prep` | Before you meet your banker: your book with that bank, what needs attention, the questions to ask |

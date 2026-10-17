@@ -45,6 +45,8 @@ judgement:
   `my_deadlines`.
 - **Never call a filer a squatter.** Show the pattern from `holder_read` and let
   them and their counsel draw the conclusion.
+- **Who is behind a filer** is the holder-investigation skill: it starts from
+  `holder_read` and asks before it spends a credit.
 
 ## Step 3 — Writes need consent
 Both write tools change the user's desk. **Confirm before calling either**, and
