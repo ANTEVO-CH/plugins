@@ -159,7 +159,7 @@ The Antevo Executive Brief is a daily editorial read on markets and world events
 
 ### How does trademark screening work?
 
-`screen_mark` compares a name against the registers Antevo reads and returns each hit with a similarity tier, its status, applicant and filing date — and the list of registers it searched, which varies by name. A tier is a string-and-phonetic comparison, not a legal view of confusability. The skills say what exists and which registers were searched; they never call a name clear, and never call anyone a squatter.
+`screen_mark` compares a name against the registers Antevo reads and returns each hit with a similarity tier, its status, applicant and filing date, and the registers those hits are filed in. `check_names` does the same for a shortlist of up to 15 names and ranks them, and adds, per name, the companies registered under it (the Swiss register always, the UK and Singapore on request; name and legal form only) and whether its domains are registered. A source that does not answer comes back as not checked. A tier is a string-and-phonetic comparison, not a legal view of confusability. The skills say what exists and what was searched; they never call a name clear, and never call anyone a squatter.
 
 ### What can the Wealth connection see?
 
