@@ -106,7 +106,7 @@ Invoke a skill directly with `/<plugin>:<skill>` — for example `/antevo-execut
 | | Connection | Address | Access | Tools |
 |:--|:--|:--|:--|--:|
 | **I.** | **Executive** — the daily editorial read, risk radar, forward calendar, dated archive, per-sector desk reads, a world-events map and macro-economic history | `https://api.antevo.ch/mcp/executive/mcp` | Public | 15 |
-| **II.** | **Trademark** — screen a name, read a holder's filing pattern, check an opposition window | `https://trademark.antevo.ch/mcp` | Public screening | 4 |
+| **II.** | **Trademark** — screen a name or a shortlist, read a holder's filing pattern, check an opposition window; with a sign-in, your watchlist, conflicts, deadlines and holder investigations | `https://trademark.antevo.ch/mcp` | Public screening; your desk with a sign-in | 16 |
 | **III.** | **Wealth** — your household: holdings, allocation, risk, real assets, liabilities, goals and documents, and recording what you already hold | `https://api.antevo.ch/mcp/wealth/mcp` | Your account | 38 |
 | **IV.** | **Mandates** — your firm's client book: clients, reviews, meeting briefs, goals, documents, succession, client email | `https://api.antevo.ch/mcp/mandates/mcp` | By arrangement | 24 |
 
@@ -126,13 +126,13 @@ All four are listed in the official [MCP Registry](https://registry.modelcontext
 | `/antevo-executive:decode` | What a move actually means, in the desk's own plain language |
 | `/antevo-executive:story-timeline` | How a story developed, from the dated archive — including where the view shifted |
 | `/antevo-executive:desk-read` | Antevo's written view on one area, from shipping and aviation to succession and art |
-| `/antevo-executive:world-map` | Chokepoints, submarine cables, conflicts, disasters, displacement, sanctions, cyber, regulatory |
+| `/antevo-executive:world-map` | Chokepoints, conflicts, disasters, displacement, sanctions, cyber, regulatory |
 | `/antevo-executive:macro-history` | The long run — prices, rates, house prices and production for about 180 countries |
 | **antevo-trademark** | *screening public* |
 | `/antevo-trademark:clearance-check` | What is on the registers near a name, and who holds it — never a clearance |
 | `/antevo-trademark:opposition-deadline` | How long there is to oppose in a given office, what starts the clock, and the provision |
 | `/antevo-trademark:conflict-review` | New filings near your watched names, ranked by consequence — with your sign-in |
-| `/antevo-trademark:holder-investigation` | Who is behind a holder: the free register read, then a cited web dossier for a credit, asked first |
+| `/antevo-trademark:holder-investigation` | Who is behind a holder: the register read first, then a cited web dossier that uses a credit, asked first |
 | **antevo-wealth** | *your account* |
 | `/antevo-wealth:record-holdings` | Records what you already hold, from a statement or a list, after you approve each plan |
 | `/antevo-wealth:advisor-meeting-prep` | Before you meet your banker: your book with that bank, what needs attention, the questions to ask |
@@ -155,7 +155,7 @@ All four are listed in the official [MCP Registry](https://registry.modelcontext
 
 ### What does the Executive connection cover?
 
-The Antevo Executive Brief is a daily editorial read on markets and world events. The connection serves today's brief and the dated archive behind it, the risk radar with each risk's trend, impact and probability *as the desk graded them*, the forward calendar, a market snapshot and indices, fourteen per-sector desk reads, a world-events map in nine layers, and about 80,000 macro-economic reference series for roughly 180 countries. No account, no personal data.
+The Antevo Executive Brief is a daily editorial read on markets and world events. The connection serves today's brief and the dated archive behind it, the risk radar with each risk's trend, impact and probability *as the desk graded them*, the forward calendar, a market snapshot and indices, fourteen per-sector desk reads, a world-events map in eight layers, and about 80,000 macro-economic reference series for roughly 180 countries. No account, no personal data.
 
 ### How does trademark screening work?
 

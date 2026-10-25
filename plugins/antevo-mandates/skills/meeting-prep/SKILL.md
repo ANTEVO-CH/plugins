@@ -36,10 +36,12 @@ One page to walk in with.
 | Recent correspondence and its flags | `get_email_messages(client_id=client_id)` |
 | The full generated brief | `generate_meeting_brief(client_id)` — **uses credits** |
 
-Start from the dossier, goals and correspondence: they are free and usually
-enough. `generate_meeting_brief` builds an eleven-section brief and **consumes
-credits** — offer it, say that it costs credits, and call it only on a yes. If it
-answers that the service is not available, carry on from the dossier.
+Start from the dossier, goals and correspondence: they use no credits and are
+usually enough. `generate_meeting_brief` builds an eleven-section brief and
+**consumes credits** — offer it, say that it uses credits, and call it only on a
+yes. If it answers that the service is not available, say so once and carry on
+from the dossier. Do not retry, and do not look for a `get_client_notes` tool:
+that message names one, and this connector does not have it.
 
 ## Step 2 — Compose
 - **Lead with what changed or is open**: a review that is due, a goal behind

@@ -37,8 +37,9 @@ Each row carries `confirmed`, `total`, `completion_pct` and `urgency`.
 - **A client with `total` = 0 has no checklist at all.** The connector marks that
   row LOW, which reads as "fine". It is the opposite: nothing has been started.
   **Report these separately as "not started"** and never as low urgency.
-- The scan covers **active clients**, at most 50, least complete first. If 50
-  come back, say more may exist.
+- The scan covers **active clients** the user's sign-in can see, at most 50,
+  fewest confirmed items first — not lowest percentage first, so re-sort by
+  `completion_pct` yourself. If 50 come back, say more may exist.
 
 ## Step 3 — Output
 ```

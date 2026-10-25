@@ -12,9 +12,9 @@ description: >-
 compatibility: >-
   Requires the Antevo Trademark connector and an Antevo sign-in, which the
   connector asks for when a personal tool is first used (a token from
-  antevo.ch/trademark → Settings → Connect your AI also works). If the personal
-  tools still return "unauthenticated", say so and stop — do not fall back to
-  public screening and present it as their watchlist.
+  antevo.ch/trademark → Settings → Connect your AI assistant also works). If the
+  personal tools still return "unauthenticated", say so and stop — do not fall
+  back to public screening and present it as their watchlist.
 ---
 
 # Antevo — Conflict review
