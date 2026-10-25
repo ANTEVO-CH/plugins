@@ -1,6 +1,6 @@
 {
   "name": "antevo-executive",
-  "description": "The Antevo Executive Brief in your assistant — editorial market and world intelligence, the risk radar, sector-by-sector desk reads, a world-events map down to shipping chokepoints and submarine cables, and a century of reference economics for ~180 countries. No account required.",
+  "description": "The Antevo Executive Brief in your assistant — editorial market and world intelligence, the risk radar, sector-by-sector desk reads, a world-events map of shipping chokepoints, conflicts and disasters, and a century of reference economics for ~180 countries. No account required.",
   "version": "0.4.0",
   "author": {
     "name": "Antevo",
@@ -26,7 +26,6 @@
     "probability",
     "risk",
     "risk-radar",
-    "shipping",
-    "submarine-cables"
+    "shipping"
   ]
 }

@@ -2,6 +2,26 @@
 
 All notable changes to the Antevo plugins are documented here.
 
+## 2026-10-25 — Executive, Trademark and Mandates ready for the Claude directory
+
+- **READMEs and listing icons.** `antevo-executive`, `antevo-trademark` and
+  `antevo-mandates` each get a README.md in the plugin folder, saying what the
+  plugin does and what it sends where, and the Antevo mark as
+  `.claude-plugin/icon.png`, as `antevo-wealth` has.
+- **`antevo-executive` world-map** no longer offers a `submarine_cables` layer.
+  The connector withholds it (`layers_withheld`); the skill now lists the eight
+  layers it serves, marks `disasters` and `displacement` as opt-in, and reads
+  `layers_withheld`. The manifest description and keywords drop submarine cables.
+- **`antevo-trademark` holder-investigation** no longer calls `buy_credits`,
+  which the connector does not list. Credits are added on the Antevo desk
+  (Settings → Investigation credits), never in the conversation.
+- **`antevo-mandates`.** meeting-prep says once that the generated brief is not
+  available when the connector says so, and does not chase the `get_client_notes`
+  tool its message names. reviews-due and succession-scan say the lists cover the
+  clients the sign-in can see; succession-scan re-sorts by completion.
+- **README:** the Trademark connection lists 16 tools, as `tools/list` returns.
+- Versions are unchanged here: the bump waits for the open marketplace.json change.
+
 ## 2026-10-10 — Wealth 0.6.0: recording holdings, meeting prep, current tool names
 
 - **`antevo-wealth` 0.6.0**

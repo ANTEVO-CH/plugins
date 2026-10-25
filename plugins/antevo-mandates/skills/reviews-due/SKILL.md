@@ -41,8 +41,8 @@ Each row carries `next_review_date`, `last_reviewed_at`, `days_until_due` and
 - **Overdue first** (`days_until_due` below zero), most overdue at the top.
 - Then **due within 30 days**, higher `risk_tier` before lower, soonest first.
 - Then the rest.
-- The list holds **active clients with a scheduled date** only, and at most 50
-  of them, soonest first. If 50 come back, say more may exist. A client with no
+- The list holds **active clients with a scheduled date** only, among those the
+  user's sign-in can see, and at most 50 of them, soonest first. If 50 come back, say more may exist. A client with no
   review date will not appear here; say that, rather than implying the book is
   complete.
 
