@@ -2,6 +2,20 @@
 
 All notable changes to the Antevo plugins are documented here.
 
+## 2026-10-27 — Wealth 0.6.1
+
+- **`antevo-wealth` market-signals-period** no longer calls
+  `get_correlations(window=…)`: the tool takes only `effect_type` and `limit`,
+  so the skill reads correlations as the current read and does not describe a
+  shift over the window unless the response dates one. The per-instrument history
+  row names `run_technical_analysis(identifier=…, history_days=…)` instead of an
+  unnamed tool.
+- **READMEs and SECURITY.md:** Trademark's eleven sign-in tools use OAuth 2.1
+  like Wealth and Mandates, and four of them change the signed-in user's records.
+  Mandates can also assign a team member and create a time-limited share link to
+  a document, which is confirm-gated. Tool counts unchanged (Executive 15,
+  Trademark 16, Wealth 38, Mandates 24, from `tools/list`).
+
 ## 2026-10-26 — Executive 0.4.1, Trademark 0.5.1, Mandates 0.1.2
 
 - **`antevo-executive`** lists as "Antevo Executive Brief" (`displayName`), the

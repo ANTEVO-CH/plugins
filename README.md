@@ -13,7 +13,7 @@
 ### Why Antevo
 
 - **A named desk, not a web search.** Answers come from Antevo's published Executive Brief and its dated archive, from the trademark registers themselves, and — when you sign in — from your own record. The assistant says where a read came from and when.
-- **Public where it can be, permissioned where it matters.** Executive and trademark screening need no account and reach no personal data. Wealth and Mandates sign in over OAuth 2.1; your account's own permissions apply.
+- **Public where it can be, permissioned where it matters.** Executive and trademark screening need no account and reach no personal data. Wealth, Mandates and Trademark's watchlist and investigations sign in over OAuth 2.1; your account's own permissions apply.
 - **Intelligence, not advice.** The skills hold the line: no invented probabilities, no "clear to use", no buy or sell dressed up as a signal.
 
 ## Who this is for
@@ -141,7 +141,7 @@ All four are listed in the official [MCP Registry](https://registry.modelcontext
 | `/antevo-wealth:portfolio-stress-radar` | Where you could get hurt — a shock traced through concentration, risk, leverage and liquidity |
 | `/antevo-wealth:concentration-and-drift` | Concentration by name, class, currency and region, and drift against target |
 | `/antevo-wealth:liquidity-and-leverage` | What can be raised in days, weeks or months, and the headroom to covenant triggers |
-| `/antevo-wealth:market-signals-period` | What trended over a window, what's new, how correlations shifted |
+| `/antevo-wealth:market-signals-period` | What trended over a window, what's new, where correlations stand |
 | `/antevo-wealth:security-analysis` | One instrument through both lenses — fundamentals and technicals |
 | `/antevo-wealth:geopolitical-risk` | The world's risks tied to your exposure |
 | `/antevo-wealth:watchlist-review` | Your tracked instruments, what moved and why |
@@ -167,7 +167,7 @@ Only the household your Antevo Wealth sign-in can see — positions and accounts
 
 ### What can the Mandates connection change?
 
-Mandates reaches the signed-in member's own firm. It reads clients, dossiers, reviews, goals, team, documents and client email, and it can also change records in that book: record a review, update a client, set a goal, manage a document. Irreversible actions return a plan first and run only when called again with confirmation, and the skills ask before any change. Access is by arrangement with Antevo.
+Mandates reaches the signed-in member's own firm. It reads clients, dossiers, reviews, goals, team, documents and client email, and it can also change records in that book: record a review, update a client, assign a team member, set a goal, manage a document, create a time-limited share link to a document. Converting a prospect, deleting a document and creating a share link return a plan first and run only when called again with confirmation, and the skills ask before any change. Access is by arrangement with Antevo.
 
 ## Compared to asking a chatbot to search
 
@@ -283,7 +283,7 @@ To revoke a connection's access to your account, sign out of the connector in yo
 
 ## Security and privacy
 
-- **OAuth 2.1 with PKCE** for Wealth and Mandates. Your assistant receives a scoped, short-lived token — never your password.
+- **OAuth 2.1 with PKCE** for Wealth, Mandates and Trademark's signed-in tools. Your assistant receives a scoped, short-lived token — never your password.
 - **Your chosen AI service receives the information a connection returns**, under that service's own terms.
 - **Nothing here trades or moves money.**
 - **Hosted in Switzerland.**

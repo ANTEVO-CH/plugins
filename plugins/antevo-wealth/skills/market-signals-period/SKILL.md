@@ -6,9 +6,9 @@ description: >-
   weeks/months", "what's trended / changed lately", "summarise the signals across
   [period]", "what's been moving", "how have correlations shifted", or "give me a
   read on the period". Pulls recent signals and results over a chosen look-back
-  (days), the correlation regime, and per-instrument history, then writes a period
-  narrative: what trended, what's new, what rolled off, and which correlations
-  changed. Orchestrates the Antevo Wealth MCP connector (markets.alt_indices). Read-only.
+  (days), the current correlation read, and per-instrument history, then writes a
+  period narrative: what trended, what's new, what rolled off, and where
+  correlations stand. Orchestrates the Antevo Wealth MCP connector (markets.alt_indices). Read-only.
 compatibility: >-
   Requires the Antevo Wealth MCP connector. If the Antevo Wealth tools are not available, tell
   the user to connect Antevo Wealth in their assistant's connector settings, then stop.
@@ -22,8 +22,11 @@ means** — not a table dump.
 
 ## Scope & honesty
 - **What's backable now:** the **alt-index / market-signal** stream supports a
-  look-back window (days, up to ~365) plus per-instrument history and a correlation
-  window. That's the real "over a period" data today.
+  look-back window (days, up to ~365) plus per-instrument history. That's the real
+  "over a period" data today.
+- **Correlations have no look-back.** `get_correlations` takes only `effect_type`
+  and `limit`: it is the current read, not a series. Say so; don't describe a
+  shift over the window unless the response itself dates one.
 - **What's not yet:** a *portfolio/household* time series (net-worth trajectory,
   risk-radar across 6 months, drawdown/VaR history) is **not** exposed as a
   connector tool yet. If the user asks for those, say so plainly and offer the
@@ -38,15 +41,15 @@ means** — not a table dump.
 |-----------|---------|
 | Signals over the window | `get_signals_recent(days_back=…)` |
 | Results / index moves over the window | `get_recent_results(days_back=…)` |
-| Correlation regime | `get_correlations(window=…)` |
-| Per-instrument trajectory | the per-instrument history tool, for names the user names |
+| Correlation regime (current read) | `get_correlations()` — optional `effect_type`; no window argument |
+| Per-instrument trajectory | `run_technical_analysis(identifier=…, history_days=…)`, for names the user names |
 
 Call `list_capabilities` first if unsure which alt-index tools/params are live.
 
 ## Step 2 — Analyse
 - **What trended.** The strongest sustained moves over the window — direction, magnitude, and whether they're building or fading.
 - **What's new vs rolled off.** Signals that appeared this period vs ones that decayed out — change is the insight.
-- **Correlation shifts.** Pairs/clusters whose correlation rose or broke down — a regime tell (e.g. risk-on → everything correlates).
+- **Correlation regime.** Which pairs/clusters are tightly or loosely correlated now — a regime tell (e.g. risk-on → everything correlates). Call it a shift only if the response dates an earlier reading.
 - **So-what.** For each, one line on why it matters to an investor; if the user named holdings/themes, tie the period moves to those.
 
 ## Step 3 — Output
@@ -62,7 +65,7 @@ Call `list_capabilities` first if unsure which alt-index tools/params are live.
 - New: {…}   ·   Faded: {…}
 
 ## Correlation regime
-- {pairs/clusters that shifted}; {what it implies}
+- {pairs/clusters tight or loose now}; {what it implies}
 
 ## Watch into next period
 - {1–3 forward items tied to the above}
