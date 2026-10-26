@@ -4,6 +4,9 @@ All notable changes to the Antevo plugins are documented here.
 
 ## 2026-10-26 — Executive 0.4.1, Trademark 0.5.1, Mandates 0.1.2
 
+- **`antevo-executive`** lists as "Antevo Executive Brief" (`displayName`), the
+  name of the connector it pairs with.
+
 - Version bumps for the 2026-10-25 changes below (READMEs, listing icons, skill
   fixes), now that the marketplace.json copy change has landed.
 - **`antevo-executive`** marketplace description no longer lists cables: the
