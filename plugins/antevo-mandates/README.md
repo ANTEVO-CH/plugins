@@ -24,7 +24,7 @@ An Antevo Mandates firm account. Mandates is available by arrangement with Antev
 - Claude calls the connector's tools with what a question needs, such as a client's name or ID and, when you ask it to record a review, the note to file. They go to Antevo's server at api.antevo.ch, which answers from your own firm's book only.
 - Answers can include client details from that book: profile and AUM, review dates, goals, the assigned team, documents, and client email with its summary and compliance flags. Your AI provider receives what the connector returns, under that provider's own terms.
 - Sign-in uses OAuth 2.1 with your Antevo account. Claude holds a token for that connection; you can disconnect it at any time in Claude's connector settings.
-- The connector can change records in your firm's own book: record a review, update a client, add a goal, file a document. An irreversible action returns a plan first and runs only when it is called again with confirmation, and the skills ask before any change. A read-only sign-in refuses changes. It cannot place a trade or move money.
+- The connector can change records in your firm's own book: record a review, update a client, assign a team member, add a goal, file a document, or create a share link to a document that anyone holding it can download, for up to 30 days. Converting a prospect, deleting a document or creating a share link returns a plan first and runs only when it is called again with confirmation, and the skills ask before any change. A read-only sign-in refuses changes. It cannot place a trade or move money.
 - Generating a full meeting brief uses credits; the meeting-prep skill asks first.
 - The plugin sends nothing anywhere else.
 

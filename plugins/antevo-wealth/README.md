@@ -22,7 +22,7 @@ An Antevo Wealth account. You sign in with it the first time Claude uses the con
 | `portfolio-stress-radar` | Where you could get hurt, traced through concentration, risk, leverage and liquidity |
 | `concentration-and-drift` | Concentration by name, class, currency and region, and drift against target |
 | `liquidity-and-leverage` | What can be raised in days, weeks or months, and the headroom to covenant triggers |
-| `market-signals-period` | What trended over a window, what's new, how correlations shifted |
+| `market-signals-period` | What trended over a window, what's new, where correlations stand |
 | `security-analysis` | One instrument through both lenses: fundamentals and technicals |
 | `geopolitical-risk` | The world's risks tied to your exposure |
 | `watchlist-review` | Your tracked instruments, what moved and why |
