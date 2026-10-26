@@ -1,5 +1,6 @@
 {
   "name": "antevo-executive",
+  "displayName": "Antevo Executive Brief",
   "description": "The Antevo Executive Brief in your assistant — editorial market and world intelligence, the risk radar, sector-by-sector desk reads, a world-events map of shipping chokepoints, conflicts and disasters, and a century of reference economics for ~180 countries. No account required.",
   "version": "0.4.1",
   "author": {
