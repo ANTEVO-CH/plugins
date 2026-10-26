@@ -2,6 +2,13 @@
 
 All notable changes to the Antevo plugins are documented here.
 
+## 2026-10-26 — Executive 0.4.1, Trademark 0.5.1, Mandates 0.1.2
+
+- Version bumps for the 2026-10-25 changes below (READMEs, listing icons, skill
+  fixes), now that the marketplace.json copy change has landed.
+- **`antevo-executive`** marketplace description no longer lists cables: the
+  connector withholds the submarine-cables layer.
+
 ## 2026-10-25 — Executive, Trademark and Mandates ready for the Claude directory
 
 - **READMEs and listing icons.** `antevo-executive`, `antevo-trademark` and
@@ -20,7 +27,7 @@ All notable changes to the Antevo plugins are documented here.
   tool its message names. reviews-due and succession-scan say the lists cover the
   clients the sign-in can see; succession-scan re-sorts by completion.
 - **README:** the Trademark connection lists 16 tools, as `tools/list` returns.
-- Versions are unchanged here: the bump waits for the open marketplace.json change.
+- Versions were bumped on 2026-10-26, after the open marketplace.json change landed.
 
 ## 2026-10-10 — Wealth 0.6.0: recording holdings, meeting prep, current tool names
 
