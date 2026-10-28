@@ -2,6 +2,13 @@
 
 All notable changes to the Antevo plugins are documented here.
 
+## 2026-10-28 — Tremor Watch 0.1.0
+
+- **`antevo-tremor-watch`**, new: the weekly Antevo Tremor Index
+  (`https://api.antevo.ch/mcp/tremor/mcp`, public, four read-only tools) with three
+  skills: `market-strain`, `what-broke` and `episode-compare`. Descriptive, not a
+  forecast; the skills cite the week and add no price levels.
+
 ## 2026-10-27 — Wealth 0.6.1
 
 - **`antevo-wealth` market-signals-period** no longer calls

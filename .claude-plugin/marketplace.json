@@ -5,7 +5,7 @@
     "url": "https://antevo.ch"
   },
   "metadata": {
-    "description": "Antevo plugins for Claude — connect your wealth or your firm's client book, and read the Executive Brief and the trademark registers, through purpose-built skills.",
+    "description": "Antevo plugins for Claude — connect your wealth or your firm's client book, and read the Executive Brief, the weekly Tremor index and the trademark registers, through purpose-built skills.",
     "pluginRoot": "./plugins"
   },
   "plugins": [
@@ -42,6 +42,24 @@
         "macro",
         "economics",
         "shipping"
+      ],
+      "author": {
+        "name": "Antevo",
+        "url": "https://antevo.ch"
+      }
+    },
+    {
+      "name": "antevo-tremor-watch",
+      "source": "./antevo-tremor-watch",
+      "description": "The Antevo Tremor Index in Claude — every week, how many of 753 relationships between markets stopped behaving, against a normal Friday since 2001; the families where the breaks gather, the new breaks of the last four weeks, any week's pairs, and every reading since 1997. Descriptive, not a forecast. No account required.",
+      "version": "0.1.0",
+      "category": "finance",
+      "tags": [
+        "markets",
+        "market-stress",
+        "correlation",
+        "cross-asset",
+        "mcp"
       ],
       "author": {
         "name": "Antevo",

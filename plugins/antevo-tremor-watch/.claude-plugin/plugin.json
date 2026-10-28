@@ -1,0 +1,25 @@
+{
+  "name": "antevo-tremor-watch",
+  "displayName": "Antevo Tremor Watch",
+  "description": "The Antevo Tremor Index in your assistant — every week, how many of 753 relationships between markets stopped behaving, against a normal Friday since 2001; the families where the breaks gather, the new breaks of the last four weeks, any week's pairs, and every reading since 1997. Descriptive, not a forecast. No account required.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Antevo",
+    "url": "https://antevo.ch",
+    "email": "contact@antevo.ch"
+  },
+  "homepage": "https://antevo.ch/tremor-watch/",
+  "repository": "https://github.com/ANTEVO-CH/plugins",
+  "license": "UNLICENSED",
+  "keywords": [
+    "correlation",
+    "cross-asset",
+    "diversification",
+    "macro",
+    "market-stress",
+    "markets",
+    "mcp",
+    "regime",
+    "risk"
+  ]
+}
