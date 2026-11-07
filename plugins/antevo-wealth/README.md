@@ -1,6 +1,6 @@
 # Antevo Wealth for Claude
 
-Ask Claude about your own wealth, held in your Antevo Wealth account: net worth across accounts, real assets and liabilities; positions, allocation and concentration; today's brief for your household; risk, drift and stress; credit, goals and your calendar. Tell Claude what you hold and it can record it for you, after you approve each change.
+Ask Claude about your own wealth, held in your Antevo Wealth account: net worth across accounts, real assets and liabilities; positions, allocation and concentration; today's brief for your household; risk, drift and stress; credit, goals, your calendar and how ready your succession plan is. Tell Claude what you hold and it can record it for you, after you approve each change.
 
 Every answer is dated and names its source. This is information, not investment, tax or legal advice.
 
@@ -11,7 +11,7 @@ An Antevo Wealth account. You sign in with it the first time Claude uses the con
 ## What this plugin contains
 
 - **One remote connector**: `https://api.antevo.ch/mcp/wealth/mcp`, run by Antevo. Nothing runs on your computer: no local server, no hooks, no scripts.
-- **Twelve skills** that teach Claude how to use the connector well:
+- **Thirteen skills** that teach Claude how to use the connector well:
 
 | Skill | What it does |
 |-------|--------------|
@@ -27,11 +27,13 @@ An Antevo Wealth account. You sign in with it the first time Claude uses the con
 | `geopolitical-risk` | The world's risks tied to your exposure |
 | `watchlist-review` | Your tracked instruments, what moved and why |
 | `goals-review` | Funding progress against targets, and the gap to plan |
+| `succession-readiness` | If something happened to you tomorrow, what's missing: the readiness band, the first three gaps, who to involve |
 
 ## What it sends, and where
 
 - Claude calls the connector's tools with the arguments a question needs, such as a household, a portfolio, a country or a security. The connector answers from your own household's data only.
 - Sign-in uses OAuth 2.1 with your Antevo account. Claude holds a token for that connection; you can disconnect it at any time in Antevo Wealth under Settings, Agent Access.
+- The two succession tools return your household's readiness and checklist status with people as roles (Principal, Child A, Trust 1), never names, and never your checklist notes. The connection asks for this access on its own consent line; a connection made before it existed has to be connected again to include it.
 - Two tools change your records: `create_portfolio` and `add_position`. Each returns a plan first and writes nothing until you say yes. Nothing is ever bought, sold or moved.
 - The plugin sends nothing anywhere else.
 

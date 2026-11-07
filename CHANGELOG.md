@@ -2,6 +2,19 @@
 
 All notable changes to the Antevo plugins are documented here.
 
+## 2026-11-07 — Wealth 0.7.0
+
+- **`antevo-wealth` succession-readiness**, new: answers "if something happened
+  to me tomorrow, what's missing?" from the household's own succession data —
+  the readiness band, the first three gaps, the open Legacy checklist items, the
+  documents to add to the vault, and the kind of professional to involve. Uses
+  the connector's two new read-only tools, `get_succession_readiness` and
+  `get_succession_checklist`, which return people by role, never by name, and
+  never checklist notes. Not legal or tax advice.
+- **README:** thirteen skills; Wealth has 40 tools from `tools/list` once
+  antevo-wealth-api#601 is live. A connection made before the succession scope
+  existed connects again to include it.
+
 ## 2026-10-28 — Tremor Watch 0.1.0
 
 - **`antevo-tremor-watch`**, new: the weekly Antevo Tremor Index

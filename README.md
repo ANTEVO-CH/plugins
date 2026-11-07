@@ -109,7 +109,7 @@ Invoke a skill directly with `/<plugin>:<skill>` — for example `/antevo-execut
 |:--|:--|:--|:--|--:|
 | **I.** | **Executive** — the daily editorial read, risk radar, forward calendar, dated archive, per-sector desk reads, a world-events map and macro-economic history | `https://api.antevo.ch/mcp/executive/mcp` | Public | 15 |
 | **II.** | **Trademark** — screen a name or a shortlist, read a holder's filing pattern, check an opposition window; with a sign-in, your watchlist, conflicts, deadlines and holder investigations | `https://trademark.antevo.ch/mcp` | Public screening; your desk with a sign-in | 16 |
-| **III.** | **Wealth** — your household: holdings, allocation, risk, real assets, liabilities, goals and documents, and recording what you already hold | `https://api.antevo.ch/mcp/wealth/mcp` | Your account | 38 |
+| **III.** | **Wealth** — your household: holdings, allocation, risk, real assets, liabilities, goals, documents and succession readiness, and recording what you already hold | `https://api.antevo.ch/mcp/wealth/mcp` | Your account | 40 |
 | **IV.** | **Mandates** — your firm's client book: clients, reviews, meeting briefs, goals, documents, succession, client email | `https://api.antevo.ch/mcp/mandates/mcp` | By arrangement | 24 |
 | **V.** | **Tremor Watch** — every week, how many of 753 market relationships stopped behaving, against a normal Friday since 2001; the families, the new breaks, any week's pairs and every reading since 1997 | `https://api.antevo.ch/mcp/tremor/mcp` | Public | 4 |
 
@@ -153,6 +153,7 @@ All five are listed in the official [MCP Registry](https://registry.modelcontext
 | `/antevo-wealth:geopolitical-risk` | The world's risks tied to your exposure |
 | `/antevo-wealth:watchlist-review` | Your tracked instruments, what moved and why |
 | `/antevo-wealth:goals-review` | Funding progress against targets, and the gap to plan |
+| `/antevo-wealth:succession-readiness` | If something happened to you tomorrow, what's missing — the readiness band, the first three gaps, who to involve |
 | **antevo-mandates** | *by arrangement* |
 | `/antevo-mandates:reviews-due` | Overdue first, then the next thirty days by risk tier — and a review recorded only on your go |
 | `/antevo-mandates:meeting-prep` | One page to walk in with, from the dossier, goals, team and correspondence |
