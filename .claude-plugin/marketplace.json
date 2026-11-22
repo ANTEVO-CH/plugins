@@ -5,7 +5,7 @@
     "url": "https://antevo.ch"
   },
   "metadata": {
-    "description": "Antevo plugins for Claude — connect your wealth or your firm's client book, and read the Executive Brief, the weekly Tremor index and the trademark registers, through purpose-built skills.",
+    "description": "Antevo plugins for Claude — connect your wealth or your firm's client book, and read the Executive Brief, the weekly Tremor index, the daily business board for companies and the trademark registers, through purpose-built skills.",
     "pluginRoot": "./plugins"
   },
   "plugins": [
@@ -59,6 +59,24 @@
         "market-stress",
         "correlation",
         "cross-asset",
+        "mcp"
+      ],
+      "author": {
+        "name": "Antevo",
+        "url": "https://antevo.ch"
+      }
+    },
+    {
+      "name": "antevo-strategy-radar",
+      "source": "./antevo-strategy-radar",
+      "description": "What changed today for your company's strategy — Antevo's daily business board of risks and opportunities for companies, from trade, regulation, supply, shipping, energy, demand, currencies, funding, labour, technology, cyber, geopolitics and climate, matched to your company in your own assistant. Five short questions, no figures; your answers never reach Antevo. Possible responses with reasons, never advice. No account required.",
+      "version": "0.1.0",
+      "category": "productivity",
+      "tags": [
+        "strategy",
+        "business-risk",
+        "supply-chain",
+        "geopolitics",
         "mcp"
       ],
       "author": {

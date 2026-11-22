@@ -2,6 +2,16 @@
 
 All notable changes to the Antevo plugins are documented here.
 
+## 2026-11-22 — Strategy Radar 0.1.0
+
+- **`antevo-strategy-radar`**, new: Antevo's daily business board of risks and
+  opportunities for companies (`https://api.antevo.ch/mcp/strategy/mcp`, public,
+  two read-only tools) with three skills: `strategy-setup`, `strategy-today` and
+  `board-read`. Five questions become a profile of exposure tags and objectives
+  that stays in the user's assistant; no tool takes company details. Grades stay
+  in words; responses are possible responses with reasons, never advice.
+- **README:** six connections, 35 skills.
+
 ## 2026-11-07 — Wealth 0.7.0
 
 - **`antevo-wealth` succession-readiness**, new: answers "if something happened

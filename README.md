@@ -2,18 +2,18 @@
 
 # Antevo: plugins and MCP connections for Claude and any MCP client
 
-**Antevo brings the world around your wealth into the assistant you already use.** Five connections — the Executive Brief, the weekly Tremor index, trademark registers, your own household and your firm's client book — and 32 skills that know how to read them: dated, attributed, and honest about what they cannot see. Install once in Claude, or point any MCP client at an address.
+**Antevo brings the world around your wealth into the assistant you already use.** Six connections — the Executive Brief, the weekly Tremor index, Strategy Radar's daily business board for companies, trademark registers, your own household and your firm's client book — and 35 skills that know how to read them: dated, attributed, and honest about what they cannot see. Install once in Claude, or point any MCP client at an address.
 
 [![validate](https://github.com/ANTEVO-CH/plugins/actions/workflows/validate.yml/badge.svg)](https://github.com/ANTEVO-CH/plugins/actions/workflows/validate.yml)
 [![MCP Registry](https://img.shields.io/badge/MCP%20Registry-ch.antevo-252c28?labelColor=9b7936)](https://registry.modelcontextprotocol.io/v0/servers?search=ch.antevo)
-[![Claude plugins](https://img.shields.io/badge/Claude-5%20plugins%20%C2%B7%2032%20skills-252c28?labelColor=9b7936)](#skills)
+[![Claude plugins](https://img.shields.io/badge/Claude-6%20plugins%20%C2%B7%2035%20skills-252c28?labelColor=9b7936)](#skills)
 [![npm](https://img.shields.io/npm/v/@antevo/cli?label=%40antevo%2Fcli&color=252c28&labelColor=9b7936)](https://www.npmjs.com/package/@antevo/cli)
 [![Hosted in Switzerland](https://img.shields.io/badge/hosted-Switzerland-252c28?labelColor=9b7936)](https://antevo.ch)
 
 ### Why Antevo
 
 - **A named desk, not a web search.** Answers come from Antevo's published Executive Brief and its dated archive, from the trademark registers themselves, and — when you sign in — from your own record. The assistant says where a read came from and when.
-- **Public where it can be, permissioned where it matters.** Executive, Tremor Watch and trademark screening need no account and reach no personal data. Wealth, Mandates and Trademark's watchlist and investigations sign in over OAuth 2.1; your account's own permissions apply.
+- **Public where it can be, permissioned where it matters.** Executive, Tremor Watch, Strategy Radar and trademark screening need no account and reach no personal data. Wealth, Mandates and Trademark's watchlist and investigations sign in over OAuth 2.1; your account's own permissions apply.
 - **Intelligence, not advice.** The skills hold the line: no invented probabilities, no "clear to use", no buy or sell dressed up as a signal.
 
 ## Who this is for
@@ -21,6 +21,7 @@
 - **Families and private investors.** One question — *"where could I get hurt this week?"* — traced across concentration, risk, leverage and liquidity in your own household, with the market backdrop that explains it.
 - **External asset managers and family offices.** Walk into a client meeting with the dossier, goals, correspondence and the review that is due, prepared from the firm's own record.
 - **Founders, brand owners and counsel.** Screen a name before you launch, read who holds anything close and how they file, and know how long you have to oppose.
+- **Leadership teams and strategy owners.** *"What changed today for our strategy?"* — the day's risks and opportunities for companies, matched to your markets, inputs, routes and objectives in your own assistant, with possible responses and their reasons. Your answers never reach Antevo.
 - **Anyone who follows markets and the world.** The daily editorial read, the risk radar and a century of macro history — no account.
 
 ![How a question travels: your assistant speaks MCP to four Antevo connections, which draw on the Antevo desk and return an answer with the record behind it](assets/connections.svg)
@@ -56,6 +57,7 @@ Add the marketplace once, then install what you need:
 
 /plugin install antevo-executive@antevo    # public — nothing to sign in to
 /plugin install antevo-tremor-watch@antevo # public — nothing to sign in to
+/plugin install antevo-strategy-radar@antevo # public — your answers stay with Claude
 /plugin install antevo-trademark@antevo    # screening public; your watchlist needs a sign-in
 /plugin install antevo-wealth@antevo       # your household — OAuth on first use
 /plugin install antevo-mandates@antevo     # your firm — by arrangement, OAuth on first use
@@ -82,12 +84,13 @@ Source: [ANTEVO-CH/cli](https://github.com/ANTEVO-CH/cli).
 
 ## Quick Start
 
-No account needed for any of these once `antevo-executive`, `antevo-tremor-watch` and `antevo-trademark` are installed:
+No account needed for any of these once `antevo-executive`, `antevo-tremor-watch`, `antevo-strategy-radar` and `antevo-trademark` are installed:
 
 ```text
 What happened in markets today, and what does the desk make of it?
 What could go wrong from here — and what would settle it?
 Are markets under strain this week, and how does it compare with 2008?
+Set up Strategy Radar for my company — what changed today for our strategy?
 Has anyone filed anything close to "Novara"?
 How long do I have to oppose an EU trademark, and from when?
 ```
@@ -112,8 +115,9 @@ Invoke a skill directly with `/<plugin>:<skill>` — for example `/antevo-execut
 | **III.** | **Wealth** — your household: holdings, allocation, risk, real assets, liabilities, goals, documents and succession readiness, and recording what you already hold | `https://api.antevo.ch/mcp/wealth/mcp` | Your account | 40 |
 | **IV.** | **Mandates** — your firm's client book: clients, reviews, meeting briefs, goals, documents, succession, client email | `https://api.antevo.ch/mcp/mandates/mcp` | By arrangement | 24 |
 | **V.** | **Tremor Watch** — every week, how many of 753 market relationships stopped behaving, against a normal Friday since 2001; the families, the new breaks, any week's pairs and every reading since 1997 | `https://api.antevo.ch/mcp/tremor/mcp` | Public | 4 |
+| **VI.** | **Strategy Radar** — every morning, the business board of risks and opportunities for companies, with impact, likelihood and trend in words, what to watch and possible responses; matched to your company in your assistant, never at Antevo | `https://api.antevo.ch/mcp/strategy/mcp` | Public | 2 |
 
-All five are listed in the official [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=ch.antevo) under `ch.antevo`. Tool counts are read live from each server's `tools/list`.
+All six are listed in the official [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=ch.antevo) under `ch.antevo`. Tool counts are read live from each server's `tools/list`.
 
 ## Skills
 
@@ -135,6 +139,10 @@ All five are listed in the official [MCP Registry](https://registry.modelcontext
 | `/antevo-tremor-watch:market-strain` | This week's Tremor index — how many times a normal Friday, its status and rank, and where the breaks gather |
 | `/antevo-tremor-watch:what-broke` | The market relationships that stopped behaving — coming apart or moving closer — and what is newly broken |
 | `/antevo-tremor-watch:episode-compare` | This week against 2008, 2020 or any period since 1997 |
+| **antevo-strategy-radar** | *public* |
+| `/antevo-strategy-radar:strategy-setup` | Five questions, no figures, become your company profile — kept in your assistant, never sent to Antevo — then today's board matched to it |
+| `/antevo-strategy-radar:strategy-today` | What changed for your strategy today: linked risks and opportunities by impact, each tied to the objective it touches, with possible responses and their reasons |
+| `/antevo-strategy-radar:board-read` | The whole business board, today's or any morning in the last 400 days, by theme or exposure, or two mornings compared |
 | **antevo-trademark** | *screening public* |
 | `/antevo-trademark:clearance-check` | What is on the registers near a name, and who holds it — never a clearance |
 | `/antevo-trademark:opposition-deadline` | How long there is to oppose in a given office, what starts the clock, and the provision |
@@ -257,6 +265,7 @@ Verbatim excerpts from the live public connections on 14 September 2026, trimmed
 
 ## What's New
 
+- **22 November 2026 — Strategy Radar.** `antevo-strategy-radar` 0.1.0 (strategy-setup, strategy-today, board-read): the daily business board for companies, matched to your company in your own assistant. Public, two read-only tools.
 - **15 September 2026 — Crypto withdrawn.** The public Crypto connection and `antevo-crypto` are no longer offered.
 - **14 September 2026 — Crypto and Mandates.** `antevo-crypto` 0.1.0 (price-check, crypto-performance, technical-read) and `antevo-mandates` 0.1.0 (reviews-due, meeting-prep, succession-scan), both listed in the MCP Registry the same day.
 - **`antevo-wealth` 0.5.2.** Technical analysis and the watchlist say how indicators lean, never buy or sell.
@@ -314,7 +323,7 @@ Antevo connects developments in the world to the things you own, manage and prot
 
 ### Do I need an account?
 
-Not for Executive or trademark screening. Wealth needs an Antevo Wealth account; Mandates needs a firm account, by arrangement.
+Not for Executive, Tremor Watch, Strategy Radar or trademark screening. Wealth needs an Antevo Wealth account; Mandates needs a firm account, by arrangement.
 
 ### Does Antevo give investment advice?
 
