@@ -1,0 +1,22 @@
+{
+  "name": "antevo-guard",
+  "description": "Check a company before you pay it — the company register, VAT validation, its LEI, and the website and email domain an invoice came from, each finding with its source and date. With an Antevo sign-in, keep a payee book that is re-read for changes, check an invoice or a change-of-bank-details letter, and watch for lookalikes of your own company name. It never takes a bank account number and never says whether to pay.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Antevo",
+    "url": "https://antevo.ch",
+    "email": "contact@antevo.ch"
+  },
+  "homepage": "https://antevo.ch/guard",
+  "repository": "https://github.com/ANTEVO-CH/plugins",
+  "license": "UNLICENSED",
+  "keywords": [
+    "invoice-fraud",
+    "payee-check",
+    "payments",
+    "lookalike-domains",
+    "mcp",
+    "vat",
+    "company-register"
+  ]
+}
