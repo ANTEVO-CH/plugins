@@ -2,7 +2,7 @@
 
 # Antevo: plugins and MCP connections for Claude and any MCP client
 
-**Antevo brings the world around your wealth into the assistant you already use.** Six connections — the Executive Brief, the weekly Tremor index, Strategy Radar's daily business board for companies, trademark registers, your own household and your firm's client book — and 35 skills that know how to read them: dated, attributed, and honest about what they cannot see. Install once in Claude, or point any MCP client at an address.
+**Antevo brings the world around your wealth into the assistant you already use.** Seven connections — the Executive Brief, the weekly Tremor index, Strategy Radar's daily business board for companies, Antevo's research desks, trademark registers, your own household and your firm's client book — and 38 skills that know how to read them: dated, attributed, and honest about what they cannot see. Install once in Claude, or point any MCP client at an address.
 
 [![validate](https://github.com/ANTEVO-CH/plugins/actions/workflows/validate.yml/badge.svg)](https://github.com/ANTEVO-CH/plugins/actions/workflows/validate.yml)
 [![MCP Registry](https://img.shields.io/badge/MCP%20Registry-ch.antevo-252c28?labelColor=9b7936)](https://registry.modelcontextprotocol.io/v0/servers?search=ch.antevo)
@@ -59,6 +59,7 @@ Add the marketplace once, then install what you need:
 /plugin install antevo-tremor-watch@antevo # public — nothing to sign in to
 /plugin install antevo-strategy-radar@antevo # public — your answers stay with Claude
 /plugin install antevo-trademark@antevo    # screening public; your watchlist needs a sign-in
+/plugin install antevo-research@antevo     # research desks — any Antevo account, OAuth on first use
 /plugin install antevo-wealth@antevo       # your household — OAuth on first use
 /plugin install antevo-mandates@antevo     # your firm — by arrangement, OAuth on first use
 ```
@@ -95,9 +96,10 @@ Has anyone filed anything close to "Novara"?
 How long do I have to oppose an EU trademark, and from when?
 ```
 
-With `antevo-wealth` or `antevo-mandates` and your sign-in:
+With `antevo-research`, `antevo-wealth` or `antevo-mandates` and your sign-in:
 
 ```text
+What does the rates desk make of the next SNB decision?
 What's my brief today?
 Where could I get hurt this week?
 Which clients are due a review this month?
@@ -116,8 +118,9 @@ Invoke a skill directly with `/<plugin>:<skill>` — for example `/antevo-execut
 | **IV.** | **Mandates** — your firm's client book: clients, reviews, meeting briefs, goals, documents, succession, client email | `https://api.antevo.ch/mcp/mandates/mcp` | By arrangement | 24 |
 | **V.** | **Tremor Watch** — every week, how many of 753 market relationships stopped behaving, against a normal Friday since 2001; the families, the new breaks, any week's pairs and every reading since 1997 | `https://api.antevo.ch/mcp/tremor/mcp` | Public | 4 |
 | **VI.** | **Strategy Radar** — every morning, the business board of risks and opportunities for companies, with impact, likelihood and trend in words, what to watch and possible responses; matched to your company in your assistant, never at Antevo | `https://api.antevo.ch/mcp/strategy/mcp` | Public | 2 |
+| **VII.** | **Research** — put a question to one of eighteen research desks, from the economy and geopolitics to equities, results, ETFs and the Swiss market, and get the desk's written answer with every fact dated; research, never advice | `https://api.antevo.ch/mcp/research/mcp` | Any Antevo account | 1 |
 
-All six are listed in the official [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=ch.antevo) under `ch.antevo`. Tool counts are read live from each server's `tools/list`.
+All seven are listed in the official [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=ch.antevo) under `ch.antevo`. Tool counts are read live from each server's `tools/list`.
 
 ## Skills
 
@@ -143,6 +146,10 @@ All six are listed in the official [MCP Registry](https://registry.modelcontextp
 | `/antevo-strategy-radar:strategy-setup` | Five questions, no figures, become your company profile — kept in your assistant, never sent to Antevo — then today's board matched to it |
 | `/antevo-strategy-radar:strategy-today` | What changed for your strategy today: linked risks and opportunities by impact, each tied to the objective it touches, with possible responses and their reasons |
 | `/antevo-strategy-radar:board-read` | The whole business board, today's or any morning in the last 400 days, by theme or exposure, or two mornings compared |
+| **antevo-research** | *any Antevo account* |
+| `/antevo-research:ask-a-desk` | One question to the desk that covers it, with the answer's dates and how recent its reading is |
+| `/antevo-research:joined-up-view` | A question across two or three desks, or the strategy desk, side by side: where they agree and where they differ |
+| `/antevo-research:company-read` | A listed company across the equities, results and, on request, technical desks — never a rating or advice |
 | **antevo-trademark** | *screening public* |
 | `/antevo-trademark:clearance-check` | What is on the registers near a name, and who holds it — never a clearance |
 | `/antevo-trademark:opposition-deadline` | How long there is to oppose in a given office, what starts the clock, and the provision |

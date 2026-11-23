@@ -2,6 +2,16 @@
 
 All notable changes to the Antevo plugins are documented here.
 
+## 2026-11-23 — Research 0.1.0
+
+- **`antevo-research`**, new: Antevo's research desks
+  (`https://api.antevo.ch/mcp/research/mcp`, any Antevo account, one read-only
+  tool, `ask_desk`) with three skills: `ask-a-desk`, `joined-up-view` and
+  `company-read`. Answers are quoted as Antevo's view with their dates; never a
+  recommendation, rating, price target or expected price level; no outlets or
+  research houses named.
+- **README:** seven connections, 38 skills.
+
 ## 2026-11-22 — Strategy Radar 0.1.0
 
 - **`antevo-strategy-radar`**, new: Antevo's daily business board of risks and
