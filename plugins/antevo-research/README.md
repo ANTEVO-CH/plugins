@@ -1,3 +1,5 @@
+![Antevo Research: a question is typed and the research desk that answers it lights up among eighteen desks](../../assets/research.svg)
+
 # Antevo Research
 
 Antevo's research desks in Claude. Put a question to one of eighteen desks and
