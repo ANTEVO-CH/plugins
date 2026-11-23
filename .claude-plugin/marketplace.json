@@ -119,6 +119,25 @@
         "name": "Antevo",
         "url": "https://antevo.ch"
       }
+    },
+    {
+      "name": "antevo-research",
+      "source": "./antevo-research",
+      "description": "Antevo's research desks in Claude: put a question to one of eighteen desks (economy, geopolitics, shipping, real estate, strategy, commodities, markets, technology, digital assets, health, rates, mortgages, equities, technical, ETFs, results, the Swiss market, private markets) and get the desk's own written answer, built from the research it reads every day, with every fact dated. Signs in with any Antevo account over OAuth. Editorial research, never advice to buy, sell or hold.",
+      "version": "0.1.0",
+      "category": "finance",
+      "tags": [
+        "research",
+        "markets",
+        "economy",
+        "geopolitics",
+        "equities",
+        "mcp"
+      ],
+      "author": {
+        "name": "Antevo",
+        "url": "https://antevo.ch"
+      }
     }
   ]
 }
