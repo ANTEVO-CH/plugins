@@ -43,6 +43,7 @@ The plugins connect seven of them directly; `antevo-build` connects eight at onc
 **We build the intelligence. You build what's next.** `antevo-build` connects eight engines in one install and adds builds on top of them. Each build is a recipe, an example from a real run and a skill:
 
 - **Startup Launch Intelligence** (`startup-launch`): tries your names until one is clear, lists the steps to register it with the official links, and plans the first 90 days. [antevo.ch/mcp/build/startup-launch](https://antevo.ch/mcp/build/startup-launch/)
+- **Fintech Launch** (`fintech-launch`): plans a Swiss fintech from the name to Germany: the licence route read on FINMA's own pages, rates and the funding window, the strategy in one paragraph, four stages with a gate for each, risks with their triggers and what to measure. [antevo.ch/mcp/build/fintech-launch](https://antevo.ch/mcp/build/fintech-launch/)
 - **Company Due Diligence** (`due-diligence`): checks a company before you sign or pay. [antevo.ch/mcp/build/due-diligence](https://antevo.ch/mcp/build/due-diligence/)
 - **Supply Chain Watch** (`supply-chain`): checks a supply route leg by leg before the next order. [antevo.ch/mcp/build/supply-chain](https://antevo.ch/mcp/build/supply-chain/)
 - **M&A Intelligence** (`m-and-a`): maps a niche and reads a shortlist before any approach. [antevo.ch/mcp/build/m-and-a](https://antevo.ch/mcp/build/m-and-a/)
@@ -198,6 +199,7 @@ All seven are listed in the official [MCP Registry](https://registry.modelcontex
 | `/antevo-research:company-read` | A listed company across the equities, results and, on request, technical desks — never a rating or advice |
 | **antevo-build** | *five engines public; Companies, Research and Wealth sign in* |
 | `/antevo-build:startup-launch` | Tries your names until one is clear, the steps to register it with official links, then the market, costs, competition and funding risk — each with a "so what" — and a 90-day plan |
+| `/antevo-build:fintech-launch` | Plans a fintech end to end: the name, the field, the licence route and the rules in the next market, rates, the franc and the funding window, then a twelve-month plan in stages with gates, risks with their triggers, what to measure and the first four weeks with official links |
 | `/antevo-build:due-diligence` | Checks a company before you sign or pay: the register, the sanctions lists, its website and email, what changed lately and which group company signs, then what to settle with the official links and what each finding means |
 | `/antevo-build:supply-chain` | Checks a supply route leg by leg before the next order: the supplier, export rules at the origin, the sea route, the last mile, fuel and freight, then what to settle with the official links and what each finding means |
 | `/antevo-build:m-and-a` | Maps the companies registered in a niche, reads a shortlist one by one (register, notices, brands), lists what to check before a first approach with the official links, and reads the deal climate — financing, currency, demand, market strain |
@@ -346,6 +348,7 @@ Verbatim excerpts from the live public connections on 14 September 2026, trimmed
 
 ## What's New
 
+- **25 November 2026 — Fintech Launch.** `antevo-build` 0.9.0: `fintech-launch` plans a Swiss fintech from the name to Germany, part 2 of the Tirano Pay story; the template gains `thesis`, `plan` (stages with gates), `risks` (with triggers), `kpis` and `next` blocks. Page: [antevo.ch/mcp/build/fintech-launch](https://antevo.ch/mcp/build/fintech-launch/).
 - **25 November 2026 — Six more builds.** `antevo-build` 0.8.0: Portfolio Concentration, Strategy Desk, The Franc Rose, Competitor Watch, Your Own Research Desk and Intelligence Terminal, each with a real run of 25 November 2026; the Wealth connection joins the plugin. Pages: [antevo.ch/mcp/build](https://antevo.ch/mcp/build/).
 - **25 November 2026 — Market Entry.** `antevo-build` 0.7.0: a seventh build, `market-entry`, reads a new country before you open there and lists the steps before the office opens. Page: [antevo.ch/mcp/build/market-entry](https://antevo.ch/mcp/build/market-entry/).
 - **25 November 2026 — Family Office.** `antevo-build` 0.6.0: a sixth build, `family-office`, reads the week against what a family owns and relies on, and lists what to bring to the family meeting. Page: [antevo.ch/mcp/build/family-office](https://antevo.ch/mcp/build/family-office/).

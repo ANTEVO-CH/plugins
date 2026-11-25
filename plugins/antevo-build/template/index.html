@@ -24,19 +24,31 @@
 .ws-road{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.ws-road div{border:1px solid var(--rule);padding:16px}.ws-road b{display:block;color:var(--wine);font-weight:600}
 .source-record{font-size:13px;color:var(--muted);margin-top:30px}
 @media(max-width:760px){.ws-tries,.ws-grid,.ws-road{grid-template-columns:1fr}}
+.ws-thesis{border-left:3px solid var(--wine);padding:4px 0 4px 20px;margin:30px 0 0;max-width:760px}.ws-thesis p:last-child{font-family:var(--serif);font-size:20px;line-height:1.5;margin:0}
+.ws-plan{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.ws-plan>li{border:1px solid var(--rule);padding:18px;display:flex;flex-direction:column;background:#fff8}.ws-plan strong{display:block;font-family:var(--serif);font-weight:400;font-size:24px;line-height:1.15;margin:6px 0 4px}.ws-plan ul{margin:8px 0 12px;padding-left:18px;font-size:14px;color:var(--muted);flex:1}
+.ws-gate{margin:0;padding-top:10px;border-top:1px solid var(--rule);font-size:14px}.ws-gate b,.ws-risks b{font-weight:600;color:var(--wine)}
+.ws-risks{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.ws-risks>div{border:1px solid var(--rule);border-left:4px solid;padding:16px 18px;background:#fff8}.ws-risks strong{display:block;font-family:var(--serif);font-weight:400;font-size:22px;line-height:1.2;margin:0 0 6px}.ws-risks p{margin:0 0 6px;font-size:14px;color:var(--muted)}
+.ws-kpis{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule)}.ws-kpis>div{padding:16px 16px 16px 0;border-bottom:1px solid var(--rule)}.ws-kpis strong{display:block;font-family:var(--serif);font-weight:400;font-size:20px}.ws-kpis p{margin:0;font-size:14px;color:var(--muted)}
+.ws-parts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.ws-parts li{border:1px solid var(--rule);padding:12px;font-family:var(--serif);font-size:18px}.ws-parts li small{display:block;margin-bottom:4px}.ws-parts li.here{border-color:var(--wine)}.ws-parts em{display:block;font-family:var(--sans);font-style:normal;font-size:12px;color:var(--muted)}.ws-parts a{color:var(--wine)}
+@media(max-width:900px){.ws-plan,.ws-kpis{grid-template-columns:repeat(2,1fr)}.ws-parts{grid-template-columns:repeat(3,1fr)}}@media(max-width:760px){.ws-plan,.ws-risks,.ws-kpis{grid-template-columns:1fr}}
 </style></head><body><main id="ws"><p class="essay-note">Loading the workspace…</p></main>
 <script>
 /* Renders any Antevo build workspace (workspace.json). Every block is optional:
    tries (options checked one by one; tries.item names them, default "Try"), steps (next actions with links),
-   sections (finding + so what), links, roadmap, watch. */
+   sections (finding + so what), links, roadmap, watch; and for a full strategy: thesis, plan (stages with gates),
+   risks (with triggers), kpis, next (the parts of a series). */
 (function(){var e=function(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
 var C={red:'#a3412a',green:'#2f7a52',amber:'#9a6a1f',ink:'#2a2622',grey:'#8a847c'};
 var safe=function(u){return /^https:\/\//.test(u)?u:'#'};
 var file=(new URLSearchParams(location.search).get('w')||'workspace.json').replace(/[^a-z0-9._-]/gi,'');
 fetch(file).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(w){var h='';
 h+='<p class="kicker">'+e(w.kind)+' · '+e(w.built)+'</p><h1 class="display">'+e(w.title)+' <br><em>'+e(w.subtitle)+'.</em></h1><p class="essay-note">'+e(w.note)+'</p>';
+if(w.thesis)h+='<div class="ws-thesis"><p class="prompt-group">'+e(w.thesis.label)+'</p><p>'+e(w.thesis.text)+'</p></div>';
 if(w.tries){h+='<p class="prompt-group ws-gap">'+e(w.tries.label)+'</p><div class="ws-tries">'+w.tries.items.map(function(t,i){
  return'<div class="ws-try" style="border-top-color:'+(C[t.level]||C.ink)+'"><small>'+e(w.tries.item||'Try')+' '+(i+1)+'</small><strong>'+e(t.name)+'</strong><span class="ws-verdict" style="color:'+(C[t.level]||C.ink)+'">'+e(t.verdict)+'</span><ul>'+t.evidence.map(function(x){return'<li>'+e(x)+'</li>'}).join('')+'</ul></div>'}).join('')+'</div><p class="ws-src">'+e(w.tries.source)+'</p>'}
+if(w.plan)h+='<p class="prompt-group ws-gap">'+e(w.plan.label)+'</p><ol class="ws-plan">'+w.plan.items.map(function(p,i){return'<li><small>Stage '+(i+1)+' · '+e(p.when)+'</small><strong>'+e(p.title)+'</strong><ul>'+p.do.map(function(x){return'<li>'+e(x)+'</li>'}).join('')+'</ul><p class="ws-gate"><b>Gate:</b> '+e(p.gate)+'</p></li>'}).join('')+'</ol>';
+if(w.risks)h+='<p class="prompt-group ws-gap">'+e(w.risks.label)+'</p><div class="ws-risks">'+w.risks.items.map(function(r){return'<div style="border-left-color:'+(C[r.level]||C.ink)+'"><strong>'+e(r.risk)+'</strong><p><b>Sign:</b> '+e(r.trigger)+'</p><p><b>Response:</b> '+e(r.response)+'</p></div>'}).join('')+'</div>';
+if(w.kpis)h+='<p class="prompt-group ws-gap">'+e(w.kpis.label)+'</p><div class="ws-kpis">'+w.kpis.items.map(function(k){return'<div><strong>'+e(k.k)+'</strong><p>'+e(k.why)+'</p></div>'}).join('')+'</div>';
 if(w.steps){h+='<p class="prompt-group ws-gap">'+e(w.steps.label)+'</p><ol class="ws-steps">'+w.steps.items.map(function(s){
  return'<li><div><strong>'+e(s.do)+'</strong>'+(s.why?'<p>'+e(s.why)+'</p>':'')+'<div class="ws-links">'+(s.links||[]).map(function(l){var own=/^https:\/\/([a-z0-9-]+\.)*antevo\.ch(\/|$)/i.test(l.url);return'<a href="'+e(safe(l.url))+'"'+(own?'':' rel="noopener"')+'>'+e(l.label)+(own?' →':' ↗')+'</a>'}).join('')+'</div></div></li>'}).join('')+'</ol>'}
 if(w.sections){h+='<div class="ws-grid">'+w.sections.map(function(s){
@@ -44,6 +56,7 @@ if(w.sections){h+='<div class="ws-grid">'+w.sections.map(function(s){
 if(w.links)h+='<p class="prompt-group">How the findings connect</p><ul class="ws-list">'+w.links.map(function(l){return'<li><b>'+e(l.a)+' × '+e(l.b)+':</b> '+e(l.text)+'</li>'}).join('')+'</ul>';
 if(w.roadmap)h+='<p class="prompt-group">90-day roadmap · options to consider</p><div class="ws-road">'+w.roadmap.map(function(r){return'<div><b>Days '+e(r.days)+'</b><span>'+e(r.do)+'</span></div>'}).join('')+'</div>';
 if(w.watch)h+='<p class="prompt-group">What to watch</p><ul class="ws-list">'+w.watch.map(function(x){return'<li>'+e(x)+'</li>'}).join('')+'</ul>';
+if(w.next)h+='<p class="prompt-group ws-gap">'+e(w.next.label)+'</p><ol class="ws-parts">'+w.next.parts.map(function(p){var t='<small>Part '+e(p.n)+'</small>'+e(p.title);return'<li'+(p.here?' class="here"':'')+'>'+(p.url&&!p.here?'<a href="'+e(p.url)+'">'+t+' →</a>':t+(p.here?' <em>this page</em>':(p.url?'':' <em>coming</em>')))+'</li>'}).join('')+'</ol>';
 h+='<p class="source-record">'+e(w.disclaimer)+' <a href="https://antevo.ch/mcp/build/">Built on Antevo →</a></p>';
 document.getElementById('ws').innerHTML=h;if(w.title)document.title=w.title+''}).catch(function(){document.getElementById('ws').innerHTML='<p class="essay-note">The workspace file could not be read.</p>'})})();
 

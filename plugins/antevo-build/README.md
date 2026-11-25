@@ -40,6 +40,32 @@ The idea: an AI fintech in Switzerland, then Germany. The names are examples, no
 
 ![The example workspace: the three names tried, then the next steps for Tirano Pay with their links](assets/workspace.png)
 
+## Fintech Launch · skill `fintech-launch`
+
+A Swiss fintech, planned from the name to Germany. One prompt, six engines, four of them free
+with no account, and the regulators' own pages. Part 2 of the Tirano Pay story.
+The page: https://antevo.ch/mcp/build/fintech-launch/
+
+| | What happens | Engine |
+|---|---|---|
+| **1. The ground** | The name screened, the field counted on the Swiss register, the licence route read on finma.ch and sif.admin.ch, the rules in the next market. | Trademark · Companies · Research (geopolitics desk) |
+| **2. Money and timing** | Rates, the franc, venture funding, the funding and demand entries on the business board, market strain, the dated calendar. | Research (economy desk) · Strategy Radar · Tremor Watch · Executive Brief |
+| **3. The strategy** | One paragraph, then four stages over twelve months, each with a gate anyone can check. | all six |
+| **4. Risks and measures** | Each risk with the sign that would set it off and a response; what to measure, thresholds left to the founder. | all six |
+
+### A real run, 25 November 2026
+
+Tirano Pay is an example name for an example company: payments and cash-flow software for Swiss
+small and mid-sized companies, Switzerland first, then Germany.
+
+- **The strategy:** software first, licence second, Germany third. Software that holds no client money reaches paying customers before a licence; FINMA's preliminary assessment says whether that first product needs one.
+- **The licence:** the FinTech licence takes deposits up to CHF 100 million that are not invested and earn no interest; on 22 October 2025 the Federal Council proposed payment instrument institutions to replace it.
+- **Germany:** activity grew at its fastest pace in over four years in November, and a Swiss licence cannot be passported, so German clients' money needs an EU licence or a licensed partner.
+- **Money:** the Swiss policy rate is 0.00%, so there is no float income; the newest large AI listing fell below its offer price on 24 November, and the radar's response is to lock in funding early.
+- **The gates:** FINMA's view, the name filed and a lead investor; pilots paying and renewing; the application filed with no fundamental concerns; the EU rules final and the first German companies live.
+
+The workspace: `template/index.html?w=fintech-launch.json`.
+
 ## Company Due Diligence · skill `due-diligence`
 
 Before you sign, pay or partner. One prompt, four engines, three of them free with no account.
@@ -304,7 +330,7 @@ cd template && python3 -m http.server 8000   # then open http://localhost:8000
 The file's blocks are all optional, so the same page renders other builds too: `tries` (options
 checked one by one), `steps` (next actions with links), `sections` (a finding, its `so_what`, its
 evidence and source), `links`, `roadmap` and `watch`. `index.html?w=due-diligence.json`,
-`index.html?w=supply-chain.json`, `index.html?w=m-and-a.json`, `index.html?w=real-estate.json`, `index.html?w=family-office.json`, `index.html?w=market-entry.json`, `index.html?w=portfolio-concentration.json`, `index.html?w=strategy-desk.json`, `index.html?w=franc-rose.json`, `index.html?w=competitor-watch.json`, `index.html?w=research-desk.json` and `index.html?w=intelligence-terminal.json` render the other runs. See [template/README.md](template/README.md).
+`index.html?w=supply-chain.json`, `index.html?w=m-and-a.json`, `index.html?w=real-estate.json`, `index.html?w=family-office.json`, `index.html?w=market-entry.json`, `index.html?w=fintech-launch.json`, `index.html?w=portfolio-concentration.json`, `index.html?w=strategy-desk.json`, `index.html?w=franc-rose.json`, `index.html?w=competitor-watch.json`, `index.html?w=research-desk.json` and `index.html?w=intelligence-terminal.json` render the other runs. See [template/README.md](template/README.md).
 
 ## The eight engines
 

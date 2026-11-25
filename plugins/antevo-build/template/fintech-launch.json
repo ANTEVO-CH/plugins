@@ -1,0 +1,82 @@
+{
+ "template": "Built on Antevo · https://antevo.ch/mcp/build/fintech-launch/",
+ "kind": "Fintech Launch Strategy · The Tirano Pay story, part 2",
+ "title": "Tirano Pay",
+ "subtitle": "A Swiss fintech, planned from the name to Germany",
+ "built": "2026-11-25",
+ "note": "Tirano Pay is an example name for an example company: payments and cash-flow software for Swiss small and mid-sized companies, Switzerland first, then Germany. Part 1 found the name; this part plans the company. Every finding is an Antevo engine's answer on the date shown, or an official page read that day; where an engine named a company, the page describes it instead. The plan, the gates and the measures are the assistant's options to consider, not advice.",
+ "thesis": {
+  "label": "The strategy in one paragraph",
+  "text": "Launch in Switzerland first as software that holds no client money: it reads a company's bank accounts, forecasts its cash and prepares payments the bank executes. That reaches paying customers without waiting for a licence. Ask FINMA early, in a preliminary assessment, whether that first product needs one. Apply for the licence second, built to fit both the FinTech licence and the new category the Federal Council proposed. Enter Germany third, under a licensed EU partner before an EU licence of its own, because a Swiss licence does not reach the EU. Earn from fees, not from client balances: at a zero policy rate there is no float income, and the FinTech licence forbids paying interest anyway. Raise early, while the window is open, and let each stage start only when its gate is passed."
+ },
+ "tries": {
+  "label": "The ground, piece by piece",
+  "item": "Piece",
+  "source": "Antevo Trademark, Antevo Companies, Antevo Research (economy and geopolitics desks), Antevo Strategy Radar, Antevo Executive Brief and Antevo Tremor Watch, 25 Nov 2026 · finma.ch and sif.admin.ch, read 25 Nov 2026 · trademark registers, Swiss companies from Zefix, the .ch and .com registries",
+  "items": [
+   {"name": "The name", "verdict": "Clear on this screen", "level": "green", "evidence": ["Tirano Pay: one loosely similar mark on file, in class 9 in Brazil, for a drone app", "No Swiss company under the name", "tiranopay.ch and tiranopay.com appear unregistered", "Tirano alone is taken: an identical mark is on file and its domains are registered"]},
+   {"name": "The field", "verdict": "Crowded", "level": "amber", "evidence": ["A search of the Swiss register for payments companies fills its first page", "They cluster in central Switzerland: Zug, Rotkreuz, Immensee and Küssnacht among them, with others in Zurich, Bern and Vaud", "The fintech search shows the same pull: five of the first ten sit in Zug or Baar"]},
+   {"name": "The licence", "verdict": "A route, with a choice", "level": "amber", "evidence": ["The FinTech licence lets a company take public deposits up to CHF 100 million, if they are not invested and no interest is paid", "A business subject to the Anti-Money Laundering Act must join a self-regulatory organisation; FINMA lists payment transactions among those likely to be", "FINMA offers a fast track for low-risk business models after a successful preliminary assessment, case by case", "On 22 October 2025 the Federal Council proposed payment instrument institutions, to replace the FinTech licence and lift the CHF 100 million limit; no dispatch to Parliament was found"]},
+   {"name": "Germany", "verdict": "Open demand, a separate licence", "level": "amber", "evidence": ["German business sentiment rose again in November; manufacturing and composite surveys stood at 55, the fastest activity in over four years", "Switzerland is not in the EU's single market for financial services: a Swiss licence cannot be passported", "To hold or move German companies' money, a firm needs an EU licence, from BaFin or from another EU state and passported"]},
+   {"name": "Money and timing", "verdict": "Raise early", "level": "red", "evidence": ["The newest large AI listing fell below its offer price on 24 November; the response the radar lists is to lock in funding early", "The economy desk reads venture funding as tighter, after the largest rotation out of tech in two decades", "The Swiss National Bank's rate is 0.00%; it decides next on 10 December", "Markets are elevated, 2.42 times a normal week, easing from 3.84"]}
+  ]
+ },
+ "plan": {
+  "label": "Twelve months, four stages, each with a gate",
+  "items": [
+   {"when": "Dec 2026 – Jan 2027", "title": "Foundation", "do": ["File Tirano Pay in Switzerland in classes 9, 36 and 42, then watch it", "Register the company and both domains", "Ask FINMA for a preliminary assessment of the first product and of the licence route", "Choose the anti-money-laundering self-regulatory organisation, if the assessment says the law applies", "Open the funding round while the window is open"], "gate": "FINMA's preliminary view is in hand, the name is filed, and the round has a lead investor"},
+   {"when": "Feb – Apr 2027", "title": "Launch without holding money", "do": ["Release cash forecasting and payment preparation to the first Swiss companies, through their own banks", "Connect more than one bank from the start, so no single bank's access decides the product", "Price by subscription and fee, never by balances held"], "gate": "Pilot companies are paying and renewing, and the measures below have the thresholds set at the first gate"},
+   {"when": "May – Aug 2027", "title": "The licence", "do": ["File the licence application on FINMA's platform, under the fast track if the preliminary assessment allows it", "Write the application so it maps to both the FinTech licence and a payment instrument institution", "Build the anti-money-laundering and data controls to Swiss and EU standards at once"], "gate": "The application is filed with no fundamental concerns raised, and the runway reaches past the licence decision"},
+   {"when": "Sep – Nov 2027", "title": "Germany", "do": ["Choose the route: a licensed EU partner first, or an EU licence of Tirano Pay's own", "Read the EU payment rules as published, and build to them", "Run the first German pilot with companies selling into German industry"], "gate": "The EU payment rules are final, a partner or a licence covers German clients' money, and the first German companies are live"}
+  ]
+ },
+ "risks": {
+  "label": "Risks, each with the sign that would set it off",
+  "items": [
+   {"risk": "The funding window closes", "trigger": "A large AI-linked sale prices wide of guidance or is pulled; Tremor Watch reads high again with credit breaking", "response": "Close the round on the terms available and stretch the runway; move Germany back a stage", "level": "red"},
+   {"risk": "The licence law changes mid-application", "trigger": "The Federal Council sends the payment instrument institutions bill to Parliament", "response": "Keep the application mapped to both regimes, so a switch is an update, not a restart", "level": "amber"},
+   {"risk": "A bank closes its door", "trigger": "A partner bank withdraws or reprices its access; in Switzerland that access rests on contracts, not on a legal right", "response": "Several banks from launch; no stage depends on one", "level": "amber"},
+   {"risk": "The franc squeezes German revenue", "trigger": "The euro falls further against the franc; it was 0.9163 francs on 25 November, down 1.6% on the year", "response": "Price Germany in euros with a review clause, and keep costs in the currency the revenue comes in", "level": "amber"},
+   {"risk": "EU rules arrive late or different", "trigger": "The European Parliament's vote on the payment rules, set for around 14 December, slips or reopens the text", "response": "Hold the German build at the partner route until the text is final", "level": "amber"},
+   {"risk": "The name is crowded later", "trigger": "A new mark close to Tirano Pay is filed", "response": "Antevo Trademark watch on the name; a lawyer reviews any close filing", "level": "green"}
+  ]
+ },
+ "kpis": {
+  "label": "What to measure, with thresholds set at the first gate",
+  "items": [
+   {"k": "Paying companies", "why": "The only proof of the first stage: live, paying and renewing"},
+   {"k": "Banks connected per customer", "why": "A product that works with more than one bank is not hostage to one"},
+   {"k": "Days to the first forecast", "why": "How fast a new company sees its own cash, the moment it decides to stay"},
+   {"k": "Forecast against the real balance", "why": "The accuracy of the cash forecast at 30 days: the promise the product makes"},
+   {"k": "Months of runway", "why": "Read every month against the licence date and the German stage"},
+   {"k": "Licence milestones", "why": "Preliminary view, filing, decision: each against the date in the plan"},
+   {"k": "German companies in pilot", "why": "The gate to the fourth stage, counted from the first one live"}
+  ]
+ },
+ "sections": [
+  {"title": "Rates and the franc", "verdict": "No float income", "level": "ink", "so_what": "With the policy rate at zero and interest banned under the FinTech licence, every franc of revenue has to come from fees: build the price list before the product, not after.", "evidence": ["The Swiss National Bank's rate is 0.00% and Swiss inflation 1.5%; the desk expects rises from spring 2027", "EUR/CHF 0.9163, down 1.6% on the year", "The European Central Bank's rate is 2.50%"], "source": "Antevo Research, economy desk, 25 Nov 2026"},
+  {"title": "EU rules in motion", "verdict": "Dated, and moving", "level": "ink", "so_what": "The German product should be built to the new EU payment rules from the start: they will govern it from about late 2027 or early 2028.", "evidence": ["The Council of the EU adopted its positions on the new payment services rules on 29 October; the Parliament's vote is indicated for around 14 December", "Instant euro payments are already required of EU payment providers: a baseline, not a feature", "The EU's new anti-money-laundering rulebook applies in 2027; its authority supervises selected firms directly from 2028"], "source": "Antevo Research, geopolitics desk, 25 Nov 2026"},
+  {"title": "Swiss developments", "verdict": "Two to follow", "level": "ink", "so_what": "Neither changes the first year; both could change the product in the second, so the plan keeps them on the watchlist.", "evidence": ["The Swiss National Bank and SIX launched an exploration of a Swiss Financial Ledger on 24 November", "The proposed payment instrument institutions would replace the FinTech licence; consultation ran to 6 February 2026"], "source": "Antevo Research, economy desk, 25 Nov 2026 · sif.admin.ch, read 25 Nov 2026"},
+  {"title": "Markets this week", "verdict": "Elevated, 2.42 times a normal week", "level": "ink", "so_what": "Not a reason to wait; a reason to close the round on a calm week rather than on a headline.", "evidence": ["Week of 20 November, down from high, 3.84 times, the week before", "Credit calm"], "source": "Antevo Tremor Watch, week of 20 Nov 2026"}
+ ],
+ "steps": {
+  "label": "The first four weeks, with the links",
+  "items": [
+   {"do": "File the name in Switzerland in classes 9, 36 and 42, and watch it", "why": "The screen is clear today; a filing protects it, and a watch catches the next close mark.", "links": [{"label": "ige.ch", "url": "https://www.ige.ch/en/protecting-your-ip/trade-marks"}, {"label": "Watch the name", "url": "https://antevo.ch/trademark/app/add?intent=watch&mark=Tirano%20Pay&source=build"}]},
+   {"do": "Register the company and the domains", "why": "No Swiss company uses the name and both domains appear free; either can change at any time.", "links": [{"label": "zefix.ch", "url": "https://www.zefix.ch"}, {"label": "easygov.swiss", "url": "https://www.easygov.swiss"}, {"label": "nic.ch", "url": "https://www.nic.ch"}]},
+   {"do": "Request FINMA's preliminary assessment", "why": "It answers the first question of the plan, whether the first product needs a licence, and it is the condition for the fast track.", "links": [{"label": "FinTech licence", "url": "https://www.finma.ch/en/authorisation/fintech/fintech-bewilligung/"}, {"label": "Fast track", "url": "https://www.finma.ch/en/authorisation/fintech/fintech-bewilligung/fintech-fast-track/"}]},
+   {"do": "Check the anti-money-laundering question", "why": "If the business falls under the Act, membership of a self-regulatory organisation comes before the first client.", "links": [{"label": "finma.ch fintech", "url": "https://www.finma.ch/en/authorisation/fintech/"}]},
+   {"do": "Read the proposed licence category", "why": "The application should fit the law that may replace the FinTech licence.", "links": [{"label": "sif.admin.ch", "url": "https://www.sif.admin.ch/en/newnsb/x4TMWQ1SWofNoFx7XyHhY"}]},
+   {"do": "Map the German route", "why": "An EU licence from BaFin or another EU state, or a licensed EU partner first.", "links": [{"label": "bafin.de", "url": "https://www.bafin.de/EN/"}]}
+  ]
+ },
+ "links": [
+  {"a": "Trademark", "b": "Companies", "text": "The name is clear, and the register shows a crowded field: Tirano Pay stands apart by the problem it solves for small companies, not by being one more payments firm."},
+  {"a": "Research", "b": "Strategy Radar", "text": "Zero rates remove float income and the funding window is narrowing: both point to a fee-based product that reaches paying customers before the licence."},
+  {"a": "Strategy Radar", "b": "Research", "text": "German demand is the strongest in four years, and a Swiss licence does not reach it: the opportunity sets the fourth stage, the rules set its route."},
+  {"a": "Tremor Watch", "b": "Executive Brief", "text": "Elevated but easing markets and a dated calendar argue for opening the round now and closing it on a calm week, not on a headline."}
+ ],
+ "watch": ["The Swiss National Bank's decision on 10 December 2026", "The European Parliament's vote on the payment rules, around 14 December 2026", "Any dispatch to Parliament on payment instrument institutions", "Pricing of AI-linked bond and share sales, as a read on the funding window", "Germany's next Ifo survey in December", "The EU anti-money-laundering rulebook in 2027", "The Swiss Financial Ledger exploration", "New marks close to Tirano Pay (Antevo Trademark watch)", "The next Tremor reading on Saturday"],
+ "next": {"label": "The Tirano Pay story", "parts": [{"n": 1, "title": "The name", "url": "https://antevo.ch/mcp/build/example/"}, {"n": 2, "title": "The strategy", "here": true}, {"n": 3, "title": "The first raise"}, {"n": 4, "title": "Germany"}, {"n": 5, "title": "Scale"}, {"n": 6, "title": "Ready to list"}]},
+ "disclaimer": "From public records, official pages and Antevo answers, each dated. A screen is not legal clearance, and whether a product needs a licence is for FINMA, the company and its advisers to decide. Not legal, regulatory, tax or investment advice."
+}

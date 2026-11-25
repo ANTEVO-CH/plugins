@@ -14,7 +14,8 @@ is the Company Due Diligence run of 25 November 2026 (an example supplier; nothi
 M&A Intelligence run (Swiss robotics; nothing says any company is for sale). `index.html?w=real-estate.json` is the
 Real Estate Acquisition run (a new apartment near Zurich; nothing says the company is party to any sale),
 `index.html?w=family-office.json` the Family Office run (an example Swiss family, in words with no amounts), and
-`index.html?w=market-entry.json` the Market Entry run (an example Swiss instrument maker opening in Singapore).
+`index.html?w=market-entry.json` the Market Entry run (an example Swiss instrument maker opening in Singapore), and
+`index.html?w=fintech-launch.json` the Fintech Launch run (an example Swiss payments company, planned to Germany).
 
 ## The file
 
@@ -28,8 +29,13 @@ Every block is optional; the page shows the ones that are there.
 | `sections` | each finding: `title`, `verdict`, `level`, `so_what` (what it means for this plan), `evidence`, `source` with its date |
 | `links` | how the findings connect: two engines (`a`, `b`) and one sentence |
 | `roadmap` | blocks of `days` and what to `do`: options to consider |
+| `thesis` | the strategy in one paragraph: `label`, `text` |
+| `plan` | stages: `when`, `title`, `do` (a list) and the `gate` that must hold before the next stage |
+| `risks` | each `risk`, the `trigger` that would set it off, the `response`, and a `level` |
+| `kpis` | what to measure: `k` and `why` |
+| `next` | the parts of a series: `n`, `title`, a `url` or `here` |
 | `watch` | the dates and indicators the engines named |
 | `disclaimer` | keep it: not advice; a screen is not clearance |
 
-Fill it with the `startup-launch`, `due-diligence`, `supply-chain`, `m-and-a`, `real-estate`, `family-office` or `market-entry` skill in this plugin, or from your own
+Fill it with the `startup-launch`, `due-diligence`, `supply-chain`, `m-and-a`, `real-estate`, `family-office`, `market-entry` or `fintech-launch` skill in this plugin, or from your own
 agent calling the connectors. Change the page, restyle it, turn it into your own product.
