@@ -220,6 +220,32 @@ data.gov.sg, made available under the terms of the Singapore Open Data Licence v
 
 The workspace: `template/index.html?w=market-entry.json`.
 
+## Strategic Planner · skill `strategic-planner`
+
+A company's year, planned on every engine. One prompt, six engines, four of them free with no
+account. Part 2 of the Vallmer Pack story (part 1 is Strategy Desk).
+The page: https://antevo.ch/mcp/build/strategic-planner/
+
+| | What happens | Engine |
+|---|---|---|
+| **1. The radar and its history** | Today's risks with trend, grades and the sign to watch; sixty days split in halves to show what grew and what dropped off. | Executive Brief |
+| **2. Scenarios** | Base, upside and stress, each with signposts and dates, the lean, and the decisions to keep open. | Research (strategy desk) |
+| **3. How unsettled, and where** | The index, fifty-two weeks of history, the breaks per week, the pairs for the company's currency and inputs. | Tremor Watch |
+| **4. Board, supply chains, calendar, names** | The business board, the supply-chain and trade indices, the dated events, a new line's name and the register. | Strategy Radar · Executive Brief · Trademark · Companies |
+| **5. The plan** | One paragraph, four stages with gates, a risk register, an early-warning dashboard. | all six |
+
+### A real run, 25 November 2026
+
+Vallmer Pack AG is an invented Swiss maker of packaging machines selling mostly in Germany.
+
+- **The lean:** the base case, managed reflation (the ECB peaks around 3.0 to 3.25%, EUR/CHF 0.90 to 0.93, the 15% US arrangement holds), with a stagflation tail drawn at EUR/CHF 0.89.
+- **The radar moved:** over 58 mornings, AI concentration rose from 14 of 140 entries to 32 of 150; trade war is rising again.
+- **Markets:** Tremor Elevated at 2.42 times a normal week, breaks rising from 10 to 31 a week, credit the one calm family at 0.54x: refinance in the first quarter.
+- **Supply chains:** stress at 79 of 100, up from 62 a month earlier: dual-source now, volumes later.
+- **The gates:** the SNB and ECB read; two to three German surveys above 53; a permanent US tariff deal; the 2028 scenarios written.
+
+The workspace: `template/index.html?w=strategic-planner.json`.
+
 ## Portfolio Concentration · skill `portfolio-concentration`
 
 Every account read as one book. One prompt, three engines; Wealth needs your Antevo account.
@@ -330,7 +356,7 @@ cd template && python3 -m http.server 8000   # then open http://localhost:8000
 The file's blocks are all optional, so the same page renders other builds too: `tries` (options
 checked one by one), `steps` (next actions with links), `sections` (a finding, its `so_what`, its
 evidence and source), `links`, `roadmap` and `watch`. `index.html?w=due-diligence.json`,
-`index.html?w=supply-chain.json`, `index.html?w=m-and-a.json`, `index.html?w=real-estate.json`, `index.html?w=family-office.json`, `index.html?w=market-entry.json`, `index.html?w=fintech-launch.json`, `index.html?w=portfolio-concentration.json`, `index.html?w=strategy-desk.json`, `index.html?w=franc-rose.json`, `index.html?w=competitor-watch.json`, `index.html?w=research-desk.json` and `index.html?w=intelligence-terminal.json` render the other runs. See [template/README.md](template/README.md).
+`index.html?w=supply-chain.json`, `index.html?w=m-and-a.json`, `index.html?w=real-estate.json`, `index.html?w=family-office.json`, `index.html?w=market-entry.json`, `index.html?w=fintech-launch.json`, `index.html?w=strategic-planner.json`, `index.html?w=portfolio-concentration.json`, `index.html?w=strategy-desk.json`, `index.html?w=franc-rose.json`, `index.html?w=competitor-watch.json`, `index.html?w=research-desk.json` and `index.html?w=intelligence-terminal.json` render the other runs. See [template/README.md](template/README.md).
 
 ## The eight engines
 
