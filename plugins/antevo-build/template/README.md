@@ -17,6 +17,7 @@ Real Estate Acquisition run (a new apartment near Zurich; nothing says the compa
 `index.html?w=market-entry.json` the Market Entry run (an example Swiss instrument maker opening in Singapore), and
 `index.html?w=fintech-launch.json` the Fintech Launch run (an example Swiss payments company, planned to Germany).
 `index.html?w=strategic-planner.json` the Strategic Planner run (an example Swiss machine maker's 2027 plan).
+`index.html?w=invoice-check.json` the Invoice Check run (an example invoice with new bank details).
 
 ## The file
 
@@ -38,5 +39,5 @@ Every block is optional; the page shows the ones that are there.
 | `watch` | the dates and indicators the engines named |
 | `disclaimer` | keep it: not advice; a screen is not clearance |
 
-Fill it with the `startup-launch`, `due-diligence`, `supply-chain`, `m-and-a`, `real-estate`, `family-office`, `market-entry`, `fintech-launch` or `strategic-planner` skill in this plugin, or from your own
+Fill it with the `startup-launch`, `due-diligence`, `supply-chain`, `m-and-a`, `real-estate`, `family-office`, `market-entry`, `fintech-launch`, `strategic-planner` or `invoice-check` skill in this plugin, or from your own
 agent calling the connectors. Change the page, restyle it, turn it into your own product.

@@ -246,6 +246,34 @@ Vallmer Pack AG is an invented Swiss maker of packaging machines selling mostly 
 
 The workspace: `template/index.html?w=strategic-planner.json`.
 
+## Invoice Check · skill `invoice-check`
+
+An invoice says the bank details changed: check before you pay. One prompt, two tools, one of
+them free with no account.
+The page: https://antevo.ch/mcp/build/invoice-check/
+
+| | What happens | Tool |
+|---|---|---|
+| **1. The payee** | The company on the register, the website, the email address the invoice came from and the country of the account, each counted as does not match, note, on the record or not checked. | Guard |
+| **2. The sender's address** | Whether the address is a lookalike of the website you know, and whether it is registered at all. | Guard |
+| **3. The company's own record** | Active or not, four sanctions lists, and any register change in the last 30 days. | Companies (optional) |
+| **4. What to confirm yourself** | The call on a number you already have, the last account you paid, the register, and what to do if the money has gone. | you |
+
+### A real run, 25 November 2026
+
+A made-up plumbing firm gets an email from its usual supplier of bathroom fittings: the bank
+details have changed. The supplier is a real Swiss company, shown as Aquorim AG.
+
+- **Does not match:** the email came from an address that adds the word "ch" to the supplier's website; that address is not registered at all; the new account is in Lithuania while the company is registered in Switzerland.
+- **On the record:** the company is on the Swiss register, its website registered since 6 May 1996; not found on four sanctions lists; no register notice in the last 30 days.
+- **Not checked:** one of Guard's four sources did not answer, and the workspace says so.
+- **A clean answer is not a green light:** the same invoice from a free webmail address draws one note and nothing else.
+
+Guard never receives an account number, only the two letters it starts with, and it never says
+whether a payment should be made.
+
+The workspace: `template/index.html?w=invoice-check.json`.
+
 ## Portfolio Concentration · skill `portfolio-concentration`
 
 Every account read as one book. One prompt, three engines; Wealth needs your Antevo account.
@@ -356,7 +384,7 @@ cd template && python3 -m http.server 8000   # then open http://localhost:8000
 The file's blocks are all optional, so the same page renders other builds too: `tries` (options
 checked one by one), `steps` (next actions with links), `sections` (a finding, its `so_what`, its
 evidence and source), `links`, `roadmap` and `watch`. `index.html?w=due-diligence.json`,
-`index.html?w=supply-chain.json`, `index.html?w=m-and-a.json`, `index.html?w=real-estate.json`, `index.html?w=family-office.json`, `index.html?w=market-entry.json`, `index.html?w=fintech-launch.json`, `index.html?w=strategic-planner.json`, `index.html?w=portfolio-concentration.json`, `index.html?w=strategy-desk.json`, `index.html?w=franc-rose.json`, `index.html?w=competitor-watch.json`, `index.html?w=research-desk.json` and `index.html?w=intelligence-terminal.json` render the other runs. See [template/README.md](template/README.md).
+`index.html?w=supply-chain.json`, `index.html?w=m-and-a.json`, `index.html?w=real-estate.json`, `index.html?w=family-office.json`, `index.html?w=market-entry.json`, `index.html?w=fintech-launch.json`, `index.html?w=strategic-planner.json`, `index.html?w=invoice-check.json`, `index.html?w=portfolio-concentration.json`, `index.html?w=strategy-desk.json`, `index.html?w=franc-rose.json`, `index.html?w=competitor-watch.json`, `index.html?w=research-desk.json` and `index.html?w=intelligence-terminal.json` render the other runs. See [template/README.md](template/README.md).
 
 ## The eight engines
 
