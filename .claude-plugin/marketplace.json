@@ -141,15 +141,17 @@
     {
       "name": "antevo-build",
       "source": "./plugins/antevo-build",
-      "description": "Build your own tools on six Antevo engines. The first: Startup Launch Intelligence — one prompt tries your candidate names until one is clear (trademarks, Swiss companies, domains), lists the steps to register it with official links, reads the competition, the market, the costs and the funding risk with a 'so what' for each, and builds a launch workspace with a 90-day roadmap. Every figure dated; a screen, not clearance; options to consider, never advice. Four of the six engines need no account.",
-      "version": "0.1.0",
+      "description": "Build your own tools on seven Antevo engines. Startup Launch Intelligence tries your candidate names until one is clear (trademarks, Swiss companies, domains), lists the steps to register it with official links, reads the competition, the market, the costs and the funding risk with a 'so what' for each, and builds a launch workspace with a 90-day roadmap. Company Due Diligence checks a company before you sign or pay (the register, sanctions lists, its website and email, recent changes, which group company signs), lists what to settle with the official links, and says what each finding means. Every figure dated; public records only; options to consider, never advice.",
+      "version": "0.2.0",
       "category": "productivity",
       "tags": [
         "startup",
         "launch",
         "trademark",
         "strategy",
-        "mcp"
+        "mcp",
+        "due-diligence",
+        "supplier"
       ],
       "author": {
         "name": "Antevo",

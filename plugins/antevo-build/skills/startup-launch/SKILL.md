@@ -50,9 +50,12 @@ example `["UK"]`). Then walk the names **in the founder's order**, one at a time
   company of the same name is registered in the home country; both domains are registered.
   Say which of the three it was, with the evidence: the closest mark's office, status and
   date, the company's name and legal form, the domains.
-- A name is **clear on this screen** when the verdict is `none_found` or `similar` with no mark
-  in the founder's classes, no company of the same name, and at least the home-country domain
-  appears unregistered.
+- A name is **clear on this screen** when no company of the same name is registered at home, at
+  least the home-country domain appears unregistered, and the verdict is `none_found`, or
+  `similar` where every near mark is only loosely alike (tier `watch`), whatever its classes.
+- A name is a **close call** when the only problem is a `high`-tier mark (not identical) in the
+  founder's classes. Say so, name the mark, and say a trademark lawyer should look before filing;
+  carry on to the next name, and come back to it if nothing better is clear.
 - Stop at the first clear name. That is the name the rest of the workspace is built for.
 - If none is clear, say so, offer five new names in the same spirit, screen them, and walk
   them the same way. At most two rounds; then hand the choice back to the founder.
