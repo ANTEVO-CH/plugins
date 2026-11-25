@@ -1,0 +1,215 @@
+{
+ "template": "Built on Antevo · https://antevo.ch/mcp/build/real-estate/",
+ "kind": "Real Estate Acquisition",
+ "title": "A new apartment near Zurich",
+ "subtitle": "A purchase read before the reservation is signed",
+ "built": "2026-11-25",
+ "note": "An example of how a buyer reads a purchase. Mobimo AG is used as the seller because building and selling property is its stated purpose in the register: nothing here says it is party to any sale, and nothing is alleged. Every finding is an Antevo engine's answer on the date shown.",
+ "tries": {
+  "label": "The seller and the deposit, check by check",
+  "item": "Check",
+  "source": "Antevo Companies and Antevo Guard, 25 Nov 2026 · Zefix, SHAB, GLEIF, OFAC, EU, UK and SECO lists, domain registries and public DNS. One of Guard's four sources, the certificate logs, did not answer.",
+  "items": [
+   {
+    "name": "Who sells?",
+    "verdict": "On the record",
+    "level": "green",
+    "evidence": [
+     "Mobimo AG, CHE-103.612.281, seat Küsnacht (ZH): active in the Swiss commercial register",
+     "Its stated purpose: building and managing property, holdings, and buying and selling property"
+    ]
+   },
+   {
+    "name": "Is it on a sanctions list?",
+    "verdict": "Not found",
+    "level": "green",
+    "evidence": [
+     "Not found under its name or identifiers on the OFAC, EU, UK and SECO lists, read 25 November 2026",
+     "Not being listed is not the same as unrestricted: ownership by a listed party needs its own check"
+    ]
+   },
+   {
+    "name": "What changed lately?",
+    "verdict": "One notice this year",
+    "level": "green",
+    "evidence": [
+     "15 register notices since March 2019; one this year, on 15 January 2026",
+     "The file gives the date and the notice, not what changed: the text is on shab.ch"
+    ]
+   },
+   {
+    "name": "Which company signs?",
+    "verdict": "Worth a look",
+    "level": "amber",
+    "evidence": [
+     "Seven register entries carry the name: Mobimo AG, Mobimo Holding AG, Mobimo Management AG, Mobimo Zürich Nord AG, Mobimo FM Service AG and two branches in Lausanne",
+     "GLEIF lists no parent for Mobimo AG; owners who are people are not public in Switzerland"
+    ]
+   },
+   {
+    "name": "Where does the deposit go?",
+    "verdict": "Worth a look",
+    "level": "amber",
+    "evidence": [
+     "mobimo.ch has been registered since 30 November 1999 and points to a web server; nothing contradicts the record in the three sources that answered",
+     "It publishes no DMARC mail policy, so mail claiming to come from it is easier to fake; the certificate logs were not checked"
+    ]
+   }
+  ]
+ },
+ "steps": {
+  "label": "Before you sign, with the links",
+  "items": [
+   {
+    "do": "Read the seller's register extract: the exact company and who may sign for it",
+    "why": "Seven entries carry the name; the reservation and the deed should name the same one.",
+    "links": [
+     {
+      "label": "zefix.ch",
+      "url": "https://www.zefix.ch"
+     }
+    ]
+   },
+   {
+    "do": "Read this year's notice",
+    "why": "The file gives the date; the notice says what changed.",
+    "links": [
+     {
+      "label": "Mobimo AG, 15 Jan 2026",
+      "url": "https://www.shab.ch/#!/search/publications/detail/669976db-e495-4b36-99e3-f60fc70025ba"
+     }
+    ]
+   },
+   {
+    "do": "Before paying the reservation deposit, confirm the payee and the account by phone, on a number you looked up yourself",
+    "why": "A payment instruction by email is the weak point; ask where the deposit is held and on what terms it comes back."
+   },
+   {
+    "do": "Order the land register extract for the plot: the owner, easements, mortgage notes and pre-emption rights",
+    "why": "The land register is kept by the canton; in the canton of Zurich the notary's offices keep it.",
+    "links": [
+     {
+      "label": "The land register in Switzerland",
+      "url": "https://www.cadastre.ch/de/grundbuch-schweiz"
+     },
+     {
+      "label": "Zurich notary's offices",
+      "url": "https://www.notariate-zh.ch"
+     }
+    ]
+   },
+   {
+    "do": "Read the public-law restrictions on the plot: zoning, building lines, contaminated sites",
+    "why": "They bind the plot whoever owns it.",
+    "links": [
+     {
+      "label": "The cadastre of restrictions",
+      "url": "https://www.cadastre.ch/de/oereb-kataster"
+     }
+    ]
+   },
+   {
+    "do": "If you live abroad, check whether you need a permit to buy",
+    "why": "Swiss law limits purchases by persons abroad; the canton decides.",
+    "links": [
+     {
+      "label": "Federal Office of Justice",
+      "url": "https://www.bj.admin.ch/de/grundstueckerwerb-durch-personen-im-ausland"
+     }
+    ]
+   },
+   {
+    "do": "Ask two lenders for dated offers, SARON-linked and fixed, and how long each offer holds",
+    "why": "The bank tests what you can carry at about 5%, not at today's rate."
+   },
+   {
+    "do": "Have the draft deed read before the notary's appointment",
+    "why": "In Switzerland a property sale is valid only as a notarised deed; a reservation is not the purchase."
+   }
+  ]
+ },
+ "sections": [
+  {
+   "title": "The market",
+   "verdict": "Still rising, more slowly",
+   "level": "amber",
+   "so_what": "Scarcity holds the price up while the pace slows and asking prices are cut more often: the asking price is where the conversation starts, and what happens to the deposit if you step back is worth settling first.",
+   "evidence": [
+    "Swiss condominium prices rose 3.9% on the year in the third quarter of 2026, and 0.8% on the quarter (transaction prices)",
+    "The estimate for 2026 is a rise of 2.5% for owner-occupied homes in the canton of Zurich, against 4.0% nationally",
+    "Vacancy was 0.9% nationally at the June 2026 count, the sixth yearly fall; in the city of Zurich 0.11%, 252 homes",
+    "Signs of saturation: asking prices are cut more often during marketing, and some buyers step back after paying a reservation deposit"
+   ],
+   "source": "Antevo Research, real estate desk, 25 Nov 2026"
+  },
+  {
+   "title": "The mortgage",
+   "verdict": "Cheap today, tested at 5%",
+   "level": "amber",
+   "so_what": "What the bank will lend is set by its test at about 5%, not by today's rate; SARON or fixed is a choice about who carries a rise in 2027.",
+   "evidence": [
+    "SARON-linked mortgages a little over 1%, ten-year fixed around 2% (early October 2026: a range, not a quote)",
+    "SNB policy rate 0.00% (October 2026), held since June 2025; Swiss inflation rose to 1.5% in October",
+    "Forecasters expect a first rise in 2027, most of them in March, and 0.5 to 0.75% by the end of 2027; some expect a move on 10 December",
+    "The rules lenders apply: at least 20% own funds, half of it not from the pension fund; costs at about 5% interest plus about 1% upkeep within a third of gross income; the loan paid down to two thirds within 15 years"
+   ],
+   "source": "Antevo Research, mortgages desk, 25 Nov 2026"
+  },
+  {
+   "title": "The price against history",
+   "verdict": "36% above the 1989 peak, after inflation",
+   "level": "amber",
+   "so_what": "Swiss prices have fallen for a decade before. How long you expect to stay is part of the price: a short stay leaves your own funds exposed to the entry year.",
+   "evidence": [
+    "Swiss real house prices stood at 140.9 on the OECD index at the end of June 2026, up 3.7% on the year",
+    "The last peak was 103.6 at the end of 1989; prices then fell 38% to early 2000 and passed the 1989 level again only at the end of 2017, 28 years later",
+    "Prices stand at 124.9% of their long-term average against incomes and 131.2% against rents (OECD, June 2026)",
+    "Credit is 11.8 points below its trend against the economy (BIS credit-to-GDP gap, March 2026): this rise was not built on loose lending"
+   ],
+   "source": "Antevo Executive Brief, macro series since 1970, and Antevo Research, 25 Nov 2026"
+  },
+  {
+   "title": "Market strain",
+   "verdict": "Elevated, 2.4 times a normal week",
+   "level": "amber",
+   "so_what": "Fixed-rate offers follow bond yields. With bond markets unsettled an offer can change within days: ask how long it holds.",
+   "evidence": [
+    "Week of 20 November 2026: elevated, down from high (3.8 times) the week before",
+    "Bond links are breaking at 2.1 times their normal rate, all of them weakening; credit is calm at 0.5 times",
+    "Provisional: 697 of 753 pairs were read this week. It describes, it does not forecast"
+   ],
+   "source": "Antevo Tremor Index, week of 20 Nov 2026"
+  }
+ ],
+ "links": [
+  {
+   "a": "Companies",
+   "b": "Guard",
+   "text": "The seller is on the register and on none of the lists read, while its mail domain publishes no DMARC mail policy: the weak point is the payment instruction, not the company."
+  },
+  {
+   "a": "Research",
+   "b": "Executive Brief",
+   "text": "Prices still rise by 3 to 4% a year while the real index stands 36% above its 1989 peak: scarcity and stretch at once, so the holding period carries the risk."
+  },
+  {
+   "a": "Research",
+   "b": "Tremor Watch",
+   "text": "Rates are low and expected to rise from 2027 while bond links break at twice their normal rate: a fixed offer may not hold for long."
+  },
+  {
+   "a": "Real estate desk",
+   "b": "Mortgages desk",
+   "text": "Banks test at about 5% while prices sit a quarter above their long-term average against incomes: for many buyers the bank's test, not the asking price, sets the limit."
+  }
+ ],
+ "watch": [
+  "Swiss inflation for November on 2 December, then the SNB's assessment on 10 December 2026",
+  "A first SNB rate rise, which most forecasters expect in March 2027",
+  "New register notices for the seller (Antevo Companies alerts at most once a day)",
+  "Asking-price cuts and time on the market in the area",
+  "1 January 2029: the imputed rental value is due to end, and with it the deductions for mortgage interest and upkeep",
+  "The next Tremor reading on Saturday"
+ ],
+ "disclaimer": "From public records and Antevo answers, each dated. A check of public records is not a legal review of the purchase. Not investment, legal or tax advice."
+}
