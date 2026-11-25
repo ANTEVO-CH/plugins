@@ -1,8 +1,11 @@
-![Antevo: a question field cycling through questions your assistant can now answer, beside a lens where signals from the world travel inward to you](assets/cover.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cover-plugins-dark.png">
+  <img alt="Antevo for Claude: eight plugins, 42 skills. You ask: check Swisscom AG before we sign. Antevo answers: on the record, not found on the sanctions lists read, and two things worth a look before signing." src="assets/cover-plugins-light.png" width="100%">
+</picture>
 
-# Antevo: plugins and MCP connections for Claude and any MCP client
+# Antevo for Claude: plugins, skills and builds
 
-**Antevo brings the world around your wealth into the assistant you already use.** Seven connections — the Executive Brief, the weekly Tremor index, Strategy Radar's daily business board for companies, Antevo's research desks, trademark registers, your own household and your firm's client book — and 42 skills that know how to read them — plus builds on top of them, Startup Launch Intelligence, Company Due Diligence, Supply Chain Watch and M&A Intelligence (`antevo-build`): dated, attributed, and honest about what they cannot see. Install once in Claude, or point any MCP client at an address.
+**Eight plugins and 42 skills that bring Antevo into the assistant you already use.** Each plugin wires one Antevo connection (the Executive Brief, the weekly Tremor index, Strategy Radar's daily business board, Antevo's research desks, the trademark registers, your own household or your firm's client book) together with the skills that know how to read it. `antevo-build` adds four builds on top: Startup Launch Intelligence, Company Due Diligence, Supply Chain Watch and M&A Intelligence. Every answer is dated, attributed, and honest about what it cannot see.
 
 [![validate](https://github.com/ANTEVO-CH/plugins/actions/workflows/validate.yml/badge.svg)](https://github.com/ANTEVO-CH/plugins/actions/workflows/validate.yml)
 [![MCP Registry](https://img.shields.io/badge/MCP%20Registry-ch.antevo-252c28?labelColor=9b7936)](https://registry.modelcontextprotocol.io/v0/servers?search=ch.antevo)
@@ -10,17 +13,41 @@
 [![npm](https://img.shields.io/npm/v/@antevo/cli?label=%40antevo%2Fcli&color=252c28&labelColor=9b7936)](https://www.npmjs.com/package/@antevo/cli)
 [![Hosted in Switzerland](https://img.shields.io/badge/hosted-Switzerland-252c28?labelColor=9b7936)](https://antevo.ch)
 
+```text
+/plugin marketplace add ANTEVO-CH/plugins
+/plugin install antevo-executive@antevo
+```
+
 ### Why Antevo
 
 - **A named desk, not a web search.** Answers come from Antevo's published Executive Brief and its dated archive, from the trademark registers themselves, and — when you sign in — from your own record. The assistant says where a read came from and when.
 - **Public where it can be, permissioned where it matters.** Executive, Tremor Watch, Strategy Radar and trademark screening need no account and reach no personal data. Wealth, Mandates, Research and Trademark's watchlist and investigations sign in over OAuth 2.1; your account's own permissions apply.
 - **Intelligence, not advice.** The skills hold the line: no invented probabilities, no "clear to use", no buy or sell dressed up as a signal.
 
-### Build on it
+## The engines
 
-[![Build with Antevo: three names tried in turn, two taken, one clear, then the next steps, standing on six Antevo engines](plugins/antevo-build/assets/cover.svg)](plugins/antevo-build/)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/engines-dark.png">
+  <img alt="Nine Antevo engines, five without an account: The 07:00 Brief, Executive Brief, Tremor Watch, Strategy Radar and Trademark screening are free; Companies and Research need any Antevo account; Wealth needs your account; Mandates is by arrangement. Each is a remote MCP server with its address." src="assets/engines-light.png" width="100%">
+</picture>
 
-**We build the intelligence. You build what's next.** `antevo-build` connects seven engines at once and adds builds on top of them. Startup Launch Intelligence takes one prompt from a name to a registered company and a 90-day plan; Company Due Diligence checks a company before you sign or pay; Supply Chain Watch checks a supply route leg by leg before the next order; M&A Intelligence maps a niche and reads a shortlist before any approach. [How it works →](plugins/antevo-build/)
+The plugins connect seven of them directly; `antevo-build` connects six at once, plus Antevo Guard for checking a payee (`https://api.antevo.ch/mcp/guard/mcp`). Every address also works on its own in any MCP client: [The connections](#the-connections).
+
+## Build on it
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/builds-dark.png">
+  <img alt="Four builds, one prompt each: Startup launch (Tirano Pay, two names taken, one clear on this screen), Due diligence (Swisscom AG, on the record, two things worth a look), Supply chain (Taiwan to Basel, leg by leg) and M&A intelligence (Swiss robotics, three companies read). Real runs on 25 November 2026." src="assets/builds-light.png" width="100%">
+</picture>
+
+**We build the intelligence. You build what's next.** `antevo-build` connects seven engines in one install and adds builds on top of them. Each build is a recipe, an example from a real run and a skill:
+
+- **Startup Launch Intelligence** (`startup-launch`): tries your names until one is clear, lists the steps to register it with the official links, and plans the first 90 days. [antevo.ch/mcp/build](https://antevo.ch/mcp/build/)
+- **Company Due Diligence** (`due-diligence`): checks a company before you sign or pay. [antevo.ch/mcp/build/due-diligence](https://antevo.ch/mcp/build/due-diligence/)
+- **Supply Chain Watch** (`supply-chain`): checks a supply route leg by leg before the next order. [antevo.ch/mcp/build/supply-chain](https://antevo.ch/mcp/build/supply-chain/)
+- **M&A Intelligence** (`m-and-a`): maps a niche and reads a shortlist before any approach. [antevo.ch/mcp/build/m-and-a](https://antevo.ch/mcp/build/m-and-a/)
+
+[How the builds work →](plugins/antevo-build/)
 
 ## Who this is for
 
@@ -30,10 +57,10 @@
 - **Leadership teams and strategy owners.** *"What changed today for our strategy?"* — the day's risks and opportunities for companies, matched to your markets, inputs, routes and objectives in your own assistant, with possible responses and their reasons. Your answers never reach Antevo.
 - **Anyone who follows markets and the world.** The daily editorial read, the risk radar and a century of macro history — no account.
 
-![How a question travels: your assistant speaks MCP to four Antevo connections, which draw on the Antevo desk and return an answer with the record behind it](assets/connections.svg)
-
 ## Table of Contents
 
+- [The engines](#the-engines)
+- [Build on it](#build-on-it)
 - [Installation](#installation)
 - [Quick Start](#quick-start)
 - [The connections](#the-connections)
@@ -66,7 +93,7 @@ Add the marketplace once, then install what you need:
 /plugin install antevo-strategy-radar@antevo # public — your answers stay with Claude
 /plugin install antevo-trademark@antevo    # screening public; your watchlist needs a sign-in
 /plugin install antevo-research@antevo     # research desks — any Antevo account, OAuth on first use
-/plugin install antevo-build@antevo        # Build with Antevo — seven engines, Startup Launch and Due Diligence
+/plugin install antevo-build@antevo        # four builds on seven engines — five public, two sign in
 /plugin install antevo-wealth@antevo       # your household — OAuth on first use
 /plugin install antevo-mandates@antevo     # your firm — by arrangement, OAuth on first use
 ```
@@ -131,7 +158,10 @@ All seven are listed in the official [MCP Registry](https://registry.modelcontex
 
 ## Skills
 
-![Antevo plugins and skills: Executive 9, Wealth 12, Trademark 4, Mandates 3, around the Antevo marketplace](assets/skills.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/plugins-dark.png">
+  <img alt="Eight plugins, 42 skills: Executive 9, Tremor Watch 3, Strategy Radar 3, Trademark 4, Research 3, Builds 4, Wealth 13, Mandates 3." src="assets/plugins-light.png" width="100%">
+</picture>
 
 | Skill | What it does |
 |:--|:--|

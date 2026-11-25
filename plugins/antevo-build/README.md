@@ -1,4 +1,7 @@
-![Build with Antevo: three names tried in turn, Novara taken, Lumora taken, Tirano Pay clear, then the next steps, standing on six Antevo engines](assets/cover.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../../assets/builds-dark.png">
+  <img alt="Four builds, one prompt each: Startup launch, Due diligence, Supply chain and M&A intelligence, each with its real run of 25 November 2026." src="../../assets/builds-light.png" width="100%">
+</picture>
 
 # Build with Antevo
 
