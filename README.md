@@ -37,7 +37,7 @@ The plugins connect seven of them directly; `antevo-build` connects eight at onc
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/builds-dark.png">
-  <img alt="Seven builds, one prompt each: Startup launch (Tirano Pay, two names taken, one clear on this screen), Due diligence (Telvaro AG, on the record, two things worth a look), Supply chain (Taiwan to Basel, leg by leg), M&A intelligence (Swiss robotics, three companies read), Real estate (a new apartment near Zurich, the seller on the record, two things worth a look) Family office (a Swiss family's week, holding by holding) and Market entry (an example Swiss instrument maker in Singapore, the name clear on this screen, two things worth a look). Real runs on 25 November 2026." src="assets/builds-light.png" width="100%">
+  <img alt="Thirteen builds, one prompt each: Startup launch, Due diligence, Supply chain, M&A intelligence, Real estate, Family office, Market entry, Portfolio concentration, Strategy desk, The franc rose, Competitor watch, Your own research desk and Intelligence terminal, each with one finding from its real run of 25 November 2026, and a last line for your own build." src="assets/builds-light.png" width="100%">
 </picture>
 
 **We build the intelligence. You build what's next.** `antevo-build` connects eight engines in one install and adds builds on top of them. Each build is a recipe, an example from a real run and a skill:

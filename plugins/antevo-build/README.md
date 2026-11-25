@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../../assets/builds-dark.png">
-  <img alt="Seven builds, one prompt each: Startup launch, Due diligence, Supply chain, M&A intelligence, Real estate, Family office and Market entry, each with its real run of 25 November 2026." src="../../assets/builds-light.png" width="100%">
+  <img alt="Thirteen builds, one prompt each: Startup launch, Due diligence, Supply chain, M&A intelligence, Real estate, Family office, Market entry, Portfolio concentration, Strategy desk, The franc rose, Competitor watch, Your own research desk and Intelligence terminal, each with one finding from its real run of 25 November 2026, and a last line for your own build." src="../../assets/builds-light.png" width="100%">
 </picture>
 
 # Build with Antevo
