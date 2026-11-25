@@ -27,7 +27,7 @@
 </style></head><body><main id="ws"><p class="essay-note">Loading the workspace…</p></main>
 <script>
 /* Renders any Antevo build workspace (workspace.json). Every block is optional:
-   tries (options checked one by one), steps (next actions with links),
+   tries (options checked one by one; tries.item names them, default "Try"), steps (next actions with links),
    sections (finding + so what), links, roadmap, watch. */
 (function(){var e=function(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
 var C={red:'#a3412a',green:'#2f7a52',amber:'#9a6a1f',ink:'#2a2622'};
@@ -36,9 +36,9 @@ var file=(new URLSearchParams(location.search).get('w')||'workspace.json').repla
 fetch(file).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(w){var h='';
 h+='<p class="kicker">'+e(w.kind)+' · '+e(w.built)+'</p><h1 class="display">'+e(w.title)+' <br><em>'+e(w.subtitle)+'.</em></h1><p class="essay-note">'+e(w.note)+'</p>';
 if(w.tries){h+='<p class="prompt-group ws-gap">'+e(w.tries.label)+'</p><div class="ws-tries">'+w.tries.items.map(function(t,i){
- return'<div class="ws-try" style="border-top-color:'+(C[t.level]||C.ink)+'"><small>Try '+(i+1)+'</small><strong>'+e(t.name)+'</strong><span class="ws-verdict" style="color:'+(C[t.level]||C.ink)+'">'+e(t.verdict)+'</span><ul>'+t.evidence.map(function(x){return'<li>'+e(x)+'</li>'}).join('')+'</ul></div>'}).join('')+'</div><p class="ws-src">'+e(w.tries.source)+'</p>'}
+ return'<div class="ws-try" style="border-top-color:'+(C[t.level]||C.ink)+'"><small>'+e(w.tries.item||'Try')+' '+(i+1)+'</small><strong>'+e(t.name)+'</strong><span class="ws-verdict" style="color:'+(C[t.level]||C.ink)+'">'+e(t.verdict)+'</span><ul>'+t.evidence.map(function(x){return'<li>'+e(x)+'</li>'}).join('')+'</ul></div>'}).join('')+'</div><p class="ws-src">'+e(w.tries.source)+'</p>'}
 if(w.steps){h+='<p class="prompt-group ws-gap">'+e(w.steps.label)+'</p><ol class="ws-steps">'+w.steps.items.map(function(s){
- return'<li><div><strong>'+e(s.do)+'</strong>'+(s.why?'<p>'+e(s.why)+'</p>':'')+'<div class="ws-links">'+(s.links||[]).map(function(l){return'<a href="'+e(safe(l.url))+'" rel="noopener">'+e(l.label)+' ↗</a>'}).join('')+'</div></div></li>'}).join('')+'</ol>'}
+ return'<li><div><strong>'+e(s.do)+'</strong>'+(s.why?'<p>'+e(s.why)+'</p>':'')+'<div class="ws-links">'+(s.links||[]).map(function(l){var own=/^https:\/\/([a-z0-9-]+\.)*antevo\.ch(\/|$)/i.test(l.url);return'<a href="'+e(safe(l.url))+'"'+(own?'':' rel="noopener"')+'>'+e(l.label)+(own?' →':' ↗')+'</a>'}).join('')+'</div></div></li>'}).join('')+'</ol>'}
 if(w.sections){h+='<div class="ws-grid">'+w.sections.map(function(s){
  return'<div class="ws-tile"><small>'+e(s.title)+'</small><strong style="color:'+(C[s.level]||C.ink)+'">'+e(s.verdict)+'</strong>'+(s.so_what?'<p class="ws-so"><b>So what:</b> '+e(s.so_what)+'</p>':'')+'<ul>'+s.evidence.map(function(x){return'<li>'+e(x)+'</li>'}).join('')+'</ul><p class="ws-src">'+e(s.source)+'</p></div>'}).join('')+'</div>'}
 if(w.links)h+='<p class="prompt-group">How the findings connect</p><ul class="ws-list">'+w.links.map(function(l){return'<li><b>'+e(l.a)+' × '+e(l.b)+':</b> '+e(l.text)+'</li>'}).join('')+'</ul>';

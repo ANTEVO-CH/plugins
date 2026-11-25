@@ -2,6 +2,23 @@
 
 All notable changes to the Antevo plugins are documented here.
 
+## 2026-11-25 — Build with Antevo 0.2.0
+
+- **`antevo-build`, `due-diligence`**, new skill: checks a company before signing,
+  paying or partnering. Five checks in turn (the register and LEI, the sanctions
+  lists, the website and email domain through Guard, what changed lately, which
+  group company signs), each on the record, worth a look, mismatch or not
+  checked; what to settle before signing with the official links; a "so what"
+  for who is behind it, its brand and its market today. Public records only.
+- **Guard** joins the plugin's connectors (`https://api.antevo.ch/mcp/guard/mcp`,
+  public): seven engines.
+- **`startup-launch`:** a name is clear when every near mark is only loosely
+  alike (tier `watch`), whatever its classes; a high-tier mark in the founder's
+  classes is a "close call" for a lawyer, not a fall. The old rule called almost
+  every real name taken.
+- **Template:** `tries.item` names the cards (`Try`, `Check`); links to antevo.ch
+  show → rather than ↗. `template/due-diligence.json` is the run of 25 Nov 2026.
+
 ## 2026-11-25 — Build with Antevo 0.1.0
 
 - **`antevo-build`**, new: tools built on six Antevo engines. First skill,

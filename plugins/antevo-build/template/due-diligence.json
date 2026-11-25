@@ -1,0 +1,138 @@
+{
+ "template": "Built on Antevo · https://antevo.ch/mcp/build/due-diligence/",
+ "kind": "Company Due Diligence",
+ "title": "Swisscom AG",
+ "subtitle": "A new supplier, checked before signing",
+ "built": "2026-11-25",
+ "note": "Swisscom AG is an example, chosen because it is well known; nothing is alleged. Every finding is an Antevo engine's answer on the date shown, from public records.",
+ "tries": {
+  "label": "Check by check",
+  "item": "Check",
+  "source": "Antevo Companies, Antevo Guard and Antevo Trademark, 25 Nov 2026 · Zefix, SHAB, GLEIF, OFAC, EU, UK and SECO sanctions lists, certificate logs and public DNS",
+  "items": [
+   {
+    "name": "Is it who it says it is?",
+    "verdict": "On the record",
+    "level": "green",
+    "evidence": [
+     "Swisscom AG, CHE-102.753.938, Ittigen: active in the Swiss commercial register",
+     "LEI 5493005SL9HHOXS3B739 issued to Swisscom AG, next renewal 22 July 2027"
+    ]
+   },
+   {
+    "name": "Is it on a sanctions list?",
+    "verdict": "Not found",
+    "level": "green",
+    "evidence": [
+     "Not found under its name or identifiers on the OFAC, EU, UK and SECO lists, read 23 to 24 November 2026",
+     "Not being listed is not the same as unrestricted: ownership by a listed party needs its own check"
+    ]
+   },
+   {
+    "name": "Do the website and email add up?",
+    "verdict": "On the record",
+    "level": "green",
+    "evidence": [
+     "swisscom.ch: first certificate logged 6 March 2008",
+     "It points to a web server, not a parking page; nothing in five sources contradicts the record"
+    ]
+   },
+   {
+    "name": "What changed lately?",
+    "verdict": "Worth a look",
+    "level": "amber",
+    "evidence": [
+     "Signatories changed on 6 May 2026 (two in, one out) and on 30 June 2026 (one in)",
+     "23 register notices since 2019, the auditor changed to PricewaterhouseCoopers AG in 2019"
+    ]
+   },
+   {
+    "name": "Which company signs?",
+    "verdict": "Worth a look",
+    "level": "amber",
+    "evidence": [
+     "Several Swiss companies carry the name: Swisscom Services AG, Swisscom Fixnet AG, Swisscom Ventures AG and more",
+     "The trademarks sit with Swisscom (Schweiz) AG: 17 marks, all registered, filing since 1996"
+    ]
+   }
+  ]
+ },
+ "steps": {
+  "label": "Before you sign, with the links",
+  "items": [
+   {
+    "do": "Get today's register extract and check who may sign",
+    "why": "Signatories changed twice this year; the person signing should be on today's extract.",
+    "links": [
+     {"label": "zefix.ch", "url": "https://www.zefix.ch"},
+     {"label": "shab.ch", "url": "https://www.shab.ch"}
+    ]
+   },
+   {
+    "do": "Make the contract and the invoice name the same company, with its UID",
+    "why": "Several group companies share the name; the UID settles which one you deal with.",
+    "links": [{"label": "uid.admin.ch", "url": "https://www.uid.admin.ch"}]
+   },
+   {
+    "do": "Confirm the bank details on a phone number you already hold",
+    "why": "Public records cannot see who owns a bank account; a call can.",
+    "links": []
+   },
+   {
+    "do": "If your rules require it, run your own sanctions check",
+    "why": "This read is not a compliance screen; the official search is free.",
+    "links": [{"label": "SECO sanctions search", "url": "https://www.sesam.search.admin.ch"}]
+   },
+   {
+    "do": "Watch the company",
+    "why": "A file is today only; at most one alert a day if the register or a sanctions list changes.",
+    "links": [{"label": "Antevo Companies", "url": "https://antevo.ch/companies/"}]
+   }
+  ]
+ },
+ "sections": [
+  {
+   "title": "Who is behind it",
+   "verdict": "No controlling parent on record",
+   "level": "ink",
+   "so_what": "If your onboarding needs owners, ask for the beneficial-owner declaration.",
+   "evidence": [
+    "GLEIF lists no parent: no person or company is known to control it",
+    "Owners who are people are not public in Switzerland; 10 corporate holders by identifier are on file"
+   ],
+   "source": "Antevo Companies, 25 Nov 2026 (GLEIF, SEC filings, PermID)"
+  },
+  {
+   "title": "Its brand",
+   "verdict": "Trades under its marks",
+   "level": "green",
+   "so_what": "The names you see on the invoice are its own: no sign of a borrowed brand.",
+   "evidence": [
+    "Swisscom (Schweiz) AG holds 17 marks in Switzerland, Canada, Singapore and internationally, none abandoned",
+    "Most claims in classes 9, 38 and 42; last filing 25 August 2026"
+   ],
+   "source": "Antevo Trademark, 25 Nov 2026"
+  },
+  {
+   "title": "Its market today",
+   "verdict": "One entry touches cloud suppliers",
+   "level": "amber",
+   "so_what": "For a multi-year cloud or data-centre contract, ask how prices are fixed if funding gets dearer.",
+   "evidence": [
+    "AI-linked funding strain could make funding dearer for data-centre owners and cloud providers (high impact, medium likelihood, rising)",
+    "Nothing on the board names Swiss telecoms directly"
+   ],
+   "source": "Antevo Strategy Radar, 25 Nov 2026"
+  }
+ ],
+ "links": [
+  {"a": "Companies", "b": "Trademark", "text": "The register shows several companies under the name, and the trademark book shows which one holds the brand: the contract should say which one you deal with."},
+  {"a": "Companies", "b": "Guard", "text": "The register, the LEI and the website all point to the same company, so the remaining checks are people and paper: who signs, and which account is paid."}
+ ],
+ "watch": [
+  "New notices for the company on SHAB (Antevo Companies alerts at most once a day)",
+  "Sanctions lists: Antevo reads OFAC, EU, UK and SECO daily",
+  "Pricing of AI-linked bond and share sales this week (named by Strategy Radar)"
+ ],
+ "disclaimer": "From public records, each named and dated. Not a KYC, AML or sanctions-compliance screen, not a credit report, and not legal advice."
+}

@@ -2,7 +2,7 @@
 
 # Build with Antevo
 
-**We build the intelligence. You build what's next.** This plugin connects six Antevo engines
+**We build the intelligence. You build what's next.** This plugin connects seven Antevo engines
 to your assistant and adds builds on top of them: one prompt, the engines answer, and your
 assistant joins the answers into a working document. The page: https://antevo.ch/mcp/build/
 
@@ -12,7 +12,7 @@ assistant joins the answers into a working document. The page: https://antevo.ch
 ```
 
 Then ask: *"Help me launch an AI fintech in Switzerland, then Germany. My names are Novara,
-Lumora and Tirano Pay."*
+Lumora and Tirano Pay."* Or: *"Check Swisscom AG before we sign with them as a supplier."*
 
 ## Startup Launch Intelligence · skill `startup-launch`
 
@@ -37,6 +37,29 @@ The idea: an AI fintech in Switzerland, then Germany. The names are examples, no
 
 ![The example workspace: the three names tried, then the next steps for Tirano Pay with their links](assets/workspace.png)
 
+## Company Due Diligence · skill `due-diligence`
+
+Before you sign, pay or partner. One prompt, four engines, three of them free with no account.
+The page: https://antevo.ch/mcp/build/due-diligence/
+
+| | What happens | Engine |
+|---|---|---|
+| **1. Check by check** | Five checks in turn, each **on the record**, **worth a look**, **mismatch** or **not checked**: is it who it says it is, is it on a sanctions list, do the website and email add up, what changed lately, which company signs. | Companies · Guard · Trademark |
+| **2. Before you sign** | What to settle, in order, each with its official link: today's register extract, the UID, the sanctions search, a call on a number you already hold for the bank details, then a watch on the company. | Companies |
+| **3. What it means** | Who is behind it, its brand and its market today, each with one "so what" line. | Companies · Trademark · Strategy Radar |
+
+### A real run, 25 November 2026
+
+The deal: a new supplier, checked before signing. Swisscom AG is an example chosen because it is
+well known; nothing is alleged.
+
+- **On the record:** active in the Swiss register (CHE-102.753.938, Ittigen), LEI issued; not found on the OFAC, EU, UK or SECO lists; swisscom.ch has had certificates since 2008.
+- **Worth a look:** signatories changed on 6 May and 30 June 2026; several Swiss companies carry the name and the trademarks sit with Swisscom (Schweiz) AG.
+- **Before you sign:** [zefix.ch](https://www.zefix.ch) for today's extract, [uid.admin.ch](https://www.uid.admin.ch) so the contract and invoice name the same company, the bank details confirmed by phone, [the SECO search](https://www.sesam.search.admin.ch) if your rules need it, then an Antevo watch.
+- **So what:** no controlling parent on record, so ask for the beneficial-owner declaration if onboarding needs owners; for a multi-year cloud contract, ask how prices are fixed if funding gets dearer.
+
+The workspace: `template/index.html?w=due-diligence.json`.
+
 ## The template
 
 `template/` is one page that renders one file, `workspace.json`. The skill fills it; so can your
@@ -48,30 +71,33 @@ cd template && python3 -m http.server 8000   # then open http://localhost:8000
 
 The file's blocks are all optional, so the same page renders other builds too: `tries` (options
 checked one by one), `steps` (next actions with links), `sections` (a finding, its `so_what`, its
-evidence and source), `links`, `roadmap` and `watch`. See [template/README.md](template/README.md).
+evidence and source), `links`, `roadmap` and `watch`. `index.html?w=due-diligence.json` renders the
+Due Diligence run. See [template/README.md](template/README.md).
 
-## The six engines
+## The seven engines
 
 | Engine | Address | Access |
 |---|---|---|
 | Trademark | `https://trademark.antevo.ch/mcp` | free, no account |
+| Guard | `https://api.antevo.ch/mcp/guard/mcp` | free, no account |
 | Strategy Radar | `https://api.antevo.ch/mcp/strategy/mcp` | free, no account |
 | Executive Brief | `https://api.antevo.ch/mcp/executive/mcp` | free, no account |
 | Tremor Watch | `https://api.antevo.ch/mcp/tremor/mcp` | free, no account |
 | Companies | `https://api.antevo.ch/mcp/companies/mcp` | any Antevo account; finding is free, opening a file uses credits |
 | Research | `https://api.antevo.ch/mcp/research/mcp` | any Antevo account; answers use credits |
 
-Not on Claude? Add the six addresses to any MCP client and paste the recipe,
-[antevo.ch/mcp/build/antevo-startup-launch.md](https://antevo.ch/mcp/build/antevo-startup-launch.md),
-at the start of the conversation.
+Not on Claude? Add the addresses to any MCP client and paste a recipe at the start of the
+conversation: [antevo-startup-launch.md](https://antevo.ch/mcp/build/antevo-startup-launch.md) or
+[antevo-due-diligence.md](https://antevo.ch/mcp/build/due-diligence/antevo-due-diligence.md).
 
 ## More builds
 
-The same six engines, a different building on top: M&A intelligence, real estate acquisition,
-family office, due diligence and supply chain are next.
+The same engines, a different building on top: M&A intelligence, real estate acquisition,
+family office and supply chain are next.
 
 ## The rules every build keeps
 
 Every figure keeps its date, and Antevo's answers are quoted as Antevo's. A trademark screen is
 not legal clearance, and an unregistered domain can be taken at any time. The plan is options to
-consider, never investment, legal or tax advice. Nothing here trades, moves money or decides for you.
+consider, never investment, legal or tax advice. A due-diligence read is public records only:
+not a KYC, AML or sanctions-compliance screen, not a credit report, and never about a person's conduct. Nothing here trades, moves money or decides for you.
