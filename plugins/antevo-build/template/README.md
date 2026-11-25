@@ -11,7 +11,8 @@ python3 -m http.server 8000   # in this folder, then open http://localhost:8000
 `index.html?w=other.json` renders another file in the same folder: `index.html?w=due-diligence.json`
 is the Company Due Diligence run of 25 November 2026 (an example supplier; nothing is alleged), and
 `index.html?w=supply-chain.json` the Supply Chain Watch run of the same day (Taiwan to Basel), and `index.html?w=m-and-a.json` the
-M&A Intelligence run (Swiss robotics; nothing says any company is for sale).
+M&A Intelligence run (Swiss robotics; nothing says any company is for sale). `index.html?w=real-estate.json` is the
+Real Estate Acquisition run (a new apartment near Zurich; nothing says the company is party to any sale).
 
 ## The file
 
@@ -28,5 +29,5 @@ Every block is optional; the page shows the ones that are there.
 | `watch` | the dates and indicators the engines named |
 | `disclaimer` | keep it: not advice; a screen is not clearance |
 
-Fill it with the `startup-launch`, `due-diligence`, `supply-chain` or `m-and-a` skill in this plugin, or from your own
+Fill it with the `startup-launch`, `due-diligence`, `supply-chain`, `m-and-a` or `real-estate` skill in this plugin, or from your own
 agent calling the connectors. Change the page, restyle it, turn it into your own product.

@@ -2,6 +2,18 @@
 
 All notable changes to the Antevo plugins are documented here.
 
+## 2026-11-25 — Build with Antevo 0.5.0
+
+- **`antevo-build`, `real-estate`**, new skill: reads a property purchase before
+  signing. The seller in the register, on the sanctions lists and by its dated
+  notices (Companies); where the deposit goes (Guard); the market where the
+  buyer buys and the mortgage with the lending rules (Research, real estate and
+  mortgages desks); the price against history (Executive Brief, house prices
+  since 1970); market strain (Tremor Watch); each with a "so what", then what
+  to do before signing with the official links. Never says whether to buy.
+  `template/real-estate.json` is the Zurich apartment run of 25 Nov 2026.
+- **README:** 43 skills.
+
 ## 2026-11-25 — Build with Antevo 0.4.0
 
 - **`antevo-build`, `m-and-a`**, new skill: maps the companies registered in a

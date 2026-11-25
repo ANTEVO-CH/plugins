@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../../assets/builds-dark.png">
-  <img alt="Four builds, one prompt each: Startup launch, Due diligence, Supply chain and M&A intelligence, each with its real run of 25 November 2026." src="../../assets/builds-light.png" width="100%">
+  <img alt="Five builds, one prompt each: Startup launch, Due diligence, Supply chain, M&A intelligence and Real estate, each with its real run of 25 November 2026." src="../../assets/builds-light.png" width="100%">
 </picture>
 
 # Build with Antevo
@@ -110,6 +110,31 @@ nothing says any of them is for sale or has been approached.
 
 The workspace: `template/index.html?w=m-and-a.json`.
 
+## Real Estate Acquisition · skill `real-estate`
+
+Before you sign. One prompt, five engines, three of them free with no account.
+The page: https://antevo.ch/mcp/build/real-estate/
+
+| | What happens | Engine |
+|---|---|---|
+| **1. The seller** | Every company that carries the name, then the file on the one named in the offer: register status, stated purpose, dated notices, sanctions lists; each check **on the record**, **not found**, **worth a look**, a **mismatch** or **not checked**. | Companies |
+| **2. Where the deposit goes** | The company that asks for the deposit and the domain the request came from, finding by finding. Never "safe" or "cleared". | Guard |
+| **3. The market and the money** | Prices, vacancy and supply where you buy; mortgage rates and the lending rules; the price against history; market strain; each with one "so what" line. | Research · Executive Brief · Tremor Watch |
+| **4. Before signing** | The register extract, the land register, the public-law restrictions on the plot, the permit for buyers abroad, dated offers from two lenders, the draft deed. | official links |
+
+### A real run, 25 November 2026
+
+A new apartment near Zurich, bought as a home with a mortgage. Mobimo AG stands in as the
+seller because building and selling property is its stated purpose in the register: nothing
+says it is party to any sale, and nothing is alleged.
+
+- **The seller:** on the record in Küsnacht (ZH), on none of the sanctions lists read, 15 register notices since 2019 and one this year. Seven register entries carry the name, so the reservation and the deed should name the same one.
+- **The deposit:** the domain has been registered since 1999 and publishes no DMARC mail policy, so the payee and the account are confirmed by phone before anything is paid.
+- **Before signing:** [zefix.ch](https://www.zefix.ch) for the extract, the [land register](https://www.cadastre.ch/de/grundbuch-schweiz), the [cadastre of public-law restrictions](https://www.cadastre.ch/de/oereb-kataster), the [permit for buyers abroad](https://www.bj.admin.ch/de/grundstueckerwerb-durch-personen-im-ausland), dated offers from two lenders, the draft deed.
+- **So what:** prices still rise, more slowly (condominiums up 3.9% on the year in the third quarter); the bank tests what you can carry at about 5%, not at today's rate; Swiss real prices stand 36% above their 1989 peak and took 28 years to pass it again, so how long you stay is part of the price; bond markets are unsettled, so ask how long a fixed offer holds.
+
+The workspace: `template/index.html?w=real-estate.json`.
+
 ## The template
 
 `template/` is one page that renders one file, `workspace.json`. The skill fills it; so can your
@@ -122,7 +147,7 @@ cd template && python3 -m http.server 8000   # then open http://localhost:8000
 The file's blocks are all optional, so the same page renders other builds too: `tries` (options
 checked one by one), `steps` (next actions with links), `sections` (a finding, its `so_what`, its
 evidence and source), `links`, `roadmap` and `watch`. `index.html?w=due-diligence.json`,
-`index.html?w=supply-chain.json` and `index.html?w=m-and-a.json` render the other runs. See [template/README.md](template/README.md).
+`index.html?w=supply-chain.json`, `index.html?w=m-and-a.json` and `index.html?w=real-estate.json` render the other runs. See [template/README.md](template/README.md).
 
 ## The seven engines
 
@@ -139,17 +164,17 @@ evidence and source), `links`, `roadmap` and `watch`. `index.html?w=due-diligenc
 Not on Claude? Add the addresses to any MCP client and paste a recipe at the start of the
 conversation: [antevo-startup-launch.md](https://antevo.ch/mcp/build/antevo-startup-launch.md),
 [antevo-due-diligence.md](https://antevo.ch/mcp/build/due-diligence/antevo-due-diligence.md),
-[antevo-supply-chain.md](https://antevo.ch/mcp/build/supply-chain/antevo-supply-chain.md) or
-[antevo-m-and-a.md](https://antevo.ch/mcp/build/m-and-a/antevo-m-and-a.md).
+[antevo-supply-chain.md](https://antevo.ch/mcp/build/supply-chain/antevo-supply-chain.md),
+[antevo-m-and-a.md](https://antevo.ch/mcp/build/m-and-a/antevo-m-and-a.md) or
+[antevo-real-estate.md](https://antevo.ch/mcp/build/real-estate/antevo-real-estate.md).
 
 ## More builds
 
-The same engines, a different building on top: real estate acquisition and family office
-are next.
+The same engines, a different building on top: family office is next.
 
 ## The rules every build keeps
 
 Every figure keeps its date, and Antevo's answers are quoted as Antevo's. A trademark screen is
-not legal clearance, and an unregistered domain can be taken at any time. An M&A read never says a company is for sale and never guesses why a notice was filed. A quiet week on a route means no alerts in the sources read, never a safe route. The plan is options to
+not legal clearance, and an unregistered domain can be taken at any time. An M&A read never says a company is for sale and never guesses why a notice was filed. A property read never says whether to buy and is not a legal review of the purchase. A quiet week on a route means no alerts in the sources read, never a safe route. The plan is options to
 consider, never investment, legal or tax advice. A due-diligence read is public records only:
 not a KYC, AML or sanctions-compliance screen, not a credit report, and never about a person's conduct. Nothing here trades, moves money or decides for you.
