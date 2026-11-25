@@ -1,0 +1,44 @@
+{
+ "template": "Built on Antevo · https://antevo.ch/mcp/build/market-entry/",
+ "kind": "Market Entry",
+ "title": "Alpenmess in Singapore",
+ "subtitle": "A sales and service office, read before it opens",
+ "built": "2026-11-25",
+ "note": "Alpenmess is an example name for an example company: a Swiss maker of precision measuring instruments and calibration software for semiconductor and electronics factories, opening in Singapore to sell across Southeast Asia. Every finding is an Antevo engine's answer on the date shown; where a desk named a company, the page describes it instead.",
+ "tries": {
+  "label": "The plan, piece by piece",
+  "item": "Piece",
+  "source": "Antevo Trademark, Antevo Research (economy and geopolitics desks), Antevo Strategy Radar, Antevo Executive Brief and Antevo Tremor Watch, 25 Nov 2026 · trademark registers, the .ch, .com and .sg registries. Contains information from Entities Registered with ACRA accessed on 25 November 2026 from data.gov.sg, made available under the terms of the Singapore Open Data Licence version 1.0",
+  "items": [
+   {"name": "The name in Singapore", "verdict": "Clear on this screen", "level": "green", "evidence": ["No near marks found in classes 9, 37 and 42, in Singapore or the other registers searched", "No entity under the name in Singapore's register (ACRA) or in Switzerland's", "alpenmess.sg, .ch and .com appear unregistered"]},
+   {"name": "Demand", "verdict": "Strong now, slower in 2027", "level": "green", "evidence": ["Singapore's 2026 growth forecast was raised to around 6% on 24 November; 6.1% a year on in the third quarter", "Electronics exports rose 73.9% a year on in October", "A major US inspection-equipment maker opened its largest plant worldwide in Singapore on 20 November", "The 2027 guide is 2.5% to 4.5%, as AI investment is expected to cool"]},
+   {"name": "Trade rules", "verdict": "Worth a look", "level": "amber", "evidence": ["The EFTA free trade agreement with Singapore has been in force since 2003; instruments move without tariffs", "A US rule published on 19 November puts advanced AI chips to Singapore, Malaysia, Thailand and Indonesia under licence, with a 90-day window to about 17 February 2027", "Instruments with US-origin parts or software can carry US export rules when they are resold from Singapore into the region"]},
+   {"name": "An export licence from Switzerland", "verdict": "Worth a look", "level": "amber", "evidence": ["Metrology for advanced chip production can count as dual-use (Wassenaar category 3) and need a licence from SECO", "Singapore, Malaysia, Vietnam and Thailand are not embargoed, so licences are generally grantable, with end-user declarations"]},
+   {"name": "The franc", "verdict": "Strong", "level": "amber", "evidence": ["One franc bought about 1.55 Singapore dollars on 25 November", "The franc is 3.4% stronger against the dollar than a year ago, so prices set in francs look dearer locally", "The Monetary Authority of Singapore held its policy in October; its next review is in January"]}
+  ]
+ },
+ "steps": {
+  "label": "Before the office opens, with the links",
+  "items": [
+   {"do": "Classify each product for export control, in Switzerland and for US-origin parts", "why": "This is the one step that can stop a shipment: a SECO licence for dual-use metrology, and US rules on resale from Singapore if US parts or software are inside.", "links": [{"label": "SECO export controls", "url": "https://www.seco.admin.ch/seco/de/home/Aussenwirtschaftspolitik_Wirtschaftliche_Zusammenarbeit/Wirtschaftsbeziehungen/exportkontrollen-und-sanktionen.html"}, {"label": "bis.gov", "url": "https://www.bis.gov/"}]},
+   {"do": "File the name in Singapore in classes 9, 37 and 42, then watch it", "why": "The screen is clear today; a filing protects the name, and a watch catches the next close mark.", "links": [{"label": "ipos.gov.sg", "url": "https://www.ipos.gov.sg/"}, {"label": "Watch the name", "url": "https://antevo.ch/trademark/app/add?intent=watch&mark=Alpenmess&source=build"}]},
+   {"do": "Register the Singapore company and secure alpenmess.sg", "why": "No entity uses the name in Singapore's register, and the domain appears free; both can change at any time.", "links": [{"label": "bizfile.gov.sg", "url": "https://www.bizfile.gov.sg/"}, {"label": "acra.gov.sg", "url": "https://www.acra.gov.sg/"}]},
+   {"do": "Write end-user undertakings into every distributor contract", "why": "Swiss and US rules can follow an instrument resold from Singapore to a third country.", "links": []},
+   {"do": "Decide the invoicing currency before the first quote", "why": "With the franc strong, quotes in francs look dearer locally; the January review sets the Singapore dollar's path.", "links": [{"label": "mas.gov.sg", "url": "https://www.mas.gov.sg/"}]},
+   {"do": "Plan work passes for the first hires, and talk to the trade promoters", "why": "Service engineers on site need passes; the Swiss and Singapore trade agencies know the region's buyers.", "links": [{"label": "Employment Pass", "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass"}, {"label": "s-ge.com", "url": "https://www.s-ge.com/en"}, {"label": "edb.gov.sg", "url": "https://www.edb.gov.sg/"}]}
+  ]
+ },
+ "sections": [
+  {"title": "The region's demand", "verdict": "Booming, and narrow", "level": "ink", "so_what": "Factories that are installed now need calibration and repair for years, so a service office earns from the installed base even if new orders slow in 2027.", "evidence": ["Manufacturing, mainly electronics and precision engineering, carries Singapore's growth; retail fell 2.7% a year on in the third quarter", "Malaysia is the region's other chip hub; Vietnam's electronics assembly is growing as supply chains move out of China", "Core inflation in Singapore eased to 1.5% in October"], "source": "Antevo Research, economy desk, 25 Nov 2026"},
+  {"title": "The rules around the customers", "verdict": "Tighter, and dated", "level": "ink", "so_what": "Customers in Malaysia and Thailand will screen their suppliers harder in 2027: expect longer sales cycles and questions about where each part comes from.", "evidence": ["The US-China trade truce formally expires on 10 January 2027", "A deeper China-ASEAN trade agreement enters into force on 1 December 2026, easing access for Chinese instrument makers", "Singapore chairs ASEAN in 2027"], "source": "Antevo Research, geopolitics desk, 25 Nov 2026"},
+  {"title": "What changed for companies today", "verdict": "Two risks touch this plan", "level": "ink", "so_what": "Both reach Alpenmess through its customers: chip factories that depend on AI funding, and equipment bought from economies named in the reported US tariff plans.", "evidence": ["The AI relief rally reversed in a day; one weak bond or share sale could hit chip and power orders (high impact, medium likelihood, rising)", "Washington is reported to be readying higher tariffs on China, the EU, Japan, South Korea and a dozen more economies; rates and dates are not published"], "source": "Antevo Strategy Radar, 25 Nov 2026"},
+  {"title": "Markets this week", "verdict": "Elevated, 2.4 times a normal week", "level": "ink", "so_what": "Not a reason to delay, but a reason not to fix a currency or a lease on a single day.", "evidence": ["Week of 20 November, down from high the week before", "Bonds, commodities and volatility breaking; credit and currencies calm"], "source": "Antevo Tremor Watch, week of 20 Nov 2026"}
+ ],
+ "links": [
+  {"a": "Trademark", "b": "Research", "text": "The name is clear in Singapore, and the desk finds demand strong: the order to act in is name, company, then the first hires."},
+  {"a": "Research", "b": "Strategy Radar", "text": "The US chip rule and the AI funding strain are one risk seen twice: both slow new factories, neither empties the installed base a service office lives on."},
+  {"a": "Research", "b": "Tremor Watch", "text": "A strong franc and elevated markets argue for deciding the invoicing currency once, not at each quote."}
+ ],
+ "watch": ["The deeper China-ASEAN trade agreement in force on 1 December 2026", "The G-20 summit in mid-December and any extension of the US-China truce", "The truce's formal expiry on 10 January 2027", "The Monetary Authority of Singapore's review in January 2027", "The US chip licensing window closing around 17 February 2027", "New marks close to the name (Antevo Trademark watch)", "The next Tremor reading on Saturday"],
+ "disclaimer": "From public records and Antevo answers, each dated. A screen is not legal clearance, and an export classification is for the company and its advisers to make. Not legal, tax or investment advice."
+}

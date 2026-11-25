@@ -2,6 +2,19 @@
 
 All notable changes to the Antevo plugins are documented here.
 
+## 2026-11-25 — Build with Antevo 0.7.0
+
+- **`antevo-build`, `market-entry`**, new skill: reads a new country before a
+  company opens there. The name screened in the country's trademark registers,
+  company register and domain (Trademark), demand and the currency (Research,
+  economy desk), the trade agreement and export rules (Research, geopolitics
+  desk), what changed for companies today (Strategy Radar), the dated events
+  ahead (Executive Brief) and market strain (Tremor Watch). Export control comes
+  first among the steps; the skill never says whether a product is controlled.
+  `template/market-entry.json` is the example run of 25 Nov 2026: Alpenmess, an
+  example Swiss instrument maker, opening in Singapore.
+- README: 45 skills; builds, plugins and cover pictures redrawn.
+
 ## 2026-11-25 — Build with Antevo 0.6.1
 
 - **`antevo-build`**, examples: company names in the six example workspaces,

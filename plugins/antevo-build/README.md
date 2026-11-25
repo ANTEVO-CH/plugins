@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../../assets/builds-dark.png">
-  <img alt="Six builds, one prompt each: Startup launch, Due diligence, Supply chain, M&A intelligence, Real estate and Family office, each with its real run of 25 November 2026." src="../../assets/builds-light.png" width="100%">
+  <img alt="Seven builds, one prompt each: Startup launch, Due diligence, Supply chain, M&A intelligence, Real estate, Family office and Market entry, each with its real run of 25 November 2026." src="../../assets/builds-light.png" width="100%">
 </picture>
 
 # Build with Antevo
@@ -163,6 +163,37 @@ The engines read the world, not the family's accounts: nothing here is a stateme
 
 The workspace: `template/index.html?w=family-office.json`.
 
+## Market Entry · skill `market-entry`
+
+A new market, read before you open. One prompt, five engines, four of them free with no account.
+The page: https://antevo.ch/mcp/build/market-entry/
+
+| | What happens | Engine |
+|---|---|---|
+| **1. The name there** | The classes businesses like yours file in, then the name screened in the country's trademark registers, its company register (UK and Singapore today) and its domain. | Trademark |
+| **2. Demand** | Growth, the central bank, the currency against yours, and your sector in the country and the region, every figure dated. | Research (economy desk) |
+| **3. The rules** | The trade agreement, export controls on the product at home and for US-origin parts, and trade measures in the region. | Research (geopolitics desk) |
+| **4. The day and the calendar** | What changed for companies today, the dated events ahead and market strain. | Strategy Radar · Executive Brief · Tremor Watch |
+| **5. Before the office opens** | Each piece with its verdict, then the steps in order, export control first, with the official links. | all five |
+
+### A real run, 25 November 2026
+
+Alpenmess is an example name for an example company: a Swiss maker of precision measuring
+instruments and calibration software for chip and electronics factories, opening a sales and
+service office in Singapore to sell across Southeast Asia.
+
+- **The name in Singapore:** clear on this screen. No near marks in classes 9, 37 and 42, no entity under the name in Singapore's register (ACRA) or Switzerland's, and alpenmess.sg appears unregistered.
+- **Demand:** strong now, slower in 2027. Singapore's 2026 growth forecast was raised to around 6% on 24 November; electronics exports rose 73.9% a year on in October; the 2027 guide is 2.5% to 4.5%.
+- **Trade rules:** worth a look. The EFTA agreement with Singapore covers the instruments, but a US rule of 19 November puts advanced chips to Singapore, Malaysia, Thailand and Indonesia under licence, with a window to about 17 February 2027.
+- **An export licence:** worth a look. Metrology for advanced chip production can count as dual-use and need a licence from SECO; the four countries are not embargoed.
+- **The franc:** strong. One franc bought about 1.55 Singapore dollars on 25 November.
+- **So what:** factories installed now need calibration and repair for years, so a service office earns from the installed base even if new orders slow in 2027.
+
+Contains information from Entities Registered with ACRA accessed on 25 November 2026 from
+data.gov.sg, made available under the terms of the Singapore Open Data Licence version 1.0.
+
+The workspace: `template/index.html?w=market-entry.json`.
+
 ## The template
 
 `template/` is one page that renders one file, `workspace.json`. The skill fills it; so can your
@@ -199,7 +230,7 @@ conversation: [antevo-startup-launch.md](https://antevo.ch/mcp/build/antevo-star
 
 ## More builds
 
-The same engines, a different building on top: six builds so far, and the template is yours to build the next.
+The same engines, a different building on top: seven builds so far, and the template is yours to build the next.
 
 ## The rules every build keeps
 
