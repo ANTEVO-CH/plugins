@@ -30,7 +30,8 @@ for path in sorted(glob.glob("**/*.json", recursive=True)):
 market = json.load(open(".claude-plugin/marketplace.json"))
 for entry in market["plugins"]:
     name = entry["name"]
-    root = f"plugins/{entry['source'].lstrip('./')}"
+    # Sources are repository paths (./plugins/<name>): Claude Code 2.1 does not apply metadata.pluginRoot.
+    root = entry['source'].removeprefix('./')
     try:
         manifest = json.load(open(f"{root}/.claude-plugin/plugin.json"))
     except FileNotFoundError:

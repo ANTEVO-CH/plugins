@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Launch workspace · built on Antevo</title>
+<!-- One page that renders one file: workspace.json. Restyle it, rename it, make it yours. -->
+<style>
+:root{--ink:#22201d;--muted:#6b655d;--rule:#ddd6cc;--bg:#f4f1ec;--wine:#7d2e2a;--bronze:#9b7936;--serif:Georgia,"Times New Roman",serif;--sans:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6}
+#ws{max-width:1080px;margin:0 auto;padding:56px 22px 60px}
+.kicker,.prompt-group,small{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--bronze)}
+.display{font-family:var(--serif);font-weight:400;font-size:clamp(38px,6vw,64px);line-height:1.05;margin:10px 0 14px}.display em{font-style:italic}
+.essay-note{color:var(--muted);max-width:620px}.prompt-group{margin:34px 0 10px}
+.ws-tries{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.ws-try{border:1px solid var(--rule);border-top:4px solid;padding:20px;background:#fff8}
+.ws-try strong{display:block;font-family:var(--serif);font-weight:400;font-size:28px;margin:6px 0 2px}.ws-verdict{font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+.ws-try ul,.ws-tile ul,.ws-list{margin:12px 0 0;padding-left:18px;font-size:14px;color:var(--muted)}
+.ws-src{font-size:12px;color:var(--bronze);margin:10px 0 0}
+.ws-steps{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule);counter-reset:ws}
+.ws-steps li{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--rule)}
+.ws-steps li::before{content:counter(ws,decimal-leading-zero);counter-increment:ws;font-size:12px;color:var(--bronze);padding-top:5px}
+.ws-steps strong{font-family:var(--serif);font-weight:400;font-size:22px}.ws-steps p{margin:4px 0 0;font-size:14px;color:var(--muted)}
+.ws-links{display:flex;flex-wrap:wrap;gap:6px 20px;margin-top:8px}.ws-links a,.source-record a{color:var(--wine)}
+.ws-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--rule);margin:34px 0}
+.ws-tile{padding:22px 22px 22px 0;border-bottom:1px solid var(--rule)}.ws-tile strong{display:block;font-family:var(--serif);font-weight:400;font-size:28px;margin:6px 0 8px}
+.ws-so{margin:0;font-size:15px}.ws-so b{color:var(--wine);font-weight:600}
+.ws-road{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.ws-road div{border:1px solid var(--rule);padding:16px}.ws-road b{display:block;color:var(--wine);font-weight:600}
+.source-record{font-size:13px;color:var(--muted);margin-top:30px}
+@media(max-width:760px){.ws-tries,.ws-grid,.ws-road{grid-template-columns:1fr}}
+</style></head><body><main id="ws"><p class="essay-note">Loading the workspace…</p></main>
+<script>
+/* Renders any Antevo build workspace (workspace.json). Every block is optional:
+   tries (options checked one by one), steps (next actions with links),
+   sections (finding + so what), links, roadmap, watch. */
+(function(){var e=function(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+var C={red:'#a3412a',green:'#2f7a52',amber:'#9a6a1f',ink:'#2a2622'};
+var safe=function(u){return /^https:\/\//.test(u)?u:'#'};
+var file=(new URLSearchParams(location.search).get('w')||'workspace.json').replace(/[^a-z0-9._-]/gi,'');
+fetch(file).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(w){var h='';
+h+='<p class="kicker">'+e(w.kind)+' · '+e(w.built)+'</p><h1 class="display">'+e(w.title)+' <br><em>'+e(w.subtitle)+'.</em></h1><p class="essay-note">'+e(w.note)+'</p>';
+if(w.tries){h+='<p class="prompt-group ws-gap">'+e(w.tries.label)+'</p><div class="ws-tries">'+w.tries.items.map(function(t,i){
+ return'<div class="ws-try" style="border-top-color:'+(C[t.level]||C.ink)+'"><small>Try '+(i+1)+'</small><strong>'+e(t.name)+'</strong><span class="ws-verdict" style="color:'+(C[t.level]||C.ink)+'">'+e(t.verdict)+'</span><ul>'+t.evidence.map(function(x){return'<li>'+e(x)+'</li>'}).join('')+'</ul></div>'}).join('')+'</div><p class="ws-src">'+e(w.tries.source)+'</p>'}
+if(w.steps){h+='<p class="prompt-group ws-gap">'+e(w.steps.label)+'</p><ol class="ws-steps">'+w.steps.items.map(function(s){
+ return'<li><div><strong>'+e(s.do)+'</strong>'+(s.why?'<p>'+e(s.why)+'</p>':'')+'<div class="ws-links">'+(s.links||[]).map(function(l){return'<a href="'+e(safe(l.url))+'" rel="noopener">'+e(l.label)+' ↗</a>'}).join('')+'</div></div></li>'}).join('')+'</ol>'}
+if(w.sections){h+='<div class="ws-grid">'+w.sections.map(function(s){
+ return'<div class="ws-tile"><small>'+e(s.title)+'</small><strong style="color:'+(C[s.level]||C.ink)+'">'+e(s.verdict)+'</strong>'+(s.so_what?'<p class="ws-so"><b>So what:</b> '+e(s.so_what)+'</p>':'')+'<ul>'+s.evidence.map(function(x){return'<li>'+e(x)+'</li>'}).join('')+'</ul><p class="ws-src">'+e(s.source)+'</p></div>'}).join('')+'</div>'}
+if(w.links)h+='<p class="prompt-group">How the findings connect</p><ul class="ws-list">'+w.links.map(function(l){return'<li><b>'+e(l.a)+' × '+e(l.b)+':</b> '+e(l.text)+'</li>'}).join('')+'</ul>';
+if(w.roadmap)h+='<p class="prompt-group">90-day roadmap · options to consider</p><div class="ws-road">'+w.roadmap.map(function(r){return'<div><b>Days '+e(r.days)+'</b><span>'+e(r.do)+'</span></div>'}).join('')+'</div>';
+if(w.watch)h+='<p class="prompt-group">What to watch</p><ul class="ws-list">'+w.watch.map(function(x){return'<li>'+e(x)+'</li>'}).join('')+'</ul>';
+h+='<p class="source-record">'+e(w.disclaimer)+' <a href="https://antevo.ch/mcp/build/">Built on Antevo →</a></p>';
+document.getElementById('ws').innerHTML=h;if(w.title)document.title=w.title+''}).catch(function(){document.getElementById('ws').innerHTML='<p class="essay-note">The workspace file could not be read.</p>'})})();
+
+</script></body></html>

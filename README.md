@@ -2,11 +2,11 @@
 
 # Antevo: plugins and MCP connections for Claude and any MCP client
 
-**Antevo brings the world around your wealth into the assistant you already use.** Seven connections — the Executive Brief, the weekly Tremor index, Strategy Radar's daily business board for companies, Antevo's research desks, trademark registers, your own household and your firm's client book — and 38 skills that know how to read them: dated, attributed, and honest about what they cannot see. Install once in Claude, or point any MCP client at an address.
+**Antevo brings the world around your wealth into the assistant you already use.** Seven connections — the Executive Brief, the weekly Tremor index, Strategy Radar's daily business board for companies, Antevo's research desks, trademark registers, your own household and your firm's client book — and 39 skills that know how to read them — plus a first build on top of them, Startup Launch Intelligence (`antevo-build`): dated, attributed, and honest about what they cannot see. Install once in Claude, or point any MCP client at an address.
 
 [![validate](https://github.com/ANTEVO-CH/plugins/actions/workflows/validate.yml/badge.svg)](https://github.com/ANTEVO-CH/plugins/actions/workflows/validate.yml)
 [![MCP Registry](https://img.shields.io/badge/MCP%20Registry-ch.antevo-252c28?labelColor=9b7936)](https://registry.modelcontextprotocol.io/v0/servers?search=ch.antevo)
-[![Claude plugins](https://img.shields.io/badge/Claude-6%20plugins%20%C2%B7%2035%20skills-252c28?labelColor=9b7936)](#skills)
+[![Claude plugins](https://img.shields.io/badge/Claude-8%20plugins%20%C2%B7%2039%20skills-252c28?labelColor=9b7936)](#skills)
 [![npm](https://img.shields.io/npm/v/@antevo/cli?label=%40antevo%2Fcli&color=252c28&labelColor=9b7936)](https://www.npmjs.com/package/@antevo/cli)
 [![Hosted in Switzerland](https://img.shields.io/badge/hosted-Switzerland-252c28?labelColor=9b7936)](https://antevo.ch)
 
@@ -15,6 +15,12 @@
 - **A named desk, not a web search.** Answers come from Antevo's published Executive Brief and its dated archive, from the trademark registers themselves, and — when you sign in — from your own record. The assistant says where a read came from and when.
 - **Public where it can be, permissioned where it matters.** Executive, Tremor Watch, Strategy Radar and trademark screening need no account and reach no personal data. Wealth, Mandates, Research and Trademark's watchlist and investigations sign in over OAuth 2.1; your account's own permissions apply.
 - **Intelligence, not advice.** The skills hold the line: no invented probabilities, no "clear to use", no buy or sell dressed up as a signal.
+
+### Build on it
+
+[![Build with Antevo: three names tried in turn, two taken, one clear, then the next steps, standing on six Antevo engines](plugins/antevo-build/assets/cover.svg)](plugins/antevo-build/)
+
+**We build the intelligence. You build what's next.** `antevo-build` connects six engines at once and adds builds on top of them. The first, Startup Launch Intelligence, takes one prompt from a name to a registered company and a 90-day plan. [How it works →](plugins/antevo-build/)
 
 ## Who this is for
 
@@ -60,6 +66,7 @@ Add the marketplace once, then install what you need:
 /plugin install antevo-strategy-radar@antevo # public — your answers stay with Claude
 /plugin install antevo-trademark@antevo    # screening public; your watchlist needs a sign-in
 /plugin install antevo-research@antevo     # research desks — any Antevo account, OAuth on first use
+/plugin install antevo-build@antevo        # Build with Antevo — six engines and Startup Launch Intelligence
 /plugin install antevo-wealth@antevo       # your household — OAuth on first use
 /plugin install antevo-mandates@antevo     # your firm — by arrangement, OAuth on first use
 ```
@@ -150,6 +157,8 @@ All seven are listed in the official [MCP Registry](https://registry.modelcontex
 | `/antevo-research:ask-a-desk` | One question to the desk that covers it, with the answer's dates and how recent its reading is |
 | `/antevo-research:joined-up-view` | A question across two or three desks, or the strategy desk, side by side: where they agree and where they differ |
 | `/antevo-research:company-read` | A listed company across the equities, results and, on request, technical desks — never a rating or advice |
+| **antevo-build** | *four engines public; Companies and Research sign in* |
+| `/antevo-build:startup-launch` | Tries your names until one is clear, the steps to register it with official links, then the market, costs, competition and funding risk — each with a "so what" — and a 90-day plan |
 | **antevo-trademark** | *screening public* |
 | `/antevo-trademark:clearance-check` | What is on the registers near a name, and who holds it — never a clearance |
 | `/antevo-trademark:opposition-deadline` | How long there is to oppose in a given office, what starts the clock, and the provision |
@@ -209,6 +218,8 @@ Mandates reaches the signed-in member's own firm. It reads clients, dossiers, re
 **An external asset manager before a client meeting.** Asks *"prepare me for the Birch family"*. The meeting-prep skill pulls the dossier, goals against target, the review that is due and the correspondence still waiting for a reply, and offers the full generated brief only after saying it uses credits.
 
 **A founder choosing between three names.** Asks *"is any of Novara, Lumen or Meridian taken?"*. The clearance check screens each, names the registers searched, reads who holds the closest marks and how they file — and leaves the judgement on use to counsel.
+
+**A founder launching a company.** Asks *"help me launch an AI fintech in Switzerland, then Germany — my names are Novara, Lumora and Tirano Pay"*. Startup Launch Intelligence walks the names in order: two are taken (an identical EU mark and a Swiss company of the same name), the third is clear on the screen. It lists the steps to register it with the official links, reads the market, costs, competition and funding risk with what each means for the launch, and drafts a 90-day plan. [See the run →](plugins/antevo-build/)
 
 ## Sample Output
 
@@ -272,6 +283,7 @@ Verbatim excerpts from the live public connections on 14 September 2026, trimmed
 
 ## What's New
 
+- **25 November 2026 — Build with Antevo.** `antevo-build` 0.1.0: six engines in one install and a first build on top, Startup Launch Intelligence (`startup-launch`), with a template that renders any build from one file. Page: [antevo.ch/mcp/build](https://antevo.ch/mcp/build/).
 - **22 November 2026 — Strategy Radar.** `antevo-strategy-radar` 0.1.0 (strategy-setup, strategy-today, board-read): the daily business board for companies, matched to your company in your own assistant. Public, two read-only tools.
 - **15 September 2026 — Crypto withdrawn.** The public Crypto connection and `antevo-crypto` are no longer offered.
 - **14 September 2026 — Crypto and Mandates.** `antevo-crypto` 0.1.0 (price-check, crypto-performance, technical-read) and `antevo-mandates` 0.1.0 (reviews-due, meeting-prep, succession-scan), both listed in the MCP Registry the same day.
