@@ -1,0 +1,183 @@
+{
+  "template": "Built on Antevo · https://antevo.ch/mcp/build/intelligence-terminal/",
+  "kind": "Intelligence Terminal",
+  "title": "Chips sold, the shopper bought",
+  "subtitle": "The shopper feels rich just before the bill arrives",
+  "built": "2026-11-25",
+  "note": "Written by antevo-terminal.py from four free Antevo engines, no account, no AI model in between. Every line is an engine's answer on the date shown.",
+  "tries": {
+    "label": "The panels",
+    "item": "Panel",
+    "source": "Antevo Executive Brief 2026-11-25; Antevo Tremor Index, week of 2026-11-20; Antevo Executive Brief business board 2026-11-25.",
+    "items": [
+      {
+        "name": "Markets today",
+        "verdict": "Rotation from AI suppliers to the shopper, with a tariff bill pending",
+        "level": "ink",
+        "evidence": [
+          "Chips: Gave back most of Monday's rally in one day.",
+          "Shoppers: Confidence jumped; retailers rose with it.",
+          "Tariffs: Reported plans target China, Europe, Japan and Korea."
+        ]
+      },
+      {
+        "name": "Market strain",
+        "verdict": "Elevated, 2.42 times a normal week",
+        "level": "amber",
+        "evidence": [
+          "Week to 2026-11-20; the week before: High, 3.84 times",
+          "Most unusual families: Volatility 2.63x, Commodities 2.48x, Bonds 2.12x",
+          "Most unusual pair: TAIEX and VIX (equity vol), z 5.12"
+        ]
+      },
+      {
+        "name": "Business board",
+        "verdict": "7 risks, 1 opening",
+        "level": "amber",
+        "evidence": [
+          "Attacks on vessels near Hormuz persist and Houthi drones hit the Riyadh headquarters of Saudi Arabia's sovereign fund (severe impact, rising)",
+          "Washington is reported to be readying higher tariffs on China, the EU, Japan, South Korea and a dozen more economies (high impact, rising)",
+          "The AI relief rally reversed in a day, and one weak bond or share sale could still hit chip and power orders (high impact, rising)"
+        ]
+      },
+      {
+        "name": "The next two weeks",
+        "verdict": "6 dated events",
+        "level": "ink",
+        "evidence": [
+          "2026-11-25: US core PCE inflation for October, consensus 3.2% year on year after 3.1%; personal spending, consensus 0.4%",
+          "2026-11-26: Bank of Korea rate decision, consensus 3.25% from 3.0%; US markets closed for Thanksgiving",
+          "2026-11-27: French inflation for November, consensus 3.8% after 3.4%; German unemployment, consensus rate 6.4%"
+        ]
+      }
+    ]
+  },
+  "steps": {
+    "label": "The dates, with the signal to read",
+    "items": [
+      {
+        "do": "2026-11-25 · US core PCE inflation for October, consensus 3.2% year on year after 3.1%; personal spending, consensus 0.4%; jobless claims, consensus 200 thousand; durable goods; new home sales; Fed Beige Book; Australian inflation",
+        "why": "Core inflation above 3.2% alongside the tariff plans would restore bets on a December rate rise; at or below it, bond yields have room to fall and the rotation into domestic shares to broaden.",
+        "links": []
+      },
+      {
+        "do": "2026-11-26 · Bank of Korea rate decision, consensus 3.25% from 3.0%; US markets closed for Thanksgiving; German consumer confidence, consensus -28.5",
+        "why": "A rise as Washington readies tariffs on Korean goods would show inflation still taking priority over the export outlook; a hold would show the trade threat reaching rate policy.",
+        "links": []
+      },
+      {
+        "do": "2026-11-27 · French inflation for November, consensus 3.8% after 3.4%; German unemployment, consensus rate 6.4%; US goods trade balance for October, consensus a deficit of $133.1 billion; US markets close early; Black Friday",
+        "why": "A goods deficit wider than $133 billion would point to imports arriving early; a narrower one would fit the freight data showing no rush ahead of the tariffs.",
+        "links": []
+      },
+      {
+        "do": "2026-11-30 · China official manufacturing survey for November, consensus 49.7 after 49.3; German inflation, consensus 3.0% after 2.8%; India third-quarter growth, consensus 7.6%",
+        "why": "A Chinese reading still below 50 with tariffs pending would show factories bracing for a second trade shock; German inflation at 3.0% would add to the pressure on the European Central Bank.",
+        "links": []
+      },
+      {
+        "do": "2026-12-01 · Euro-area inflation for November, consensus 4.3% after 4.0%; US manufacturing survey from the Institute for Supply Management, previously 55.5",
+        "why": "A US prices-paid component rising sharply would be the first survey sign of tariff costs; euro-area inflation above 4% would keep European rates pointed up.",
+        "links": []
+      },
+      {
+        "do": "2026-12-04 · Reserve Bank of India rate decision, consensus a rise to 5.75% from 5.5%; US payrolls for November, previously 165 thousand, unemployment consensus 4.2%",
+        "why": "US unemployment at 4.2% or higher would test the confident-shopper reading; an Indian rise would add another central bank to those still tightening.",
+        "links": []
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Attacks on vessels near Hormuz persist and Houthi drones hit the Riyadh headquarters of Saudi Arabia's sovereign fund",
+      "verdict": "Risk · severe impact · medium likelihood · rising",
+      "level": "red",
+      "so_what": "Touches: Shippers, airlines, fuel buyers and exporters that route cargo through or depend on supplies from the Gulf.",
+      "evidence": [
+        "Attacks on shipping near the Gulf continued on Tuesday, and a second strike reached Riyadh, injuring 11 people. One analysis argues that escalation with Iran is now the default path, which would keep insurance and freight costs high and put voyages at risk. Hopes for talks had pushed oil lower on Monday, so a stall would reverse that relief.",
+        "Watch: Attacks on vessels near Hormuz, further strikes on Saudi targets and war-risk insurance rates for Gulf voyages.",
+        "Act if attacks on merchant ships increase or insurers withdraw cover for Gulf transits."
+      ],
+      "source": "Antevo Executive Brief, business board of 2026-11-24"
+    },
+    {
+      "title": "Washington is reported to be readying higher tariffs on China, the EU, Japan, South Korea and a dozen more economies",
+      "verdict": "Risk · high impact · medium likelihood · rising",
+      "level": "amber",
+      "so_what": "Touches: Importing retailers, carmakers and equipment makers that buy from the named economies, and exporters in those economies.",
+      "evidence": [
+        "Plans are now reported for this week, and rates and dates are not yet published. Importers of consumer goods, cars and equipment from those economies would face higher landed costs from the spring. The added risk is retaliation, because China's pause on its mineral export curbs runs out in January, the month the levies would bite.",
+        "Watch: Publication of the rates and start dates, and any answer from Beijing, Brussels or Tokyo.",
+        "Act once rates and dates are published and a company's own product codes are confirmed to be on the list."
+      ],
+      "source": "Antevo Executive Brief, business board of 2026-11-24"
+    },
+    {
+      "title": "The AI relief rally reversed in a day, and one weak bond or share sale could still hit chip and power orders",
+      "verdict": "Risk · high impact · medium likelihood · rising",
+      "level": "amber",
+      "so_what": "Touches: Data-centre builders, chip and power-equipment suppliers and cloud providers that rely on external funding or on a few large AI customers.",
+      "evidence": [
+        "Chip makers gave back more than half of Monday's surge on Tuesday, and the newest large AI listing fell below its offer price. Scrutiny of circular financing between chip makers and their customers could increase. If a deal fails or has to be repriced, data-centre owners and their suppliers would face dearer funding and might trim orders.",
+        "Watch: Pricing of AI-linked bond and share sales this week, and whether new listings trade above their offer prices.",
+        "Act if a large AI-linked sale prices wide of guidance or is pulled."
+      ],
+      "source": "Antevo Executive Brief, business board of 2026-11-24"
+    },
+    {
+      "title": "German business sentiment rose again in November and activity grew at its fastest pace in over four years",
+      "verdict": "Opportunity · medium impact · high likelihood · steady",
+      "level": "green",
+      "so_what": "Touches: Suppliers, machinery makers and service firms selling into German industry.",
+      "evidence": [
+        "The Ifo business climate rose to 90.6 from 90.1, and current conditions improved to 89.4. German manufacturing and composite surveys both stood at 55, well above forecasts, while France contracted. Firms selling into Germany see firmer orders, though tariff plans aimed at the EU could dampen the export side.",
+        "Watch: Next month's Ifo expectations index, which slipped to 91.9 against 92 forecast, and the EU response to US tariff plans.",
+        "Act when order books show the improvement is durable and US tariff rates are known."
+      ],
+      "source": "Antevo Executive Brief, business board of 2026-11-24"
+    },
+    {
+      "title": "The EU will impose a provisional safeguard measure on imports of certain new hybrid cars from 1 December",
+      "verdict": "Risk · medium impact · high likelihood · new",
+      "level": "amber",
+      "so_what": "Touches: Importers and dealers of hybrid cars in the EU and manufacturers who export such vehicles there.",
+      "evidence": [
+        "Commission Implementing Regulation 2026/2614, adopted on 23 November, imposes a provisional safeguard on imports of certain new hybrid vehicles designed to carry people. It takes effect on 1 December, so shipments already at sea or contracted may face a new charge or limit. Importers into the EU and the carmakers who export to it have little time to adjust.",
+        "Watch: The measure's scope, the rate or quota it sets and any exemption rules in the regulation text.",
+        "Act before 1 December for any hybrid shipments or contracts that would land after that date."
+      ],
+      "source": "Antevo Executive Brief, business board of 2026-11-24"
+    },
+    {
+      "title": "The US Labor Department's final rule changes the test for employee versus independent contractor status",
+      "verdict": "Risk · medium impact · high likelihood · steady",
+      "level": "amber",
+      "so_what": "Touches: US employers that rely on independent contractors, including delivery, care and staffing businesses.",
+      "evidence": [
+        "The rule rescinds the earlier analysis under the Fair Labor Standards Act and replaces it with one similar to the 2021 version, with modifications. It also amends provisions under the Family and Medical Leave Act and the migrant farm worker law. Firms that use contractors, such as gig platforms, logistics and care providers, need to check whether their arrangements still pass.",
+        "Watch: The rule's effective date and any legal challenge or state-level rules that differ.",
+        "Act once the effective date is known and a legal review of current contractor arrangements is done."
+      ],
+      "source": "Antevo Executive Brief, business board of 2026-11-23"
+    }
+  ],
+  "links": [
+    {
+      "a": "Tremor Watch",
+      "b": "Strategy Radar",
+      "text": "Markets read Elevated (2.42 times a normal week); 5 of the board's 8 entries are rising or new."
+    },
+    {
+      "a": "Executive Brief",
+      "b": "Tremor Watch",
+      "text": "The brief's regime: rotation from AI suppliers to the shopper, with a tariff bill pending. The families breaking most: Volatility and Commodities."
+    }
+  ],
+  "watch": [
+    "Today's core inflation and spending figures.",
+    "The published scope and start date of the tariffs.",
+    "Retailers against chip makers into Black Friday.",
+    "Pacific air-cargo flights and west-coast port queues."
+  ],
+  "disclaimer": "From Antevo answers, each dated, assembled by a script with no opinion of its own. Tremor Watch describes, it does not forecast. Not investment advice."
+}
