@@ -5,13 +5,15 @@ All notable changes to the Antevo plugins are documented here.
 ## 2026-11-25 — Build with Antevo 0.1.0
 
 - **`antevo-build`**, new: tools built on six Antevo engines. First skill,
-  `startup-launch`: screens candidate names (Trademark), finds the competition
-  (Companies), reads the business board (Strategy Radar), the regime and risk
-  radar (Executive) and market strain (Tremor Watch), asks the economy desk
-  (Research), joins the findings and builds a launch workspace with a 90-day
-  roadmap. `template/` renders the workspace from one `workspace.json` (a real
-  run of 25 Nov 2026). Every figure dated; options to consider, never advice.
-- **README:** eight plugins, 39 skills.
+  `startup-launch`: tries the candidate names in order until one is clear
+  (Trademark: marks, Swiss companies, domains), lists the steps to register it
+  with official links and a watch, reads the competition (Companies), the market
+  (Strategy Radar), costs and funding (Research), the regime (Executive) and
+  market strain (Tremor Watch) with a "so what" for each, joins the findings and
+  builds a launch workspace with a 90-day roadmap. `template/` renders any build
+  from one `workspace.json` (tries, steps, sections); the example is a real run
+  of 25 Nov 2026. Every figure dated; options to consider, never advice.
+- **README:** eight plugins, 39 skills; the badge said six and 35.
 
 ## 2026-11-23 — Research 0.1.0
 

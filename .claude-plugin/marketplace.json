@@ -5,13 +5,12 @@
     "url": "https://antevo.ch"
   },
   "metadata": {
-    "description": "Antevo plugins for Claude — connect your wealth or your firm's client book, and read the Executive Brief, the weekly Tremor index, the daily business board for companies and the trademark registers, through purpose-built skills.",
-    "pluginRoot": "./plugins"
+    "description": "Antevo plugins for Claude — connect your wealth or your firm's client book, and read the Executive Brief, the weekly Tremor index, the daily business board for companies and the trademark registers, through purpose-built skills."
   },
   "plugins": [
     {
       "name": "antevo-wealth",
-      "source": "./antevo-wealth",
+      "source": "./plugins/antevo-wealth",
       "description": "Connect your Antevo Wealth account to Claude — portfolios, net worth, real assets, liabilities, markets, geopolitics and your daily brief — plus banker-grade skills. Reads your whole book, and can record holdings you already own — only after you confirm. It never trades, moves money or deletes anything.",
       "version": "0.7.0",
       "category": "finance",
@@ -29,7 +28,7 @@
     },
     {
       "name": "antevo-executive",
-      "source": "./antevo-executive",
+      "source": "./plugins/antevo-executive",
       "description": "The Antevo Executive Brief in Claude — today's editorial read on markets and world events, the risk radar and how it has changed, the forward calendar, Antevo's own probability layer, per-sector desk reads from shipping to art, a world map of chokepoints, conflicts and disasters, and macro-economic history back to 1920. No account required.",
       "version": "0.4.1",
       "category": "finance",
@@ -50,7 +49,7 @@
     },
     {
       "name": "antevo-tremor-watch",
-      "source": "./antevo-tremor-watch",
+      "source": "./plugins/antevo-tremor-watch",
       "description": "The Antevo Tremor Index in Claude — every week, how many of 753 relationships between markets stopped behaving, against a normal Friday since 2001; the families where the breaks gather, the new breaks of the last four weeks, any week's pairs, and every reading since 1997. Descriptive, not a forecast. No account required.",
       "version": "0.1.0",
       "category": "finance",
@@ -68,7 +67,7 @@
     },
     {
       "name": "antevo-strategy-radar",
-      "source": "./antevo-strategy-radar",
+      "source": "./plugins/antevo-strategy-radar",
       "description": "What changed today for your company's strategy — Antevo's daily business board of risks and opportunities for companies, from trade, regulation, supply, shipping, energy, demand, currencies, funding, labour, technology, cyber, geopolitics and climate, matched to your company in your own assistant. Five short questions, no figures; your answers never reach Antevo. Possible responses with reasons, never advice. No account required.",
       "version": "0.1.0",
       "category": "productivity",
@@ -86,7 +85,7 @@
     },
     {
       "name": "antevo-trademark",
-      "source": "./antevo-trademark",
+      "source": "./plugins/antevo-trademark",
       "description": "Trademark conflict intelligence in Claude — screen a brand name, or a whole shortlist with the companies and domains already registered under each name, across 50+ registers, read who holds a mark and how they file, and check the opposition window in any of twenty offices, including the ones that run it after registration. Screening needs no account. Your own watchlist, conflicts, deadlines and holder investigations connect with an Antevo sign-in — OAuth, read-only by default, and it asks before it changes anything.",
       "version": "0.5.1",
       "category": "productivity",
@@ -104,7 +103,7 @@
     },
     {
       "name": "antevo-mandates",
-      "source": "./antevo-mandates",
+      "source": "./plugins/antevo-mandates",
       "description": "Your firm's client book in Claude — reviews due and overdue, meeting preparation from the record, and succession gaps across the book. Signs in with your Antevo Mandates firm account over OAuth; the connector can change records in your own book, and the skills ask before they do.",
       "version": "0.1.2",
       "category": "finance",
@@ -122,7 +121,7 @@
     },
     {
       "name": "antevo-research",
-      "source": "./antevo-research",
+      "source": "./plugins/antevo-research",
       "description": "Antevo's research desks in Claude: put a question to one of eighteen desks (economy, geopolitics, shipping, real estate, strategy, commodities, markets, technology, digital assets, health, rates, mortgages, equities, technical, ETFs, results, the Swiss market, private markets) and get the desk's own written answer, built from the research it reads every day, with every fact dated. Signs in with any Antevo account over OAuth. Editorial research, never advice to buy, sell or hold.",
       "version": "0.1.0",
       "category": "finance",
@@ -141,8 +140,8 @@
     },
     {
       "name": "antevo-build",
-      "source": "./antevo-build",
-      "description": "Build your own tools on six Antevo engines. First: Startup Launch Intelligence — screen candidate names, find the competition, read the business board, the economy and market strain, ask the economy desk, and get a launch workspace with a 90-day roadmap. Every figure dated; never advice. Four of the six engines need no account.",
+      "source": "./plugins/antevo-build",
+      "description": "Build your own tools on six Antevo engines. The first: Startup Launch Intelligence — one prompt tries your candidate names until one is clear (trademarks, Swiss companies, domains), lists the steps to register it with official links, reads the competition, the market, the costs and the funding risk with a 'so what' for each, and builds a launch workspace with a 90-day roadmap. Every figure dated; a screen, not clearance; options to consider, never advice. Four of the six engines need no account.",
       "version": "0.1.0",
       "category": "productivity",
       "tags": [

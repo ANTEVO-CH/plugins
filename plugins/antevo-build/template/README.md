@@ -1,23 +1,29 @@
-# Startup Launch Intelligence — the template
+# The template: one page, one file
 
-One page that renders one file. `workspace.json` holds the launch workspace your agent builds from
-six Antevo engines; `index.html` shows it. The file here is a real run of 25 November 2026 for an
-example AI fintech (the name, Lumora, is an example, not a suggestion).
+`index.html` renders `workspace.json`. The file here is the Startup Launch Intelligence run of
+25 November 2026 for an example AI fintech (Novara and Lumora taken, Tirano Pay clear; the names
+are examples, not suggestions).
 
 ```bash
 python3 -m http.server 8000   # in this folder, then open http://localhost:8000
 ```
 
+`index.html?w=other.json` renders another file in the same folder.
+
 ## The file
+
+Every block is optional; the page shows the ones that are there.
 
 | field | what goes in it |
 |---|---|
-| `idea`, `markets`, `name`, `built` | the founder's idea, home market then next market, the name tried, the date |
-| `brand`, `market`, `competition`, `risk` | each a `verdict`, a `level` (`red`, `green`, `amber`, `ink`), the `evidence` lines and the `source` with its date |
+| `kind`, `title`, `subtitle`, `built`, `note` | the build's name, the headline (the clear name), one line on the idea and markets, the date, and the note that every figure is an engine's answer on the date shown |
+| `tries` | `label`, `source` and `items`: each option checked in turn, with `name`, `verdict`, `level` (`red`, `green`, `amber`, `ink`) and `evidence` lines |
+| `steps` | `label` and `items`: each next action with `do`, `why` and `links` (`label`, `url`; https only) |
+| `sections` | each finding: `title`, `verdict`, `level`, `so_what` (what it means for this plan), `evidence`, `source` with its date |
 | `links` | how the findings connect: two engines (`a`, `b`) and one sentence |
-| `roadmap` | three blocks of `days` and what to `do`: options to consider |
+| `roadmap` | blocks of `days` and what to `do`: options to consider |
 | `watch` | the dates and indicators the engines named |
-| `note`, `disclaimer` | keep them: every figure is an engine's answer on the date shown; not advice; a screen is not clearance |
+| `disclaimer` | keep it: not advice; a screen is not clearance |
 
 Fill it with the `startup-launch` skill in this plugin, or from your own agent calling the six
 connectors. Change the page, restyle it, turn it into your own product.

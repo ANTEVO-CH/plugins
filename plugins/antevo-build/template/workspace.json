@@ -1,83 +1,135 @@
 {
- "template": "Startup Launch Intelligence · built on Antevo · https://antevo.ch/mcp/build/",
- "idea": "An AI fintech",
- "markets": [
-  "Switzerland",
-  "Germany"
- ],
- "name": "Lumora",
+ "template": "Built on Antevo · https://github.com/ANTEVO-CH/plugins/tree/main/plugins/antevo-build",
+ "kind": "Startup Launch Intelligence",
+ "title": "Tirano Pay",
+ "subtitle": "An AI fintech, Switzerland then Germany",
  "built": "2026-11-25",
- "note": "Lumora is an example name, not a suggestion. Every finding is an Antevo engine's answer on the date shown.",
- "brand": {
-  "verdict": "Rename before filing",
-  "level": "red",
-  "source": "Antevo Trademark, 25 Nov 2026",
-  "evidence": [
-   "An identical mark is registered in the EU, filed 29 June 2023",
-   "Over 40 similar marks on 14 registers: AR AU BR CA CH CL DE EM ES FR LT MX NO NZ",
-   "Four Swiss companies use the name, Lumora AG among them",
-   "lumora.ch and lumora.com are registered"
+ "note": "Novara, Lumora and Tirano Pay are example names, not suggestions. Every finding is an Antevo engine's answer on the date shown.",
+ "tries": {
+  "label": "The name, try by try",
+  "source": "Antevo Trademark, 25 Nov 2026, classes 36 and 42 · Swiss companies from Zefix · domains from the registries",
+  "items": [
+   {
+    "name": "Novara",
+    "verdict": "Taken",
+    "level": "red",
+    "evidence": [
+     "Identical marks on file in the EU, one registered since 3 April 2012; 40+ near marks on 17 registers",
+     "Novara SA and 11 more Swiss companies under the name",
+     "novara.ch and novara.com are registered"
+    ]
+   },
+   {
+    "name": "Lumora",
+    "verdict": "Taken",
+    "level": "red",
+    "evidence": [
+     "Identical marks registered in the EU, the earliest filed 29 June 2023; 40+ near marks on 14 registers, Switzerland among them",
+     "Lumora AG and 3 more Swiss companies under the name",
+     "lumora.ch and lumora.com are registered"
+    ]
+   },
+   {
+    "name": "Tirano Pay",
+    "verdict": "Clear on this screen",
+    "level": "green",
+    "evidence": [
+     "No near marks found",
+     "No Swiss company under the name",
+     "tiranopay.ch and tiranopay.com appear unregistered"
+    ]
+   }
   ]
  },
- "market": {
-  "verdict": "Switzerland, then Germany",
-  "level": "green",
-  "source": "Antevo Strategy Radar, 23 Nov 2026 · Antevo Research, 25 Nov 2026",
-  "evidence": [
-   "German business activity at 55, its fastest growth in over four years; France at 46.2",
-   "Swiss policy rate 0% and euro area 2.5%, both as of October 2026",
-   "EUR/CHF 0.9163 on 24 November 2026"
+ "steps": {
+  "label": "Next steps for Tirano Pay, with the links",
+  "items": [
+   {
+    "do": "Check the name in the Swiss commercial register, then register the company",
+    "why": "No Swiss company uses the name today; the register has the final word.",
+    "links": [
+     {"label": "zefix.ch", "url": "https://www.zefix.ch"},
+     {"label": "easygov.swiss", "url": "https://www.easygov.swiss"}
+    ]
+   },
+   {
+    "do": "File the Swiss trademark in classes 36 and 42",
+    "why": "The screen found no near mark; filing is what protects the name.",
+    "links": [{"label": "ige.ch", "url": "https://www.ige.ch/en/protecting-your-ip/trade-marks"}]
+   },
+   {
+    "do": "Then the EU trademark, before selling in Germany",
+    "why": "Germany is the second market, and the Swiss mark does not reach it.",
+    "links": [{"label": "euipo.europa.eu", "url": "https://euipo.europa.eu"}]
+   },
+   {
+    "do": "Register tiranopay.ch and tiranopay.com",
+    "why": "An unregistered domain can be taken by anyone at any time.",
+    "links": [{"label": "nic.ch", "url": "https://www.nic.ch"}]
+   },
+   {
+    "do": "Watch the name",
+    "why": "A screen is today only; the filing that matters is the one that lands next week.",
+    "links": [{"label": "Antevo watch", "url": "https://antevo.ch/trademark/app/add?intent=watch&mark=Tirano+Pay&source=build"}]
+   }
   ]
  },
- "competition": {
-  "verdict": "A Zug fintech cluster",
-  "level": "ink",
-  "source": "Antevo Companies, 25 Nov 2026",
-  "evidence": [
-   "Of the first ten Swiss companies with 'Fintech' in their name, four sit in Zug and one in neighbouring Baar",
-   "Finding is free; no company file was opened"
-  ]
- },
- "risk": {
-  "verdict": "Elevated · 2.4× a normal week",
-  "level": "amber",
-  "source": "Antevo Tremor Watch, week of 20 Nov 2026 · Antevo Executive Brief, 24 Nov 2026",
-  "evidence": [
-   "Bonds, commodities and volatility are where market links are breaking",
-   "The US ten-year yield held at 4.92%: the cost of money has not moved",
-   "On the radar: a December rate rise could come back into play"
-  ]
- },
- "links": [
+ "sections": [
   {
-   "a": "Trademark",
-   "b": "Strategy Radar",
-   "text": "The EU mark blocks the name in Germany, the market the board points to."
+   "title": "Market entry",
+   "verdict": "Switzerland, then Germany",
+   "level": "green",
+   "so_what": "Germany comes second: it is growing while France shrinks.",
+   "evidence": [
+    "German business activity at 55, its fastest growth in over four years; France at 46.2"
+   ],
+   "source": "Antevo Strategy Radar, 23 Nov 2026"
   },
   {
-   "a": "Strategy Radar",
-   "b": "Research",
-   "text": "Demand is strongest in Germany, where money costs more than at home."
+   "title": "Costs",
+   "verdict": "Money is dearer in the euro area",
+   "level": "amber",
+   "so_what": "Budget for euro-area costs before selling in Germany.",
+   "evidence": [
+    "Swiss policy rate 0% and euro area 2.5%, both as of October 2026",
+    "EUR/CHF 0.9163 on 24 November 2026"
+   ],
+   "source": "Antevo Research, economy desk, 25 Nov 2026"
   },
   {
-   "a": "Tremor Watch",
-   "b": "Executive Brief",
-   "text": "Markets are unsettled while the cost of money stands still, so funding timing matters."
+   "title": "Competition",
+   "verdict": "A Zug fintech cluster",
+   "level": "ink",
+   "so_what": "Zug is where the rivals, partners and investors sit.",
+   "evidence": [
+    "Of the first ten Swiss companies with 'Fintech' in their name, four sit in Zug and one in neighbouring Baar",
+    "Finding is free; no company file was opened"
+   ],
+   "source": "Antevo Companies, 25 Nov 2026"
+  },
+  {
+   "title": "Funding risk",
+   "verdict": "Elevated · 2.4× a normal week",
+   "level": "amber",
+   "so_what": "Plan a longer runway and expect harder questions in a round.",
+   "evidence": [
+    "Bonds, commodities and volatility are where market links are breaking",
+    "Funding is tighter as money rotates away from tech",
+    "The US ten-year yield held at 4.92%: the cost of money has not moved",
+    "On the radar: a December rate rise could come back into play"
+   ],
+   "source": "Antevo Tremor Watch, week of 20 Nov 2026 · Antevo Research, 25 Nov 2026 · Antevo Executive Brief, 24 Nov 2026"
   }
+ ],
+ "links": [
+  {"a": "Trademark", "b": "Companies", "text": "Two names fell on both registers at once: an identical mark and a Swiss company of the same name. The third was clear on both."},
+  {"a": "Strategy Radar", "b": "Research", "text": "Demand is strongest in Germany, where money costs more than at home."},
+  {"a": "Tremor Watch", "b": "Research", "text": "Markets are unsettled and funding for tech is tighter, so the length of the runway matters more than the timing of the round."}
  ],
  "roadmap": [
-  {
-   "days": "1–30",
-   "do": "A new name, screened again and watched"
-  },
-  {
-   "days": "31–60",
-   "do": "The company and the funding round"
-  },
-  {
-   "days": "61–90",
-   "do": "First customers in Germany"
-  }
+  {"days": "1–30", "do": "Register Tirano Pay: company, Swiss trademark, domains, watch"},
+  {"days": "31–60", "do": "EU trademark and the funding round, with a longer runway"},
+  {"days": "61–90", "do": "First customers in Germany, costs budgeted in euros"}
  ],
  "watch": [
   "The US core inflation figure on 26 November 2026 (named by Strategy Radar and the risk radar)",
