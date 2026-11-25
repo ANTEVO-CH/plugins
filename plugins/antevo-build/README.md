@@ -5,7 +5,7 @@
 
 # Build with Antevo
 
-**We build the intelligence. You build what's next.** This plugin connects seven Antevo engines
+**We build the intelligence. You build what's next.** This plugin connects eight Antevo engines
 to your assistant and adds builds on top of them: one prompt, the engines answer, and your
 assistant joins the answers into a working document. The page: https://antevo.ch/mcp/build/
 
@@ -194,6 +194,104 @@ data.gov.sg, made available under the terms of the Singapore Open Data Licence v
 
 The workspace: `template/index.html?w=market-entry.json`.
 
+## Portfolio Concentration · skill `portfolio-concentration`
+
+Every account read as one book. One prompt, three engines; Wealth needs your Antevo account.
+The page: https://antevo.ch/mcp/build/portfolio-concentration/
+
+### A real run, 25 November 2026
+
+Antevo's model book: three accounts named Capital Preservation, Balanced and Growth. Holdings are described, never named.
+
+- **One company:** worth a look. The largest holding, a US phone and device maker, is 17.3% of the whole and sits in all three accounts; three US technology shares make 40.7%.
+- **One industry:** worth a look. Technology 48%; a US bank share and a US bank fund are the same industry twice.
+- **One country, one currency:** worth a look. 85.9% in the United States and in dollars, for a household that spends francs.
+- **The names on the accounts:** worth a look. Five of the nine holdings sit in all three; a replay of 2000 to 2002 gives −34%, −46% and −61%. A replay, not a forecast.
+- **Cash when needed:** on the record. Every position is listed and counted as sellable within a day.
+
+The workspace: `template/index.html?w=portfolio-concentration.json`.
+
+## Strategy Desk · skill `strategy-desk`
+
+Today's developments matched to a company's objectives. One prompt, three engines.
+The page: https://antevo.ch/mcp/build/strategy-desk/
+
+### A real run, 25 November 2026
+
+Vallmer Pack AG is an invented Swiss packaging maker with five objectives.
+
+- **Grow sales in Germany:** an opening. German surveys at 55 in November, above forecasts; France contracted.
+- **Open a US service hub:** worth a look. Higher US tariffs on the EU, China and more are reported for the week; rates and dates not yet published.
+- **A second source outside China:** worth a look. The reported list names the EU as well.
+- **Hold margins with a strong franc:** worth a look. The franc is 2.2% stronger against the euro in a year; the Swiss National Bank decides on 10 December.
+- **So what:** the same German order earns more euros and fewer francs, so objectives 1 and 4 pull against each other.
+
+The business board is credited as the Antevo Executive Brief. The workspace: `template/index.html?w=strategy-desk.json`.
+
+## The Franc Rose · skill `franc-rose`
+
+What a currency move did to your money, in your own currency. One prompt, three engines.
+The page: https://antevo.ch/mcp/build/franc-rose/
+
+### A real run, 25 November 2026
+
+Antevo's model book, read in francs.
+
+- **The currencies:** 85.9% priced in dollars, 14.1% in francs, none in euros.
+- **This week:** the dollar lost 1.5% against the franc; about 1.3% off the book in francs from the currency alone.
+- **This year:** the dollar is up 3.4%; about 2.9% added in francs.
+- **The steady part:** a short-dated US government bond fund, 32.5% of Capital Preservation, moves with the dollar in francs.
+- **The dates:** US inflation on 25 November, US jobs on 4 December, the Swiss National Bank on 10 December.
+
+The workspace: `template/index.html?w=franc-rose.json`.
+
+## Competitor Watch · skill `competitor-watch`
+
+Your rivals, read on the public record. One prompt, three engines.
+The page: https://antevo.ch/mcp/build/competitor-watch/
+
+### A real run, 25 November 2026
+
+Three real Swiss rivals of the invented Vallmer Pack AG, under invented names.
+
+- **Brenvik Packaging Systems AG:** a busy record. A merger in 2024, signatories changed three times since, first marks abroad in December 2025, in classes 7, 9 and 42.
+- **Tessmer Pack AG:** worth a look. Eight marks in Australia, Canada, Israel and Singapore; seven registered, one pending, none lapsed.
+- **Orvanta Group AG:** a quiet record. A holding company since 2018; no marks under its own name.
+- **So what:** two rivals file in Canada, and US tariff plans were reported this week.
+
+The workspace: `template/index.html?w=competitor-watch.json`.
+
+## Your Own Research Desk · skill `research-desk`
+
+One question, answered as a research desk. One prompt, three engines; Research uses credits.
+The page: https://antevo.ch/mcp/build/research-desk/
+
+### A real run, 25 November 2026
+
+The question: is the chip sell-off spreading?
+
+- **Across markets:** wider than usual, easing. Tremor Watch elevated, 2.42 times a normal week, down from 3.84.
+- **Where it sits:** Taiwan at the centre; Taiwan and the US fear gauge were the week's most unusual pair.
+- **US shoppers and credit:** not reached. The chip index fell 7.9% on 24 November while retailers rose 2.3%.
+- **Metals:** joined the same trade.
+- **The cause:** policy, still unfolding: a US rule on AI chip licences and tariff findings on 16 economies.
+
+The workspace: `template/index.html?w=research-desk.json`.
+
+## Intelligence Terminal · skill `intelligence-terminal`
+
+Your own morning page, built from code on the four free engines. No account, no API key, no model in between.
+The page: https://antevo.ch/mcp/build/intelligence-terminal/
+
+```bash
+python3 skills/intelligence-terminal/scripts/antevo-terminal.py              # writes workspace.json
+python3 skills/intelligence-terminal/scripts/antevo-terminal.py --watch-name Yourbrand   # adds a name screen
+```
+
+The script (standard library only) calls the Executive Brief, Tremor Watch, Strategy Radar and, with
+`--watch-name`, Trademark over MCP, and writes four panels: markets today, market strain, the business board
+and the next two weeks. `template/intelligence-terminal.json` is its own output of 25 November 2026.
+
 ## The template
 
 `template/` is one page that renders one file, `workspace.json`. The skill fills it; so can your
@@ -206,9 +304,9 @@ cd template && python3 -m http.server 8000   # then open http://localhost:8000
 The file's blocks are all optional, so the same page renders other builds too: `tries` (options
 checked one by one), `steps` (next actions with links), `sections` (a finding, its `so_what`, its
 evidence and source), `links`, `roadmap` and `watch`. `index.html?w=due-diligence.json`,
-`index.html?w=supply-chain.json`, `index.html?w=m-and-a.json`, `index.html?w=real-estate.json` and `index.html?w=family-office.json` render the other runs. See [template/README.md](template/README.md).
+`index.html?w=supply-chain.json`, `index.html?w=m-and-a.json`, `index.html?w=real-estate.json`, `index.html?w=family-office.json`, `index.html?w=market-entry.json`, `index.html?w=portfolio-concentration.json`, `index.html?w=strategy-desk.json`, `index.html?w=franc-rose.json`, `index.html?w=competitor-watch.json`, `index.html?w=research-desk.json` and `index.html?w=intelligence-terminal.json` render the other runs. See [template/README.md](template/README.md).
 
-## The seven engines
+## The eight engines
 
 | Engine | Address | Access |
 |---|---|---|
@@ -219,6 +317,7 @@ evidence and source), `links`, `roadmap` and `watch`. `index.html?w=due-diligenc
 | Tremor Watch | `https://api.antevo.ch/mcp/tremor/mcp` | free, no account |
 | Companies | `https://api.antevo.ch/mcp/companies/mcp` | any Antevo account; finding is free, opening a file uses credits |
 | Research | `https://api.antevo.ch/mcp/research/mcp` | any Antevo account; answers use credits |
+| Wealth | `https://api.antevo.ch/mcp/wealth/mcp` | your Antevo Wealth account; read only in these builds |
 
 Not on Claude? Add the addresses to any MCP client and paste a recipe at the start of the
 conversation: [antevo-startup-launch.md](https://antevo.ch/mcp/build/antevo-startup-launch.md),
@@ -226,15 +325,15 @@ conversation: [antevo-startup-launch.md](https://antevo.ch/mcp/build/antevo-star
 [antevo-supply-chain.md](https://antevo.ch/mcp/build/supply-chain/antevo-supply-chain.md),
 [antevo-m-and-a.md](https://antevo.ch/mcp/build/m-and-a/antevo-m-and-a.md),
 [antevo-real-estate.md](https://antevo.ch/mcp/build/real-estate/antevo-real-estate.md) or
-[antevo-family-office.md](https://antevo.ch/mcp/build/family-office/antevo-family-office.md).
+[antevo-family-office.md](https://antevo.ch/mcp/build/family-office/antevo-family-office.md), or the recipe on any build's page under [antevo.ch/mcp/build](https://antevo.ch/mcp/build/).
 
 ## More builds
 
-The same engines, a different building on top: seven builds so far, and the template is yours to build the next.
+The same engines, a different building on top: thirteen builds so far, and the template is yours to build the next.
 
 ## The rules every build keeps
 
 Every figure keeps its date, and Antevo's answers are quoted as Antevo's. A trademark screen is
 not legal clearance, and an unregistered domain can be taken at any time. An M&A read never says a company is for sale and never guesses why a notice was filed. A property read never says whether to buy and is not a legal review of the purchase. A family read never says what to buy, sell or hedge and never states a value of holdings. A quiet week on a route means no alerts in the sources read, never a safe route. The plan is options to
 consider, never investment, legal or tax advice. A due-diligence read is public records only:
-not a KYC, AML or sanctions-compliance screen, not a credit report, and never about a person's conduct. Nothing here trades, moves money or decides for you.
+not a KYC, AML or sanctions-compliance screen, not a credit report, and never about a person's conduct. A portfolio or currency read never says what to buy, sell or hedge, and a crash replay is never a forecast. A strategy read gives possible responses with what would make each right, never a decision. A competitor read is the public record only and never says why a notice was filed. Nothing here trades, moves money or decides for you.
