@@ -2,6 +2,18 @@
 
 All notable changes to the Antevo plugins are documented here.
 
+## 2026-11-25 — Build with Antevo 0.3.0
+
+- **`antevo-build`, `supply-chain`**, new skill: checks a supply route leg by leg
+  before the next order — the supplier (Guard), leaving the origin (risk radar and
+  business board), the route (chokepoints, hotspots, disaster alerts, the shipping
+  desk), the last mile and fuel and freight — each running, worth a look,
+  disrupted or not checked; what to settle with the official links; a "so what"
+  for tariffs and curbs, the route, fuel and the dated events ahead.
+- **Template:** `grey` level for what was not checked;
+  `template/supply-chain.json` is the Taiwan to Basel run of 25 Nov 2026.
+- **README:** 41 skills.
+
 ## 2026-11-25 — Build with Antevo 0.2.0
 
 - **`antevo-build`, `due-diligence`**, new skill: checks a company before signing,

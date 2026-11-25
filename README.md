@@ -2,11 +2,11 @@
 
 # Antevo: plugins and MCP connections for Claude and any MCP client
 
-**Antevo brings the world around your wealth into the assistant you already use.** Seven connections — the Executive Brief, the weekly Tremor index, Strategy Radar's daily business board for companies, Antevo's research desks, trademark registers, your own household and your firm's client book — and 40 skills that know how to read them — plus builds on top of them, Startup Launch Intelligence and Company Due Diligence (`antevo-build`): dated, attributed, and honest about what they cannot see. Install once in Claude, or point any MCP client at an address.
+**Antevo brings the world around your wealth into the assistant you already use.** Seven connections — the Executive Brief, the weekly Tremor index, Strategy Radar's daily business board for companies, Antevo's research desks, trademark registers, your own household and your firm's client book — and 41 skills that know how to read them — plus builds on top of them, Startup Launch Intelligence, Company Due Diligence and Supply Chain Watch (`antevo-build`): dated, attributed, and honest about what they cannot see. Install once in Claude, or point any MCP client at an address.
 
 [![validate](https://github.com/ANTEVO-CH/plugins/actions/workflows/validate.yml/badge.svg)](https://github.com/ANTEVO-CH/plugins/actions/workflows/validate.yml)
 [![MCP Registry](https://img.shields.io/badge/MCP%20Registry-ch.antevo-252c28?labelColor=9b7936)](https://registry.modelcontextprotocol.io/v0/servers?search=ch.antevo)
-[![Claude plugins](https://img.shields.io/badge/Claude-8%20plugins%20%C2%B7%2040%20skills-252c28?labelColor=9b7936)](#skills)
+[![Claude plugins](https://img.shields.io/badge/Claude-8%20plugins%20%C2%B7%2041%20skills-252c28?labelColor=9b7936)](#skills)
 [![npm](https://img.shields.io/npm/v/@antevo/cli?label=%40antevo%2Fcli&color=252c28&labelColor=9b7936)](https://www.npmjs.com/package/@antevo/cli)
 [![Hosted in Switzerland](https://img.shields.io/badge/hosted-Switzerland-252c28?labelColor=9b7936)](https://antevo.ch)
 
@@ -20,7 +20,7 @@
 
 [![Build with Antevo: three names tried in turn, two taken, one clear, then the next steps, standing on six Antevo engines](plugins/antevo-build/assets/cover.svg)](plugins/antevo-build/)
 
-**We build the intelligence. You build what's next.** `antevo-build` connects seven engines at once and adds builds on top of them. Startup Launch Intelligence takes one prompt from a name to a registered company and a 90-day plan; Company Due Diligence checks a company before you sign or pay, with the official links and what each finding means. [How it works →](plugins/antevo-build/)
+**We build the intelligence. You build what's next.** `antevo-build` connects seven engines at once and adds builds on top of them. Startup Launch Intelligence takes one prompt from a name to a registered company and a 90-day plan; Company Due Diligence checks a company before you sign or pay; Supply Chain Watch checks a supply route leg by leg before the next order. [How it works →](plugins/antevo-build/)
 
 ## Who this is for
 
@@ -160,6 +160,7 @@ All seven are listed in the official [MCP Registry](https://registry.modelcontex
 | **antevo-build** | *five engines public; Companies and Research sign in* |
 | `/antevo-build:startup-launch` | Tries your names until one is clear, the steps to register it with official links, then the market, costs, competition and funding risk — each with a "so what" — and a 90-day plan |
 | `/antevo-build:due-diligence` | Checks a company before you sign or pay: the register, the sanctions lists, its website and email, what changed lately and which group company signs, then what to settle with the official links and what each finding means |
+| `/antevo-build:supply-chain` | Checks a supply route leg by leg before the next order: the supplier, export rules at the origin, the sea route, the last mile, fuel and freight, then what to settle with the official links and what each finding means |
 | **antevo-trademark** | *screening public* |
 | `/antevo-trademark:clearance-check` | What is on the registers near a name, and who holds it — never a clearance |
 | `/antevo-trademark:opposition-deadline` | How long there is to oppose in a given office, what starts the clock, and the provision |
@@ -224,6 +225,8 @@ Mandates reaches the signed-in member's own firm. It reads clients, dossiers, re
 
 **A buyer about to sign with a new supplier.** Asks *"check Swisscom AG before we sign"*. Company Due Diligence runs five checks in turn — the register, the sanctions lists, the website and email, what changed lately, which group company signs — and marks each on the record or worth a look. It lists what to settle before signing with the official links (today's register extract, the UID, a call on a number you already hold for the bank details), and says what each finding means. Public records only; never a compliance screen. [See the run →](plugins/antevo-build/#company-due-diligence--skill-due-diligence)
 
+**A machine maker before the next order from Asia.** Asks *"check our route for components from Taiwan to Basel before we order"*. Supply Chain Watch walks the route leg by leg — the supplier, leaving the origin, the sea route, Rotterdam and the Rhine, fuel and freight — and marks each running, worth a look, disrupted or not checked. It lists what to settle before the order with the official links (the supplier's register, a price clause, the river gauges, the customs tariff) and says what each finding means. [See the run →](plugins/antevo-build/#supply-chain-watch--skill-supply-chain)
+
 ## Sample Output
 
 Verbatim excerpts from the live public connections on 14 September 2026, trimmed where marked.
@@ -286,6 +289,7 @@ Verbatim excerpts from the live public connections on 14 September 2026, trimmed
 
 ## What's New
 
+- **25 November 2026 — Supply Chain Watch.** `antevo-build` 0.3.0: a third build, `supply-chain`, checks a supply route leg by leg before the next order; the template gains a `grey` level for what was not checked. Page: [antevo.ch/mcp/build/supply-chain](https://antevo.ch/mcp/build/supply-chain/).
 - **25 November 2026 — Company Due Diligence.** `antevo-build` 0.2.0: a second build, `due-diligence`, checks a company before you sign or pay; the Guard connection joins the plugin (seven engines); the template labels its cards (`tries.item`). Page: [antevo.ch/mcp/build/due-diligence](https://antevo.ch/mcp/build/due-diligence/).
 - **25 November 2026 — Build with Antevo.** `antevo-build` 0.1.0: six engines in one install and a first build on top, Startup Launch Intelligence (`startup-launch`), with a template that renders any build from one file. Page: [antevo.ch/mcp/build](https://antevo.ch/mcp/build/).
 - **22 November 2026 — Strategy Radar.** `antevo-strategy-radar` 0.1.0 (strategy-setup, strategy-today, board-read): the daily business board for companies, matched to your company in your own assistant. Public, two read-only tools.
