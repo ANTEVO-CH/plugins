@@ -18,6 +18,9 @@ Real Estate Acquisition run (a new apartment near Zurich; nothing says the compa
 `index.html?w=fintech-launch.json` the Fintech Launch run (an example Swiss payments company, planned to Germany).
 `index.html?w=strategic-planner.json` the Strategic Planner run (an example Swiss machine maker's 2027 plan).
 `index.html?w=invoice-check.json` the Invoice Check run (an example invoice with new bank details).
+`index.html?w=banks-on-one-page.json` the All Your Banks run (an example family with three made-up banks).
+`index.html?w=inside-your-funds.json` the Inside Your Funds run (an example family with five funds, four opened).
+`index.html?w=risks-in-francs.json` the Risks In Francs run (five risks for an example family).
 
 ## The file
 
@@ -39,5 +42,5 @@ Every block is optional; the page shows the ones that are there.
 | `watch` | the dates and indicators the engines named |
 | `disclaimer` | keep it: not advice; a screen is not clearance |
 
-Fill it with the `startup-launch`, `due-diligence`, `supply-chain`, `m-and-a`, `real-estate`, `family-office`, `market-entry`, `fintech-launch`, `strategic-planner` or `invoice-check` skill in this plugin, or from your own
+Fill it with the `startup-launch`, `due-diligence`, `supply-chain`, `m-and-a`, `real-estate`, `family-office`, `market-entry`, `fintech-launch`, `strategic-planner`, `invoice-check`, `banks-on-one-page`, `inside-your-funds` or `risks-in-francs` skill in this plugin, or from your own
 agent calling the connectors. Change the page, restyle it, turn it into your own product.

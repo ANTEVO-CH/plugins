@@ -274,6 +274,78 @@ whether a payment should be made.
 
 The workspace: `template/index.html?w=invoice-check.json`.
 
+## All Your Banks On One Page · skill `banks-on-one-page`
+
+Three banks, three statements: what do you actually own? One prompt, one tool.
+The page: https://antevo.ch/mcp/build/banks-on-one-page/
+
+| | What happens | Tool |
+|---|---|---|
+| **1. The banks** | Each account with the bank that holds it. | Wealth |
+| **2. Each holding, with its bank** | Every holding matched to its account, added up per bank and in total, in the household's own currency. | Wealth |
+| **3. Shares, bonds and the rest** | The split by kind of holding. | Wealth |
+| **4. The same thing in more than one place** | Each holding added up across banks and portfolios: the largest, the largest three, and every one held more than once. | Wealth |
+| **5. What is not there** | Property and loans, if recorded; "none recorded" if not. | Wealth |
+
+### A real run, 25 November 2026
+
+An example family with three made-up banks (Bank Halvern, Banque Sorvelle, Tessmar Privatbank). Companies are described, not named.
+
+- **Three banks:** CHF 29.55m, CHF 3.91m and CHF 2.09m. Together CHF 35.55m.
+- **Shares and bonds:** 87% in shares and share funds, 13% in one bond fund.
+- **One company:** a US phone and device maker sits in three portfolios: added up, CHF 5.1m, 14.4% of everything.
+- **Three companies:** with a software company and a chip designer, a third of everything.
+- **Not on the page:** what is inside the three funds; no property and no loans are recorded.
+
+The workspace: `template/index.html?w=banks-on-one-page.json`.
+
+## What Is Inside Your Funds · skill `inside-your-funds`
+
+A fund is one line on your statement: what is inside it? One prompt, one tool.
+The page: https://antevo.ch/mcp/build/inside-your-funds/
+
+| | What happens | Tool |
+|---|---|---|
+| **1. By industry, twice** | Counted as the statements show it and with the funds opened; which funds were opened; what share of the money each count covers. | Wealth |
+| **2. By country, twice** | The same two counts by country. A fund counts as the country it is listed in until it is opened. | Wealth |
+| **3. Side by side** | The lines that move most, with one plain sentence on why. | you read it |
+
+### A real run, 25 November 2026
+
+An example family: CHF 35.5m at three made-up banks, in single shares and five funds. Funds and companies are described, not named.
+
+- **Technology:** 39.6% as the statements show it, 46.1% with the funds opened: CHF 2.3m more sits inside the funds.
+- **America:** 88.1% on the statements, because four of the funds are American funds; 81.4% with the funds opened.
+- **Switzerland:** 11.9%, then 15.4%: one of those American funds holds only Swiss companies.
+- **Funds opened:** four of five, holding 20.4% of the money. A bond fund stayed closed, and the answer says so.
+- **The limit:** funds are opened by industry and by country, not company by company.
+
+The workspace: `template/index.html?w=inside-your-funds.json`.
+
+## Today's Risks, In Francs · skill `risks-in-francs`
+
+A list of risks every morning: what would each one cost you? One prompt, two tools, one of them free with no account.
+The page: https://antevo.ch/mcp/build/risks-in-francs/
+
+| | What happens | Tool |
+|---|---|---|
+| **1. The list with its figures** | Each risk on today's list, the what-if that stands for it, and its cost in total and for each portfolio. | Wealth |
+| **2. In plain words** | What could happen, the what-if by name, the cost, the portfolio that moves most and least. | you read it |
+| **3. The story behind each line** | What the risk is, whether it is rising, what to watch. | Executive Brief (optional) |
+| **4. Past crashes, for scale** | The worst replays of past crashes on today's holdings. | Wealth |
+
+### A real run, 25 November 2026
+
+An example family: CHF 35.5m in five portfolios at three made-up banks. The risks are Antevo's list of 25 November 2026.
+
+- **Tariffs push prices up:** the what-if is prices that keep rising while growth stalls: −CHF 5.3m, 15.0% of everything.
+- **New tariffs on the largest trading partners:** a trade war that escalates: −CHF 1.9m, 5.3%. The cautious portfolio gains 1.1%.
+- **The companies that supply AI fall out of favour:** money leaving technology shares: −CHF 1.6m, 4.6%.
+- **A firm inflation figure:** interest rates two points higher: −CHF 0.17m, 0.5%.
+- **A truce frays in the Gulf:** no what-if fits, so no figure. That is not the same as no effect.
+
+The workspace: `template/index.html?w=risks-in-francs.json`.
+
 ## Portfolio Concentration · skill `portfolio-concentration`
 
 Every account read as one book. One prompt, three engines; Wealth needs your Antevo account.
@@ -384,7 +456,7 @@ cd template && python3 -m http.server 8000   # then open http://localhost:8000
 The file's blocks are all optional, so the same page renders other builds too: `tries` (options
 checked one by one), `steps` (next actions with links), `sections` (a finding, its `so_what`, its
 evidence and source), `links`, `roadmap` and `watch`. `index.html?w=due-diligence.json`,
-`index.html?w=supply-chain.json`, `index.html?w=m-and-a.json`, `index.html?w=real-estate.json`, `index.html?w=family-office.json`, `index.html?w=market-entry.json`, `index.html?w=fintech-launch.json`, `index.html?w=strategic-planner.json`, `index.html?w=invoice-check.json`, `index.html?w=portfolio-concentration.json`, `index.html?w=strategy-desk.json`, `index.html?w=franc-rose.json`, `index.html?w=competitor-watch.json`, `index.html?w=research-desk.json` and `index.html?w=intelligence-terminal.json` render the other runs. See [template/README.md](template/README.md).
+`index.html?w=supply-chain.json`, `index.html?w=m-and-a.json`, `index.html?w=real-estate.json`, `index.html?w=family-office.json`, `index.html?w=market-entry.json`, `index.html?w=fintech-launch.json`, `index.html?w=strategic-planner.json`, `index.html?w=invoice-check.json`, `index.html?w=banks-on-one-page.json`, `index.html?w=inside-your-funds.json`, `index.html?w=risks-in-francs.json`, `index.html?w=portfolio-concentration.json`, `index.html?w=strategy-desk.json`, `index.html?w=franc-rose.json`, `index.html?w=competitor-watch.json`, `index.html?w=research-desk.json` and `index.html?w=intelligence-terminal.json` render the other runs. See [template/README.md](template/README.md).
 
 ## The eight engines
 
