@@ -42,7 +42,7 @@ The plugins connect seven of them directly; `antevo-build` connects six at once,
 
 **We build the intelligence. You build what's next.** `antevo-build` connects seven engines in one install and adds builds on top of them. Each build is a recipe, an example from a real run and a skill:
 
-- **Startup Launch Intelligence** (`startup-launch`): tries your names until one is clear, lists the steps to register it with the official links, and plans the first 90 days. [antevo.ch/mcp/build](https://antevo.ch/mcp/build/)
+- **Startup Launch Intelligence** (`startup-launch`): tries your names until one is clear, lists the steps to register it with the official links, and plans the first 90 days. [antevo.ch/mcp/build/startup-launch](https://antevo.ch/mcp/build/startup-launch/)
 - **Company Due Diligence** (`due-diligence`): checks a company before you sign or pay. [antevo.ch/mcp/build/due-diligence](https://antevo.ch/mcp/build/due-diligence/)
 - **Supply Chain Watch** (`supply-chain`): checks a supply route leg by leg before the next order. [antevo.ch/mcp/build/supply-chain](https://antevo.ch/mcp/build/supply-chain/)
 - **M&A Intelligence** (`m-and-a`): maps a niche and reads a shortlist before any approach. [antevo.ch/mcp/build/m-and-a](https://antevo.ch/mcp/build/m-and-a/)
