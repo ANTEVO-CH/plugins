@@ -14,8 +14,8 @@ assistant joins the answers into a working document. The page: https://antevo.ch
 /plugin install antevo-build@antevo
 ```
 
-Then ask: *"Help me launch an AI fintech in Switzerland, then Germany. My names are Novara,
-Lumora and Tirano Pay."* Or: *"Check Swisscom AG before we sign with them as a supplier."*
+Then ask: *"Help me launch an AI fintech in Switzerland, then Germany. My names are Morvane,
+Quorvia and Tirano Pay."* Or: *"Check Telvaro AG before we sign with them as a supplier."*
 
 ## Startup Launch Intelligence · skill `startup-launch`
 
@@ -32,8 +32,8 @@ One story, in four parts.
 
 The idea: an AI fintech in Switzerland, then Germany. The names are examples, not suggestions.
 
-- **Novara: taken.** Identical marks on file in the EU, one registered since 2012; Novara SA and 11 more Swiss companies; novara.ch and novara.com registered.
-- **Lumora: taken.** Identical marks registered in the EU since 2023; Lumora AG and 3 more Swiss companies; both domains registered.
+- **Morvane: taken.** Identical marks on file in the EU, one registered since 2012; Morvane SA and 11 more Swiss companies; both domains registered.
+- **Quorvia: taken.** Identical marks registered in the EU since 2023; Quorvia AG and 3 more Swiss companies; both domains registered.
 - **Tirano Pay: clear on this screen.** No near marks, no Swiss company, tiranopay.ch and tiranopay.com appear unregistered.
 - **Next steps:** [zefix.ch](https://www.zefix.ch) and [easygov.swiss](https://www.easygov.swiss) for the company, [ige.ch](https://www.ige.ch/en/protecting-your-ip/trade-marks) for the Swiss mark, [euipo.europa.eu](https://euipo.europa.eu) for the EU mark, [nic.ch](https://www.nic.ch) for the domain, then an Antevo watch.
 - **So what:** Germany comes second (business activity 55 against 46.2 in France); budget for euro-area costs (policy rate 2.5% against 0% at home); plan a longer runway (markets at 2.4 times a normal week, funding for tech tighter).
@@ -53,11 +53,10 @@ The page: https://antevo.ch/mcp/build/due-diligence/
 
 ### A real run, 25 November 2026
 
-The deal: a new supplier, checked before signing. Swisscom AG is an example chosen because it is
-well known; nothing is alleged.
+The deal: a new supplier, checked before signing. Telvaro AG is an invented name standing in for a well-known Swiss company checked in a real run; names and numbers are replaced, the findings are not, and nothing is alleged.
 
-- **On the record:** active in the Swiss register (CHE-102.753.938, Ittigen), LEI issued; not found on the OFAC, EU, UK or SECO lists; swisscom.ch has had certificates since 2008.
-- **Worth a look:** signatories changed on 6 May and 30 June 2026; several Swiss companies carry the name and the trademarks sit with Swisscom (Schweiz) AG.
+- **On the record:** active in the Swiss register (canton Bern), LEI issued; not found on the OFAC, EU, UK or SECO lists; Its domain has had certificates since 2008.
+- **Worth a look:** signatories changed on 6 May and 30 June 2026; several Swiss companies carry the name and the trademarks sit with Telvaro (Schweiz) AG.
 - **Before you sign:** [zefix.ch](https://www.zefix.ch) for today's extract, [uid.admin.ch](https://www.uid.admin.ch) so the contract and invoice name the same company, the bank details confirmed by phone, [the SECO search](https://www.sesam.search.admin.ch) if your rules need it, then an Antevo watch.
 - **So what:** no controlling parent on record, so ask for the beneficial-owner declaration if onboarding needs owners; for a multi-year cloud contract, ask how prices are fixed if funding gets dearer.
 
@@ -104,7 +103,7 @@ Swiss robotics. The companies are public register entries, read to show how a bu
 nothing says any of them is for sale or has been approached.
 
 - **The niche:** the first ten register matches, seats from Geneva to Ticino.
-- **The shortlist:** F&P Robotics AG (24 notices since 2019, four this year; one EU trademark pending), ASIC Robotics AG (three notices this year; no trademark filings in the registers read), mta robotics AG (a quiet record).
+- **The shortlist:** Ferrant Robotics AG (24 notices since 2019, four this year; one EU trademark pending), Quintal Robotics AG (three notices this year; no trademark filings in the registers read), Talgen Robotics AG (a quiet record).
 - **Before a first approach:** [zefix.ch](https://www.zefix.ch) for the extracts, the notices on [shab.ch](https://www.shab.ch), [Swissreg](https://www.swissreg.ch) for patents and designs, owners asked under a confidentiality agreement, then a watch.
 - **So what:** financing is cheap but starting to rise (SNB 0.00%, next assessment 10 December); markets are elevated at 2.4 times a normal week, so a price can move before signing; German factories are expanding, so ask for order intake since September.
 
@@ -124,11 +123,11 @@ The page: https://antevo.ch/mcp/build/real-estate/
 
 ### A real run, 25 November 2026
 
-A new apartment near Zurich, bought as a home with a mortgage. Mobimo AG stands in as the
+A new apartment near Zurich, bought as a home with a mortgage. Varenta Immobilien AG stands in as the
 seller because building and selling property is its stated purpose in the register: nothing
 says it is party to any sale, and nothing is alleged.
 
-- **The seller:** on the record in Küsnacht (ZH), on none of the sanctions lists read, 15 register notices since 2019 and one this year. Seven register entries carry the name, so the reservation and the deed should name the same one.
+- **The seller:** on the record in canton Zurich, on none of the sanctions lists read, 15 register notices since 2019 and one this year. Seven register entries carry the name, so the reservation and the deed should name the same one.
 - **The deposit:** the domain has been registered since 1999 and publishes no DMARC mail policy, so the payee and the account are confirmed by phone before anything is paid.
 - **Before signing:** [zefix.ch](https://www.zefix.ch) for the extract, the [land register](https://www.cadastre.ch/de/grundbuch-schweiz), the [cadastre of public-law restrictions](https://www.cadastre.ch/de/oereb-kataster), the [permit for buyers abroad](https://www.bj.admin.ch/de/grundstueckerwerb-durch-personen-im-ausland), dated offers from two lenders, the draft deed.
 - **So what:** prices still rise, more slowly (condominiums up 3.9% on the year in the third quarter); the bank tests what you can carry at about 5%, not at today's rate; Swiss real prices stand 36% above their 1989 peak and took 28 years to pass it again, so how long you stay is part of the price; bond markets are unsettled, so ask how long a fixed offer holds.
@@ -152,8 +151,7 @@ The page: https://antevo.ch/mcp/build/family-office/
 
 An example Swiss family, described in words with no amounts: a machine-making company that
 sells to Germany and the United States, rented apartment buildings near Zurich, and a portfolio
-in francs, euros and dollars. UBS Switzerland AG stands in as its custody bank because it is
-well known; nothing is alleged.
+in francs, euros and dollars. Helvoran Bank AG, an invented name, stands in for a well-known custody bank checked in a real run; names and numbers are replaced, the findings are not, and nothing is alleged.
 
 - **The family company:** two forces pulling apart. German business sentiment rose again in November while Washington is reported to be readying higher tariffs on the EU; rates and dates are not published.
 - **The property:** a rate date ahead, the SNB's assessment on 10 December, after Swiss inflation rose to 1.5% in October.

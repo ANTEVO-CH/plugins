@@ -4,7 +4,7 @@
  "title": "A new apartment near Zurich",
  "subtitle": "A purchase read before the reservation is signed",
  "built": "2026-11-25",
- "note": "An example of how a buyer reads a purchase. Mobimo AG is used as the seller because building and selling property is its stated purpose in the register: nothing here says it is party to any sale, and nothing is alleged. Every finding is an Antevo engine's answer on the date shown.",
+ "note": "An example of how a buyer reads a purchase. Varenta Immobilien AG, an invented name, stands in for a Swiss property developer checked in a real run; names and numbers are replaced, the findings are not. Nothing here says any company is party to any sale, and nothing is alleged. Every finding is an Antevo engine's answer on the date shown.",
  "tries": {
   "label": "The seller and the deposit, check by check",
   "item": "Check",
@@ -15,7 +15,7 @@
     "verdict": "On the record",
     "level": "green",
     "evidence": [
-     "Mobimo AG, CHE-103.612.281, seat Küsnacht (ZH): active in the Swiss commercial register",
+     "Varenta Immobilien AG, seat in canton Zurich: active in the Swiss commercial register",
      "Its stated purpose: building and managing property, holdings, and buying and selling property"
     ]
    },
@@ -42,8 +42,8 @@
     "verdict": "Worth a look",
     "level": "amber",
     "evidence": [
-     "Seven register entries carry the name: Mobimo AG, Mobimo Holding AG, Mobimo Management AG, Mobimo Zürich Nord AG, Mobimo FM Service AG and two branches in Lausanne",
-     "GLEIF lists no parent for Mobimo AG; owners who are people are not public in Switzerland"
+     "Seven register entries carry the name: Varenta Immobilien AG, Varenta Holding AG, Varenta Management AG, Varenta Zürich Nord AG, Varenta FM Service AG and two branches in Lausanne",
+     "GLEIF lists no parent for Varenta Immobilien AG; owners who are people are not public in Switzerland"
     ]
    },
    {
@@ -51,7 +51,7 @@
     "verdict": "Worth a look",
     "level": "amber",
     "evidence": [
-     "mobimo.ch has been registered since 30 November 1999 and points to a web server; nothing contradicts the record in the three sources that answered",
+     "Its domain has been registered since 30 November 1999 and points to a web server; nothing contradicts the record in the three sources that answered",
      "It publishes no DMARC mail policy, so mail claiming to come from it is easier to fake; the certificate logs were not checked"
     ]
    }
@@ -75,8 +75,8 @@
     "why": "The file gives the date; the notice says what changed.",
     "links": [
      {
-      "label": "Mobimo AG, 15 Jan 2026",
-      "url": "https://www.shab.ch/#!/search/publications/detail/669976db-e495-4b36-99e3-f60fc70025ba"
+      "label": "Varenta Immobilien AG, 15 Jan 2026",
+      "url": "https://www.shab.ch/"
      }
     ]
    },

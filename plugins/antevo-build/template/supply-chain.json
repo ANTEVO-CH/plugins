@@ -4,7 +4,7 @@
  "title": "Taiwan to Basel",
  "subtitle": "Electronic components for a Swiss machine maker, checked leg by leg",
  "built": "2026-11-25",
- "note": "The machine maker is an example. The supplier, Delta Electronics, is named only to show the supplier check; nothing is alleged. Every finding is an Antevo engine's answer on the date shown. Antevo's research desks did not answer on 25 November, so the parts they cover are marked not checked rather than filled in.",
+ "note": "The machine maker is an example. The supplier, Lanyu Electronics, is an invented name standing in for a real Taiwanese supplier checked in a real run; names and numbers are replaced, the findings are not, and nothing is alleged. Every finding is an Antevo engine's answer on the date shown. Antevo's research desks did not answer on 25 November, so the parts they cover are marked not checked rather than filled in.",
  "tries": {
   "label": "Leg by leg",
   "item": "Leg",
@@ -15,7 +15,7 @@
     "verdict": "On the record",
     "level": "green",
     "evidence": [
-     "deltaww.com was registered on 14 February 2001 and points to a web server, not a parking page",
+     "Its domain was registered on 14 February 2001 and points to a web server, not a parking page",
      "Taiwan's company register is not covered by Guard yet, so whether the company is on it was not checked"
     ]
    },

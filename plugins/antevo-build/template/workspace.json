@@ -4,29 +4,29 @@
  "title": "Tirano Pay",
  "subtitle": "An AI fintech, Switzerland then Germany",
  "built": "2026-11-25",
- "note": "Novara, Lumora and Tirano Pay are example names, not suggestions. Every finding is an Antevo engine's answer on the date shown.",
+ "note": "Morvane, Quorvia and Tirano Pay are example names, not suggestions. The first two stand in for the real names screened in the run, so the findings are that run's answers. Every finding is an Antevo engine's answer on the date shown.",
  "tries": {
   "label": "The name, try by try",
   "source": "Antevo Trademark, 25 Nov 2026, classes 36 and 42 · Swiss companies from Zefix · domains from the registries",
   "items": [
    {
-    "name": "Novara",
+    "name": "Morvane",
     "verdict": "Taken",
     "level": "red",
     "evidence": [
      "Identical marks on file in the EU, one registered since 3 April 2012; 40+ near marks on 17 registers",
-     "Novara SA and 11 more Swiss companies under the name",
-     "novara.ch and novara.com are registered"
+     "Morvane SA and 11 more Swiss companies under the name",
+     "Both domains, .ch and .com, are registered"
     ]
    },
    {
-    "name": "Lumora",
+    "name": "Quorvia",
     "verdict": "Taken",
     "level": "red",
     "evidence": [
      "Identical marks registered in the EU, the earliest filed 29 June 2023; 40+ near marks on 14 registers, Switzerland among them",
-     "Lumora AG and 3 more Swiss companies under the name",
-     "lumora.ch and lumora.com are registered"
+     "Quorvia AG and 3 more Swiss companies under the name",
+     "Both domains, .ch and .com, are registered"
     ]
    },
    {

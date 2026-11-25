@@ -2,6 +2,15 @@
 
 All notable changes to the Antevo plugins are documented here.
 
+## 2026-11-25 — Build with Antevo 0.6.1
+
+- **`antevo-build`**, examples: company names in the six example workspaces,
+  templates and README are now invented stand-ins (Morvane, Quorvia, Telvaro,
+  Lanyu Electronics, Ferrant, Quintal and Talgen Robotics, Varenta Immobilien,
+  Helvoran Bank). The findings are still the real 25 November runs; register
+  numbers, LEIs, domains and links to individual notices are taken out, and
+  towns are given as cantons. Pictures redrawn.
+
 ## 2026-11-25 — Build with Antevo 0.6.0
 
 - **`antevo-build`, `family-office`**, new skill: reads the week against what a

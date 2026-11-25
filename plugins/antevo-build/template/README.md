@@ -1,7 +1,7 @@
 # The template: one page, one file
 
 `index.html` renders `workspace.json`. The file here is the Startup Launch Intelligence run of
-25 November 2026 for an example AI fintech (Novara and Lumora taken, Tirano Pay clear; the names
+25 November 2026 for an example AI fintech (Morvane and Quorvia taken, Tirano Pay clear; the names
 are examples, not suggestions).
 
 ```bash

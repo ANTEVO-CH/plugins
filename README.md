@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cover-plugins-dark.png">
-  <img alt="Antevo for Claude: eight plugins, 44 skills. You ask: check Swisscom AG before we sign. Antevo answers: on the record, not found on the sanctions lists read, and two things worth a look before signing." src="assets/cover-plugins-light.png" width="100%">
+  <img alt="Antevo for Claude: eight plugins, 44 skills. You ask: check Telvaro AG before we sign. Antevo answers: on the record, not found on the sanctions lists read, and two things worth a look before signing." src="assets/cover-plugins-light.png" width="100%">
 </picture>
 
 # Antevo for Claude: plugins, skills and builds
@@ -37,7 +37,7 @@ The plugins connect seven of them directly; `antevo-build` connects six at once,
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/builds-dark.png">
-  <img alt="Six builds, one prompt each: Startup launch (Tirano Pay, two names taken, one clear on this screen), Due diligence (Swisscom AG, on the record, two things worth a look), Supply chain (Taiwan to Basel, leg by leg), M&A intelligence (Swiss robotics, three companies read), Real estate (a new apartment near Zurich, the seller on the record, two things worth a look) and Family office (a Swiss family's week, holding by holding). Real runs on 25 November 2026." src="assets/builds-light.png" width="100%">
+  <img alt="Six builds, one prompt each: Startup launch (Tirano Pay, two names taken, one clear on this screen), Due diligence (Telvaro AG, on the record, two things worth a look), Supply chain (Taiwan to Basel, leg by leg), M&A intelligence (Swiss robotics, three companies read), Real estate (a new apartment near Zurich, the seller on the record, two things worth a look) and Family office (a Swiss family's week, holding by holding). Real runs on 25 November 2026." src="assets/builds-light.png" width="100%">
 </picture>
 
 **We build the intelligence. You build what's next.** `antevo-build` connects seven engines in one install and adds builds on top of them. Each build is a recipe, an example from a real run and a skill:
@@ -128,7 +128,7 @@ What happened in markets today, and what does the desk make of it?
 What could go wrong from here — and what would settle it?
 Are markets under strain this week, and how does it compare with 2008?
 Set up Strategy Radar for my company — what changed today for our strategy?
-Has anyone filed anything close to "Novara"?
+Has anyone filed anything close to "Morvane"?
 How long do I have to oppose an EU trademark, and from when?
 ```
 
@@ -254,11 +254,11 @@ Mandates reaches the signed-in member's own firm. It reads clients, dossiers, re
 
 **An external asset manager before a client meeting.** Asks *"prepare me for the Birch family"*. The meeting-prep skill pulls the dossier, goals against target, the review that is due and the correspondence still waiting for a reply, and offers the full generated brief only after saying it uses credits.
 
-**A founder choosing between three names.** Asks *"is any of Novara, Lumen or Meridian taken?"*. The clearance check screens each, names the registers searched, reads who holds the closest marks and how they file — and leaves the judgement on use to counsel.
+**A founder choosing between three names.** Asks *"is any of Morvane, Lumen or Meridian taken?"*. The clearance check screens each, names the registers searched, reads who holds the closest marks and how they file — and leaves the judgement on use to counsel.
 
-**A founder launching a company.** Asks *"help me launch an AI fintech in Switzerland, then Germany — my names are Novara, Lumora and Tirano Pay"*. Startup Launch Intelligence walks the names in order: two are taken (an identical EU mark and a Swiss company of the same name), the third is clear on the screen. It lists the steps to register it with the official links, reads the market, costs, competition and funding risk with what each means for the launch, and drafts a 90-day plan. [See the run →](plugins/antevo-build/)
+**A founder launching a company.** Asks *"help me launch an AI fintech in Switzerland, then Germany — my names are Morvane, Quorvia and Tirano Pay"*. Startup Launch Intelligence walks the names in order: two are taken (an identical EU mark and a Swiss company of the same name), the third is clear on the screen. It lists the steps to register it with the official links, reads the market, costs, competition and funding risk with what each means for the launch, and drafts a 90-day plan. [See the run →](plugins/antevo-build/)
 
-**A buyer about to sign with a new supplier.** Asks *"check Swisscom AG before we sign"*. Company Due Diligence runs five checks in turn — the register, the sanctions lists, the website and email, what changed lately, which group company signs — and marks each on the record or worth a look. It lists what to settle before signing with the official links (today's register extract, the UID, a call on a number you already hold for the bank details), and says what each finding means. Public records only; never a compliance screen. [See the run →](plugins/antevo-build/#company-due-diligence--skill-due-diligence)
+**A buyer about to sign with a new supplier.** Asks *"check Telvaro AG before we sign"*. Company Due Diligence runs five checks in turn — the register, the sanctions lists, the website and email, what changed lately, which group company signs — and marks each on the record or worth a look. It lists what to settle before signing with the official links (today's register extract, the UID, a call on a number you already hold for the bank details), and says what each finding means. Public records only; never a compliance screen. [See the run →](plugins/antevo-build/#company-due-diligence--skill-due-diligence)
 
 **A machine maker before the next order from Asia.** Asks *"check our route for components from Taiwan to Basel before we order"*. Supply Chain Watch walks the route leg by leg — the supplier, leaving the origin, the sea route, Rotterdam and the Rhine, fuel and freight — and marks each running, worth a look, disrupted or not checked. It lists what to settle before the order with the official links (the supplier's register, a price clause, the river gauges, the customs tariff) and says what each finding means. [See the run →](plugins/antevo-build/#supply-chain-watch--skill-supply-chain)
 
