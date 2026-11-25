@@ -6,6 +6,7 @@
     "antevo-executive": {"type": "http", "url": "https://api.antevo.ch/mcp/executive/mcp"},
     "antevo-tremor-watch": {"type": "http", "url": "https://api.antevo.ch/mcp/tremor/mcp"},
     "antevo-research": {"type": "http", "url": "https://api.antevo.ch/mcp/research/mcp"},
-    "antevo-guard": {"type": "http", "url": "https://api.antevo.ch/mcp/guard/mcp"}
+    "antevo-guard": {"type": "http", "url": "https://api.antevo.ch/mcp/guard/mcp"},
+    "antevo-wealth": {"type": "http", "url": "https://api.antevo.ch/mcp/wealth/mcp"}
   }
 }
