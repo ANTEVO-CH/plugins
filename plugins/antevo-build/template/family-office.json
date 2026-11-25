@@ -4,7 +4,7 @@
  "title": "A Swiss family, 25 November",
  "subtitle": "The family's week on one page",
  "built": "2026-11-25",
- "note": "An example family: it owns a machine-making company that sells to Germany and the United States, rented apartment buildings near Zurich, and a portfolio in francs, euros and dollars. No amounts were given and none are needed. UBS Switzerland AG stands in as its custody bank because it is well known; nothing is alleged. Every finding is an Antevo engine's answer on the date shown.",
+ "note": "An example family: it owns a machine-making company that sells to Germany and the United States, rented apartment buildings near Zurich, and a portfolio in francs, euros and dollars. No amounts were given and none are needed. Helvoran Bank AG, an invented name, stands in for a well-known custody bank checked in a real run; names and numbers are replaced, the findings are not, and nothing is alleged. Every finding is an Antevo engine's answer on the date shown.",
  "tries": {
   "label": "What the family owns and relies on, one by one",
   "item": "Holding",
@@ -45,9 +45,9 @@
     "verdict": "On the record",
     "level": "green",
     "evidence": [
-     "UBS Switzerland AG, CHE-412.669.376, Zurich: active; direct parent UBS AG, ultimate parent UBS Group AG (GLEIF, 27 October 2026)",
+     "Helvoran Bank AG, Zurich: active; direct parent Helvoran AG, ultimate parent Helvoran Group AG (GLEIF, 27 October 2026)",
      "Not found on the OFAC, EU, UK and SECO lists, read 25 November 2026; 16 register notices this year, all changes of signatories, the latest on 19 November",
-     "ubs.com has been registered since 15 February 1993; nothing contradicts the record in the three sources that answered"
+     "Its domain has been registered since 15 February 1993; nothing contradicts the record in the three sources that answered"
     ]
    }
   ]

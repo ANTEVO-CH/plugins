@@ -60,7 +60,7 @@ example `["UK"]`). Then walk the names **in the founder's order**, one at a time
 - If none is clear, say so, offer five new names in the same spirit, screen them, and walk
   them the same way. At most two rounds; then hand the choice back to the founder.
 
-How to say it: "Taken: an identical mark is on file in the EU and Novara SA is in the Swiss
+How to say it: "Taken: an identical mark is on file in the EU and Morvane SA is in the Swiss
 register." Never say a mark "blocks" a name or that a name "can be used": when a mark's classes
 are not shown, say so, and say a trademark lawyer decides. A screen is not legal clearance, and
 an unregistered domain can be taken by anyone at any time.

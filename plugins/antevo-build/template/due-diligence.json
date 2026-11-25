@@ -1,10 +1,10 @@
 {
  "template": "Built on Antevo · https://antevo.ch/mcp/build/due-diligence/",
  "kind": "Company Due Diligence",
- "title": "Swisscom AG",
+ "title": "Telvaro AG",
  "subtitle": "A new supplier, checked before signing",
  "built": "2026-11-25",
- "note": "Swisscom AG is an example, chosen because it is well known; nothing is alleged. Every finding is an Antevo engine's answer on the date shown, from public records.",
+ "note": "Telvaro AG is an invented name standing in for a well-known Swiss company checked in a real run; names and numbers are replaced, the findings are not, and nothing is alleged. Every finding is an Antevo engine's answer on the date shown, from public records.",
  "tries": {
   "label": "Check by check",
   "item": "Check",
@@ -15,8 +15,8 @@
     "verdict": "On the record",
     "level": "green",
     "evidence": [
-     "Swisscom AG, CHE-102.753.938, Ittigen: active in the Swiss commercial register",
-     "LEI 5493005SL9HHOXS3B739 issued to Swisscom AG, next renewal 22 July 2027"
+     "Telvaro AG, canton Bern: active in the Swiss commercial register",
+     "An LEI issued to Telvaro AG, next renewal 22 July 2027"
     ]
    },
    {
@@ -33,7 +33,7 @@
     "verdict": "On the record",
     "level": "green",
     "evidence": [
-     "swisscom.ch: first certificate logged 6 March 2008",
+     "Its domain: first certificate logged 6 March 2008",
      "It points to a web server, not a parking page; nothing in five sources contradicts the record"
     ]
    },
@@ -43,7 +43,7 @@
     "level": "amber",
     "evidence": [
      "Signatories changed on 6 May 2026 (two in, one out) and on 30 June 2026 (one in)",
-     "23 register notices since 2019, the auditor changed to PricewaterhouseCoopers AG in 2019"
+     "23 register notices since 2019, the auditor changed in 2019"
     ]
    },
    {
@@ -51,8 +51,8 @@
     "verdict": "Worth a look",
     "level": "amber",
     "evidence": [
-     "Several Swiss companies carry the name: Swisscom Services AG, Swisscom Fixnet AG, Swisscom Ventures AG and more",
-     "The trademarks sit with Swisscom (Schweiz) AG: 17 marks, all registered, filing since 1996"
+     "Several Swiss companies carry the name: Telvaro Services AG, Telvaro Fixnet AG, Telvaro Ventures AG and more",
+     "The trademarks sit with Telvaro (Schweiz) AG: 17 marks, all registered, filing since 1996"
     ]
    }
   ]
@@ -108,7 +108,7 @@
    "level": "green",
    "so_what": "The names you see on the invoice are its own: no sign of a borrowed brand.",
    "evidence": [
-    "Swisscom (Schweiz) AG holds 17 marks in Switzerland, Canada, Singapore and internationally, none abandoned",
+    "Telvaro (Schweiz) AG holds 17 marks in Switzerland, Canada, Singapore and internationally, none abandoned",
     "Most claims in classes 9, 38 and 42; last filing 25 August 2026"
    ],
    "source": "Antevo Trademark, 25 Nov 2026"

@@ -11,31 +11,31 @@
   "source": "Antevo Companies and Antevo Trademark, 25 Nov 2026 · Zefix, SHAB, GLEIF, OFAC, EU, UK and SECO lists. For all three: no parent on record, not found on the four sanctions lists, no article in Antevo's news reading since 18 May.",
   "items": [
    {
-    "name": "F&P Robotics AG",
+    "name": "Ferrant Robotics AG",
     "verdict": "A busy record",
     "level": "amber",
     "evidence": [
-     "Active, seat Opfikon; its stated purpose is software and hardware for robots that learn",
+     "Active, seat in canton Zurich; its stated purpose is software and hardware for robots that learn",
      "24 register notices since February 2019, four this year (24 and 27 February, 12 June, 2 November)",
      "One EU trademark, pending, in classes 7, 9 and 42"
     ]
    },
    {
-    "name": "ASIC Robotics AG",
+    "name": "Quintal Robotics AG",
     "verdict": "Changes this year",
     "level": "amber",
     "evidence": [
-     "Active, seat Burgdorf; its stated purpose is rationalisation and automation technology",
+     "Active, seat in canton Bern; its stated purpose is rationalisation and automation technology",
      "8 register notices since September 2019, three this year (21 January, 17 September, 6 November)",
      "No trademark filings under its name in the registers Antevo reads"
     ]
    },
    {
-    "name": "mta robotics AG",
+    "name": "Talgen Robotics AG",
     "verdict": "A quiet record",
     "level": "green",
     "evidence": [
-     "Active, seat Gals; its stated purpose is automated production systems",
+     "Active, seat in canton Bern; its stated purpose is automated production systems",
      "2 register notices, on 8 March 2024 and 21 November 2025",
      "No trademark filings under its name in the registers Antevo reads"
     ]
@@ -52,10 +52,10 @@
    },
    {
     "do": "Read this year's notices",
-    "why": "F&P Robotics had four and ASIC Robotics three; each notice says what changed.",
+    "why": "Ferrant Robotics had four and Quintal Robotics three; each notice says what changed.",
     "links": [
-     {"label": "F&P Robotics, 2 Nov", "url": "https://www.shab.ch/#!/search/publications/detail/17e90c15-a7ec-48de-a007-b80a986ebe1d"},
-     {"label": "ASIC Robotics, 6 Nov", "url": "https://www.shab.ch/#!/search/publications/detail/9297634c-f035-4abf-bd25-bab31fcd6efc"}
+     {"label": "Ferrant Robotics, 2 Nov", "url": "https://www.shab.ch/"},
+     {"label": "Quintal Robotics, 6 Nov", "url": "https://www.shab.ch/"}
     ]
    },
    {
@@ -70,10 +70,10 @@
    },
    {
     "do": "Watch the shortlist",
-    "why": "At most one alert a day when a register notice or a sanctions list changes, and F&P Robotics' next trademark filing.",
+    "why": "At most one alert a day when a register notice or a sanctions list changes, and Ferrant Robotics' next trademark filing.",
     "links": [
      {"label": "Antevo Companies", "url": "https://antevo.ch/companies/"},
-     {"label": "Follow F&P Robotics' filings", "url": "https://antevo.ch/trademark/app/filers?intent=follow&filer=F%26P+Robotics+AG&source=build"}
+     {"label": "Follow Ferrant Robotics' filings", "url": "https://antevo.ch/trademark/app/filers?source=build"}
     ]
    }
   ]
@@ -155,7 +155,7 @@
  "watch": [
   "The SNB's assessment on 10 December, and its revised inflation forecast",
   "New register notices for the three companies (Antevo Companies alerts at most once a day)",
-  "F&P Robotics' pending EU trademark and its next filings",
+  "Ferrant Robotics' pending EU trademark and its next filings",
   "The Tremor index every Saturday",
   "Pricing of AI-linked bond and share sales (Strategy Radar)"
  ],
