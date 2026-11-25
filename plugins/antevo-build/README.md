@@ -83,6 +83,30 @@ Rhine to Basel. The machine maker is an example; the supplier is named only to s
 
 The workspace: `template/index.html?w=supply-chain.json`.
 
+## M&A Intelligence · skill `m-and-a`
+
+Before you call anyone. One prompt, five engines, three of them free with no account.
+The page: https://antevo.ch/mcp/build/m-and-a/
+
+| | What happens | Engine |
+|---|---|---|
+| **1. Map the niche** | Who is registered under the niche word: names, legal forms, seats, counted. | Companies |
+| **2. The shortlist** | Each company's file: register status, dated notices, group, sanctions lists, and who holds which brands; each **a quiet record**, **worth a look**, a **mismatch** or **not checked**. | Companies · Trademark |
+| **3. Before a first approach** | The register extract, the notices themselves, patents and designs, owners under a confidentiality agreement, then a watch. | Companies · Trademark |
+| **4. The deal climate** | Financing and the currency, market strain and the niche's market, each with one "so what" line. | Research · Tremor Watch · Strategy Radar |
+
+### A real run, 25 November 2026
+
+Swiss robotics. The companies are public register entries, read to show how a buyer works:
+nothing says any of them is for sale or has been approached.
+
+- **The niche:** the first ten register matches, seats from Geneva to Ticino.
+- **The shortlist:** F&P Robotics AG (24 notices since 2019, four this year; one EU trademark pending), ASIC Robotics AG (three notices this year; no trademark filings in the registers read), mta robotics AG (a quiet record).
+- **Before a first approach:** [zefix.ch](https://www.zefix.ch) for the extracts, the notices on [shab.ch](https://www.shab.ch), [Swissreg](https://www.swissreg.ch) for patents and designs, owners asked under a confidentiality agreement, then a watch.
+- **So what:** financing is cheap but starting to rise (SNB 0.00%, next assessment 10 December); markets are elevated at 2.4 times a normal week, so a price can move before signing; German factories are expanding, so ask for order intake since September.
+
+The workspace: `template/index.html?w=m-and-a.json`.
+
 ## The template
 
 `template/` is one page that renders one file, `workspace.json`. The skill fills it; so can your
@@ -94,8 +118,8 @@ cd template && python3 -m http.server 8000   # then open http://localhost:8000
 
 The file's blocks are all optional, so the same page renders other builds too: `tries` (options
 checked one by one), `steps` (next actions with links), `sections` (a finding, its `so_what`, its
-evidence and source), `links`, `roadmap` and `watch`. `index.html?w=due-diligence.json` and
-`index.html?w=supply-chain.json` render the other two runs. See [template/README.md](template/README.md).
+evidence and source), `links`, `roadmap` and `watch`. `index.html?w=due-diligence.json`,
+`index.html?w=supply-chain.json` and `index.html?w=m-and-a.json` render the other runs. See [template/README.md](template/README.md).
 
 ## The seven engines
 
@@ -111,17 +135,18 @@ evidence and source), `links`, `roadmap` and `watch`. `index.html?w=due-diligenc
 
 Not on Claude? Add the addresses to any MCP client and paste a recipe at the start of the
 conversation: [antevo-startup-launch.md](https://antevo.ch/mcp/build/antevo-startup-launch.md),
-[antevo-due-diligence.md](https://antevo.ch/mcp/build/due-diligence/antevo-due-diligence.md) or
-[antevo-supply-chain.md](https://antevo.ch/mcp/build/supply-chain/antevo-supply-chain.md).
+[antevo-due-diligence.md](https://antevo.ch/mcp/build/due-diligence/antevo-due-diligence.md),
+[antevo-supply-chain.md](https://antevo.ch/mcp/build/supply-chain/antevo-supply-chain.md) or
+[antevo-m-and-a.md](https://antevo.ch/mcp/build/m-and-a/antevo-m-and-a.md).
 
 ## More builds
 
-The same engines, a different building on top: M&A intelligence, real estate acquisition
-and family office are next.
+The same engines, a different building on top: real estate acquisition and family office
+are next.
 
 ## The rules every build keeps
 
 Every figure keeps its date, and Antevo's answers are quoted as Antevo's. A trademark screen is
-not legal clearance, and an unregistered domain can be taken at any time. A quiet week on a route means no alerts in the sources read, never a safe route. The plan is options to
+not legal clearance, and an unregistered domain can be taken at any time. An M&A read never says a company is for sale and never guesses why a notice was filed. A quiet week on a route means no alerts in the sources read, never a safe route. The plan is options to
 consider, never investment, legal or tax advice. A due-diligence read is public records only:
 not a KYC, AML or sanctions-compliance screen, not a credit report, and never about a person's conduct. Nothing here trades, moves money or decides for you.

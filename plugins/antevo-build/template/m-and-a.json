@@ -1,0 +1,163 @@
+{
+ "template": "Built on Antevo · https://antevo.ch/mcp/build/m-and-a/",
+ "kind": "M&A Intelligence",
+ "title": "Swiss robotics",
+ "subtitle": "A niche mapped and a shortlist read before any approach",
+ "built": "2026-11-25",
+ "note": "An example of how a buyer reads a niche. The companies are public register entries: nothing here says any of them is for sale or has been approached, and nothing is alleged. Every finding is an Antevo engine's answer on 25 November 2026.",
+ "tries": {
+  "label": "The shortlist, company by company",
+  "item": "Company",
+  "source": "Antevo Companies and Antevo Trademark, 25 Nov 2026 · Zefix, SHAB, GLEIF, OFAC, EU, UK and SECO lists. For all three: no parent on record, not found on the four sanctions lists, no article in Antevo's news reading since 18 May.",
+  "items": [
+   {
+    "name": "F&P Robotics AG",
+    "verdict": "A busy record",
+    "level": "amber",
+    "evidence": [
+     "Active, seat Opfikon; its stated purpose is software and hardware for robots that learn",
+     "24 register notices since February 2019, four this year (24 and 27 February, 12 June, 2 November)",
+     "One EU trademark, pending, in classes 7, 9 and 42"
+    ]
+   },
+   {
+    "name": "ASIC Robotics AG",
+    "verdict": "Changes this year",
+    "level": "amber",
+    "evidence": [
+     "Active, seat Burgdorf; its stated purpose is rationalisation and automation technology",
+     "8 register notices since September 2019, three this year (21 January, 17 September, 6 November)",
+     "No trademark filings under its name in the registers Antevo reads"
+    ]
+   },
+   {
+    "name": "mta robotics AG",
+    "verdict": "A quiet record",
+    "level": "green",
+    "evidence": [
+     "Active, seat Gals; its stated purpose is automated production systems",
+     "2 register notices, on 8 March 2024 and 21 November 2025",
+     "No trademark filings under its name in the registers Antevo reads"
+    ]
+   }
+  ]
+ },
+ "steps": {
+  "label": "Before a first approach, with the links",
+  "items": [
+   {
+    "do": "Read today's register extract for each: purpose, capital and who may sign",
+    "why": "Who may sign decides who the first conversation is with.",
+    "links": [{"label": "zefix.ch", "url": "https://www.zefix.ch"}]
+   },
+   {
+    "do": "Read this year's notices",
+    "why": "F&P Robotics had four and ASIC Robotics three; each notice says what changed.",
+    "links": [
+     {"label": "F&P Robotics, 2 Nov", "url": "https://www.shab.ch/#!/search/publications/detail/17e90c15-a7ec-48de-a007-b80a986ebe1d"},
+     {"label": "ASIC Robotics, 6 Nov", "url": "https://www.shab.ch/#!/search/publications/detail/9297634c-f035-4abf-bd25-bab31fcd6efc"}
+    ]
+   },
+   {
+    "do": "Check patents and designs, not only trademarks",
+    "why": "Two of the three have no trademark filings in the registers read; what protects their products may be patents, know-how or nothing registered.",
+    "links": [{"label": "Swissreg", "url": "https://www.swissreg.ch"}]
+   },
+   {
+    "do": "Ask who owns each company, under a confidentiality agreement",
+    "why": "Owners who are people are not public in Switzerland, and no parent is on record for any of the three.",
+    "links": []
+   },
+   {
+    "do": "Watch the shortlist",
+    "why": "At most one alert a day when a register notice or a sanctions list changes, and F&P Robotics' next trademark filing.",
+    "links": [
+     {"label": "Antevo Companies", "url": "https://antevo.ch/companies/"},
+     {"label": "Follow F&P Robotics' filings", "url": "https://antevo.ch/trademark/app/filers?intent=follow&filer=F%26P+Robotics+AG&source=build"}
+    ]
+   }
+  ]
+ },
+ "sections": [
+  {
+   "title": "The niche",
+   "verdict": "Ten companies, seats from Geneva to Ticino",
+   "level": "ink",
+   "so_what": "The niche spans the French, German and Italian-speaking regions: a buyer's plan for people and customers has to work in all three.",
+   "evidence": [
+    "The first ten register matches for \"robotics\": nine companies limited by shares and one limited liability company",
+    "Seats in Meggen, Balerna, Lugano, Glattbrugg, Pully, Schindellegi, Gals, Burgdorf, Plan-les-Ouates and Basel"
+   ],
+   "source": "Antevo Companies, 25 Nov 2026 (Zefix). The search returns ten at a time."
+  },
+  {
+   "title": "Financing",
+   "verdict": "Cheap, and starting to rise",
+   "level": "amber",
+   "so_what": "If the deal needs debt, terms before and after the SNB's 10 December assessment may differ: fixing early or pricing a later rise in are both options.",
+   "evidence": [
+    "SNB policy rate 0.00% (October 2026), held since June 2025; Swiss inflation rose to 1.5% in October",
+    "Economists' median expects a first rise in June 2027; some banks expect one as soon as December",
+    "10-year Swiss government bond yield 0.51% (third quarter)"
+   ],
+   "source": "Antevo Research, economy desk, 25 Nov 2026"
+  },
+  {
+   "title": "The franc",
+   "verdict": "Strong against the euro",
+   "level": "ink",
+   "so_what": "A company selling to Germany in euros earns fewer francs per sale: ask for margins by currency.",
+   "evidence": [
+    "EUR/CHF 0.9162 on 24 November",
+    "The franc is 1.6% stronger against the euro than a year ago"
+   ],
+   "source": "Antevo Research, economy desk, 25 Nov 2026"
+  },
+  {
+   "title": "Customers in Germany",
+   "verdict": "Factories expanding",
+   "level": "green",
+   "so_what": "Ask for order intake since September: firmer German demand would show there first.",
+   "evidence": [
+    "German manufacturing survey at 55 in November; business climate 90.6",
+    "German producer prices up 8.1% on the year in October, an incentive to automate in the desk's reading"
+   ],
+   "source": "Antevo Research and Antevo Strategy Radar, 24 to 25 Nov 2026"
+  },
+  {
+   "title": "Market strain",
+   "verdict": "Elevated, 2.4 times a normal week",
+   "level": "amber",
+   "so_what": "Prices can move between a first offer and signing: a price-adjustment clause or a short exclusivity are options.",
+   "evidence": [
+    "Week of 20 November: elevated, down from high the week before (3.8 times a normal week)",
+    "Bonds, commodities and volatility are breaking; credit is calm"
+   ],
+   "source": "Antevo Tremor Watch, week of 20 Nov 2026 (provisional)"
+  },
+  {
+   "title": "AI funding",
+   "verdict": "One entry touches suppliers",
+   "level": "amber",
+   "so_what": "If a company sells into chip or data-centre projects, ask how much of its order book depends on them.",
+   "evidence": [
+    "A failed or repriced AI bond or share sale could make funding dearer and trim chip and power orders",
+    "High impact, medium likelihood, rising"
+   ],
+   "source": "Antevo Strategy Radar, 25 Nov 2026"
+  }
+ ],
+ "links": [
+  {"a": "Companies", "b": "Trademark", "text": "Two of the three have no trademark filings in the registers read: what a buyer pays for may sit in patents, know-how or nothing registered, and that is the first question."},
+  {"a": "Research", "b": "Tremor Watch", "text": "Franc money is cheap while markets are unsettled: financing is not the constraint, a price that moves before signing is."},
+  {"a": "Strategy Radar", "b": "Research", "text": "German factories are expanding as their costs rise: if automation demand is turning, a robotics maker selling into Germany would see it in orders first."}
+ ],
+ "watch": [
+  "The SNB's assessment on 10 December, and its revised inflation forecast",
+  "New register notices for the three companies (Antevo Companies alerts at most once a day)",
+  "F&P Robotics' pending EU trademark and its next filings",
+  "The Tremor index every Saturday",
+  "Pricing of AI-linked bond and share sales (Strategy Radar)"
+ ],
+ "disclaimer": "From public records and Antevo answers, each dated. Nothing here says a company is for sale, and nothing is alleged. Not investment, legal or tax advice."
+}
