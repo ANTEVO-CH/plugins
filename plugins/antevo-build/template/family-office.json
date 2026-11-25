@@ -1,0 +1,189 @@
+{
+ "template": "Built on Antevo · https://antevo.ch/mcp/build/family-office/",
+ "kind": "Family Office",
+ "title": "A Swiss family, 25 November",
+ "subtitle": "The family's week on one page",
+ "built": "2026-11-25",
+ "note": "An example family: it owns a machine-making company that sells to Germany and the United States, rented apartment buildings near Zurich, and a portfolio in francs, euros and dollars. No amounts were given and none are needed. UBS Switzerland AG stands in as its custody bank because it is well known; nothing is alleged. Every finding is an Antevo engine's answer on the date shown.",
+ "tries": {
+  "label": "What the family owns and relies on, one by one",
+  "item": "Holding",
+  "source": "Antevo Strategy Radar, Antevo Research (strategy desk), Antevo Companies and Antevo Guard, 24 to 25 Nov 2026. One of Guard's four sources, the certificate logs, did not answer.",
+  "items": [
+   {
+    "name": "The family company",
+    "verdict": "Two forces pulling apart",
+    "level": "amber",
+    "evidence": [
+     "German business sentiment rose again in November (Ifo 90.6 from 90.1) and the manufacturing survey stood at 55: firmer orders for suppliers to German industry",
+     "Washington is reported to be readying higher tariffs on the EU and others; rates and dates are not published. A US tariff floor of 15% has applied to Swiss exports since 14 November 2025",
+     "Swiss industrial production grew 0.8% on the year in the third quarter of 2026, against 4.0% expected"
+    ]
+   },
+   {
+    "name": "The property",
+    "verdict": "A rate date ahead",
+    "level": "amber",
+    "evidence": [
+     "The SNB's next assessment is on 10 December 2026; Swiss inflation rose to 1.5% in October",
+     "A rise would lift the cost of SARON-linked loans on the buildings; rent, in francs, does not move with the currency",
+     "Supply near Zurich stays scarce; a forecast for 2027 sees prices up 2.0% in Zurich, well below recent years"
+    ]
+   },
+   {
+    "name": "The portfolio",
+    "verdict": "The currency does the work",
+    "level": "amber",
+    "evidence": [
+     "A euro bought 0.9131 francs on 25 November, down 2.2% over a year; a dollar 0.8342 francs, up 3.4%",
+     "The gap between the SNB's rate (0.00%) and the Fed's (3.88%, October 2026) is about 3.9 points: roughly what it costs to hedge dollars into francs",
+     "Swiss ten-year yield 0.51% (September 2026), up from 0.30% a year earlier"
+    ]
+   },
+   {
+    "name": "The custody bank",
+    "verdict": "On the record",
+    "level": "green",
+    "evidence": [
+     "UBS Switzerland AG, CHE-412.669.376, Zurich: active; direct parent UBS AG, ultimate parent UBS Group AG (GLEIF, 27 October 2026)",
+     "Not found on the OFAC, EU, UK and SECO lists, read 25 November 2026; 16 register notices this year, all changes of signatories, the latest on 19 November",
+     "ubs.com has been registered since 15 February 1993; nothing contradicts the record in the three sources that answered"
+    ]
+   }
+  ]
+ },
+ "steps": {
+  "label": "For the family meeting, with the links",
+  "items": [
+   {
+    "do": "When the US tariff rates and dates are published, check whether the company's own product codes are on the list",
+    "why": "Until then the plans are reports; the board's trigger is publication plus the company's own codes."
+   },
+   {
+    "do": "Put 10 December in the diary and list which loans on the buildings are SARON-linked",
+    "why": "The SNB's assessment is the one date that touches the company, the property and the portfolio at once.",
+    "links": [
+     {
+      "label": "snb.ch",
+      "url": "https://www.snb.ch/en/"
+     }
+    ]
+   },
+   {
+    "do": "Ask the bank which currencies in the portfolio are hedged, and what the hedge costs",
+    "why": "With a rate gap of about 3.9 points, hedged and unhedged dollars are two different holdings."
+   },
+   {
+    "do": "Ask the company for order intake from Germany since September",
+    "why": "Sentiment is firmer and output is not: the order book says which one the company is living in."
+   },
+   {
+    "do": "Watch the companies the family relies on",
+    "why": "At most one alert a day if a register notice or a sanctions list changes.",
+    "links": [
+     {
+      "label": "Antevo Companies",
+      "url": "https://antevo.ch/companies/"
+     },
+     {
+      "label": "zefix.ch",
+      "url": "https://www.zefix.ch"
+     }
+    ]
+   },
+   {
+    "do": "Before a new payee is paid, check it and confirm the account by phone",
+    "why": "A capital call, an invoice or a change of account by email is where a family is most exposed.",
+    "links": [
+     {
+      "label": "Antevo Guard",
+      "url": "https://antevo.ch/guard/"
+     }
+    ]
+   }
+  ]
+ },
+ "sections": [
+  {
+   "title": "The week in markets",
+   "verdict": "Chips sold, the shopper bought",
+   "level": "ink",
+   "so_what": "The reported plans name the EU; whether Swiss goods are included is not known until the list is published. For this family the channel to watch is the company's German customers.",
+   "evidence": [
+    "Chip makers gave back most of Monday's rally in a session while retailers rose on strong US consumer confidence",
+    "The same day brought reports of higher US tariffs on China, the EU, Japan, South Korea and others",
+    "Freight shows no rush to land goods ahead of them: 57 ships waiting off Los Angeles and Long Beach in the week to 24 November, against 56 in the four weeks before"
+   ],
+   "source": "Antevo Executive Brief, 25 Nov 2026"
+  },
+  {
+   "title": "What could go wrong",
+   "verdict": "Three risks rising",
+   "level": "amber",
+   "so_what": "Two of the three reach this family directly: tariffs through the company, the AI trade through the portfolio. The third, the Gulf, reaches it through energy and freight.",
+   "evidence": [
+    "New tariffs on the largest trading partners: rising, high impact, medium probability, on the radar for 22 mornings",
+    "AI suppliers lose their second bid: rising, high impact, medium probability, 53 mornings",
+    "The Gulf truce frays at sea and in Riyadh: rising, high impact, medium probability, 16 mornings"
+   ],
+   "source": "Antevo Executive Brief, risk radar, 25 Nov 2026"
+  },
+  {
+   "title": "The next three months",
+   "verdict": "Managed friction, held loosely",
+   "level": "amber",
+   "so_what": "One event moves the three holdings in different directions: a franc surge cuts the company's euro revenue while franc assets hold their value. Seeing them on one page is the point.",
+   "evidence": [
+    "The base: tariffs stay near today's level, the SNB moves once in December or March, the euro holds between 0.91 and 0.93 francs",
+    "A franc surge on a market shock, the euro towards 0.88 to 0.89 francs: the most damaging for the company, since a 5% rise in the franc takes 5% off euro revenue in francs",
+    "A dollar and rate overshoot, the dollar towards 0.88 to 0.90 francs: dollar revenue and assets gain in francs, US bond prices fall",
+    "The desk holds the base with lower conviction than usual; a euro below 0.90 francs is its signal for the second"
+   ],
+   "source": "Antevo Research, strategy desk, 25 Nov 2026"
+  },
+  {
+   "title": "Market strain",
+   "verdict": "Elevated, 2.4 times a normal week",
+   "level": "amber",
+   "so_what": "Prices are moving more than usual: anything that has to be bought, sold or refinanced on a fixed date is worth a second look at its timing.",
+   "evidence": [
+    "Week of 20 November 2026: elevated, down from high (3.8 times) the week before",
+    "Bonds, commodities and volatility are breaking at more than twice their normal rate; credit is calm at 0.5 times",
+    "Provisional: 697 of 753 pairs were read this week. It describes, it does not forecast"
+   ],
+   "source": "Antevo Tremor Index, week of 20 Nov 2026"
+  }
+ ],
+ "links": [
+  {
+   "a": "Strategy Radar",
+   "b": "Research",
+   "text": "German sentiment is firming while Swiss industrial output slowed to 0.8% growth: the company's order book will say which of the two it is living in."
+  },
+  {
+   "a": "Executive Brief",
+   "b": "Strategy Radar",
+   "text": "Tariffs reported on the EU would reach the family through its German customers even if Swiss goods are untouched."
+  },
+  {
+   "a": "Research",
+   "b": "Tremor Watch",
+   "text": "The base scenario is held loosely while markets run at 2.4 times a normal week: the franc-surge scenario needs only one shock."
+  },
+  {
+   "a": "Companies",
+   "b": "Guard",
+   "text": "The bank is on the register, on none of the lists read, and nothing contradicts its domain record: a clean routine check. The phone call before a new account is paid still applies."
+  }
+ ],
+ "watch": [
+  "The published rates and start dates of the US tariffs",
+  "Euro-area inflation for November on 1 December (consensus 4.3% after 4.0%)",
+  "US payrolls for November on 4 December",
+  "The SNB's assessment on 10 December 2026",
+  "The euro against 0.90 francs",
+  "New register notices for the bank (Antevo Companies alerts at most once a day)",
+  "The next Tremor reading on Saturday"
+ ],
+ "disclaimer": "From public records and Antevo answers, each dated. The engines read the world, not the family's accounts: nothing here is a statement of holdings. Not investment, legal or tax advice."
+}

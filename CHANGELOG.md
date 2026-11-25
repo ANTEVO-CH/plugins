@@ -2,6 +2,20 @@
 
 All notable changes to the Antevo plugins are documented here.
 
+## 2026-11-25 — Build with Antevo 0.6.0
+
+- **`antevo-build`, `family-office`**, new skill: reads the week against what a
+  family owns and relies on. The day's brief, the risk radar and the dated
+  events ahead (Executive Brief); what touches the family company (Strategy
+  Radar); the scenarios for the months ahead (Research, strategy desk); market
+  strain (Tremor Watch); the firms the family relies on in the register
+  (Companies) and a payee check before anything new is paid (Guard). Each
+  holding gets a line on what moved for it, then what to bring to the family
+  meeting with the links. Never says what to buy, sell or hedge, and never
+  states a value of holdings. `template/family-office.json` is the example
+  Swiss family run of 25 Nov 2026.
+- **README:** 44 skills.
+
 ## 2026-11-25 — Build with Antevo 0.5.0
 
 - **`antevo-build`, `real-estate`**, new skill: reads a property purchase before

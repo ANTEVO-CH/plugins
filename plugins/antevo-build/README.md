@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../../assets/builds-dark.png">
-  <img alt="Five builds, one prompt each: Startup launch, Due diligence, Supply chain, M&A intelligence and Real estate, each with its real run of 25 November 2026." src="../../assets/builds-light.png" width="100%">
+  <img alt="Six builds, one prompt each: Startup launch, Due diligence, Supply chain, M&A intelligence, Real estate and Family office, each with its real run of 25 November 2026." src="../../assets/builds-light.png" width="100%">
 </picture>
 
 # Build with Antevo
@@ -135,6 +135,36 @@ says it is party to any sale, and nothing is alleged.
 
 The workspace: `template/index.html?w=real-estate.json`.
 
+## Family Office · skill `family-office`
+
+The family's week, on one page. One prompt, six engines, four of them free with no account.
+The page: https://antevo.ch/mcp/build/family-office/
+
+| | What happens | Engine |
+|---|---|---|
+| **1. The week** | The day's brief, the risk radar with what would confirm each risk, and the dated events ahead. | Executive Brief |
+| **2. The family business** | The board entries that touch the family company and its customers, with impact, likelihood and trend. | Strategy Radar |
+| **3. The months ahead** | How the pieces connect for holdings like these: the scenarios and what would change them. Then market strain. | Research · Tremor Watch |
+| **4. The firms it relies on** | Each firm's register status, group, sanctions lists and what changed; a payee check before anything new is paid. | Companies · Guard |
+| **5. For the family meeting** | Each holding with a line on what moved for it, then what to check, what to ask whom and which date to keep. | all six |
+
+### A real run, 25 November 2026
+
+An example Swiss family, described in words with no amounts: a machine-making company that
+sells to Germany and the United States, rented apartment buildings near Zurich, and a portfolio
+in francs, euros and dollars. UBS Switzerland AG stands in as its custody bank because it is
+well known; nothing is alleged.
+
+- **The family company:** two forces pulling apart. German business sentiment rose again in November while Washington is reported to be readying higher tariffs on the EU; rates and dates are not published.
+- **The property:** a rate date ahead, the SNB's assessment on 10 December, after Swiss inflation rose to 1.5% in October.
+- **The portfolio:** the currency does the work. The gap between the SNB's rate and the Fed's is about 3.9 points, roughly the cost of hedging dollars into francs.
+- **The custody bank:** on the record, on none of the sanctions lists read, 16 register notices this year, all changes of signatories.
+- **So what:** one event moves the three holdings in different directions (a franc surge cuts the company's euro revenue while franc assets hold their value), so the family reads them on one page.
+
+The engines read the world, not the family's accounts: nothing here is a statement of holdings.
+
+The workspace: `template/index.html?w=family-office.json`.
+
 ## The template
 
 `template/` is one page that renders one file, `workspace.json`. The skill fills it; so can your
@@ -147,7 +177,7 @@ cd template && python3 -m http.server 8000   # then open http://localhost:8000
 The file's blocks are all optional, so the same page renders other builds too: `tries` (options
 checked one by one), `steps` (next actions with links), `sections` (a finding, its `so_what`, its
 evidence and source), `links`, `roadmap` and `watch`. `index.html?w=due-diligence.json`,
-`index.html?w=supply-chain.json`, `index.html?w=m-and-a.json` and `index.html?w=real-estate.json` render the other runs. See [template/README.md](template/README.md).
+`index.html?w=supply-chain.json`, `index.html?w=m-and-a.json`, `index.html?w=real-estate.json` and `index.html?w=family-office.json` render the other runs. See [template/README.md](template/README.md).
 
 ## The seven engines
 
@@ -165,16 +195,17 @@ Not on Claude? Add the addresses to any MCP client and paste a recipe at the sta
 conversation: [antevo-startup-launch.md](https://antevo.ch/mcp/build/antevo-startup-launch.md),
 [antevo-due-diligence.md](https://antevo.ch/mcp/build/due-diligence/antevo-due-diligence.md),
 [antevo-supply-chain.md](https://antevo.ch/mcp/build/supply-chain/antevo-supply-chain.md),
-[antevo-m-and-a.md](https://antevo.ch/mcp/build/m-and-a/antevo-m-and-a.md) or
-[antevo-real-estate.md](https://antevo.ch/mcp/build/real-estate/antevo-real-estate.md).
+[antevo-m-and-a.md](https://antevo.ch/mcp/build/m-and-a/antevo-m-and-a.md),
+[antevo-real-estate.md](https://antevo.ch/mcp/build/real-estate/antevo-real-estate.md) or
+[antevo-family-office.md](https://antevo.ch/mcp/build/family-office/antevo-family-office.md).
 
 ## More builds
 
-The same engines, a different building on top: family office is next.
+The same engines, a different building on top: six builds so far, and the template is yours to build the next.
 
 ## The rules every build keeps
 
 Every figure keeps its date, and Antevo's answers are quoted as Antevo's. A trademark screen is
-not legal clearance, and an unregistered domain can be taken at any time. An M&A read never says a company is for sale and never guesses why a notice was filed. A property read never says whether to buy and is not a legal review of the purchase. A quiet week on a route means no alerts in the sources read, never a safe route. The plan is options to
+not legal clearance, and an unregistered domain can be taken at any time. An M&A read never says a company is for sale and never guesses why a notice was filed. A property read never says whether to buy and is not a legal review of the purchase. A family read never says what to buy, sell or hedge and never states a value of holdings. A quiet week on a route means no alerts in the sources read, never a safe route. The plan is options to
 consider, never investment, legal or tax advice. A due-diligence read is public records only:
 not a KYC, AML or sanctions-compliance screen, not a credit report, and never about a person's conduct. Nothing here trades, moves money or decides for you.
