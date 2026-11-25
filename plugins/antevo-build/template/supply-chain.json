@@ -1,0 +1,157 @@
+{
+ "template": "Built on Antevo · https://antevo.ch/mcp/build/supply-chain/",
+ "kind": "Supply Chain Watch",
+ "title": "Taiwan to Basel",
+ "subtitle": "Electronic components for a Swiss machine maker, checked leg by leg",
+ "built": "2026-11-25",
+ "note": "The machine maker is an example. The supplier, Delta Electronics, is named only to show the supplier check; nothing is alleged. Every finding is an Antevo engine's answer on the date shown. Antevo's research desks did not answer on 25 November, so the parts they cover are marked not checked rather than filled in.",
+ "tries": {
+  "label": "Leg by leg",
+  "item": "Leg",
+  "source": "Antevo Guard, Antevo Executive Brief and Antevo Strategy Radar, 25 Nov 2026 · domain registries, public DNS, USGS, GDACS and EONET disaster alerts, UCDP conflict data",
+  "items": [
+   {
+    "name": "The supplier",
+    "verdict": "On the record",
+    "level": "green",
+    "evidence": [
+     "deltaww.com was registered on 14 February 2001 and points to a web server, not a parking page",
+     "Taiwan's company register is not covered by Guard yet, so whether the company is on it was not checked"
+    ]
+   },
+   {
+    "name": "Leaving Taiwan and China",
+    "verdict": "Worth a look",
+    "level": "amber",
+    "evidence": [
+     "China has paused its curbs on critical-material exports until January",
+     "Washington is reported to be readying higher tariffs on China and more than a dozen other economies; the risk Antevo names is Beijing restoring the curbs in reply (high impact, medium probability, rising)"
+    ]
+   },
+   {
+    "name": "The sea route",
+    "verdict": "Worth a look",
+    "level": "amber",
+    "evidence": [
+     "Bab el-Mandeb, the southern gate of the Red Sea, borders Yemen, Djibouti and Eritrea; Yemen ranks third and Somalia fourth on Antevo's hotspot list (fatalities counted 23 to 30 September)",
+     "No storm or earthquake alerts at the Taiwanese or southern Chinese ports, in the Malacca Strait or at Suez from 18 to 25 November"
+    ]
+   },
+   {
+    "name": "Rotterdam and the Rhine to Basel",
+    "verdict": "Not checked",
+    "level": "grey",
+    "evidence": [
+     "Antevo's shipping desk, which reads ports and inland waterways, did not answer on 25 November",
+     "The Rhine gauges and the Swiss Rhine ports publish their own figures: links below"
+    ]
+   },
+   {
+    "name": "Fuel and freight",
+    "verdict": "Worth a look",
+    "level": "amber",
+    "evidence": [
+     "Brent rebounded to 91.40 dollars on 24 November; diesel and jet fuel are tight even though gasoline is plentiful",
+     "Container freight rates were not checked: the shipping desk did not answer"
+    ]
+   }
+  ]
+ },
+ "steps": {
+  "label": "Before the next order, with the links",
+  "items": [
+   {
+    "do": "Check the supplier on Taiwan's company register",
+    "why": "Guard does not cover Taiwan yet; the Ministry of Economic Affairs keeps the register.",
+    "links": []
+   },
+   {
+    "do": "Settle who pays a new tariff or a restored export curb",
+    "why": "Strategy Radar's options: a price clause on orders for spring delivery, or a second supplier outside the named economies.",
+    "links": []
+   },
+   {
+    "do": "Decide how much stock of parts made with critical materials to hold into January",
+    "why": "China's pause runs to January; extra stock buys time if the curbs return, as long as it can be stored.",
+    "links": []
+   },
+   {
+    "do": "Ask your forwarder whether the ships go by Suez or the Cape, and check the Rhine before booking the barge",
+    "why": "The route sets the transit time, and the river levels and port notices are public.",
+    "links": [
+     {"label": "Rhine gauges (PEGELONLINE)", "url": "https://www.pegelonline.wsv.de"},
+     {"label": "Swiss water levels", "url": "https://www.hydrodaten.admin.ch"},
+     {"label": "Swiss Rhine ports", "url": "https://port-of-switzerland.ch"},
+     {"label": "Port of Rotterdam", "url": "https://www.portofrotterdam.com/en"}
+    ]
+   },
+   {
+    "do": "Check the duty and the origin rules for each part",
+    "why": "The Swiss customs tariff gives both for each product code.",
+    "links": [{"label": "Swiss customs tariff (Tares)", "url": "https://www.tares.ch"}]
+   },
+   {
+    "do": "Watch the board every morning",
+    "why": "Strategy Radar is read daily and free; the entries above change as the news does.",
+    "links": [{"label": "Strategy Radar", "url": "https://antevo.ch/executive/strategy/"}]
+   }
+  ]
+ },
+ "sections": [
+  {
+   "title": "Tariffs and export curbs",
+   "verdict": "One risk, one month",
+   "level": "amber",
+   "so_what": "For a buyer of magnets the risk is the reply: ask suppliers now how they would price parts if the curbs return in January.",
+   "evidence": [
+    "Tariff plans are reported for this week; rates and dates are not yet published",
+    "China's pause on its mineral export curbs runs out in January, the month the levies would bite"
+   ],
+   "source": "Antevo Strategy Radar and Antevo Executive Brief, 25 Nov 2026"
+  },
+  {
+   "title": "Strikes in the region",
+   "verdict": "Rising",
+   "level": "amber",
+   "so_what": "Ask the forwarder to price both routes, so a switch to the Cape is a known cost and time, not a surprise.",
+   "evidence": [
+    "Attacks on vessels near Hormuz persist and Houthi drones hit Riyadh on 24 November: severe impact, medium likelihood, rising",
+    "Strategy Radar's trigger: act if attacks on merchant ships increase or insurers withdraw cover for Gulf transits"
+   ],
+   "source": "Antevo Strategy Radar, 25 Nov 2026"
+  },
+  {
+   "title": "Fuel",
+   "verdict": "Brent back above 90 dollars",
+   "level": "amber",
+   "so_what": "Check how the fuel surcharge in your freight contract follows the oil price: the clause decides who carries a jump.",
+   "evidence": [
+    "Brent at 91.40 dollars on 24 November, after talks hoped for with Iran produced nothing",
+    "Watch 95 dollars on the upside and 88 on the downside, and the price of diesel"
+   ],
+   "source": "Antevo Strategy Radar, 25 Nov 2026"
+  },
+  {
+   "title": "Chinese factories",
+   "verdict": "A dated test on 30 November",
+   "level": "ink",
+   "so_what": "A reading still below 50 is a reason to ask suppliers about lead times early.",
+   "evidence": [
+    "China's official manufacturing survey for November, consensus 49.7 after 49.3",
+    "Below 50 with tariffs pending would show factories bracing for a second trade shock"
+   ],
+   "source": "Antevo Executive Brief, 25 Nov 2026"
+  }
+ ],
+ "links": [
+  {"a": "Strategy Radar", "b": "Executive Brief", "text": "The tariff plans and China's pause come to a head in the same month, so for a buyer of magnets the tariff risk and the export-curb risk are one risk with one date: January."},
+  {"a": "Executive Brief", "b": "Strategy Radar", "text": "No storm or earthquake alerts on the route this week, but strikes in the region are rising: what could change the timing is the route, not the weather."}
+ ],
+ "watch": [
+  "China's official manufacturing survey on 30 November (consensus 49.7)",
+  "Publication of the US tariff rates and dates, and Beijing's answer",
+  "China's critical-material export rules in January",
+  "Brent against 95 dollars up and 88 down, and war-risk cover for Gulf transits"
+ ],
+ "disclaimer": "From Antevo answers and public records, each dated. A quiet week means no alerts in the sources read, not a safe route. The options are for you to decide on; not advice."
+}

@@ -60,6 +60,29 @@ well known; nothing is alleged.
 
 The workspace: `template/index.html?w=due-diligence.json`.
 
+## Supply Chain Watch · skill `supply-chain`
+
+Before the next order. One prompt, four engines, three of them free with no account.
+The page: https://antevo.ch/mcp/build/supply-chain/
+
+| | What happens | Engine |
+|---|---|---|
+| **1. Leg by leg** | The supplier, leaving the origin, the route, the last mile, fuel and freight, each **running**, **worth a look**, **disrupted** or **not checked**. | Guard · Executive Brief · Strategy Radar · Research |
+| **2. Before the next order** | What to settle, each with its official link: the supplier's register, a price clause or a second supplier, stock, the route and the river, the duty, the daily board. | Strategy Radar |
+| **3. What it means** | Tariffs and export curbs, what could change the route, fuel and the dated events ahead, each with one "so what" line. | Strategy Radar · Executive Brief |
+
+### A real run, 25 November 2026
+
+Electronic components from Taiwan to a Swiss machine maker, by sea to Rotterdam and up the
+Rhine to Basel. The machine maker is an example; the supplier is named only to show the check.
+
+- **Leg 1, on the record:** the supplier's domain was registered in 2001 and points to a web server; Taiwan's register is not covered by Guard yet.
+- **Legs 2, 3 and 5, worth a look:** China's pause on critical-material export curbs runs to January as new US tariffs are readied; the Red Sea's southern gate borders Yemen, third on Antevo's hotspot list; Brent rebounded to 91.40 dollars on 24 November.
+- **Leg 4, not checked:** Antevo's shipping desk did not answer that morning, so the Rhine leg says so instead of guessing, and links the [river gauges](https://www.pegelonline.wsv.de) and the [Swiss Rhine ports](https://port-of-switzerland.ch).
+- **So what:** the tariff risk and the export-curb risk are one risk with one date, January; ask the forwarder to price both routes, Suez and the Cape.
+
+The workspace: `template/index.html?w=supply-chain.json`.
+
 ## The template
 
 `template/` is one page that renders one file, `workspace.json`. The skill fills it; so can your
@@ -71,8 +94,8 @@ cd template && python3 -m http.server 8000   # then open http://localhost:8000
 
 The file's blocks are all optional, so the same page renders other builds too: `tries` (options
 checked one by one), `steps` (next actions with links), `sections` (a finding, its `so_what`, its
-evidence and source), `links`, `roadmap` and `watch`. `index.html?w=due-diligence.json` renders the
-Due Diligence run. See [template/README.md](template/README.md).
+evidence and source), `links`, `roadmap` and `watch`. `index.html?w=due-diligence.json` and
+`index.html?w=supply-chain.json` render the other two runs. See [template/README.md](template/README.md).
 
 ## The seven engines
 
@@ -87,17 +110,18 @@ Due Diligence run. See [template/README.md](template/README.md).
 | Research | `https://api.antevo.ch/mcp/research/mcp` | any Antevo account; answers use credits |
 
 Not on Claude? Add the addresses to any MCP client and paste a recipe at the start of the
-conversation: [antevo-startup-launch.md](https://antevo.ch/mcp/build/antevo-startup-launch.md) or
-[antevo-due-diligence.md](https://antevo.ch/mcp/build/due-diligence/antevo-due-diligence.md).
+conversation: [antevo-startup-launch.md](https://antevo.ch/mcp/build/antevo-startup-launch.md),
+[antevo-due-diligence.md](https://antevo.ch/mcp/build/due-diligence/antevo-due-diligence.md) or
+[antevo-supply-chain.md](https://antevo.ch/mcp/build/supply-chain/antevo-supply-chain.md).
 
 ## More builds
 
-The same engines, a different building on top: M&A intelligence, real estate acquisition,
-family office and supply chain are next.
+The same engines, a different building on top: M&A intelligence, real estate acquisition
+and family office are next.
 
 ## The rules every build keeps
 
 Every figure keeps its date, and Antevo's answers are quoted as Antevo's. A trademark screen is
-not legal clearance, and an unregistered domain can be taken at any time. The plan is options to
+not legal clearance, and an unregistered domain can be taken at any time. A quiet week on a route means no alerts in the sources read, never a safe route. The plan is options to
 consider, never investment, legal or tax advice. A due-diligence read is public records only:
 not a KYC, AML or sanctions-compliance screen, not a credit report, and never about a person's conduct. Nothing here trades, moves money or decides for you.

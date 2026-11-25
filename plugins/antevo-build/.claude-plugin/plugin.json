@@ -1,8 +1,8 @@
 {
   "name": "antevo-build",
   "displayName": "Build with Antevo",
-  "description": "Build your own tools on seven Antevo engines. Startup Launch Intelligence tries your candidate names until one is clear (trademarks, Swiss companies, domains), lists the steps to register it with official links, reads the competition, the market, the costs and the funding risk with a 'so what' for each, and builds a launch workspace with a 90-day roadmap. Company Due Diligence checks a company before you sign or pay (the register, sanctions lists, its website and email, recent changes, which group company signs), lists what to settle with the official links, and says what each finding means. Every figure dated; public records only; options to consider, never advice.",
-  "version": "0.2.0",
+  "description": "Build your own tools on seven Antevo engines. Startup Launch Intelligence tries your candidate names until one is clear, lists the steps to register it with official links, reads the market, costs and funding risk with a 'so what' for each, and builds a 90-day plan. Company Due Diligence checks a company before you sign or pay and lists what to settle with the official links. Supply Chain Watch checks a supply route leg by leg before the next order: the supplier, export rules, the sea route, the last mile, fuel and freight. Every figure dated; what was not checked says so; options to consider, never advice.",
+  "version": "0.3.0",
   "author": {
     "name": "Antevo",
     "url": "https://antevo.ch",
@@ -20,6 +20,8 @@
     "economy",
     "mcp",
     "due-diligence",
-    "supplier"
+    "supplier",
+    "supply-chain",
+    "shipping"
   ]
 }

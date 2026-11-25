@@ -30,7 +30,7 @@
    tries (options checked one by one; tries.item names them, default "Try"), steps (next actions with links),
    sections (finding + so what), links, roadmap, watch. */
 (function(){var e=function(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
-var C={red:'#a3412a',green:'#2f7a52',amber:'#9a6a1f',ink:'#2a2622'};
+var C={red:'#a3412a',green:'#2f7a52',amber:'#9a6a1f',ink:'#2a2622',grey:'#8a847c'};
 var safe=function(u){return /^https:\/\//.test(u)?u:'#'};
 var file=(new URLSearchParams(location.search).get('w')||'workspace.json').replace(/[^a-z0-9._-]/gi,'');
 fetch(file).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(w){var h='';
