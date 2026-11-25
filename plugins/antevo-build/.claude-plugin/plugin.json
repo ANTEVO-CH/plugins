@@ -1,8 +1,8 @@
 {
   "name": "antevo-build",
   "displayName": "Build with Antevo",
-  "description": "Build your own tools on seven Antevo engines. Startup Launch Intelligence tries your candidate names until one is clear and builds a 90-day plan. Company Due Diligence checks a company before you sign or pay. Supply Chain Watch checks a supply route leg by leg before the next order. M&A Intelligence maps a niche and reads a shortlist before any approach, with the deal climate. Real Estate Acquisition reads a property purchase before you sign: the seller, the deposit, the market and the mortgage. Each lists what to settle with the official links and says what each finding means. Every figure dated; what was not checked says so; options to consider, never advice.",
-  "version": "0.5.0",
+  "description": "Build your own tools on seven Antevo engines. Startup Launch Intelligence tries your candidate names until one is clear and builds a 90-day plan. Company Due Diligence checks a company before you sign or pay. Supply Chain Watch checks a supply route leg by leg before the next order. M&A Intelligence maps a niche and reads a shortlist before any approach, with the deal climate. Real Estate Acquisition reads a property purchase before you sign: the seller, the deposit, the market and the mortgage. Family Office reads the week against what a family owns and relies on. Each lists what to settle with the official links and says what each finding means. Every figure dated; what was not checked says so; options to consider, never advice.",
+  "version": "0.6.0",
   "author": {
     "name": "Antevo",
     "url": "https://antevo.ch",
@@ -27,6 +27,7 @@
     "acquisitions",
     "real-estate",
     "property",
-    "mortgage"
+    "mortgage",
+    "family-office"
   ]
 }

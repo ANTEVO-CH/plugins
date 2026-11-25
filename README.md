@@ -1,15 +1,15 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cover-plugins-dark.png">
-  <img alt="Antevo for Claude: eight plugins, 43 skills. You ask: check Swisscom AG before we sign. Antevo answers: on the record, not found on the sanctions lists read, and two things worth a look before signing." src="assets/cover-plugins-light.png" width="100%">
+  <img alt="Antevo for Claude: eight plugins, 44 skills. You ask: check Swisscom AG before we sign. Antevo answers: on the record, not found on the sanctions lists read, and two things worth a look before signing." src="assets/cover-plugins-light.png" width="100%">
 </picture>
 
 # Antevo for Claude: plugins, skills and builds
 
-**Eight plugins and 43 skills that bring Antevo into the assistant you already use.** Each plugin wires one Antevo connection (the Executive Brief, the weekly Tremor index, Strategy Radar's daily business board, Antevo's research desks, the trademark registers, your own household or your firm's client book) together with the skills that know how to read it. `antevo-build` adds four builds on top: Startup Launch Intelligence, Company Due Diligence, Supply Chain Watch and M&A Intelligence. Every answer is dated, attributed, and honest about what it cannot see.
+**Eight plugins and 44 skills that bring Antevo into the assistant you already use.** Each plugin wires one Antevo connection (the Executive Brief, the weekly Tremor index, Strategy Radar's daily business board, Antevo's research desks, the trademark registers, your own household or your firm's client book) together with the skills that know how to read it. `antevo-build` adds four builds on top: Startup Launch Intelligence, Company Due Diligence, Supply Chain Watch and M&A Intelligence. Every answer is dated, attributed, and honest about what it cannot see.
 
 [![validate](https://github.com/ANTEVO-CH/plugins/actions/workflows/validate.yml/badge.svg)](https://github.com/ANTEVO-CH/plugins/actions/workflows/validate.yml)
 [![MCP Registry](https://img.shields.io/badge/MCP%20Registry-ch.antevo-252c28?labelColor=9b7936)](https://registry.modelcontextprotocol.io/v0/servers?search=ch.antevo)
-[![Claude plugins](https://img.shields.io/badge/Claude-8%20plugins%20%C2%B7%2043%20skills-252c28?labelColor=9b7936)](#skills)
+[![Claude plugins](https://img.shields.io/badge/Claude-8%20plugins%20%C2%B7%2044%20skills-252c28?labelColor=9b7936)](#skills)
 [![npm](https://img.shields.io/npm/v/@antevo/cli?label=%40antevo%2Fcli&color=252c28&labelColor=9b7936)](https://www.npmjs.com/package/@antevo/cli)
 [![Hosted in Switzerland](https://img.shields.io/badge/hosted-Switzerland-252c28?labelColor=9b7936)](https://antevo.ch)
 
@@ -37,7 +37,7 @@ The plugins connect seven of them directly; `antevo-build` connects six at once,
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/builds-dark.png">
-  <img alt="Five builds, one prompt each: Startup launch (Tirano Pay, two names taken, one clear on this screen), Due diligence (Swisscom AG, on the record, two things worth a look), Supply chain (Taiwan to Basel, leg by leg), M&A intelligence (Swiss robotics, three companies read) and Real estate (a new apartment near Zurich, the seller on the record, two things worth a look). Real runs on 25 November 2026." src="assets/builds-light.png" width="100%">
+  <img alt="Six builds, one prompt each: Startup launch (Tirano Pay, two names taken, one clear on this screen), Due diligence (Swisscom AG, on the record, two things worth a look), Supply chain (Taiwan to Basel, leg by leg), M&A intelligence (Swiss robotics, three companies read), Real estate (a new apartment near Zurich, the seller on the record, two things worth a look) and Family office (a Swiss family's week, holding by holding). Real runs on 25 November 2026." src="assets/builds-light.png" width="100%">
 </picture>
 
 **We build the intelligence. You build what's next.** `antevo-build` connects seven engines in one install and adds builds on top of them. Each build is a recipe, an example from a real run and a skill:
@@ -47,6 +47,7 @@ The plugins connect seven of them directly; `antevo-build` connects six at once,
 - **Supply Chain Watch** (`supply-chain`): checks a supply route leg by leg before the next order. [antevo.ch/mcp/build/supply-chain](https://antevo.ch/mcp/build/supply-chain/)
 - **M&A Intelligence** (`m-and-a`): maps a niche and reads a shortlist before any approach. [antevo.ch/mcp/build/m-and-a](https://antevo.ch/mcp/build/m-and-a/)
 - **Real Estate Acquisition** (`real-estate`): reads a property purchase before you sign: the seller, the deposit, the market and the mortgage. [antevo.ch/mcp/build/real-estate](https://antevo.ch/mcp/build/real-estate/)
+- **Family Office** (`family-office`): reads the week against what a family owns and relies on, and lists what to bring to the family meeting. [antevo.ch/mcp/build/family-office](https://antevo.ch/mcp/build/family-office/)
 
 [How the builds work →](plugins/antevo-build/)
 
@@ -94,7 +95,7 @@ Add the marketplace once, then install what you need:
 /plugin install antevo-strategy-radar@antevo # public — your answers stay with Claude
 /plugin install antevo-trademark@antevo    # screening public; your watchlist needs a sign-in
 /plugin install antevo-research@antevo     # research desks — any Antevo account, OAuth on first use
-/plugin install antevo-build@antevo        # five builds on seven engines — five public, two sign in
+/plugin install antevo-build@antevo        # six builds on seven engines — five public, two sign in
 /plugin install antevo-wealth@antevo       # your household — OAuth on first use
 /plugin install antevo-mandates@antevo     # your firm — by arrangement, OAuth on first use
 ```
@@ -161,7 +162,7 @@ All seven are listed in the official [MCP Registry](https://registry.modelcontex
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/plugins-dark.png">
-  <img alt="Eight plugins, 43 skills: Executive 9, Tremor Watch 3, Strategy Radar 3, Trademark 4, Research 3, Builds 5, Wealth 13, Mandates 3." src="assets/plugins-light.png" width="100%">
+  <img alt="Eight plugins, 44 skills: Executive 9, Tremor Watch 3, Strategy Radar 3, Trademark 4, Research 3, Builds 6, Wealth 13, Mandates 3." src="assets/plugins-light.png" width="100%">
 </picture>
 
 | Skill | What it does |
@@ -194,6 +195,7 @@ All seven are listed in the official [MCP Registry](https://registry.modelcontex
 | `/antevo-build:supply-chain` | Checks a supply route leg by leg before the next order: the supplier, export rules at the origin, the sea route, the last mile, fuel and freight, then what to settle with the official links and what each finding means |
 | `/antevo-build:m-and-a` | Maps the companies registered in a niche, reads a shortlist one by one (register, notices, brands), lists what to check before a first approach with the official links, and reads the deal climate — financing, currency, demand, market strain |
 | `/antevo-build:real-estate` | Reads a property purchase before you sign: the seller in the register, where the deposit goes, the market, the mortgage and the lending rules, the price against history, and what to do before signing with the official links |
+| `/antevo-build:family-office` | Reads the week against what a family owns and relies on: each holding against what changed, the risks rising, the scenarios ahead, the firms it relies on in the register, and what to bring to the family meeting with the links |
 | **antevo-trademark** | *screening public* |
 | `/antevo-trademark:clearance-check` | What is on the registers near a name, and who holds it — never a clearance |
 | `/antevo-trademark:opposition-deadline` | How long there is to oppose in a given office, what starts the clock, and the provision |
@@ -264,6 +266,8 @@ Mandates reaches the signed-in member's own firm. It reads clients, dossiers, re
 
 **A buyer about to reserve an apartment.** Asks *"I am about to buy a new apartment near Zurich with a mortgage: read the deal before I sign"*. Real Estate Acquisition reads the seller in the register and on the sanctions lists, checks where the deposit goes, then sets the market, the mortgage and the lending rules, the price against history and this week's market strain beside each other, each with what it means. It lists what to do before signing, with the official links, and never says whether to buy. [See the run →](plugins/antevo-build/#real-estate-acquisition--skill-real-estate)
 
+**A family before its Monday meeting.** Asks *"we own a machine-making company, property near Zurich and a portfolio in three currencies: read this week against them"*. Family Office reads the day's brief, the risk radar and the dates ahead, matches the business board to the family company, asks the strategy desk for the scenarios, checks the bank in the register, and gives each holding a line on what moved for it. It lists what to bring to the meeting and never says what to buy, sell or hedge. [See the run →](plugins/antevo-build/#family-office--skill-family-office)
+
 ## Sample Output
 
 Verbatim excerpts from the live public connections on 14 September 2026, trimmed where marked.
@@ -326,6 +330,7 @@ Verbatim excerpts from the live public connections on 14 September 2026, trimmed
 
 ## What's New
 
+- **25 November 2026 — Family Office.** `antevo-build` 0.6.0: a sixth build, `family-office`, reads the week against what a family owns and relies on, and lists what to bring to the family meeting. Page: [antevo.ch/mcp/build/family-office](https://antevo.ch/mcp/build/family-office/).
 - **25 November 2026 — Real Estate Acquisition.** `antevo-build` 0.5.0: a fifth build, `real-estate`, reads a property purchase before you sign: the seller, the deposit, the market, the mortgage and the price against history. Page: [antevo.ch/mcp/build/real-estate](https://antevo.ch/mcp/build/real-estate/).
 - **25 November 2026 — M&A Intelligence.** `antevo-build` 0.4.0: a fourth build, `m-and-a`, maps a niche and reads a shortlist before any approach, with the deal climate. Page: [antevo.ch/mcp/build/m-and-a](https://antevo.ch/mcp/build/m-and-a/).
 - **25 November 2026 — Supply Chain Watch.** `antevo-build` 0.3.0: a third build, `supply-chain`, checks a supply route leg by leg before the next order; the template gains a `grey` level for what was not checked. Page: [antevo.ch/mcp/build/supply-chain](https://antevo.ch/mcp/build/supply-chain/).
