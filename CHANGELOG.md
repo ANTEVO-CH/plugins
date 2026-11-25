@@ -2,6 +2,17 @@
 
 All notable changes to the Antevo plugins are documented here.
 
+## 2026-11-25 — Build with Antevo 0.4.0
+
+- **`antevo-build`, `m-and-a`**, new skill: maps the companies registered in a
+  niche (Companies), reads a shortlist one by one — register, dated notices,
+  group, sanctions lists, brands (Trademark) — lists what to check before a
+  first approach with the official links, and reads the deal climate: financing
+  and the currency (Research), market strain (Tremor Watch) and the niche's
+  market (Strategy Radar), each with a "so what". Never says a company is for
+  sale. `template/m-and-a.json` is the Swiss robotics run of 25 Nov 2026.
+- **README:** 42 skills.
+
 ## 2026-11-25 — Build with Antevo 0.3.0
 
 - **`antevo-build`, `supply-chain`**, new skill: checks a supply route leg by leg
