@@ -2,7 +2,7 @@
 
 # Antevo: plugins and MCP connections for Claude and any MCP client
 
-**Antevo brings the world around your wealth into the assistant you already use.** Seven connections — the Executive Brief, the weekly Tremor index, Strategy Radar's daily business board for companies, Antevo's research desks, trademark registers, your own household and your firm's client book — and 38 skills that know how to read them: dated, attributed, and honest about what they cannot see. Install once in Claude, or point any MCP client at an address.
+**Antevo brings the world around your wealth into the assistant you already use.** Seven connections — the Executive Brief, the weekly Tremor index, Strategy Radar's daily business board for companies, Antevo's research desks, trademark registers, your own household and your firm's client book — and 39 skills that know how to read them — plus a first build on top of them, Startup Launch Intelligence (`antevo-build`): dated, attributed, and honest about what they cannot see. Install once in Claude, or point any MCP client at an address.
 
 [![validate](https://github.com/ANTEVO-CH/plugins/actions/workflows/validate.yml/badge.svg)](https://github.com/ANTEVO-CH/plugins/actions/workflows/validate.yml)
 [![MCP Registry](https://img.shields.io/badge/MCP%20Registry-ch.antevo-252c28?labelColor=9b7936)](https://registry.modelcontextprotocol.io/v0/servers?search=ch.antevo)

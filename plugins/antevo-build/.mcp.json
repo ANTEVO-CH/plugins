@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "antevo-trademark": {"type": "http", "url": "https://trademark.antevo.ch/mcp"},
+    "antevo-companies": {"type": "http", "url": "https://api.antevo.ch/mcp/companies/mcp"},
+    "antevo-strategy-radar": {"type": "http", "url": "https://api.antevo.ch/mcp/strategy/mcp"},
+    "antevo-executive": {"type": "http", "url": "https://api.antevo.ch/mcp/executive/mcp"},
+    "antevo-tremor-watch": {"type": "http", "url": "https://api.antevo.ch/mcp/tremor/mcp"},
+    "antevo-research": {"type": "http", "url": "https://api.antevo.ch/mcp/research/mcp"}
+  }
+}

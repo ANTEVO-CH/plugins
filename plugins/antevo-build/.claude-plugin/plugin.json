@@ -1,0 +1,15 @@
+{
+  "name": "antevo-build",
+  "displayName": "Build with Antevo",
+  "description": "Build your own tools on six Antevo engines. The first: Startup Launch Intelligence — one prompt screens your candidate names across trademark registers, finds the competition in the Swiss register, reads today's business board, the economy and market strain, asks the economy desk about funding conditions, joins the findings and builds a launch workspace with a 90-day roadmap. Every figure dated; a screen, not clearance; options to consider, never advice. Four of the six engines need no account.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Antevo",
+    "url": "https://antevo.ch",
+    "email": "contact@antevo.ch"
+  },
+  "homepage": "https://antevo.ch/mcp/build/",
+  "repository": "https://github.com/ANTEVO-CH/plugins",
+  "license": "UNLICENSED",
+  "keywords": ["startup", "launch", "trademark", "competition", "strategy", "economy", "mcp"]
+}

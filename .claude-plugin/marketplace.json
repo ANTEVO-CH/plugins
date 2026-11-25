@@ -138,6 +138,24 @@
         "name": "Antevo",
         "url": "https://antevo.ch"
       }
+    },
+    {
+      "name": "antevo-build",
+      "source": "./antevo-build",
+      "description": "Build your own tools on six Antevo engines. First: Startup Launch Intelligence — screen candidate names, find the competition, read the business board, the economy and market strain, ask the economy desk, and get a launch workspace with a 90-day roadmap. Every figure dated; never advice. Four of the six engines need no account.",
+      "version": "0.1.0",
+      "category": "productivity",
+      "tags": [
+        "startup",
+        "launch",
+        "trademark",
+        "strategy",
+        "mcp"
+      ],
+      "author": {
+        "name": "Antevo",
+        "url": "https://antevo.ch"
+      }
     }
   ]
 }

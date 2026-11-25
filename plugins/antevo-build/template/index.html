@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Startup Launch Intelligence — built on Antevo</title>
+<style>
+:root{--ink:#1d1a17;--muted:#6b645b;--rule:#e2dccf;--bronze:#9a7434;--wine:#7b2e2e;--bg:#f6f3ee;--serif:Georgia,"Times New Roman",serif;--sans:-apple-system,"Helvetica Neue",Arial,sans-serif}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans)}
+.frame{max-width:1080px;margin:0 auto;padding:0 28px}.ws{padding:64px 28px 48px}
+.kicker,.prompt-group{font-size:11px;letter-spacing:.17em;text-transform:uppercase;color:var(--bronze);font-weight:600;margin:0 0 10px}
+.display{font-family:var(--serif);font-weight:400;font-size:clamp(40px,6vw,72px);line-height:1.02;letter-spacing:-.02em;margin:0 0 18px}.display em{color:var(--muted)}
+.essay-note{color:var(--muted);font-size:15px;line-height:1.7;max-width:640px}.source-record{font-size:13px;color:var(--muted)}a{color:var(--wine)}
+.ws-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--rule);margin:30px 0 36px}
+.ws-tile{padding:24px 24px 24px 0;border-bottom:1px solid var(--rule)}.ws-tile small{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--bronze)}
+.ws-tile strong{display:block;font-family:var(--serif);font-weight:400;font-size:30px;margin:8px 0 10px}.ws-tile ul,.ws-list{margin:0 0 28px;padding-left:18px;font-size:14px;line-height:1.7;color:var(--muted)}
+.ws-src{font-size:12px;color:var(--bronze);margin:10px 0 0}.ws-road{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 30px}
+.ws-road div{border:1px solid var(--rule);padding:18px;background:#fff}.ws-road b{display:block;color:var(--wine);font-weight:600;margin-bottom:6px}
+@media(max-width:800px){.ws-grid,.ws-road{grid-template-columns:1fr}}
+</style></head><body>
+<main class="frame"><section class="ws" id="ws"><p class="essay-note">Loading workspace.json… (serve this folder over http, for example <code>python3 -m http.server</code>; browsers block reading files over file://)</p></section></main>
+<script>
+(function(){var e=function(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+var C={red:'#a3412a',green:'#2f7a52',amber:'#9a6a1f',ink:'#2a2622'};
+fetch('workspace.json').then(function(r){return r.json()}).then(function(w){var h='';
+h+='<p class="kicker">Startup Launch Intelligence · '+e(w.built)+'</p><h1 class="display">'+e(w.name)+' <br><em>'+e(w.idea)+', '+e(w.markets.join(' then '))+'.</em></h1><p class="essay-note">'+e(w.note)+'</p>';
+h+='<div class="ws-grid">';[['Brand','brand'],['Market entry','market'],['Competition','competition'],['Risk','risk']].forEach(function(p){var s=w[p[1]];
+h+='<div class="ws-tile"><small>'+p[0]+'</small><strong style="color:'+(C[s.level]||C.ink)+'">'+e(s.verdict)+'</strong><ul>'+s.evidence.map(function(x){return'<li>'+e(x)+'</li>'}).join('')+'</ul><p class="ws-src">'+e(s.source)+'</p></div>'});h+='</div>';
+h+='<p class="prompt-group">How the findings connect</p><ul class="ws-list">'+w.links.map(function(l){return'<li><b>'+e(l.a)+' × '+e(l.b)+':</b> '+e(l.text)+'</li>'}).join('')+'</ul>';
+h+='<p class="prompt-group">90-day roadmap · options to consider</p><div class="ws-road">'+w.roadmap.map(function(r){return'<div><b>Days '+e(r.days)+'</b><span>'+e(r.do)+'</span></div>'}).join('')+'</div>';
+h+='<p class="prompt-group">What to watch</p><ul class="ws-list">'+w.watch.map(function(x){return'<li>'+e(x)+'</li>'}).join('')+'</ul><p class="source-record">'+e(w.disclaimer)+' Built on <a href="https://antevo.ch/mcp/build/">Antevo</a>.</p>';
+document.getElementById('ws').innerHTML=h}).catch(function(){document.getElementById('ws').innerHTML='<p class="essay-note">The workspace file could not be read.</p>'})})();
+</script></body></html>

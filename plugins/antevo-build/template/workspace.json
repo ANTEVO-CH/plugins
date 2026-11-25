@@ -1,0 +1,88 @@
+{
+ "template": "Startup Launch Intelligence · built on Antevo · https://antevo.ch/mcp/build/",
+ "idea": "An AI fintech",
+ "markets": [
+  "Switzerland",
+  "Germany"
+ ],
+ "name": "Lumora",
+ "built": "2026-11-25",
+ "note": "Lumora is an example name, not a suggestion. Every finding is an Antevo engine's answer on the date shown.",
+ "brand": {
+  "verdict": "Rename before filing",
+  "level": "red",
+  "source": "Antevo Trademark, 25 Nov 2026",
+  "evidence": [
+   "An identical mark is registered in the EU, filed 29 June 2023",
+   "Over 40 similar marks on 14 registers: AR AU BR CA CH CL DE EM ES FR LT MX NO NZ",
+   "Four Swiss companies use the name, Lumora AG among them",
+   "lumora.ch and lumora.com are registered"
+  ]
+ },
+ "market": {
+  "verdict": "Switzerland, then Germany",
+  "level": "green",
+  "source": "Antevo Strategy Radar, 23 Nov 2026 · Antevo Research, 25 Nov 2026",
+  "evidence": [
+   "German business activity at 55, its fastest growth in over four years; France at 46.2",
+   "Swiss policy rate 0% and euro area 2.5%, both as of October 2026",
+   "EUR/CHF 0.9163 on 24 November 2026"
+  ]
+ },
+ "competition": {
+  "verdict": "A Zug fintech cluster",
+  "level": "ink",
+  "source": "Antevo Companies, 25 Nov 2026",
+  "evidence": [
+   "Of the first ten Swiss companies with 'Fintech' in their name, four sit in Zug and one in neighbouring Baar",
+   "Finding is free; no company file was opened"
+  ]
+ },
+ "risk": {
+  "verdict": "Elevated · 2.4× a normal week",
+  "level": "amber",
+  "source": "Antevo Tremor Watch, week of 20 Nov 2026 · Antevo Executive Brief, 24 Nov 2026",
+  "evidence": [
+   "Bonds, commodities and volatility are where market links are breaking",
+   "The US ten-year yield held at 4.92%: the cost of money has not moved",
+   "On the radar: a December rate rise could come back into play"
+  ]
+ },
+ "links": [
+  {
+   "a": "Trademark",
+   "b": "Strategy Radar",
+   "text": "The EU mark blocks the name in Germany, the market the board points to."
+  },
+  {
+   "a": "Strategy Radar",
+   "b": "Research",
+   "text": "Demand is strongest in Germany, where money costs more than at home."
+  },
+  {
+   "a": "Tremor Watch",
+   "b": "Executive Brief",
+   "text": "Markets are unsettled while the cost of money stands still, so funding timing matters."
+  }
+ ],
+ "roadmap": [
+  {
+   "days": "1–30",
+   "do": "A new name, screened again and watched"
+  },
+  {
+   "days": "31–60",
+   "do": "The company and the funding round"
+  },
+  {
+   "days": "61–90",
+   "do": "First customers in Germany"
+  }
+ ],
+ "watch": [
+  "The US core inflation figure on 26 November 2026 (named by Strategy Radar and the risk radar)",
+  "The SNB's assessment on 10 December 2026 (named by the economy desk)",
+  "Germany's December flash business surveys (named by Strategy Radar)"
+ ],
+ "disclaimer": "Options to consider, not advice. A trademark screen is not legal clearance."
+}
