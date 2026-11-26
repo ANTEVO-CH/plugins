@@ -21,6 +21,7 @@ Real Estate Acquisition run (a new apartment near Zurich; nothing says the compa
 `index.html?w=banks-on-one-page.json` the All Your Banks run (an example family with three made-up banks).
 `index.html?w=inside-your-funds.json` the Inside Your Funds run (an example family with five funds, four opened).
 `index.html?w=risks-in-francs.json` the Risks In Francs run (five risks for an example family).
+`index.html?w=a-banks-monday.json` the A Bank's Monday run (a made-up bank, one example family and its loan).
 
 ## The file
 
@@ -42,5 +43,5 @@ Every block is optional; the page shows the ones that are there.
 | `watch` | the dates and indicators the engines named |
 | `disclaimer` | keep it: not advice; a screen is not clearance |
 
-Fill it with the `startup-launch`, `due-diligence`, `supply-chain`, `m-and-a`, `real-estate`, `family-office`, `market-entry`, `fintech-launch`, `strategic-planner`, `invoice-check`, `banks-on-one-page`, `inside-your-funds` or `risks-in-francs` skill in this plugin, or from your own
+Fill it with the `startup-launch`, `due-diligence`, `supply-chain`, `m-and-a`, `real-estate`, `family-office`, `market-entry`, `fintech-launch`, `strategic-planner`, `invoice-check`, `banks-on-one-page`, `inside-your-funds`, `risks-in-francs` or `a-banks-monday` skill in this plugin, or from your own
 agent calling the connectors. Change the page, restyle it, turn it into your own product.

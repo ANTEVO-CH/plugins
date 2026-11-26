@@ -346,6 +346,31 @@ An example family: CHF 35.5m in five portfolios at three made-up banks. The risk
 
 The workspace: `template/index.html?w=risks-in-francs.json`.
 
+## A Bank's Monday · skill `a-banks-monday`
+
+One morning, four seats at a bank: what is unfolding, what it would do to the bank, to its clients and to the loans against their portfolios. One prompt, four tools, three of them free with no account.
+The page: https://antevo.ch/mcp/build/a-banks-monday/
+
+| | What happens | Tool |
+|---|---|---|
+| **1. What is unfolding** | Today's risks, which are rising, how long each has been on the list, how unsettled markets were last week. | Executive Brief, Tremor Watch |
+| **2. The bank's own plan** | Each what-if applied to the bank's own split of client assets and income, with the arithmetic shown and the bank's assumptions marked as its own. | Wealth + the bank's figures |
+| **3. The client banker** | Where each loan against a portfolio stands today and under each what-if, against the limit agreed with the bank. | Wealth |
+| **4. The business clients** | Which lines on today's business board touch each business client. | Strategy Radar |
+| **5. Meeting notes** | For each client: what moved and what to ask. | you read it |
+
+### A real run, 26 November 2026
+
+A made-up bank, Bank Halvern, and its made-up figures. The family is Antevo's example household: CHF 35.6m in five portfolios, with a made-up loan of CHF 4.5m against its growth portfolio.
+
+- **The chief executive:** five risks, three rising. Last week markets were 2.4 times as unsettled as a normal week.
+- **The bank's own plan:** if leveraged funds cut together (shares falling a fifth everywhere), client assets fall 20.1% and, on the bank's own assumptions, income 13.7%.
+- **The client banker:** the loan stands at 46% against a limit of 55%. The portfolio can fall 15.7% before the limit; in the same what-if the loan would stand at 63%.
+- **The business client:** two of eight lines on today's board touch a clothing importer: tariffs proposed on fourteen partners and a garment-wage rise in Bangladesh.
+- **Across every what-if:** ten of thirty-five take the loan past its limit, four past the level where the bank may ask for more security.
+
+The workspace: `template/index.html?w=a-banks-monday.json`.
+
 ## Portfolio Concentration · skill `portfolio-concentration`
 
 Every account read as one book. One prompt, three engines; Wealth needs your Antevo account.
@@ -456,7 +481,7 @@ cd template && python3 -m http.server 8000   # then open http://localhost:8000
 The file's blocks are all optional, so the same page renders other builds too: `tries` (options
 checked one by one), `steps` (next actions with links), `sections` (a finding, its `so_what`, its
 evidence and source), `links`, `roadmap` and `watch`. `index.html?w=due-diligence.json`,
-`index.html?w=supply-chain.json`, `index.html?w=m-and-a.json`, `index.html?w=real-estate.json`, `index.html?w=family-office.json`, `index.html?w=market-entry.json`, `index.html?w=fintech-launch.json`, `index.html?w=strategic-planner.json`, `index.html?w=invoice-check.json`, `index.html?w=banks-on-one-page.json`, `index.html?w=inside-your-funds.json`, `index.html?w=risks-in-francs.json`, `index.html?w=portfolio-concentration.json`, `index.html?w=strategy-desk.json`, `index.html?w=franc-rose.json`, `index.html?w=competitor-watch.json`, `index.html?w=research-desk.json` and `index.html?w=intelligence-terminal.json` render the other runs. See [template/README.md](template/README.md).
+`index.html?w=supply-chain.json`, `index.html?w=m-and-a.json`, `index.html?w=real-estate.json`, `index.html?w=family-office.json`, `index.html?w=market-entry.json`, `index.html?w=fintech-launch.json`, `index.html?w=strategic-planner.json`, `index.html?w=invoice-check.json`, `index.html?w=banks-on-one-page.json`, `index.html?w=inside-your-funds.json`, `index.html?w=risks-in-francs.json`, `index.html?w=a-banks-monday.json`, `index.html?w=portfolio-concentration.json`, `index.html?w=strategy-desk.json`, `index.html?w=franc-rose.json`, `index.html?w=competitor-watch.json`, `index.html?w=research-desk.json` and `index.html?w=intelligence-terminal.json` render the other runs. See [template/README.md](template/README.md).
 
 ## The eight engines
 

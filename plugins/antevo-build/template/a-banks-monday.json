@@ -1,0 +1,179 @@
+{
+  "template": "Built on Antevo · https://antevo.ch/mcp/build/a-banks-monday/",
+  "kind": "A Bank’s Monday",
+  "title": "One bank, one family, one loan",
+  "subtitle": "What today’s risks would do, as what-ifs",
+  "built": "2026-11-26",
+  "note": "The bank and its figures are made up. The family is Antevo’s example household with a made-up loan. The risks, the falls and the loan’s position are the Antevo tools’ answers on the date shown. A what-if is not a forecast.",
+  "tries": {
+    "label": "The same morning, from four seats",
+    "item": "Seat",
+    "source": "Antevo Wealth, Executive Brief, Tremor Watch and Strategy Radar, 26 Nov 2026. Each risk is tied to one named what-if from a fixed list that Antevo keeps. A what-if is not a forecast: the risk may play out differently, or not at all. The bank, its figures and its assumptions are made up and typed in by the bank. Antevo supplies the risks and the falls; the rest is arithmetic.",
+    "items": [
+      {
+        "name": "The chief executive · what is unfolding",
+        "verdict": "Five risks, three rising",
+        "level": "amber",
+        "evidence": [
+          "Rising: AI borrowers find the debt market shut (54 mornings on the list); fourteen partners answer the tariff proposals (23); strikes reach Saudi oil facilities (17)",
+          "Stable: the bond shelter fails (38); leveraged funds are forced to cut together (11)",
+          "Markets in the week of 20 Nov: Elevated, 2.4 times a normal week (3.8 the week before)"
+        ]
+      },
+      {
+        "name": "The bank’s own plan · if leveraged funds cut together",
+        "verdict": "Client assets −20.1% · income −13.7%",
+        "level": "red",
+        "evidence": [
+          "Antevo’s what-if (shares down a fifth everywhere): cautious −15.4%, balanced −20.0%, growth −25.9%",
+          "The bank’s own split of client assets: 30% cautious, 45% balanced, 25% growth, so client assets fall 20.1%",
+          "The bank’s own income: 62% fees on assets (−20.1%), 14% dealing (+5%, its assumption), 24% interest (−8%, its assumption)",
+          "Arithmetic: 0.62 × −20.1 + 0.14 × 5 + 0.24 × −8 = −13.7%"
+        ]
+      },
+      {
+        "name": "The client banker · one family, one loan",
+        "verdict": "46% today · 63% in the what-if · limit 55%",
+        "level": "red",
+        "evidence": [
+          "CHF 4.5m borrowed against a growth portfolio worth CHF 9.70m: 46.4%",
+          "Agreed limit 55%; the level where the bank may ask for more security 65%",
+          "The portfolio can fall 15.7% before the limit and 28.7% before the second level",
+          "Under the broad sell-off what-if it falls 25.9%: the loan stands at 62.6%",
+          "Back to the limit in that what-if: CHF 544,768 repaid, or CHF 990,487 more pledged"
+        ]
+      },
+      {
+        "name": "The business client · a clothing importer",
+        "verdict": "Two of eight lines touch it",
+        "level": "amber",
+        "evidence": [
+          "Tariffs formally proposed on fourteen partners, possibly from January: act when final lists and rates are published, or a partner announces countermeasures",
+          "Bangladesh’s garment workers won a minimum wage rise of more than a third: act when suppliers quote higher spring prices or tariff lists confirm duties on clothing"
+        ]
+      }
+    ]
+  },
+  "steps": {
+    "label": "What is worth a look",
+    "items": [
+      {
+        "do": "Start with the cost, not the headline",
+        "why": "As a what-if the tariffs take 3.9% off this bank’s client assets; a broad fall in shares, 20.1%.",
+        "links": []
+      },
+      {
+        "do": "Keep your own assumptions apart from the answers",
+        "why": "The falls are Antevo’s. The split and the two assumptions are the bank’s.",
+        "links": [
+          {
+            "label": "How the what-ifs work",
+            "url": "https://antevo.ch/stress-testing/"
+          }
+        ]
+      },
+      {
+        "do": "Go to the meeting with the loan’s own numbers",
+        "why": "CHF 0.54m repaid or CHF 0.99m more pledged would bring it back to the limit in that what-if.",
+        "links": [
+          {
+            "label": "Today’s risks, in francs",
+            "url": "https://antevo.ch/mcp/build/risks-in-francs/"
+          }
+        ]
+      },
+      {
+        "do": "See what the client holds elsewhere",
+        "why": "The bank sees CHF 29.6m of the family’s CHF 35.6m.",
+        "links": [
+          {
+            "label": "All your banks on one page",
+            "url": "https://antevo.ch/mcp/build/banks-on-one-page/"
+          }
+        ]
+      },
+      {
+        "do": "Ask the business client one question",
+        "why": "Whether its products are on the final tariff lists, and what its spring quotes say.",
+        "links": [
+          {
+            "label": "Strategy desk",
+            "url": "https://antevo.ch/mcp/build/strategy-desk/"
+          }
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "The loan against every what-if",
+      "verdict": "Ten of thirty-five",
+      "level": "amber",
+      "so_what": "Today’s list is what is in the news. The full list shows how much room the loan really has.",
+      "evidence": [
+        "35 what-ifs run on the pledged portfolio",
+        "10 take the loan past the agreed limit",
+        "4 take it past the level where the bank may ask for more security",
+        "The furthest: a replay of the crash of 2000 to 2002"
+      ],
+      "source": "Antevo Wealth, 26 Nov 2026. What a bank does when a loan passes a level is set by the loan agreement. Nothing here says a margin call will happen."
+    },
+    {
+      "title": "Four risks, one loan",
+      "verdict": "One past the limit",
+      "level": "ink",
+      "so_what": "One risk on today’s list takes this loan past its limit. The banker can name it.",
+      "evidence": [
+        "Shares down a fifth everywhere: 63%",
+        "Trade war: 52%",
+        "Money leaves technology shares: 51%",
+        "Interest rates two points higher: 46%, unchanged"
+      ],
+      "source": "Antevo Wealth, 26 Nov 2026"
+    },
+    {
+      "title": "The bank’s client assets, risk by risk",
+      "verdict": "From −0.6% to −20.1%",
+      "level": "amber",
+      "so_what": "The same split of client assets, four what-ifs, four very different mornings.",
+      "evidence": [
+        "Leveraged funds cut together: −20.1%",
+        "AI borrowers find the debt market shut: −4.0%",
+        "Partners answer the tariffs: −3.9%",
+        "The bond shelter fails: −0.6%",
+        "Strikes on Saudi oil sites: no what-if fits, so no figure"
+      ],
+      "source": "Falls: Antevo Wealth, 26 Nov 2026. Split: the bank’s own."
+    },
+    {
+      "title": "What the bank does not see",
+      "verdict": "CHF 6.0m at two other banks",
+      "level": "grey",
+      "so_what": "The client’s funds elsewhere hold the same technology companies as the pledged portfolio.",
+      "evidence": [
+        "At this bank: CHF 29.6m",
+        "At two other banks: CHF 6.0m, in three funds",
+        "Net worth after the loan: CHF 31.1m"
+      ],
+      "source": "Antevo Wealth, 26 Nov 2026"
+    }
+  ],
+  "links": [
+    {
+      "a": "The headline risk",
+      "b": "The costliest",
+      "text": "The tariffs lead the news and take 3.9% off the bank’s client assets. A broad fall in shares, a quieter line on the list, takes 20.1%."
+    },
+    {
+      "a": "The bank’s income",
+      "b": "The client’s loan",
+      "text": "The same what-if that takes 14% off the bank’s income takes the client’s loan past its limit. One morning, both sides of the balance sheet."
+    }
+  ],
+  "watch": [
+    "The next AI-linked bond or loan to come to market",
+    "Final tariff lists and the partners’ answers",
+    "The loan as a share of the pledged portfolio after each week’s prices"
+  ],
+  "disclaimer": "From the Antevo tools’ answers on the date shown. Each risk is tied to one named what-if from a fixed list that Antevo keeps. A what-if is not a forecast: the risk may play out differently, or not at all. The bank, its figures and its assumptions are made up and typed in by the bank. Antevo supplies the risks and the falls; the rest is arithmetic. What a bank does when a loan passes a level is set by the loan agreement. Nothing here says a margin call will happen. Not investment advice: nothing here says what to buy or sell."
+}
