@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "antevo-guard": {
+      "type": "http",
+      "url": "https://api.antevo.ch/mcp/guard/mcp"
+    },
+    "antevo-guard-account": {
+      "type": "http",
+      "url": "https://api.antevo.ch/mcp/guard/me/mcp"
+    }
+  }
+}
