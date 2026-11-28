@@ -1,0 +1,387 @@
+{
+  "template": "Built on Antevo · https://antevo.ch/mcp/build/strategic-planner/",
+  "kind": "Strategic Planner · The Vallmer Pack story, part 2",
+  "title": "Vallmer Pack AG, the 2027 plan",
+  "subtitle": "Three scenarios, sixty days of risk and a year in four gates",
+  "built": "2026-11-25",
+  "note": "Vallmer Pack AG is an invented name for an example company: a Swiss maker of packaging machines for food and pharmaceutical factories, selling mostly in Germany and the euro area and some in the United States. Part 1 was its morning read; this part plans its year. Every finding is an Antevo engine's answer on the date shown; where an engine named a company, the page describes it instead. The company's details stayed with the assistant; the research question went to Antevo without its name. The scenarios, gates and measures are the assistant's options to consider, not advice.",
+  "thesis": {
+    "label": "The plan in one paragraph",
+    "text": "Plan 2027 on the base case the strategy desk leans to, a managed reflation: the European Central Bank peaks around 3.0 to 3.25%, the franc stays between 0.90 and 0.93 to the euro and the 15% US tariff arrangement holds. Build the year so the stress case cannot break it. Commit now to what pays in every scenario: German orders, a service and retrofit line, and a second source for components. Stage what pays in only one: new capacity and a US hub. Hedge the franc in rolling twelve-month tranches rather than one block. Each large decision waits for its own signpost: the Swiss National Bank on 10 December, the ECB on 22 January, two to three German purchasing surveys above 53, a permanent US tariff deal. Meanwhile the radar itself has moved: in October its risks sat mostly in rates and government debt; in November AI funding and geopolitics caught up, and the trade-war risk is rising again."
+  },
+  "tries": {
+    "label": "Three scenarios for 2027",
+    "item": "Scenario",
+    "source": "Antevo Research, strategy desk, 25 Nov 2026. The desk leans to the base case, with a stress tail.",
+    "items": [
+      {
+        "name": "Base case: managed reflation",
+        "verdict": "The lean",
+        "level": "green",
+        "evidence": [
+          "The ECB peaks around 3.0 to 3.25%; the Swiss National Bank reaches 0.5% by mid-2027",
+          "EUR/CHF between 0.90 and 0.93; the US–Swiss 15% arrangement holds",
+          "Signposts: the ECB on 22 January 2027, German purchasing surveys above 53 through the first quarter, the SNB on 10 December"
+        ]
+      },
+      {
+        "name": "Upside: disinflation",
+        "verdict": "Less likely",
+        "level": "grey",
+        "evidence": [
+          "Brent below 75 dollars for two months",
+          "An EU–US tariff freeze before the G7 in June 2027",
+          "German business expectations (Ifo) above 95 by February"
+        ]
+      },
+      {
+        "name": "Stress: a stagflation trap",
+        "verdict": "The tail to hedge",
+        "level": "red",
+        "evidence": [
+          "The ECB at 3.5% or more; the French spread above 150 basis points before the election in the second quarter of 2027",
+          "EUR/CHF below 0.89",
+          "New US tariffs on EU goods; Swiss core inflation above 1.0%"
+        ]
+      }
+    ]
+  },
+  "plan": {
+    "label": "2027 in four stages, each with a gate",
+    "items": [
+      {
+        "when": "Dec 2026 – Jan 2027",
+        "title": "Set the year",
+        "do": [
+          "After the SNB on 10 December, hedge the first twelve-month tranche of euro income",
+          "Qualify a second source for Asian components; keep volumes small",
+          "File the service line's name, Vallmer Retrofit, and watch it",
+          "Hold multi-year price commitments until the first-quarter energy figures",
+          "Read the ECB on 22 January against the three scenarios"
+        ],
+        "gate": "The SNB and ECB decisions are read and the scenario lean is confirmed or changed in writing"
+      },
+      {
+        "when": "Feb – Apr 2027",
+        "title": "Win Germany's orders",
+        "do": [
+          "Put sales effort behind German food and pharmaceutical plants while demand is strong",
+          "Launch the retrofit and service offer to the installed base: revenue that holds in every scenario",
+          "Prepare the capacity case, but do not commit it",
+          "Refinance the bank loan while credit markets stay calm"
+        ],
+        "gate": "Two to three German purchasing surveys in a row above 53, and the order book confirms it"
+      },
+      {
+        "when": "May – Aug 2027",
+        "title": "Commit or hold",
+        "do": [
+          "If the gate held, commit the capacity expansion in steps",
+          "Watch the French spread into the election",
+          "Decide the US service hub once a permanent tariff deal is published, expected around mid-2027",
+          "Move second-source volumes up if supply-chain stress stays high"
+        ],
+        "gate": "A permanent US tariff arrangement is published, or the hub stays a plan"
+      },
+      {
+        "when": "Sep – Dec 2027",
+        "title": "Lock in 2028",
+        "do": [
+          "Set multi-year prices on the year's energy and franc readings",
+          "Roll the hedges forward a tranche",
+          "Rewrite the scenarios for 2028 from the radar's last sixty days"
+        ],
+        "gate": "The 2028 scenarios are written and every signpost has an owner"
+      }
+    ]
+  },
+  "risks": {
+    "label": "The risk register, from the radar",
+    "items": [
+      {
+        "risk": "New tariffs on the largest trading partners · rising · first seen 10 March",
+        "trigger": "Publication of tariff rates and dates; China's critical-material export rules; EU and Japanese responses",
+        "response": "Keep the US hub staged; price US quotes with a tariff clause; second source outside the countries named",
+        "level": "red"
+      },
+      {
+        "risk": "AI-linked funding gets dearer · rising · 53 mornings since 14 March",
+        "trigger": "Pricing of AI-linked bond and share sales; Tremor Watch high again with credit breaking",
+        "response": "Refinance the bank loan early, while credit is the one calm family",
+        "level": "red"
+      },
+      {
+        "risk": "The Gulf truce frays · rising · 16 mornings since 3 July",
+        "trigger": "Attacks on vessels near Hormuz; strikes on Saudi targets; Brent back above 95 dollars",
+        "response": "Hold energy surcharges in quotes; delay fixed-price contracts",
+        "level": "amber"
+      },
+      {
+        "risk": "Tariffs reach spring prices with no stockpile · stable",
+        "trigger": "Core goods prices in the inflation figures; retailers' margin guidance; Pacific air cargo in December",
+        "response": "Expect food customers to push back on capital spending in the spring; lead with retrofit",
+        "level": "amber"
+      },
+      {
+        "risk": "A firm inflation figure restores rate-rise bets · stable · 63 mornings since 14 March",
+        "trigger": "Two- and five-year Treasury yields after the figure; Fed speakers before December",
+        "response": "Fix the loan rate rather than float it",
+        "level": "ink"
+      },
+      {
+        "risk": "The franc breaks out of its range",
+        "trigger": "EUR/CHF below 0.89, the stress line; the franc against the dollar already moving apart from Asian and US equities",
+        "response": "Tranches, not one block; move more costs into euros",
+        "level": "amber"
+      }
+    ]
+  },
+  "kpis": {
+    "label": "The early-warning dashboard",
+    "items": [
+      {
+        "k": "Tremor Watch status and how many times a normal week",
+        "why": "High again with credit breaking closes the refinancing window"
+      },
+      {
+        "k": "EUR/CHF against 0.89",
+        "why": "The stress case's line for margins on euro sales"
+      },
+      {
+        "k": "German purchasing surveys against 53",
+        "why": "The capacity gate: two to three readings in a row"
+      },
+      {
+        "k": "Brent against 75 and 95 dollars",
+        "why": "Below 75 for two months is the upside; above 95 is the Gulf risk firing"
+      },
+      {
+        "k": "Swiss core inflation against 1.0%",
+        "why": "Above it, the SNB rises faster and the stress case gains"
+      },
+      {
+        "k": "The French spread against 150 basis points",
+        "why": "The euro area's stress line before the election"
+      },
+      {
+        "k": "Supply-chain stress",
+        "why": "When it stays high, second-source volumes move up"
+      },
+      {
+        "k": "Radar risks rising, week by week",
+        "why": "A rising count is the first sign the lean is changing"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "The radar over sixty days",
+      "verdict": "The risks have moved",
+      "level": "amber",
+      "so_what": "A year planned on October's radar would have hedged the bond market and missed AI funding: refinancing now sits beside the franc as a first-quarter decision.",
+      "evidence": [
+        "58 mornings from 26 September to 25 November, 44 distinct risks",
+        "To 25 October: 52 of 140 entries on rates and government debt, 27 on geopolitics, 14 on AI concentration",
+        "From 26 October: 43 of 150 on rates, 33 on geopolitics, 32 on AI concentration: AI more than doubled",
+        "Most persistent: a US–Iran escalation on 33 mornings, last on 23 November; AI funding strain on 29; trade war back since 15 November",
+        "Dropped off: euro-area government debt, last on 30 October; emerging-market currency stress, last on 13 November",
+        "The regime read went from “A long end that no longer answers to oil” on 26 September, to “Politics sets the price” on 9 November, to “Rotation from AI suppliers to the shopper, with a tariff bill pending” today"
+      ],
+      "source": "Antevo Executive Brief, risk radar and its evolution, 26 Sep – 25 Nov 2026"
+    },
+    {
+      "title": "How unsettled markets are",
+      "verdict": "Elevated, cooling",
+      "level": "amber",
+      "so_what": "The second spell of the year is cooling from its peak, but more pairs break each week: plan for a market that stays unsettled into 2027, and use the calm in credit while it lasts.",
+      "evidence": [
+        "Elevated at 2.42 times a normal week in the week of 20 November, after High on 6 and 13 November (3.70x and 3.84x)",
+        "This year: High from 20 March to 15 May, peaking at 4.69x on 17 April; calm from June to mid-October",
+        "Breaking pairs per week: 10, 22, 30 and 31 over the last four weeks",
+        "Volatility 2.63x, commodities 2.48x and bonds 2.12x lead; credit is calm at 0.54x",
+        "Copper moves with US shares far more closely than its two-year norm: an input cost that now rises with a strong economy",
+        "The franc against the dollar has come apart from Japanese and US industrial shares since 13 November"
+      ],
+      "source": "Antevo Tremor Watch, weeks to 20 Nov 2026 (provisional: 697 of 753 pairs read)"
+    },
+    {
+      "title": "The business board",
+      "verdict": "An opening and a bill",
+      "level": "green",
+      "so_what": "Germany is the opening the base case needs, and the tariff bill is the reason to keep the US staged.",
+      "evidence": [
+        "German manufacturing and composite surveys stood at 55 in November, well above forecasts; France contracted",
+        "German business sentiment rose to 90.6 from 90.1",
+        "Higher US tariffs on China, the EU, Japan, South Korea and a dozen more are reported for this week; rates and dates not yet published",
+        "China's pause on its mineral export curbs runs until January"
+      ],
+      "source": "Antevo Strategy Radar, business board, 25 Nov 2026"
+    },
+    {
+      "title": "Supply chains",
+      "verdict": "Under strain",
+      "level": "red",
+      "so_what": "Qualify the second source now, while volumes can stay small: in the desk's words, dual-source now and defer the volumes.",
+      "evidence": [
+        "Supply-chain stress at 79 of 100, read as critical, up from 62 on 26 October",
+        "Energy flows swing widely day to day: between 46 and 100 over the month, 64 today",
+        "Global trade activity flat, around 50",
+        "The index's own confidence is moderate: read the direction, not the decimal"
+      ],
+      "source": "Antevo Executive Brief, indices, 26 Oct – 25 Nov 2026"
+    },
+    {
+      "title": "Decisions that wait for a signpost",
+      "verdict": "Keep them open",
+      "level": "ink",
+      "so_what": "None of these has to be made in December, and each one costs more if it is made before its signpost.",
+      "evidence": [
+        "Capacity expansion: wait for two or three German surveys above 53",
+        "US localisation: wait for a permanent tariff deal, around mid-2027",
+        "Asian components: dual-source now, defer the volumes",
+        "The franc: hedge in rolling twelve-month tranches until after the SNB",
+        "Multi-year prices: not before the first-quarter energy figures"
+      ],
+      "source": "Antevo Research, strategy desk, 25 Nov 2026"
+    },
+    {
+      "title": "Names and the register",
+      "verdict": "Clear on this screen",
+      "level": "green",
+      "so_what": "Name the service line before it launches, and check every partner on the register before signing.",
+      "evidence": [
+        "Vallmer Retrofit and Vallmer Uptime: no near marks in classes 7, 37 and 42, no Swiss company under either name, domains appear unregistered",
+        "Vallmer Care: one loosely similar mark, filed in the UK in an unrelated class",
+        "The Swiss register finds only two small limited companies with “packaging machines” in their names, in Graubünden and Thurgau: the field trades under its founders' names, so search partners by name, not by product"
+      ],
+      "source": "Antevo Trademark and Antevo Companies, 25 Nov 2026"
+    },
+    {
+      "title": "The calendar",
+      "verdict": "Dated",
+      "level": "ink",
+      "so_what": "Every signpost in the plan has a date: put them in the board's calendar, not in a drawer.",
+      "evidence": [
+        "This week: US core inflation (25 Nov), French inflation (27 Nov), China's and Germany's November data (30 Nov)",
+        "1 December: euro-area inflation, consensus 4.3%; 4 December: US payrolls",
+        "10 December: the Swiss National Bank",
+        "22 January 2027: the ECB; the second quarter: the French election; June: the G7"
+      ],
+      "source": "Antevo Executive Brief, catalysts, to 4 Dec 2026; later dates from the strategy desk"
+    }
+  ],
+  "steps": {
+    "label": "The first four weeks",
+    "items": [
+      {
+        "do": "Write the three scenarios and the lean into the board pack",
+        "why": "A plan built on one forecast breaks on the first surprise; three scenarios with signposts tell the board what would change the plan.",
+        "links": [
+          {
+            "label": "The strategy desk build",
+            "url": "https://antevo.ch/mcp/build/strategy-desk/"
+          }
+        ]
+      },
+      {
+        "do": "Read the SNB on 10 December, then place the first hedge tranche",
+        "why": "The desk's advice is tranches until after the decision, not before.",
+        "links": [
+          {
+            "label": "snb.ch",
+            "url": "https://www.snb.ch/en/"
+          }
+        ]
+      },
+      {
+        "do": "File Vallmer Retrofit and watch it",
+        "why": "The screen is clear today; a filing protects it, and a watch catches the next close mark.",
+        "links": [
+          {
+            "label": "ige.ch",
+            "url": "https://www.ige.ch/en/protecting-your-ip/trade-marks"
+          },
+          {
+            "label": "Watch the name",
+            "url": "https://antevo.ch/trademark/app/add?intent=watch&mark=Vallmer%20Retrofit&source=build"
+          }
+        ]
+      },
+      {
+        "do": "Set up the early-warning dashboard and read it every Monday",
+        "why": "The gates only work if someone looks: Tremor Watch weekly, the radar daily.",
+        "links": [
+          {
+            "label": "Tremor Watch",
+            "url": "https://antevo.ch/tremor-watch/"
+          },
+          {
+            "label": "Executive Brief",
+            "url": "https://antevo.ch/executive/"
+          }
+        ]
+      },
+      {
+        "do": "Check each second-source candidate on the register",
+        "why": "Who they are, where they sit and who signs for them, from the public record.",
+        "links": [
+          {
+            "label": "Antevo Companies",
+            "url": "https://antevo.ch/companies/"
+          }
+        ]
+      }
+    ]
+  },
+  "links": [
+    {
+      "a": "Strategy Radar",
+      "b": "Research",
+      "text": "The board shows German demand at its strongest in years, and the desk's base case needs it to last: the opening is real, but capacity waits for two or three readings in a row."
+    },
+    {
+      "a": "Executive Brief",
+      "b": "Tremor Watch",
+      "text": "AI funding strain is on the radar on 29 of 58 mornings while credit is the one calm family in Tremor: refinance in the first quarter, while that still holds."
+    },
+    {
+      "a": "Tremor Watch",
+      "b": "Research",
+      "text": "The franc has come apart from equities and the stress case draws its line at 0.89: hedge in tranches, so no single date decides the year's margin."
+    },
+    {
+      "a": "Executive Brief",
+      "b": "Research",
+      "text": "Supply-chain stress is critical and rising, and the desk says dual-source now: qualify the second source in December, buy the volumes later."
+    },
+    {
+      "a": "Trademark",
+      "b": "Companies",
+      "text": "The service line's name is clear and the field does not trade under its product: name the line first, then check every partner by name."
+    }
+  ],
+  "watch": [
+    "Euro-area inflation on 1 December, consensus 4.3%",
+    "The published scope and start date of the US tariffs",
+    "The Swiss National Bank on 10 December 2026",
+    "Tremor Watch each Friday: whether credit starts to break",
+    "The ECB on 22 January 2027",
+    "German purchasing surveys in January, February and March"
+  ],
+  "next": {
+    "label": "The Vallmer Pack story",
+    "parts": [
+      {
+        "n": 1,
+        "title": "The morning read",
+        "url": "https://antevo.ch/mcp/build/strategy-desk/example/"
+      },
+      {
+        "n": 2,
+        "title": "The 2027 plan",
+        "here": true
+      }
+    ]
+  },
+  "disclaimer": "From Antevo answers, each dated, and the public record. The scenarios are a desk's view, not a forecast, and the plan is options to consider. A trademark screen is not clearance. Not legal, tax or investment advice."
+}

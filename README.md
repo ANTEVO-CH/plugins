@@ -1,15 +1,15 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cover-plugins-dark.png">
-  <img alt="Antevo for Claude: eight plugins, 45 skills. You ask: check Telvaro AG before we sign. Antevo answers: on the record, not found on the sanctions lists read, and two things worth a look before signing." src="assets/cover-plugins-light.png" width="100%">
+  <img alt="Antevo for Claude: eight plugins, 51 skills. You ask: check Telvaro AG before we sign. Antevo answers: on the record, not found on the sanctions lists read, and two things worth a look before signing." src="assets/cover-plugins-light.png" width="100%">
 </picture>
 
 # Antevo for Claude: plugins, skills and builds
 
-**Eight plugins and 45 skills that bring Antevo into the assistant you already use.** Each plugin wires one Antevo connection (the Executive Brief, the weekly Tremor index, Strategy Radar's daily business board, Antevo's research desks, the trademark registers, your own household or your firm's client book) together with the skills that know how to read it. `antevo-build` adds four builds on top: Startup Launch Intelligence, Company Due Diligence, Supply Chain Watch and M&A Intelligence. Every answer is dated, attributed, and honest about what it cannot see.
+**Eight plugins and 51 skills that bring Antevo into the assistant you already use.** Each plugin wires one Antevo connection (the Executive Brief, the weekly Tremor index, Strategy Radar's daily business board, Antevo's research desks, the trademark registers, your own household or your firm's client book) together with the skills that know how to read it. `antevo-build` adds thirteen builds on top, from Startup Launch Intelligence and Company Due Diligence to Portfolio Concentration, Strategy Desk and your own Intelligence Terminal. Every answer is dated, attributed, and honest about what it cannot see.
 
 [![validate](https://github.com/ANTEVO-CH/plugins/actions/workflows/validate.yml/badge.svg)](https://github.com/ANTEVO-CH/plugins/actions/workflows/validate.yml)
 [![MCP Registry](https://img.shields.io/badge/MCP%20Registry-ch.antevo-252c28?labelColor=9b7936)](https://registry.modelcontextprotocol.io/v0/servers?search=ch.antevo)
-[![Claude plugins](https://img.shields.io/badge/Claude-8%20plugins%20%C2%B7%2045%20skills-252c28?labelColor=9b7936)](#skills)
+[![Claude plugins](https://img.shields.io/badge/Claude-8%20plugins%20%C2%B7%2051%20skills-252c28?labelColor=9b7936)](#skills)
 [![npm](https://img.shields.io/npm/v/@antevo/cli?label=%40antevo%2Fcli&color=252c28&labelColor=9b7936)](https://www.npmjs.com/package/@antevo/cli)
 [![Hosted in Switzerland](https://img.shields.io/badge/hosted-Switzerland-252c28?labelColor=9b7936)](https://antevo.ch)
 
@@ -31,24 +31,37 @@
   <img alt="Nine Antevo engines, five without an account: The 07:00 Brief, Executive Brief, Tremor Watch, Strategy Radar and Trademark screening are free; Companies and Research need any Antevo account; Wealth needs your account; Mandates is by arrangement. Each is a remote MCP server with its address." src="assets/engines-light.png" width="100%">
 </picture>
 
-The plugins connect seven of them directly; `antevo-build` connects six at once, plus Antevo Guard for checking a payee (`https://api.antevo.ch/mcp/guard/mcp`). Every address also works on its own in any MCP client: [The connections](#the-connections).
+The plugins connect seven of them directly; `antevo-build` connects eight at once: six of them, plus Antevo Guard for checking a payee (`https://api.antevo.ch/mcp/guard/mcp`) and Wealth for your own household. Every address also works on its own in any MCP client: [The connections](#the-connections).
 
 ## Build on it
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/builds-dark.png">
-  <img alt="Seven builds, one prompt each: Startup launch (Tirano Pay, two names taken, one clear on this screen), Due diligence (Telvaro AG, on the record, two things worth a look), Supply chain (Taiwan to Basel, leg by leg), M&A intelligence (Swiss robotics, three companies read), Real estate (a new apartment near Zurich, the seller on the record, two things worth a look) Family office (a Swiss family's week, holding by holding) and Market entry (an example Swiss instrument maker in Singapore, the name clear on this screen, two things worth a look). Real runs on 25 November 2026." src="assets/builds-light.png" width="100%">
+  <img alt="Thirteen builds, one prompt each: Startup launch, Due diligence, Supply chain, M&A intelligence, Real estate, Family office, Market entry, Portfolio concentration, Strategy desk, The franc rose, Competitor watch, Your own research desk and Intelligence terminal, each with one finding from its real run of 25 November 2026, and a last line for your own build." src="assets/builds-light.png" width="100%">
 </picture>
 
-**We build the intelligence. You build what's next.** `antevo-build` connects seven engines in one install and adds builds on top of them. Each build is a recipe, an example from a real run and a skill:
+**We build the intelligence. You build what's next.** `antevo-build` connects eight engines in one install and adds builds on top of them. Each build is a recipe, an example from a real run and a skill:
 
 - **Startup Launch Intelligence** (`startup-launch`): tries your names until one is clear, lists the steps to register it with the official links, and plans the first 90 days. [antevo.ch/mcp/build/startup-launch](https://antevo.ch/mcp/build/startup-launch/)
+- **Fintech Launch** (`fintech-launch`): plans a Swiss fintech from the name to Germany: the licence route read on FINMA's own pages, rates and the funding window, the strategy in one paragraph, four stages with a gate for each, risks with their triggers and what to measure. [antevo.ch/mcp/build/fintech-launch](https://antevo.ch/mcp/build/fintech-launch/)
+- **Strategic Planner** (`strategic-planner`): writes a company's year on every engine: the risk radar and how it moved over sixty days, three scenarios with signposts, Tremor's history and breaks, the business board, supply chains and the calendar; then four stages with gates, a risk register, an early-warning dashboard and the decisions to keep open. Page: [antevo.ch/mcp/build/strategic-planner](https://antevo.ch/mcp/build/strategic-planner/).
+- **Invoice Check** (`invoice-check`): checks an invoice with new bank details against the public record before you pay: the company on the register, the email address it came from (a lookalike or not), the country of the bank account, the sanctions lists and recent register changes. It says what does not match and what was not checked, never whether to pay, and it never takes an account number. Page: [antevo.ch/mcp/build/invoice-check](https://antevo.ch/mcp/build/invoice-check/).
+- **All Your Banks On One Page** (`banks-on-one-page`): adds up what you hold at every bank on one page: the total, shares against bonds, and each company that sits in more than one place. Describes; never says what to buy or sell.
+- **What Is Inside Your Funds** (`inside-your-funds`): opens the funds you hold and counts again, by industry and by country, beside the way your statements show it. Describes; never says what to buy or sell.
+- **Today's Risks, In Francs** (`risks-in-francs`): puts a figure next to each risk on the morning list: the what-if that stands for it and what it would cost your household, in total and for each portfolio. Describes; never says what to buy or sell.
+- **A Bank's Monday** (`a-banks-monday`): prepares a bank's or wealth manager's week: today's risks, what each what-if would do to the firm's own income (its figures kept apart and marked as its own), to a client household and to the loans against its portfolios, and which business clients the day's developments touch, ending in notes for each client meeting. Never says a margin call will happen. Page: [antevo.ch/mcp/build/a-banks-monday](https://antevo.ch/mcp/build/a-banks-monday/).
 - **Company Due Diligence** (`due-diligence`): checks a company before you sign or pay. [antevo.ch/mcp/build/due-diligence](https://antevo.ch/mcp/build/due-diligence/)
 - **Supply Chain Watch** (`supply-chain`): checks a supply route leg by leg before the next order. [antevo.ch/mcp/build/supply-chain](https://antevo.ch/mcp/build/supply-chain/)
 - **M&A Intelligence** (`m-and-a`): maps a niche and reads a shortlist before any approach. [antevo.ch/mcp/build/m-and-a](https://antevo.ch/mcp/build/m-and-a/)
 - **Real Estate Acquisition** (`real-estate`): reads a property purchase before you sign: the seller, the deposit, the market and the mortgage. [antevo.ch/mcp/build/real-estate](https://antevo.ch/mcp/build/real-estate/)
 - **Family Office** (`family-office`): reads the week against what a family owns and relies on, and lists what to bring to the family meeting. [antevo.ch/mcp/build/family-office](https://antevo.ch/mcp/build/family-office/)
 - **Market Entry** (`market-entry`): reads a new country before you open there: whether your name is free, demand, the trade and export rules and the currency, with the steps before the office opens. [antevo.ch/mcp/build/market-entry](https://antevo.ch/mcp/build/market-entry/)
+- **Portfolio Concentration** (`portfolio-concentration`): reads every account as one book: how much sits behind one company, one industry, one country and one currency, and what the accounts did in past crashes. [antevo.ch/mcp/build/portfolio-concentration](https://antevo.ch/mcp/build/portfolio-concentration/)
+- **Strategy Desk** (`strategy-desk`): matches today's developments to a company's objectives, with the possible responses and the event that would make each one right. [antevo.ch/mcp/build/strategy-desk](https://antevo.ch/mcp/build/strategy-desk/)
+- **The Franc Rose** (`franc-rose`): reads what a currency move did to your money: the book by currency, account by account, this week and this year, and the dates that move it. [antevo.ch/mcp/build/franc-rose](https://antevo.ch/mcp/build/franc-rose/)
+- **Competitor Watch** (`competitor-watch`): reads your rivals on the public record: register changes, trademark filings by country and class, and where they meet today's developments. [antevo.ch/mcp/build/competitor-watch](https://antevo.ch/mcp/build/competitor-watch/)
+- **Your Own Research Desk** (`research-desk`): answers one question as a research desk: splits it into parts that can be checked, asks the desks that fit, and writes one note with every fact dated. [antevo.ch/mcp/build/research-desk](https://antevo.ch/mcp/build/research-desk/)
+- **Intelligence Terminal** (`intelligence-terminal`): builds your own morning terminal on the four free engines: a stdlib Python script that calls them over MCP and writes one page, no account and no model in between. [antevo.ch/mcp/build/intelligence-terminal](https://antevo.ch/mcp/build/intelligence-terminal/)
 
 [How the builds work →](plugins/antevo-build/)
 
@@ -96,7 +109,7 @@ Add the marketplace once, then install what you need:
 /plugin install antevo-strategy-radar@antevo # public — your answers stay with Claude
 /plugin install antevo-trademark@antevo    # screening public; your watchlist needs a sign-in
 /plugin install antevo-research@antevo     # research desks — any Antevo account, OAuth on first use
-/plugin install antevo-build@antevo        # seven builds on seven engines — five public, two sign in
+/plugin install antevo-build@antevo        # thirteen builds on eight engines — five public, three sign in
 /plugin install antevo-wealth@antevo       # your household — OAuth on first use
 /plugin install antevo-mandates@antevo     # your firm — by arrangement, OAuth on first use
 ```
@@ -163,7 +176,7 @@ All seven are listed in the official [MCP Registry](https://registry.modelcontex
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/plugins-dark.png">
-  <img alt="Eight plugins, 45 skills: Executive 9, Tremor Watch 3, Strategy Radar 3, Trademark 4, Research 3, Builds 7, Wealth 13, Mandates 3." src="assets/plugins-light.png" width="100%">
+  <img alt="Eight plugins, 51 skills: Executive 9, Tremor Watch 3, Strategy Radar 3, Trademark 4, Research 3, Builds 13, Wealth 13, Mandates 3." src="assets/plugins-light.png" width="100%">
 </picture>
 
 | Skill | What it does |
@@ -190,14 +203,27 @@ All seven are listed in the official [MCP Registry](https://registry.modelcontex
 | `/antevo-research:ask-a-desk` | One question to the desk that covers it, with the answer's dates and how recent its reading is |
 | `/antevo-research:joined-up-view` | A question across two or three desks, or the strategy desk, side by side: where they agree and where they differ |
 | `/antevo-research:company-read` | A listed company across the equities, results and, on request, technical desks — never a rating or advice |
-| **antevo-build** | *five engines public; Companies and Research sign in* |
+| **antevo-build** | *five engines public; Companies, Research and Wealth sign in* |
 | `/antevo-build:startup-launch` | Tries your names until one is clear, the steps to register it with official links, then the market, costs, competition and funding risk — each with a "so what" — and a 90-day plan |
+| `/antevo-build:fintech-launch` | Plans a fintech end to end: the name, the field, the licence route and the rules in the next market, rates, the franc and the funding window, then a twelve-month plan in stages with gates, risks with their triggers, what to measure and the first four weeks with official links |
+| `/antevo-build:strategic-planner` | Writes a company's plan for the year: three scenarios with signposts, a risk register from the radar's last sixty days, how unsettled markets are, supply chains, the year in stages with gates, an early-warning dashboard and the decisions to keep open |
+| `/antevo-build:invoice-check` | Checks an invoice or a change of bank details before you pay: the company, the email address it came from, the account's country and the record lately, with what does not match and what to confirm yourself |
+| `/antevo-build:banks-on-one-page` | Puts every bank on one page: what each holds, the total, shares against bonds, and each company held in more than one place, added up |
+| `/antevo-build:inside-your-funds` | Opens your funds and counts again: each industry and country as your statements show it and with the funds opened, and which funds were opened |
+| `/antevo-build:risks-in-francs` | Puts each risk on today's list in your own currency: the what-if that stands for it and its cost, in total and for each portfolio. What-ifs, not forecasts |
+| `/antevo-build:a-banks-monday` | Prepares a bank's week: today's risks, what each what-if does to the firm's income, a client's portfolios and the loans against them (against the agreed limit), which business clients are touched, and notes for each client meeting. What-ifs, not forecasts |
 | `/antevo-build:due-diligence` | Checks a company before you sign or pay: the register, the sanctions lists, its website and email, what changed lately and which group company signs, then what to settle with the official links and what each finding means |
 | `/antevo-build:supply-chain` | Checks a supply route leg by leg before the next order: the supplier, export rules at the origin, the sea route, the last mile, fuel and freight, then what to settle with the official links and what each finding means |
 | `/antevo-build:m-and-a` | Maps the companies registered in a niche, reads a shortlist one by one (register, notices, brands), lists what to check before a first approach with the official links, and reads the deal climate — financing, currency, demand, market strain |
 | `/antevo-build:real-estate` | Reads a property purchase before you sign: the seller in the register, where the deposit goes, the market, the mortgage and the lending rules, the price against history, and what to do before signing with the official links |
 | `/antevo-build:family-office` | Reads the week against what a family owns and relies on: each holding against what changed, the risks rising, the scenarios ahead, the firms it relies on in the register, and what to bring to the family meeting with the links |
 | `/antevo-build:market-entry` | Reads a new country before you open there: the name screened in its trademark registers, company register and domain, demand, the trade and export rules that touch the product, the currency, and the steps before the office opens with the official links |
+| `/antevo-build:portfolio-concentration` | Reads all your accounts as one book: the share behind one company, one industry, one country and one currency, funds looked through, a crash replay per account, and the dates that touch what you hold, never what to buy or sell |
+| `/antevo-build:strategy-desk` | Matches today's business board, brief and research desks to your company's three to five objectives: what bears on which objective, where two objectives pull against each other, and the questions for the next meeting with what would settle each |
+| `/antevo-build:franc-rose` | Reads what a currency move did to your book in your own currency: the mix by currency and account, the week's and the year's effect, why the currency moved, and the dates ahead, never a hedge recommendation |
+| `/antevo-build:competitor-watch` | Reads two to five rivals on the public record: what changed in each register, where and in which classes each files trademarks, what that may point to, and what to watch, never why a notice was filed or whether a company is for sale |
+| `/antevo-build:research-desk` | Answers one question as a research desk: splits it into parts, asks the Research desks that fit, sets Tremor Watch against the written answers, and writes one note with where the engines agree and differ and the dates that settle it |
+| `/antevo-build:intelligence-terminal` | Builds a custom terminal on the four free engines from code: the MCP handshake, the tools to call, the workspace.json format and scheduling, with a reference Python script (standard library only) in the skill |
 | **antevo-trademark** | *screening public* |
 | `/antevo-trademark:clearance-check` | What is on the registers near a name, and who holds it — never a clearance |
 | `/antevo-trademark:opposition-deadline` | How long there is to oppose in a given office, what starts the clock, and the provision |
@@ -334,6 +360,12 @@ Verbatim excerpts from the live public connections on 14 September 2026, trimmed
 
 ## What's New
 
+- **26 November 2026 — A Bank's Monday.** `antevo-build` 0.13.0: `a-banks-monday` reads one morning from four seats at a bank: the chief executive, the bank's own plan, the client banker (a loan against its agreed limit, today and under each what-if) and a business client. Page: [antevo.ch/mcp/build/a-banks-monday](https://antevo.ch/mcp/build/a-banks-monday/).
+- **26 November 2026 — three builds on Wealth.** `antevo-build` 0.12.0: `banks-on-one-page` adds up every bank on one page, `inside-your-funds` opens your funds by industry and country, and `risks-in-francs` puts a figure next to each risk on the morning list. Pages: [banks-on-one-page](https://antevo.ch/mcp/build/banks-on-one-page/), [inside-your-funds](https://antevo.ch/mcp/build/inside-your-funds/), [risks-in-francs](https://antevo.ch/mcp/build/risks-in-francs/). `portfolio-concentration` no longer says the tool does not look inside funds.
+- **25 November 2026 — Invoice Check.** `antevo-build` 0.11.0: `invoice-check` checks an invoice with new bank details against the public record, on Guard and Companies. Page: [antevo.ch/mcp/build/invoice-check](https://antevo.ch/mcp/build/invoice-check/).
+- **25 November 2026 — Strategic Planner.** `antevo-build` 0.10.0: `strategic-planner` writes a company's year on every Antevo engine, part 2 of the Vallmer Pack story. Page: [antevo.ch/mcp/build/strategic-planner](https://antevo.ch/mcp/build/strategic-planner/).
+- **25 November 2026 — Fintech Launch.** `antevo-build` 0.9.0: `fintech-launch` plans a Swiss fintech from the name to Germany, part 2 of the Tirano Pay story; the template gains `thesis`, `plan` (stages with gates), `risks` (with triggers), `kpis` and `next` blocks. Page: [antevo.ch/mcp/build/fintech-launch](https://antevo.ch/mcp/build/fintech-launch/).
+- **25 November 2026 — Six more builds.** `antevo-build` 0.8.0: Portfolio Concentration, Strategy Desk, The Franc Rose, Competitor Watch, Your Own Research Desk and Intelligence Terminal, each with a real run of 25 November 2026; the Wealth connection joins the plugin. Pages: [antevo.ch/mcp/build](https://antevo.ch/mcp/build/).
 - **25 November 2026 — Market Entry.** `antevo-build` 0.7.0: a seventh build, `market-entry`, reads a new country before you open there and lists the steps before the office opens. Page: [antevo.ch/mcp/build/market-entry](https://antevo.ch/mcp/build/market-entry/).
 - **25 November 2026 — Family Office.** `antevo-build` 0.6.0: a sixth build, `family-office`, reads the week against what a family owns and relies on, and lists what to bring to the family meeting. Page: [antevo.ch/mcp/build/family-office](https://antevo.ch/mcp/build/family-office/).
 - **25 November 2026 — Real Estate Acquisition.** `antevo-build` 0.5.0: a fifth build, `real-estate`, reads a property purchase before you sign: the seller, the deposit, the market, the mortgage and the price against history. Page: [antevo.ch/mcp/build/real-estate](https://antevo.ch/mcp/build/real-estate/).

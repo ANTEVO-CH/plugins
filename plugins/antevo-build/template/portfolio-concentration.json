@@ -1,0 +1,194 @@
+{
+  "template": "Built on Antevo · https://antevo.ch/mcp/build/portfolio-concentration/",
+  "kind": "Portfolio Concentration",
+  "title": "Three accounts, one book",
+  "subtitle": "How much sits behind one company, one industry, one country and one currency",
+  "built": "2026-11-25",
+  "note": "The example is Antevo's model book: one household that spends in francs, with three accounts named Capital Preservation, Balanced and Growth. Amounts are left out; shares of the whole are shown. Companies are described, not named. Every figure is an Antevo engine's answer on the date shown.",
+  "tries": {
+    "label": "The book, piece by piece",
+    "item": "Piece",
+    "source": "Antevo Wealth, Tremor Watch and Executive Brief, 25 Nov 2026. Shares are added up from the positions the engine returned; a fund counts as one holding.",
+    "items": [
+      {
+        "name": "One company",
+        "verdict": "Worth a look",
+        "level": "amber",
+        "evidence": [
+          "The largest holding, a US phone and device maker, is 17.3% of the whole and sits in all three accounts",
+          "The three US technology shares (the device maker, a software company and a chip designer) make 40.7% together",
+          "Nine holdings in all: the largest five make 71.5%"
+        ]
+      },
+      {
+        "name": "One industry",
+        "verdict": "Worth a look",
+        "level": "amber",
+        "evidence": [
+          "Technology 48%, everyday consumer goods 14.1%, financials 12.6%, health care 9.9%",
+          "The industry is known for 84.6% of the book; the other 15.4% is a short-dated US government bond fund",
+          "A US bank share (8.4%) and a US bank fund (4.2%) are the same industry twice"
+        ]
+      },
+      {
+        "name": "One country, one currency",
+        "verdict": "Worth a look",
+        "level": "amber",
+        "evidence": [
+          "85.9% of the book is in the United States and priced in dollars; 14.1% is in Switzerland",
+          "The Swiss share is one food company, not a spread of Swiss companies",
+          "The household spends in francs: a move in the dollar moves 86% of the book"
+        ]
+      },
+      {
+        "name": "The names on the accounts",
+        "verdict": "Worth a look",
+        "level": "amber",
+        "evidence": [
+          "Five of the nine holdings sit in all three accounts, in different weights",
+          "A replay of the 2000 to 2002 crash: Capital Preservation −34%, Balanced −46%, Growth −61%",
+          "A replay of a past event, not a forecast"
+        ]
+      },
+      {
+        "name": "Cash when needed",
+        "verdict": "On the record",
+        "level": "green",
+        "evidence": [
+          "Every position is a listed share or fund: the engine counts 100% as sellable within a day",
+          "Bonds are 15.4% of the book, shares 84.6%"
+        ]
+      }
+    ]
+  },
+  "steps": {
+    "label": "What is worth a look, with the links",
+    "items": [
+      {
+        "do": "Add each holding up across every account before judging any one account",
+        "why": "Five of the nine holdings sit in all three accounts, so no single statement shows the real share.",
+        "links": [
+          {
+            "label": "Antevo Wealth",
+            "url": "https://antevo.ch/wealth/"
+          }
+        ]
+      },
+      {
+        "do": "Look inside any fund you hold",
+        "why": "A US bank fund sits beside a US bank share here: a fund can double a holding you already have. The engine counts a fund as one holding and does not look inside it.",
+        "links": []
+      },
+      {
+        "do": "Write down the share you are at ease with behind one company, one industry and one currency",
+        "why": "The page shows where the book stands; where the line sits is for you and your adviser.",
+        "links": []
+      },
+      {
+        "do": "See how each account fared in past crashes",
+        "why": "A name on an account says what was intended; a replay says what the holdings did.",
+        "links": [
+          {
+            "label": "Past events, replayed",
+            "url": "https://antevo.ch/stress-testing/"
+          }
+        ]
+      },
+      {
+        "do": "Note the dates that touch what you hold",
+        "why": "On 25 November the chip designer (8.6% of the book) reports after the US close, the day the US inflation figure is due.",
+        "links": [
+          {
+            "label": "The Executive Brief",
+            "url": "https://antevo.ch/executive/"
+          }
+        ]
+      },
+      {
+        "do": "Read it again after a big market day",
+        "why": "Shares of the whole move with prices: a holding that rises becomes a larger share by itself.",
+        "links": [
+          {
+            "label": "Tremor Watch",
+            "url": "https://antevo.ch/tremor-watch/"
+          }
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "What markets did",
+      "verdict": "Chips sold, shoppers bought",
+      "level": "ink",
+      "so_what": "This book holds a chip designer at 8.6% and technology at 48%, so a day like Tuesday lands on it harder than on the average share.",
+      "evidence": [
+        "On Tuesday 24 November the Philadelphia chip index fell 7.9% and the chip designer this book holds 5.9%",
+        "The same day the Dow rose 0.9% and retailers 2.3%: money moved from the suppliers of artificial intelligence to the shopper",
+        "Washington was reported to be preparing higher tariffs on its largest trading partners"
+      ],
+      "source": "Antevo Executive Brief, 25 Nov 2026"
+    },
+    {
+      "title": "How markets are moving together",
+      "verdict": "Elevated, 2.4 times a normal week",
+      "level": "amber",
+      "so_what": "This week, spreading across regions gives less cover than usual, and 86% of this book is in one of them.",
+      "evidence": [
+        "The Tremor Index for the week of 20 November is Elevated, down from High the week before",
+        "US shares are moving with Europe’s and Taiwan’s far more closely than their norm of the past two years",
+        "Bonds, commodities and volatility carry most of the breaks; US industries against each other are calmer than usual"
+      ],
+      "source": "Antevo Tremor Index, week of 2026-11-20"
+    },
+    {
+      "title": "The accounts in a past crash",
+      "verdict": "The cautious account is not cautious in a technology crash",
+      "level": "amber",
+      "so_what": "The three accounts are one book with three labels. Read them together.",
+      "evidence": [
+        "A replay of the 2000 to 2002 crash: Capital Preservation −34%, Balanced −46%, Growth −61%",
+        "The largest position is 32% of Capital Preservation, 17% of Balanced and 24% of Growth",
+        "A replay of a past event on today’s holdings, not a forecast"
+      ],
+      "source": "Antevo Wealth, risk read, 25 Nov 2026"
+    },
+    {
+      "title": "The dates ahead",
+      "verdict": "Two on the same day",
+      "level": "ink",
+      "so_what": "8.6% of the book has its own event today: better known before than discovered after.",
+      "evidence": [
+        "The chip designer reports results on 25 November after the US close",
+        "The October US inflation figure is due on 25 November",
+        "US retail sales for October are due on 27 November"
+      ],
+      "source": "Antevo Wealth, the calendar, 25 Nov 2026"
+    }
+  ],
+  "links": [
+    {
+      "a": "Wealth",
+      "b": "Executive Brief",
+      "text": "The brief says money left the chip makers on Tuesday; the book shows 8.6% in one of them and 48% in technology. The news and the holdings are one story."
+    },
+    {
+      "a": "Wealth",
+      "b": "Tremor Watch",
+      "text": "Regions are moving together more than usual, and 86% of the book is in one region: this week geography is not doing the spreading."
+    },
+    {
+      "a": "Wealth",
+      "b": "Wealth",
+      "text": "Exposure shows the same five holdings in all three accounts; the risk read shows what that does in a crash. The labels differ, the book does not."
+    }
+  ],
+  "watch": [
+    "The chip designer’s results, 25 November after the US close",
+    "The October US inflation figure, 25 November",
+    "US retail sales for October, 27 November",
+    "The tariff plans the brief reports for China, the EU, Japan and South Korea",
+    "The next Tremor Index, for the week of 27 November"
+  ],
+  "disclaimer": "From Antevo answers, each dated. Shares of the whole, not amounts. A description of what the book holds, not advice to buy, sell or hold anything, and not a forecast."
+}

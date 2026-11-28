@@ -1,0 +1,167 @@
+{
+  "template": "Built on Antevo · https://antevo.ch/mcp/build/inside-your-funds/",
+  "kind": "Inside Your Funds",
+  "title": "Five funds, four opened",
+  "subtitle": "What one family owns, counted twice",
+  "built": "2026-11-25",
+  "note": "The family is Antevo’s example household, with three made-up banks. Funds and companies are described, not named. Every figure is the Antevo Wealth tool’s answer on the date shown.",
+  "tries": {
+    "label": "Before and after the funds are opened",
+    "item": "Count",
+    "source": "Antevo Wealth, 25 Nov 2026. Shares of everything the family has recorded: CHF 35.5m.",
+    "items": [
+      {
+        "name": "Technology",
+        "verdict": "40% becomes 46%",
+        "level": "amber",
+        "evidence": [
+          "As the statements show it: 39.6% of everything",
+          "With the funds opened: 46.1%",
+          "CHF 14.1m held directly, CHF 2.3m inside funds"
+        ]
+      },
+      {
+        "name": "America",
+        "verdict": "88% becomes 81%",
+        "level": "ink",
+        "evidence": [
+          "As the statements show it: 88.1%, because four of the funds are American funds",
+          "With the funds opened: 81.4%",
+          "The funds hold companies in more than sixty countries"
+        ]
+      },
+      {
+        "name": "Switzerland",
+        "verdict": "12% becomes 15%",
+        "level": "green",
+        "evidence": [
+          "As the statements show it: 11.9%",
+          "With the funds opened: 15.4%",
+          "One American fund holds only Swiss companies"
+        ]
+      },
+      {
+        "name": "Funds opened",
+        "verdict": "4 of 5",
+        "level": "ink",
+        "evidence": [
+          "A world fund, a Nasdaq fund, a US bank fund and a Swiss fund: CHF 7.2m, 20.4% of everything",
+          "The US bank fund sits in two portfolios and is counted once"
+        ]
+      },
+      {
+        "name": "Not opened",
+        "verdict": "One bond fund",
+        "level": "grey",
+        "evidence": [
+          "A bond fund has no industry: it is counted as one holding",
+          "It is 12.8% of everything, and is left out of the industry shares"
+        ]
+      }
+    ]
+  },
+  "steps": {
+    "label": "What is worth a look",
+    "items": [
+      {
+        "do": "Read both counts side by side",
+        "why": "The gap between them is what sits inside your funds.",
+        "links": [
+          {
+            "label": "Antevo Wealth",
+            "url": "https://antevo.ch/wealth/"
+          }
+        ]
+      },
+      {
+        "do": "Look for the same kind of company held twice",
+        "why": "A world fund and a Nasdaq fund both hold large American technology companies, which the family also owns directly.",
+        "links": []
+      },
+      {
+        "do": "Check where a fund is from against what it holds",
+        "why": "A fund listed in one country can hold companies from another. The factsheet lists its largest holdings by name.",
+        "links": []
+      },
+      {
+        "do": "Write down the share you are at ease with in one industry and one country",
+        "why": "The page shows where things stand; the line is yours and your adviser’s to draw.",
+        "links": []
+      },
+      {
+        "do": "Ask what it would cost in a bad year",
+        "why": "The same holdings, set against today’s risks.",
+        "links": [
+          {
+            "label": "Today’s risks, in francs",
+            "url": "https://antevo.ch/mcp/build/risks-in-francs/"
+          }
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Banks and health care",
+      "verdict": "Both rise",
+      "level": "ink",
+      "so_what": "Broad funds add a little of everything, and most of all to what was already large.",
+      "evidence": [
+        "Financial companies: 10.5% as the statements show it, 12.3% with the funds opened",
+        "Health care: 8.4%, then 10.6%"
+      ],
+      "source": "Antevo Wealth, 25 Nov 2026"
+    },
+    {
+      "title": "Held directly and inside funds",
+      "verdict": "Two columns for every industry",
+      "level": "ink",
+      "so_what": "You can see how much of a share comes from your own choices and how much arrived inside a fund.",
+      "evidence": [
+        "Technology: CHF 14.1m held directly, CHF 2.3m inside funds",
+        "Switzerland: CHF 4.2m held directly, CHF 1.3m inside funds"
+      ],
+      "source": "Antevo Wealth, 25 Nov 2026"
+    },
+    {
+      "title": "What the count covers",
+      "verdict": "87% of the money has an industry",
+      "level": "grey",
+      "so_what": "What is not classified is left out of the shares, not counted as zero.",
+      "evidence": [
+        "With the funds opened: the industry is known for 87.2% of the money",
+        "As the statements show it: 70.3%",
+        "By country: all of it"
+      ],
+      "source": "Antevo Wealth, 25 Nov 2026"
+    },
+    {
+      "title": "The limit",
+      "verdict": "By industry and country, not by company",
+      "level": "grey",
+      "so_what": "For the names inside a fund, read its factsheet. This page shows the shape, not the list.",
+      "evidence": [
+        "Funds are opened by industry and by country, not company by company. A fund with no published breakdown stays closed and is counted as one holding; the answer names the funds it opened."
+      ],
+      "source": "Antevo Wealth"
+    }
+  ],
+  "links": [
+    {
+      "a": "The funds",
+      "b": "The single shares",
+      "text": "Two funds at two banks hold large American technology companies; the family holds the same kind directly at a third. Technology is larger than any one statement shows."
+    },
+    {
+      "a": "Where a fund is from",
+      "b": "What it holds",
+      "text": "A fund counts as American on a statement because it is listed there. Opened, one of them is entirely Swiss."
+    }
+  ],
+  "watch": [
+    "The share of technology with the funds opened, at each review",
+    "Any new fund: was it opened, or did it stay closed?",
+    "The gap between the two counts: it grows when funds and single shares overlap"
+  ],
+  "disclaimer": "From the Antevo Wealth tool’s answers on the date shown. Funds are opened by industry and by country, not company by company. A fund with no published breakdown stays closed and is counted as one holding; the answer names the funds it opened. The page describes where the money sits; it is not investment advice and says nothing about what to buy or sell."
+}

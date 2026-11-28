@@ -2,6 +2,28 @@
 
 All notable changes to the Antevo plugins are documented here.
 
+## 2026-11-25 — Build with Antevo 0.8.0
+
+Six new builds, each with a recipe, an example from a real run of 25 Nov 2026 and a
+skill; the Wealth connection joins the plugin (eight engines).
+
+- **`portfolio-concentration`**: every account read as one book (Wealth, Tremor
+  Watch, Executive Brief). `template/portfolio-concentration.json`: Antevo's model
+  book, holdings described, never named.
+- **`strategy-desk`**: the day's business board, brief and research desks matched
+  to a company's objectives, with possible responses and what would settle each.
+  `template/strategy-desk.json`: Vallmer Pack AG, an invented Swiss packaging maker.
+- **`franc-rose`**: what a currency move did to a book, in your own currency.
+  `template/franc-rose.json`: the model book read in francs.
+- **`competitor-watch`**: rivals read on the public record (Companies, Trademark,
+  Strategy Radar). `template/competitor-watch.json`: three rivals under invented names.
+- **`research-desk`**: one question answered as a research desk (Research, Executive
+  Brief, Tremor Watch). `template/research-desk.json`: "Is the chip sell-off spreading?"
+- **`intelligence-terminal`**: a morning page from code on the four free engines, with
+  `scripts/antevo-terminal.py` (standard library only). `template/intelligence-terminal.json`
+  is the script's own output.
+- README: 51 skills, thirteen builds.
+
 ## 2026-11-25 — Build with Antevo 0.7.0
 
 - **`antevo-build`, `market-entry`**, new skill: reads a new country before a

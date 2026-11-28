@@ -1,0 +1,171 @@
+{
+  "template": "Built on Antevo · https://antevo.ch/mcp/build/invoice-check/",
+  "kind": "Invoice Check",
+  "title": "One invoice, new bank details",
+  "subtitle": "Checked against the public record before paying",
+  "built": "2026-11-25",
+  "note": "The plumbing firm and the invoice are a made-up example. The supplier is a real Swiss company checked on the public record on the date shown, under a made-up name, Aquorim AG, with its web addresses renamed to match. Every finding is an Antevo tool’s answer on that date.",
+  "tries": {
+    "label": "The invoice, line by line",
+    "item": "Check",
+    "source": "Antevo Guard and Antevo Companies, 25 Nov 2026. Three of Guard’s four sources answered.",
+    "items": [
+      {
+        "name": "The email address",
+        "verdict": "Does not match",
+        "level": "red",
+        "evidence": [
+          "The email came from aquorim-ch.com; the website the firm knows is aquorim.ch",
+          "The sender’s address differs by the added word “ch”"
+        ]
+      },
+      {
+        "name": "Is that address real?",
+        "verdict": "Not registered",
+        "level": "red",
+        "evidence": [
+          "aquorim-ch.com is not registered: its registry holds no record",
+          "The internet’s address book (DNS) does not know it"
+        ]
+      },
+      {
+        "name": "The new bank account",
+        "verdict": "Another country",
+        "level": "red",
+        "evidence": [
+          "The account is in Lithuania, while the company is registered in Switzerland",
+          "Guard was given the two letters the account starts with, never the number"
+        ]
+      },
+      {
+        "name": "The company itself",
+        "verdict": "On the record",
+        "level": "green",
+        "evidence": [
+          "Aquorim AG is on the Swiss company register, status “entered in the register”, canton of St. Gallen",
+          "Its website, aquorim.ch, was registered on 6 May 1996 and points to a web server",
+          "Not found on the US, EU, UK and Swiss sanctions lists under its name or its number"
+        ]
+      },
+      {
+        "name": "Not checked",
+        "verdict": "One source did not answer",
+        "level": "grey",
+        "evidence": [
+          "The certificate logs did not answer in this check",
+          "A source that did not answer is not a clean result"
+        ]
+      }
+    ]
+  },
+  "steps": {
+    "label": "What to confirm yourself",
+    "items": [
+      {
+        "do": "Call the supplier on a number you already have",
+        "why": "From an old invoice, a contract or your own contacts, never from the email. Ask one question: did your bank details change?",
+        "links": []
+      },
+      {
+        "do": "Compare the account with the last one you paid",
+        "why": "Your own payment history shows it. A new country is worth that call on its own.",
+        "links": []
+      },
+      {
+        "do": "Read the sender’s address letter by letter",
+        "why": "One added word, one swapped letter or a different ending is enough.",
+        "links": [
+          {
+            "label": "Check an address in Guard",
+            "url": "https://antevo.ch/guard/"
+          }
+        ]
+      },
+      {
+        "do": "Look the company up in the official register",
+        "why": "The register has the final word on the name, the seat and who may sign.",
+        "links": [
+          {
+            "label": "zefix.ch",
+            "url": "https://www.zefix.ch/en/search/entity/welcome"
+          }
+        ]
+      },
+      {
+        "do": "Already paid? Call your bank at once, then report it",
+        "why": "The sooner the bank knows, the better the chance of stopping the transfer.",
+        "links": [
+          {
+            "label": "Swiss cyber security office",
+            "url": "https://www.report.ncsc.admin.ch/en/"
+          }
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Sanctions lists",
+      "verdict": "Not found on four lists",
+      "level": "green",
+      "so_what": "A look at four lists, not an official compliance check. It says nothing about who sent the email.",
+      "evidence": [
+        "Not found under its name or its number on the US, EU, UK and Swiss lists, checked 25 Nov 2026",
+        "Not being found does not mean unrestricted: a company owned by a listed party can be restricted without being listed"
+      ],
+      "source": "Antevo Companies, 25 Nov 2026"
+    },
+    {
+      "title": "The register lately",
+      "verdict": "No change in the last 30 days",
+      "level": "ink",
+      "so_what": "The register does not hold bank details, so it cannot confirm the change or rule it out. It does show the company did not move or change its name in the weeks before the email.",
+      "evidence": [
+        "Thirteen official notices since 2019",
+        "The latest on 16 December 2025",
+        "None in the 30 days before 25 November 2026"
+      ],
+      "source": "Antevo Companies, official gazette notices, read 25 Nov 2026"
+    },
+    {
+      "title": "The same invoice, from a free email service",
+      "verdict": "One note, and nothing else",
+      "level": "amber",
+      "so_what": "A clean answer is not a green light. A careful fraud can pass every public check, which is why the phone call comes first.",
+      "evidence": [
+        "Checked again as if the email came from a free webmail address and the account were Swiss",
+        "Guard notes the free email service",
+        "Nothing found that contradicts the public record in the four sources that answered"
+      ],
+      "source": "Antevo Guard, 25 Nov 2026"
+    },
+    {
+      "title": "What Guard does not see",
+      "verdict": "People, accounts and payments",
+      "level": "grey",
+      "so_what": "What settles an invoice like this is the supplier’s own answer, on a number you trust.",
+      "evidence": [
+        "Guard reads public records about companies. It does not check people, who owns a bank account, or transactions, and it does not say whether a payment should be made."
+      ],
+      "source": "Antevo Guard"
+    }
+  ],
+  "links": [
+    {
+      "a": "Guard",
+      "b": "Companies",
+      "text": "The company is real and its record is quiet; the three things that do not match are all about the email and the account. The record describes the company, not who sent the invoice."
+    },
+    {
+      "a": "Guard",
+      "b": "Your own records",
+      "text": "The lookalike only shows because the firm already knew the supplier’s real website. What you know about a supplier is the other half of every check."
+    }
+  ],
+  "watch": [
+    "Any new invoice or email that says bank details have changed",
+    "The sender’s address on the next message from this supplier",
+    "New notices in the supplier’s register file"
+  ],
+  "disclaimer": "From Antevo answers on public records, each dated. Guard reads public records about companies. It does not check people, who owns a bank account, or transactions, and it does not say whether a payment should be made. A look at sanctions lists is not a compliance check. Not legal advice."
+}

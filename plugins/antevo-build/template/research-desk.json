@@ -1,0 +1,178 @@
+{
+  "template": "Built on Antevo · https://antevo.ch/mcp/build/research-desk/",
+  "kind": "Research Note",
+  "title": "Is the chip sell-off spreading?",
+  "subtitle": "One question, three engines",
+  "built": "2026-11-25",
+  "note": "A real question from 25 November 2026, the day after chip shares gave back most of a one-day rally. Every finding is an Antevo engine's answer on the date shown. Companies are described, not named.",
+  "tries": {
+    "label": "The question, part by part",
+    "item": "Part",
+    "source": "Antevo Research, Executive Brief and Tremor Watch, 25 Nov 2026. Tremor Watch provisional: 697 of 753 pairs read.",
+    "items": [
+      {
+        "name": "Across markets",
+        "verdict": "Wider than usual, easing",
+        "level": "amber",
+        "evidence": [
+          "Tremor Watch Elevated, 2.42 times a normal week, week to 20 November; rank 288 of 1,351 Fridays since 2001",
+          "Down from High, 3.84 times, the week before",
+          "Realised volatility 1.59 times its normal"
+        ]
+      },
+      {
+        "name": "Where it sits",
+        "verdict": "Taiwan at the centre",
+        "level": "amber",
+        "evidence": [
+          "Taiwan and the US fear gauge: 5.12 standard deviations from their two-year norm, the most unusual pair of the week",
+          "Taiwan and the S&P 500: 4.55, moving closer than usual",
+          "On 24 November Taipei had risen 9.0% and Seoul 6.3% before the reversal"
+        ]
+      },
+      {
+        "name": "US shoppers and credit",
+        "verdict": "Not reached",
+        "level": "green",
+        "evidence": [
+          "Dow +0.9%, retailers +2.3% as the chip index fell 7.9% on 24 November",
+          "Consumer confidence jumped to 103.3 from 91.9",
+          "US sectors broke 0.33 times as often as normal, credit 0.54"
+        ]
+      },
+      {
+        "name": "Metals",
+        "verdict": "Joined the same trade",
+        "level": "amber",
+        "evidence": [
+          "Gold −2.5%, silver −5.5%, copper −4.7% on 24 November while the dollar and the ten-year yield eased",
+          "Hong Kong shares and gold moved together 3.63 standard deviations above their norm",
+          "Commodity pairs broke 2.48 times as often as normal"
+        ]
+      },
+      {
+        "name": "The cause",
+        "verdict": "Policy, still unfolding",
+        "level": "amber",
+        "evidence": [
+          "A mid-November US rule requires licences for advanced AI chips shipped to Singapore, Malaysia, Thailand, Indonesia and Brazil",
+          "Findings that could put tariffs on 16 economies were reported as imminent on 24 November"
+        ]
+      }
+    ]
+  },
+  "steps": {
+    "label": "What settles it",
+    "items": [
+      {
+        "do": "Watch for the US trade representative’s findings on 16 economies",
+        "why": "Reported as imminent on 24 November; rates for allies may be 15% or below, steeper for China.",
+        "links": [
+          {
+            "label": "USTR",
+            "url": "https://ustr.gov/"
+          }
+        ]
+      },
+      {
+        "do": "Read the mid-November US chip rule",
+        "why": "Licences for advanced AI chips to five markets, and a 90-day window for data centres abroad serving Chinese customers.",
+        "links": [
+          {
+            "label": "BIS",
+            "url": "https://www.bis.gov/"
+          }
+        ]
+      },
+      {
+        "do": "Read Saturday’s Tremor Watch",
+        "why": "If Taiwan’s pairs stay this unusual while the index eases, the strain is narrowing rather than spreading.",
+        "links": [
+          {
+            "label": "Tremor Watch",
+            "url": "https://antevo.ch/tremor-watch/"
+          }
+        ]
+      },
+      {
+        "do": "Mark 10 January 2027",
+        "why": "The US-China tariff truce and China’s pause on rare-earth export curbs both run out that day.",
+        "links": []
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Research, geopolitics desk",
+      "verdict": "Policy, not funding costs",
+      "level": "amber",
+      "so_what": "The sell-off has a policy cause that is still unfolding: the next step is a publication date, not a market mood.",
+      "evidence": [
+        "Mid-November US rule: licences for advanced AI chips to five markets; 90-day window for data centres abroad",
+        "Tariff findings on 16 economies reported as imminent on 24 November",
+        "The US-China truce and China’s rare-earth pause expire on 10 January 2027",
+        "Evidence thin on the tariff rates and on whether China retaliates before January"
+      ],
+      "source": "Antevo Research, geopolitics desk, 25 Nov 2026"
+    },
+    {
+      "title": "Executive Brief",
+      "verdict": "The chip trade lost its repair",
+      "level": "amber",
+      "so_what": "Nothing about the cost of funding changed in a day; the tariff news did. The brief and the desk agree.",
+      "evidence": [
+        "The chip index fell 7.9%; the largest AI chip designer 5.9%",
+        "The ten-year yield ended within a few basis points of where it began",
+        "Metals fell with chips, not with rates"
+      ],
+      "source": "Antevo Executive Brief, 25 Nov 2026"
+    },
+    {
+      "title": "Tremor Watch",
+      "verdict": "Elevated, easing",
+      "level": "amber",
+      "so_what": "The strain sits in markets tied to chips and metals, not in credit: on this reading it has not become a funding problem.",
+      "evidence": [
+        "Volatility 2.63 times normal, commodities 2.48, bonds 2.12, equity regions 2.04",
+        "Currencies and crypto 0.15, US sectors 0.33, credit 0.54",
+        "Provisional: 697 of 753 pairs read; revised on Saturday"
+      ],
+      "source": "Antevo Tremor Index, week of 2026-11-20"
+    },
+    {
+      "title": "Research, economy desk",
+      "verdict": "Fear reached the currencies",
+      "level": "ink",
+      "so_what": "The safe-haven currencies are the one place the sell-off visibly spread this week; the Tremor reading is a week older.",
+      "evidence": [
+        "A gauge of share-market fear rose above 30 on 24 November",
+        "The franc strengthened 1.5% against the dollar in the week to 25 November"
+      ],
+      "source": "Antevo Research, economy desk, 25 Nov 2026"
+    }
+  ],
+  "links": [
+    {
+      "a": "Research",
+      "b": "Executive Brief",
+      "text": "The desk names the cause, a chip rule and tariff findings; the brief shows funding costs did not move. Both point to policy, not money, behind the fall."
+    },
+    {
+      "a": "Tremor Watch",
+      "b": "Executive Brief",
+      "text": "Tremor sees US sectors calmer than usual; the brief sees money moving from chips into retailers. The rotation stayed inside US shares."
+    },
+    {
+      "a": "Tremor Watch",
+      "b": "Research",
+      "text": "Taiwan is the most unusual market on the Tremor board, and the desk’s chip rule and tariff findings land hardest on chip makers there."
+    }
+  ],
+  "watch": [
+    "The US trade representative’s findings on 16 economies, reported as imminent",
+    "Saturday’s Tremor Watch: do Taiwan’s pairs stay unusual?",
+    "US jobs figures, 4 December",
+    "The US-China truce and China’s rare-earth pause, 10 January 2027"
+  ],
+  "disclaimer": "From Antevo answers, each dated. A research desk writes Antevo's view; Tremor Watch describes, it does not forecast. Not investment advice."
+}

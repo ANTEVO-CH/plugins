@@ -1,0 +1,153 @@
+{
+  "template": "Built on Antevo · https://antevo.ch/mcp/build/competitor-watch/",
+  "kind": "Competitor Watch",
+  "title": "Vallmer Pack AG, three rivals",
+  "subtitle": "Read on the public record",
+  "built": "2026-11-25",
+  "note": "Vallmer Pack AG is an invented example company, a Swiss maker of packaging machines. Its three rivals are real Swiss companies read on the public record on the date shown, under invented names: Tessmer Pack AG, Orvanta Group AG and Brenvik Packaging Systems AG.",
+  "tries": {
+    "label": "The rivals, one by one",
+    "item": "Rival",
+    "source": "Antevo Companies, Trademark and Strategy Radar, 25 Nov 2026. Sanctions: none of the three found on OFAC SDN, EU FSF, UK or SECO lists under its name.",
+    "items": [
+      {
+        "name": "Brenvik Packaging Systems AG",
+        "verdict": "A busy record",
+        "level": "amber",
+        "evidence": [
+          "A call to creditors after a merger, published on 1, 2 and 3 May 2024: it took over another company",
+          "Signatories changed in July 2024 (5 in, 4 out), January 2025 (4 in, 1 out) and December 2025 (1 in, 1 out)",
+          "First marks under this name filed 3 December 2025 in Brazil and Canada, classes 7, 9 and 42, both pending"
+        ]
+      },
+      {
+        "name": "Tessmer Pack AG",
+        "verdict": "Worth a look",
+        "level": "amber",
+        "evidence": [
+          "Eight marks on two names in Australia, Canada, Israel and Singapore; seven registered, one pending, none lapsed",
+          "All in classes 7, 37 and 42; first filing 2009, last 12 December 2024",
+          "Register changed on 10 July 2025 and 11 May 2026"
+        ]
+      },
+      {
+        "name": "Orvanta Group AG",
+        "verdict": "A quiet record",
+        "level": "green",
+        "evidence": [
+          "A holding company, entered in the register in 2018",
+          "Ten notices in all, the last two on 22 December 2025 and 11 May 2026",
+          "No trademark filings under its own name; marks may sit with another group company (not checked)"
+        ]
+      }
+    ]
+  },
+  "steps": {
+    "label": "What to watch next",
+    "items": [
+      {
+        "do": "Follow each rival’s trademark filings",
+        "why": "A new country or a new class in the next filing shows where a rival is going.",
+        "links": [
+          {
+            "label": "Follow a filer",
+            "url": "https://antevo.ch/trademark/app/filers"
+          }
+        ]
+      },
+      {
+        "do": "Watch each company file for register changes",
+        "why": "Mergers, name changes and new signatories reach the official gazette before the press.",
+        "links": [
+          {
+            "label": "Antevo Companies",
+            "url": "https://antevo.ch/companies/"
+          }
+        ]
+      },
+      {
+        "do": "Read the notice text for this year’s changes",
+        "why": "Two rivals’ registers changed on 11 May 2026; the notice says what changed.",
+        "links": [
+          {
+            "label": "Official gazette (SHAB)",
+            "url": "https://www.shab.ch/"
+          }
+        ]
+      },
+      {
+        "do": "Ask sales whether these rivals turn up in bids in Brazil, Canada or Singapore",
+        "why": "Their filings point there; the order book says whether it matters.",
+        "links": []
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "One rival has been reorganising",
+      "verdict": "Brenvik · a merger and new signatories",
+      "level": "amber",
+      "so_what": "A rival that merges and changes its signatories is rebuilding: read it as a sign of a bigger offer, not of trouble.",
+      "evidence": [
+        "A call to creditors after a merger, published 1–3 May 2024",
+        "Signatory changes in July 2024, January 2025 and December 2025",
+        "Name changed in January 2020; purpose changed twice that year"
+      ],
+      "source": "Antevo Companies, official gazette notices, read 25 Nov 2026"
+    },
+    {
+      "title": "New marks reach into software",
+      "verdict": "Brenvik · classes 7, 9 and 42",
+      "level": "amber",
+      "so_what": "If its machines come with software of their own, the rivalry moves to the service around the machine, the same ground as a US service hub.",
+      "evidence": [
+        "Two marks filed 3 December 2025, Brazil and Canada, both pending",
+        "Class 9 covers software and electronics; class 42 covers engineering and software services",
+        "Too few filings for a pattern: an absence of evidence, not a clean bill"
+      ],
+      "source": "Antevo Trademark, holder read, 25 Nov 2026"
+    },
+    {
+      "title": "Tessmer files tightly, far from home",
+      "verdict": "Tessmer · a tight book",
+      "level": "ink",
+      "so_what": "A company that files tightly and carries every filing through protects what it sells; its four offices are where it chose to protect its names.",
+      "evidence": [
+        "100% of its class claims in classes 7, 37 and 42",
+        "7 of 7 decided filings registered",
+        "Last filing 12 December 2024"
+      ],
+      "source": "Antevo Trademark, holder read, 25 Nov 2026"
+    },
+    {
+      "title": "The sector today",
+      "verdict": "Tariffs and German demand",
+      "level": "amber",
+      "so_what": "The tariff list and German demand reach every Swiss maker in the field, rivals and this company alike.",
+      "evidence": [
+        "US tariffs on the EU and others reported for this week, rates not yet published (high impact, rising)",
+        "German manufacturing surveys at 55 in November (medium impact, high likelihood)"
+      ],
+      "source": "Antevo Executive Brief, business board of 25 Nov 2026"
+    }
+  ],
+  "links": [
+    {
+      "a": "Companies",
+      "b": "Trademark",
+      "text": "Brenvik merged in 2024, renewed its signatories through 2025 and filed its first marks abroad in December 2025: the register and the filings tell one story of a company rebuilding its offer."
+    },
+    {
+      "a": "Trademark",
+      "b": "Strategy Radar",
+      "text": "Two rivals file in Canada, and the board reports US tariff plans this week: North America is where the competition and the levy meet."
+    }
+  ],
+  "watch": [
+    "Each rival’s next trademark filing: a new country or class",
+    "New notices in each rival’s register",
+    "Publication of US tariff rates and start dates, reported for this week",
+    "The text of the 11 May 2026 notices for Tessmer and Orvanta"
+  ],
+  "disclaimer": "From Antevo answers on the public record, each dated. A register notice shows that something changed; a trademark book shows where a company protects names, not what it plans. Not legal advice; a sanctions-list check is not a compliance screen."
+}

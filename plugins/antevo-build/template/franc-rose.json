@@ -1,0 +1,167 @@
+{
+  "template": "Built on Antevo · https://antevo.ch/mcp/build/franc-rose/",
+  "kind": "Currency Read",
+  "title": "Three accounts, read in francs",
+  "subtitle": "What the franc’s move did to three accounts",
+  "built": "2026-11-25",
+  "note": "Antevo's model book: one household that spends in francs, three accounts named Capital Preservation, Balanced and Growth, nine securities, all but one priced in dollars. Figures are shares of the whole from Antevo engine answers on the date shown; holdings are described, not named.",
+  "tries": {
+    "label": "The book, currency by currency",
+    "item": "Piece",
+    "source": "Antevo Wealth, Research and Executive Brief, 25 Nov 2026. Currencies from the price currency of each holding; one dollar bought 0.8342 francs on 25 November.",
+    "items": [
+      {
+        "name": "The currencies",
+        "verdict": "Mostly dollars",
+        "level": "amber",
+        "evidence": [
+          "85.9% of the book priced in dollars, 14.1% in francs, none in euros",
+          "The only franc holding is the Swiss food maker, held in all three accounts"
+        ]
+      },
+      {
+        "name": "This week",
+        "verdict": "Worth a look",
+        "level": "amber",
+        "evidence": [
+          "The dollar lost 1.5% against the franc over the week to 25 November",
+          "On 85.9% of the book, that is about 1.3% off its value in francs from the currency alone"
+        ]
+      },
+      {
+        "name": "This year",
+        "verdict": "A tailwind",
+        "level": "green",
+        "evidence": [
+          "The dollar is 3.4% up on the franc over the year, 0.8% over the month",
+          "Over the year the currency added about 2.9% to the book in francs"
+        ]
+      },
+      {
+        "name": "The steady part",
+        "verdict": "Worth a look",
+        "level": "amber",
+        "evidence": [
+          "A short-dated US government bond fund is 15.4% of the book",
+          "It is 32.5% of the Capital Preservation account, the largest position in it, and its value in francs moves with the dollar"
+        ]
+      },
+      {
+        "name": "Each account",
+        "verdict": "Worth a look",
+        "level": "amber",
+        "evidence": [
+          "Capital Preservation 78.6% in dollars, Balanced 84.8%, Growth 93.4%",
+          "Every 1% the dollar moves against the franc moves the book about 0.86% in francs, before any move in the shares"
+        ]
+      }
+    ]
+  },
+  "steps": {
+    "label": "What to check next",
+    "items": [
+      {
+        "do": "Read each account’s currency mix",
+        "why": "Capital Preservation carries the bond fund that moves with the dollar; Growth is 93.4% in dollars.",
+        "links": [
+          {
+            "label": "Antevo Wealth",
+            "url": "https://antevo.ch/wealth"
+          }
+        ]
+      },
+      {
+        "do": "Ask your bank whether any fund you hold is a currency-hedged share class",
+        "why": "The record shows the price currency of each fund, not whether it is hedged; only the fund’s papers say that.",
+        "links": []
+      },
+      {
+        "do": "Read gains and losses in both currencies",
+        "why": "Over the year the dollar added about 2.9% to the book in francs; this week it took about 1.3% back.",
+        "links": []
+      },
+      {
+        "do": "Note the dates",
+        "why": "US inflation on 25 November, US jobs figures on 4 December, the Swiss National Bank on 10 December.",
+        "links": [
+          {
+            "label": "Swiss National Bank",
+            "url": "https://www.snb.ch/en/"
+          }
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Why the franc rose this week",
+      "verdict": "A flight to safety",
+      "level": "amber",
+      "so_what": "The franc tends to rise when shares fall, so a dollar book can lose twice in a sell-off: on the shares and on the currency.",
+      "evidence": [
+        "The franc rose as AI shares sold off; a gauge of share-market fear climbed above 30 on 24 November",
+        "The desk reads it as money seeking safety, not new Swiss data",
+        "One dollar bought 0.8342 francs on 25 November, down 1.5% in a week"
+      ],
+      "source": "Antevo Research, economy desk, 25 Nov 2026"
+    },
+    {
+      "title": "What held the dollar up this year",
+      "verdict": "The rate gap",
+      "level": "ink",
+      "so_what": "The year’s currency gain came from the gap between US and Swiss rates; anything that narrows the gap works against it.",
+      "evidence": [
+        "US interest rates sit far above Swiss rates, which are at 0%",
+        "That gap pulled money into dollars through most of the year: the dollar is 3.4% up on the franc over twelve months"
+      ],
+      "source": "Antevo Research, economy desk, 25 Nov 2026"
+    },
+    {
+      "title": "Swiss prices and the Swiss National Bank",
+      "verdict": "A decision on 10 December",
+      "level": "amber",
+      "so_what": "A Swiss rate rise would narrow the gap that has supported the dollar behind 85.9% of the book.",
+      "evidence": [
+        "Swiss inflation rose to 1.5% in October, its core about 0.5%",
+        "The Swiss National Bank holds at 0% and decides on 10 December"
+      ],
+      "source": "Antevo Research, economy desk, 25 Nov 2026"
+    },
+    {
+      "title": "The dates ahead",
+      "verdict": "Three in sixteen days",
+      "level": "ink",
+      "so_what": "All three bear on the rate gap, and with it on the book’s value in francs.",
+      "evidence": [
+        "25 November: US core inflation for October; above 3.2% would restore bets on a US rate rise in December",
+        "4 December: US jobs figures for November",
+        "10 December: the Swiss National Bank"
+      ],
+      "source": "Antevo Executive Brief, 25 Nov 2026"
+    }
+  ],
+  "links": [
+    {
+      "a": "Wealth",
+      "b": "Research",
+      "text": "The book is 85.9% in dollars and the desk sees the dollar 1.5% weaker on the week: about 1.3% off the book in francs, on top of whatever the shares did."
+    },
+    {
+      "a": "Wealth",
+      "b": "Research",
+      "text": "The Capital Preservation account’s largest position is a US government bond fund. The desk’s flight to safety lifted the franc, so the part meant to be steady moved with the currency."
+    },
+    {
+      "a": "Research",
+      "b": "Executive Brief",
+      "text": "The desk explains the year by the rate gap; the brief’s dates, US inflation, US jobs and the Swiss decision, are the events that move it."
+    }
+  ],
+  "watch": [
+    "US core inflation for October, 25 November",
+    "US jobs figures for November, 4 December",
+    "Swiss inflation and the Swiss National Bank’s decision, 10 December",
+    "Share-market fear: the franc rose as it climbed"
+  ],
+  "disclaimer": "From Antevo answers, each dated. The effect of the currency is arithmetic on today's holdings, not a forecast. Describing a book is not advice: nothing here says what to buy, sell, hold or hedge."
+}

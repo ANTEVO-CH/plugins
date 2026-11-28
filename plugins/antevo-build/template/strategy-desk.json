@@ -1,0 +1,216 @@
+{
+  "template": "Built on Antevo · https://antevo.ch/mcp/build/strategy-desk/",
+  "kind": "Strategy Desk",
+  "title": "Vallmer Pack AG, the morning read",
+  "subtitle": "Today’s developments matched to five objectives",
+  "built": "2026-11-25",
+  "note": "Vallmer Pack AG is an invented name for an example company: a Swiss maker of packaging machines for food and pharmaceutical factories, selling mostly in Germany and the euro area and some in the United States. Every finding is an Antevo engine's answer on the date shown. The company's answers stayed with the assistant; the research question went to Antevo without its name.",
+  "tries": {
+    "label": "The plan, objective by objective",
+    "item": "Objective",
+    "source": "Antevo Strategy Radar, Executive Brief and Research, 25 Nov 2026. Board: 8 entries, 6 linked (5 risks, 1 opening), 2 not linked.",
+    "items": [
+      {
+        "name": "Grow sales in Germany",
+        "verdict": "An opening",
+        "level": "green",
+        "evidence": [
+          "German manufacturing and composite surveys stood at 55 in November, well above forecasts; France contracted",
+          "German business sentiment rose to 90.6 from 90.1",
+          "Board grades: medium impact, high likelihood, steady"
+        ]
+      },
+      {
+        "name": "Open a US service hub",
+        "verdict": "Worth a look",
+        "level": "amber",
+        "evidence": [
+          "Higher US tariffs on China, the EU, Japan, South Korea and a dozen more are reported for this week; rates and dates not yet published",
+          "A final US rule changes the test for employee versus independent contractor"
+        ]
+      },
+      {
+        "name": "A second source for drives outside China",
+        "verdict": "Worth a look",
+        "level": "amber",
+        "evidence": [
+          "The reported US list names the EU as well as China, so a second source in the EU does not escape it for parts shipped to the US",
+          "China’s pause on its mineral export curbs runs until January"
+        ]
+      },
+      {
+        "name": "Hold margins with a strong franc",
+        "verdict": "Worth a look",
+        "level": "amber",
+        "evidence": [
+          "One euro bought 0.9131 francs on 25 November: the franc is 1.3% stronger in a month and 2.2% in a year",
+          "The Swiss National Bank holds at 0% and decides on 10 December"
+        ]
+      },
+      {
+        "name": "Refinance the bank loan next year",
+        "verdict": "Worth a look",
+        "level": "amber",
+        "evidence": [
+          "The AI relief rally reversed in one session and the newest large AI listing fell below its offer price",
+          "A failed or repriced AI-linked sale would make funding dearer for suppliers to industry (high impact, medium likelihood, rising)"
+        ]
+      }
+    ]
+  },
+  "steps": {
+    "label": "Questions for management this week",
+    "items": [
+      {
+        "do": "Which supplier contracts for spring delivery say who pays a new levy?",
+        "why": "The US tariff plans would land on orders placed now; rates and dates are not yet published.",
+        "links": []
+      },
+      {
+        "do": "Which parts would the US hub import from the EU or China, under which product codes?",
+        "why": "The board says to act once rates are published and a company’s own codes are on the list.",
+        "links": []
+      },
+      {
+        "do": "Are today’s terms on the loan due next year acceptable, and by when must we decide?",
+        "why": "One failed AI-linked sale could make lenders more cautious; the board’s trigger is a large sale pricing wide of guidance or being pulled.",
+        "links": []
+      },
+      {
+        "do": "How much of next year’s euro sales is already priced, and at what franc rate?",
+        "why": "The franc is 2.2% stronger in a year and the Swiss central bank decides on 10 December.",
+        "links": [
+          {
+            "label": "Swiss National Bank",
+            "url": "https://www.snb.ch/en/"
+          }
+        ]
+      },
+      {
+        "do": "Will the US hub employ its technicians or use contractors?",
+        "why": "The new US test decides which side of the line they fall on.",
+        "links": []
+      },
+      {
+        "do": "Is any customer a maker or importer of hybrid cars?",
+        "why": "The EU safeguard on hybrid car imports links to this company only through its EU sales; if no customer is affected, the entry can be set aside.",
+        "links": [
+          {
+            "label": "EUR-Lex",
+            "url": "https://eur-lex.europa.eu/"
+          }
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "US tariffs on the largest partners",
+      "verdict": "Risk · high impact · medium likelihood · rising",
+      "level": "amber",
+      "so_what": "Touches objective 2, the US hub, and objective 3: parts shipped to the US from the EU or China would carry the levy if they are on the list.",
+      "evidence": [
+        "Plans reported for this week; rates and dates not yet published",
+        "Retaliation risk: China’s pause on mineral export curbs runs out in January, the month the levies would bite",
+        "Act when: rates and dates are published and the company’s own product codes are confirmed on the list",
+        "Possible responses: a tariff-sharing clause in contracts for spring delivery (right if contracts can still be reopened); a source outside the named economies (right if qualifying it takes less time than the levies last)"
+      ],
+      "source": "Antevo Executive Brief, business board of 25 Nov 2026"
+    },
+    {
+      "title": "AI funding strain",
+      "verdict": "Risk · high impact · medium likelihood · rising",
+      "level": "amber",
+      "so_what": "Touches objective 5: the loan is refinanced next year, and a failed AI-linked deal would make lenders more cautious.",
+      "evidence": [
+        "Chip makers gave back more than half of Monday’s surge on Tuesday; the newest large AI listing fell below its offer price",
+        "Watch: pricing of AI-linked bond and share sales this week",
+        "Possible responses: lock in funding early (right if today’s terms are acceptable and capital is needed within a year); delay a capacity decision (right if it is not yet committed)"
+      ],
+      "source": "Antevo Executive Brief, business board of 25 Nov 2026"
+    },
+    {
+      "title": "German demand picks up",
+      "verdict": "Opening · medium impact · high likelihood · steady",
+      "level": "green",
+      "so_what": "Touches objective 1: firmer orders in Germany, the company’s largest market.",
+      "evidence": [
+        "German manufacturing and composite surveys at 55 in November, well above forecasts; business sentiment 90.6",
+        "Watch: next month’s expectations reading and the EU response to the US tariff plans",
+        "Possible responses: shift sales effort from weaker France to Germany (right if distribution is already there); reprice (right if competitors see fuller order books too)"
+      ],
+      "source": "Antevo Executive Brief, business board of 25 Nov 2026"
+    },
+    {
+      "title": "A new US test for contractors",
+      "verdict": "Risk · medium impact · high likelihood · steady",
+      "level": "amber",
+      "so_what": "Touches objective 2: if the US hub uses contract technicians, the new test decides whether they count as employees.",
+      "evidence": [
+        "The final rule replaces the earlier analysis with one close to the 2021 version, with changes",
+        "Act when: the effective date is known and current arrangements have had a legal review"
+      ],
+      "source": "Antevo Executive Brief, business board of 25 Nov 2026"
+    },
+    {
+      "title": "An EU safeguard on hybrid car imports",
+      "verdict": "Risk · medium impact · high likelihood · new",
+      "level": "ink",
+      "so_what": "Links through EU sales only and bears on no objective: the measure covers imports of hybrid cars, so it matters only if a customer makes or imports them.",
+      "evidence": [
+        "Starts on 1 December",
+        "Question for management: is any customer a maker or importer of hybrid cars? If none is, the entry can be set aside"
+      ],
+      "source": "Antevo Executive Brief, business board of 25 Nov 2026"
+    },
+    {
+      "title": "Tariffs reach US spring prices",
+      "verdict": "Risk · medium impact · medium likelihood · steady",
+      "level": "ink",
+      "so_what": "Links through buying from China and selling in the US; it bears on no objective directly and reaches the company through its US food customers, whose spring costs it raises.",
+      "evidence": [
+        "US port queues and cargo flights from Asia were at usual levels in the week to 24 November: importers have not ordered ahead",
+        "Levies on what is ordered next would land in spring prices and margins"
+      ],
+      "source": "Antevo Executive Brief, business board of 25 Nov 2026"
+    },
+    {
+      "title": "The franc",
+      "verdict": "Not on the board · worth a look",
+      "level": "amber",
+      "so_what": "Every euro of German sales converts into fewer francs: the opening in Germany and the margin objective pull against each other.",
+      "evidence": [
+        "One euro bought 0.9131 francs on 25 November; one dollar 0.8342",
+        "Swiss inflation rose to 1.5% in October, its core about 0.5%",
+        "The Swiss National Bank decides on 10 December"
+      ],
+      "source": "Antevo Research, economy desk, 25 Nov 2026"
+    }
+  ],
+  "links": [
+    {
+      "a": "Strategy Radar",
+      "b": "Research",
+      "text": "The board sees German demand picking up; the desk sees the franc 2.2% stronger in a year. The same German order earns more euros and fewer francs: objectives 1 and 4 pull against each other."
+    },
+    {
+      "a": "Strategy Radar",
+      "b": "Executive Brief",
+      "text": "The board and the risk radar both raise the tariff plans and the AI funding strain to rising this morning: two of the company’s five objectives sit under risks the brief is watching most closely."
+    },
+    {
+      "a": "Executive Brief",
+      "b": "Research",
+      "text": "Euro-area inflation on 1 December and the Swiss decision on 10 December both move the euro against the franc, the rate behind objective 4."
+    }
+  ],
+  "watch": [
+    "US core inflation for October, 25 November",
+    "German unemployment, 27 November; German inflation, 30 November",
+    "Euro-area inflation and the EU hybrid safeguard, 1 December",
+    "Publication of US tariff rates and start dates, reported for this week",
+    "The Swiss National Bank’s decision, 10 December",
+    "Pricing of AI-linked bond and share sales this week"
+  ],
+  "disclaimer": "From Antevo answers, each dated. The board is the same for every company; the matching was done in the assistant. The questions and possible responses are for management to decide on. Not investment, legal or tax advice."
+}

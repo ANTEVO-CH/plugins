@@ -1,0 +1,175 @@
+{
+  "template": "Built on Antevo · https://antevo.ch/mcp/build/risks-in-francs/",
+  "kind": "Risks In Francs",
+  "title": "Five risks, one family",
+  "subtitle": "What each would cost, as a what-if",
+  "built": "2026-11-25",
+  "note": "The family is Antevo’s example household: CHF 35.5m in five portfolios at three made-up banks. The risks are Antevo’s list of the date shown. Every figure is the Antevo Wealth tool’s answer. A what-if is not a forecast.",
+  "tries": {
+    "label": "Today’s list, risk by risk",
+    "item": "Risk",
+    "source": "Antevo Wealth, 25 Nov 2026. Each risk is tied to one named what-if from a fixed list that Antevo keeps. A what-if is not a forecast: the risk may play out differently, or not at all. A risk with no fitting what-if gets no figure.",
+    "items": [
+      {
+        "name": "Tariffs reach spring prices with no stockpile",
+        "verdict": "−CHF 5.3m · 15.0%",
+        "level": "red",
+        "evidence": [
+          "What-if: Stagflation, prices that keep rising while growth stalls",
+          "Growth −19.8%, Funds −16.2%, Nasdaq fund −16.1%, Balanced −14.0%, Capital Preservation −9.7%"
+        ]
+      },
+      {
+        "name": "New tariffs on the largest trading partners",
+        "verdict": "−CHF 1.9m · 5.3%",
+        "level": "amber",
+        "evidence": [
+          "What-if: Trade War Escalation",
+          "Growth −10.2%, Funds −9.2%, Nasdaq fund −7.8%, Balanced −3.8%, Capital Preservation +1.1%"
+        ]
+      },
+      {
+        "name": "AI suppliers lose their second bid",
+        "verdict": "−CHF 1.6m · 4.6%",
+        "level": "amber",
+        "evidence": [
+          "What-if: Sector Rotation, technology −15% and cheaper shares +10%",
+          "Nasdaq fund −10.4%, Growth −9.1%, Balanced −3.7%, Funds −2.1%, Capital Preservation −0.2%"
+        ]
+      },
+      {
+        "name": "A firm inflation figure restores hike bets",
+        "verdict": "−CHF 0.17m · 0.5%",
+        "level": "ink",
+        "evidence": [
+          "What-if: interest rates two points higher",
+          "Capital Preservation −1.2%, Balanced −0.6%, the other three portfolios unchanged"
+        ]
+      },
+      {
+        "name": "The Gulf truce frays at sea and in Riyadh",
+        "verdict": "No figure",
+        "level": "grey",
+        "evidence": [
+          "No what-if on Antevo’s list stands for this risk",
+          "That is not the same as no effect"
+        ]
+      }
+    ]
+  },
+  "steps": {
+    "label": "What is worth a look",
+    "items": [
+      {
+        "do": "Read the cost, not the headline",
+        "why": "The risk in the news, the trade war, costs a third of what rising prices with no growth would.",
+        "links": []
+      },
+      {
+        "do": "Look at each portfolio against each risk",
+        "why": "The cautious portfolio gains in one what-if and loses a tenth in another.",
+        "links": [
+          {
+            "label": "How the what-ifs work",
+            "url": "https://antevo.ch/stress-testing/"
+          }
+        ]
+      },
+      {
+        "do": "Ask the same question next week",
+        "why": "The list changes every morning; the figures follow what you own that day.",
+        "links": [
+          {
+            "label": "Antevo Wealth",
+            "url": "https://antevo.ch/wealth/"
+          }
+        ]
+      },
+      {
+        "do": "Read the story behind each line",
+        "why": "What the risk is, whether it is rising, and what to watch.",
+        "links": [
+          {
+            "label": "Today’s read",
+            "url": "https://antevo.ch/executive/"
+          }
+        ]
+      },
+      {
+        "do": "Know what is inside your funds first",
+        "why": "A what-if is only as good as the picture of what you own.",
+        "links": [
+          {
+            "label": "What is inside your funds",
+            "url": "https://antevo.ch/mcp/build/inside-your-funds/"
+          }
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "The cautious portfolio",
+      "verdict": "Cautious against what?",
+      "level": "amber",
+      "so_what": "A label says what a portfolio is for, not what it is protected against.",
+      "evidence": [
+        "Trade war: +1.1%",
+        "Prices rise, growth stalls: −9.7%",
+        "Interest rates two points higher: −1.2%, more than any other portfolio"
+      ],
+      "source": "Antevo Wealth, 25 Nov 2026"
+    },
+    {
+      "title": "Higher interest rates",
+      "verdict": "A small figure is a finding too",
+      "level": "ink",
+      "so_what": "This family holds few bonds, so higher rates on their own cost it little.",
+      "evidence": [
+        "−CHF 0.17m, 0.5% of everything",
+        "Three of the five portfolios do not move"
+      ],
+      "source": "Antevo Wealth, 25 Nov 2026"
+    },
+    {
+      "title": "Past crashes, replayed",
+      "verdict": "The worst case is not on today’s list",
+      "level": "red",
+      "so_what": "Today’s list is what is in the news now. The replays show what the holdings have been through before.",
+      "evidence": [
+        "A replay of the crash of 2000 to 2002: growth portfolio −61%, Nasdaq fund −67%",
+        "A replay of 2008: growth portfolio −50%",
+        "A replay is not a forecast"
+      ],
+      "source": "Antevo Wealth, 25 Nov 2026"
+    },
+    {
+      "title": "How a risk gets its figure",
+      "verdict": "A fixed list, not a guess",
+      "level": "grey",
+      "so_what": "The answer says which what-if it used, so you can disagree with the choice.",
+      "evidence": [
+        "Each risk is tied to one named what-if from a fixed list that Antevo keeps. A what-if is not a forecast: the risk may play out differently, or not at all. A risk with no fitting what-if gets no figure."
+      ],
+      "source": "Antevo Wealth"
+    }
+  ],
+  "links": [
+    {
+      "a": "Two tariff risks",
+      "b": "Two different costs",
+      "text": "Tariffs appear twice on the list. As a trade war they cost 5.3% of everything; as rising prices with no growth, 15.0%. The same news, two what-ifs."
+    },
+    {
+      "a": "The AI risk",
+      "b": "The Nasdaq fund",
+      "text": "The portfolio that falls most when technology goes out of favour is the fund at the third bank, not the single shares at the first."
+    }
+  ],
+  "watch": [
+    "Which risks are marked rising on tomorrow’s list",
+    "The cost of the most expensive risk as a share of everything",
+    "Any risk that gets no figure: it needs a closer look by hand"
+  ],
+  "disclaimer": "From the Antevo Wealth tool’s answers on the date shown. Each risk is tied to one named what-if from a fixed list that Antevo keeps. A what-if is not a forecast: the risk may play out differently, or not at all. A risk with no fitting what-if gets no figure. Not investment advice: nothing here says what to buy or sell."
+}

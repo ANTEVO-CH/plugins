@@ -1,0 +1,176 @@
+{
+  "template": "Built on Antevo · https://antevo.ch/mcp/build/banks-on-one-page/",
+  "kind": "All Your Banks",
+  "title": "Three banks, one page",
+  "subtitle": "What one family holds, added up",
+  "built": "2026-11-25",
+  "note": "The family is Antevo’s example household. Its three banks are made up. Companies are described, not named. Every figure is the Antevo Wealth tool’s answer on the date shown.",
+  "tries": {
+    "label": "The page, line by line",
+    "item": "Line",
+    "source": "Antevo Wealth, 25 Nov 2026. Amounts in francs at that day’s prices.",
+    "items": [
+      {
+        "name": "Three banks",
+        "verdict": "CHF 35.55m",
+        "level": "green",
+        "evidence": [
+          "Bank Halvern: CHF 29.55m in three portfolios",
+          "Banque Sorvelle: CHF 3.91m in two funds",
+          "Tessmar Privatbank: CHF 2.09m in one fund"
+        ]
+      },
+      {
+        "name": "Shares and bonds",
+        "verdict": "87% in shares",
+        "level": "amber",
+        "evidence": [
+          "Shares and share funds: CHF 31.0m, 87.2% of everything",
+          "One bond fund, held in two portfolios: CHF 4.55m, 12.8%"
+        ]
+      },
+      {
+        "name": "One company",
+        "verdict": "14% of everything",
+        "level": "amber",
+        "evidence": [
+          "A US phone and device maker sits in three portfolios at the first bank",
+          "Added up: CHF 5.1m, 14.4% of everything"
+        ]
+      },
+      {
+        "name": "Three companies",
+        "verdict": "One third",
+        "level": "amber",
+        "evidence": [
+          "A software company: CHF 4.3m, in three portfolios",
+          "A chip designer: CHF 2.4m, in two portfolios",
+          "With the phone maker: CHF 11.9m, 33.5% of everything"
+        ]
+      },
+      {
+        "name": "Not on this page",
+        "verdict": "Inside the funds",
+        "level": "grey",
+        "evidence": [
+          "Three share funds at two banks hold CHF 6.0m",
+          "Each fund is one line here: what it holds is a separate question"
+        ]
+      }
+    ]
+  },
+  "steps": {
+    "label": "What is worth asking",
+    "items": [
+      {
+        "do": "Record every account, not only the large ones",
+        "why": "A pension pot, a broker app or a cash account left out makes the total wrong.",
+        "links": [
+          {
+            "label": "Antevo Wealth",
+            "url": "https://antevo.ch/wealth/"
+          }
+        ]
+      },
+      {
+        "do": "Add each holding up across banks before judging any one statement",
+        "why": "Five holdings sit in all three portfolios of the first bank.",
+        "links": []
+      },
+      {
+        "do": "Open the funds",
+        "why": "Three funds at two banks hold CHF 6.0m, and each is one line here.",
+        "links": [
+          {
+            "label": "What is inside your funds",
+            "url": "https://antevo.ch/mcp/build/inside-your-funds/"
+          }
+        ]
+      },
+      {
+        "do": "Ask what a bad year would cost the whole",
+        "why": "One portfolio’s answer is not the family’s answer.",
+        "links": [
+          {
+            "label": "Today’s risks, in francs",
+            "url": "https://antevo.ch/mcp/build/risks-in-francs/"
+          }
+        ]
+      },
+      {
+        "do": "Write down who in the family holds the whole picture",
+        "why": "Each bank knows its own slice.",
+        "links": [
+          {
+            "label": "The family file",
+            "url": "https://antevo.ch/family-file/"
+          }
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "title": "Accounts and banks",
+      "verdict": "Three accounts, three banks",
+      "level": "ink",
+      "so_what": "The page is only as complete as what has been recorded. An account that is not in Antevo Wealth is not on it.",
+      "evidence": [
+        "Each holding names the account that holds it",
+        "Each account names its bank and its country"
+      ],
+      "source": "Antevo Wealth, 25 Nov 2026"
+    },
+    {
+      "title": "The same holdings in several portfolios",
+      "verdict": "Five in all three",
+      "level": "amber",
+      "so_what": "No single portfolio statement shows the real share of any of them.",
+      "evidence": [
+        "Five holdings sit in all three portfolios at the first bank",
+        "Each in a different weight"
+      ],
+      "source": "Antevo Wealth, 25 Nov 2026"
+    },
+    {
+      "title": "The funds",
+      "verdict": "Three funds, still closed",
+      "level": "grey",
+      "so_what": "A fund can hold the same companies you already own directly. That is the next question.",
+      "evidence": [
+        "A world fund and a Swiss fund at the second bank: CHF 3.91m",
+        "A Nasdaq fund at the third bank: CHF 2.09m"
+      ],
+      "source": "Antevo Wealth, 25 Nov 2026"
+    },
+    {
+      "title": "What is not here",
+      "verdict": "No property, no loans",
+      "level": "grey",
+      "so_what": "What a family owns includes both. Record them, and the same question covers them.",
+      "evidence": [
+        "No property recorded",
+        "No loans recorded"
+      ],
+      "source": "Antevo Wealth, 25 Nov 2026"
+    }
+  ],
+  "links": [
+    {
+      "a": "The first bank",
+      "b": "The other two",
+      "text": "The first bank holds single shares; the other two hold funds. The funds can hold the very companies the first bank holds directly."
+    },
+    {
+      "a": "Each statement",
+      "b": "The whole",
+      "text": "Every statement is accurate. The share of one company in everything appears only when the three are added up."
+    }
+  ],
+  "watch": [
+    "A new account opened anywhere: record it the same week",
+    "The largest company’s share of everything, once the funds are opened",
+    "Any holding that appears at a second bank"
+  ],
+  "disclaimer": "From the Antevo Wealth tool’s answers on the date shown. The banks are made up. The page describes what is held and where; it is not investment advice and says nothing about what to buy or sell."
+}
